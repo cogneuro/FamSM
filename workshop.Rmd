@@ -10,11 +10,9 @@ output:
       collapse: false
       smooth_scroll: false
     number_sections: true
-    theme: yeti 
+    theme: simplex 
     highlight: tango
     code_folding: show
-  md_document:
-    variant: markdown_github
 ---
 
 ```{r setup, include=FALSE}
