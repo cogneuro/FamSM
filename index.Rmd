@@ -1,5 +1,18 @@
 ---
-title: "My Website"
+title: "Index"
+author: "Do-Joon Yi"
+date: "2/21/2019"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: 
+      collapse: false
+      smooth_scroll: false
+    number_sections: true
+    theme: united 
+    highlight: tango
+    code_folding: show
 ---
 
 Hello, Website!
