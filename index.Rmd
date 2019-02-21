@@ -10,9 +10,11 @@ output:
       collapse: false
       smooth_scroll: false
     number_sections: true
-    theme: united 
+    theme: yeti 
     highlight: tango
     code_folding: show
+  md_document:
+    variant: markdown_github
 ---
 
 Hello, Website!

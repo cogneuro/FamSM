@@ -10,7 +10,7 @@ output:
       collapse: false
       smooth_scroll: false
     number_sections: true
-    theme: united 
+    theme: yeti 
     highlight: tango
     code_folding: show
 ---
