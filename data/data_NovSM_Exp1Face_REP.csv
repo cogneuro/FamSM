@@ -1,0 +1,4609 @@
+SID,Familiarity,RepTime,Trial,ImgCat,Resp,Corr,RT,ImgName
+1,1,1,1,1,1,1,477.59,actor17.jpg
+1,1,1,2,2,2,1,385.1,famfemale30.jpg
+1,1,1,3,1,1,1,337.84,actor51.jpg
+1,1,1,4,2,1,0,354.65,famfemale02.jpg
+1,1,1,5,1,1,1,395.43,actorprac1.jpg
+1,1,1,6,1,1,1,436.21,athlete1.jpg
+1,1,1,7,1,1,1,573.02,actor49.jpg
+1,1,1,8,2,2,1,405.75,famfemale22.jpg
+1,1,1,9,2,2,1,350.56,famfemale36.jpg
+1,1,1,10,2,2,1,359.29,famfemale39.jpg
+1,1,1,11,1,1,1,504.08,capture008 copy.jpg
+1,1,1,12,2,2,1,344.92,famfemale12.jpg
+1,1,1,13,1,1,1,489.68,actor53.jpg
+1,1,1,14,2,2,1,330.51,famfemale08.jpg
+1,1,1,15,2,2,1,323.22,famfemale40.jpg
+1,1,1,16,1,1,1,356.03,capture027 copy.jpg
+1,1,1,17,2,2,1,436.79,famfemale38.jpg
+1,1,1,18,2,2,1,469.62,famfemale34.jpg
+1,1,1,19,1,1,1,534.38,capture025 copy.jpg
+1,1,1,20,2,2,1,407.2,famfemale21.jpg
+1,1,1,21,1,1,1,448.01,athlete28.jpg
+1,1,1,22,2,2,1,320.8,famfemale01.jpg
+1,1,1,23,1,1,1,409.57,actor14.jpg
+1,1,1,24,1,2,0,306.33,athlete6.jpg
+1,1,2,1,1,1,1,529.95,capture025 copy.jpg
+1,1,2,2,1,1,1,418.72,capture008 copy.jpg
+1,1,2,3,2,2,1,291.45,famfemale22.jpg
+1,1,2,4,1,1,1,468.29,athlete6.jpg
+1,1,2,5,1,1,1,389.02,capture027 copy.jpg
+1,1,2,6,2,2,1,413.85,famfemale38.jpg
+1,1,2,7,2,2,1,374.65,famfemale08.jpg
+1,1,2,8,1,1,1,391.39,actor53.jpg
+1,1,2,9,1,1,1,400.18,athlete1.jpg
+1,1,2,10,1,1,1,448.96,actorprac1.jpg
+1,1,2,11,2,2,1,345.74,famfemale40.jpg
+1,1,2,12,2,2,1,394.6,famfemale01.jpg
+1,1,2,13,2,2,1,371.3,famfemale39.jpg
+1,1,2,14,1,1,1,436.11,actor14.jpg
+1,1,2,15,1,1,1,516.93,actor17.jpg
+1,1,2,16,2,2,1,389.71,famfemale36.jpg
+1,1,2,17,1,1,1,502.47,athlete28.jpg
+1,1,2,18,2,2,1,407.27,famfemale30.jpg
+1,1,2,19,2,2,1,360.07,famfemale21.jpg
+1,1,2,20,2,2,1,344.8,famfemale12.jpg
+1,1,2,21,1,1,1,313.6,actor51.jpg
+1,1,2,22,1,1,1,402.42,actor49.jpg
+1,1,2,23,2,2,1,371.21,famfemale02.jpg
+1,1,2,24,2,2,1,419.98,famfemale34.jpg
+1,1,3,1,2,2,1,370.32,famfemale21.jpg
+1,1,3,2,2,2,1,307.11,famfemale39.jpg
+1,1,3,3,2,2,1,307.84,famfemale08.jpg
+1,1,3,4,1,2,0,332.65,athlete6.jpg
+1,1,3,5,2,2,1,461.46,famfemale02.jpg
+1,1,3,6,2,2,1,414.25,famfemale36.jpg
+1,1,3,7,2,2,1,383.03,famfemale34.jpg
+1,1,3,8,1,1,1,391.76,athlete28.jpg
+1,1,3,9,1,1,1,424.55,actor17.jpg
+1,1,3,10,2,2,1,353.34,famfemale40.jpg
+1,1,3,11,2,2,1,346.17,famfemale30.jpg
+1,1,3,12,1,1,1,578.92,athlete1.jpg
+1,1,3,13,2,2,1,347.72,famfemale12.jpg
+1,1,3,14,2,2,1,356.5,famfemale38.jpg
+1,1,3,15,2,2,1,333.31,famfemale22.jpg
+1,1,3,16,1,1,1,398.09,actor14.jpg
+1,1,3,17,1,2,0,358.86,capture025 copy.jpg
+1,1,3,18,2,2,1,399.6,famfemale01.jpg
+1,1,3,19,1,1,1,368.43,actor53.jpg
+1,1,3,20,1,1,1,329.23,actor51.jpg
+1,1,3,21,1,1,1,313.98,actor49.jpg
+1,1,3,22,1,1,1,338.73,capture027 copy.jpg
+1,1,3,23,1,1,1,331.58,capture008 copy.jpg
+1,1,3,24,1,1,1,316.32,actorprac1.jpg
+1,1,4,1,1,1,1,392.62,actor17.jpg
+1,1,4,2,1,1,1,369.34,capture025 copy.jpg
+1,1,4,3,1,1,1,314.14,capture008 copy.jpg
+1,1,4,4,2,2,1,450.95,famfemale36.jpg
+1,1,4,5,2,2,1,467.75,famfemale30.jpg
+1,1,4,6,1,1,1,356.54,actor51.jpg
+1,1,4,7,2,2,1,565.3,famfemale21.jpg
+1,1,4,8,2,2,1,358.06,famfemale22.jpg
+1,1,4,9,1,1,1,318.88,athlete1.jpg
+1,1,4,10,1,2,0,359.64,athlete6.jpg
+1,1,4,11,1,2,0,384.44,athlete28.jpg
+1,1,4,12,2,2,1,425.24,famfemale39.jpg
+1,1,4,13,1,1,1,361.96,actorprac1.jpg
+1,1,4,14,2,2,1,362.78,famfemale08.jpg
+1,1,4,15,2,2,1,323.59,famfemale02.jpg
+1,1,4,16,2,2,1,332.38,famfemale38.jpg
+1,1,4,17,1,1,1,445.17,actor53.jpg
+1,1,4,18,2,2,1,493.92,famfemale40.jpg
+1,1,4,19,2,2,1,358.72,famfemale01.jpg
+1,1,4,20,1,1,1,447.48,actor14.jpg
+1,1,4,21,1,1,1,456.3,actor49.jpg
+1,1,4,22,2,2,1,457.09,famfemale12.jpg
+1,1,4,23,1,1,1,417.87,capture027 copy.jpg
+1,1,4,24,2,2,1,346.59,famfemale34.jpg
+1,1,5,1,2,2,1,453.78,famfemale21.jpg
+1,1,5,2,1,1,1,350.65,actorprac1.jpg
+1,1,5,3,1,1,1,423.38,capture008 copy.jpg
+1,1,5,4,2,2,1,424.16,famfemale08.jpg
+1,1,5,5,2,2,1,432.92,famfemale22.jpg
+1,1,5,6,1,1,1,497.77,actor51.jpg
+1,1,5,7,1,1,1,402.52,capture025 copy.jpg
+1,1,5,8,2,2,1,435.32,famfemale34.jpg
+1,1,5,9,2,2,1,372.08,famfemale36.jpg
+1,1,5,10,2,2,1,468.88,famfemale01.jpg
+1,1,5,11,1,1,1,373.71,actor14.jpg
+1,1,5,12,1,1,1,390.49,actor49.jpg
+1,1,5,13,1,1,1,455.28,athlete1.jpg
+1,1,5,14,2,2,1,463.92,famfemale30.jpg
+1,1,5,15,1,1,1,352.82,actor17.jpg
+1,1,5,16,2,2,1,377.59,famfemale12.jpg
+1,1,5,17,2,2,1,338.35,famfemale39.jpg
+1,1,5,18,1,1,1,571.2,athlete28.jpg
+1,1,5,19,1,1,1,435.96,capture027 copy.jpg
+1,1,5,20,2,2,1,444.7,famfemale40.jpg
+1,1,5,21,1,1,1,373.54,actor53.jpg
+1,1,5,22,2,2,1,398.34,famfemale02.jpg
+1,1,5,23,1,1,1,431.12,athlete6.jpg
+1,1,5,24,2,2,1,399.89,famfemale38.jpg
+1,1,6,1,1,1,1,456.43,actor49.jpg
+1,1,6,2,1,1,1,385.19,capture025 copy.jpg
+1,1,6,3,2,1,0,329.96,famfemale12.jpg
+1,1,6,4,2,2,1,410.79,famfemale01.jpg
+1,1,6,5,2,2,1,379.58,famfemale02.jpg
+1,1,6,6,2,2,1,332.3,famfemale30.jpg
+1,1,6,7,2,2,1,357.12,famfemale36.jpg
+1,1,6,8,1,1,1,445.87,actor14.jpg
+1,1,6,9,1,1,1,382.69,athlete1.jpg
+1,1,6,10,1,1,1,367.5,athlete6.jpg
+1,1,6,11,1,1,1,400.27,athlete28.jpg
+1,1,6,12,2,2,1,377.02,famfemale39.jpg
+1,1,6,13,2,2,1,377.85,famfemale40.jpg
+1,1,6,14,1,1,1,450.64,capture027 copy.jpg
+1,1,6,15,1,2,0,299.42,capture008 copy.jpg
+1,1,6,16,2,2,1,348.2,famfemale38.jpg
+1,1,6,17,2,2,1,388.98,famfemale22.jpg
+1,1,6,18,1,1,1,389.76,actorprac1.jpg
+1,1,6,19,2,2,1,502.56,famfemale34.jpg
+1,1,6,20,2,2,1,383.3,famfemale08.jpg
+1,1,6,21,1,1,1,416.11,actor53.jpg
+1,1,6,22,2,2,1,360.87,famfemale21.jpg
+1,1,6,23,1,1,1,409.63,actor51.jpg
+1,1,6,24,1,1,1,434.43,actor17.jpg
+1,1,7,1,2,2,1,476.65,famfemale38.jpg
+1,1,7,2,1,1,1,453.37,capture025 copy.jpg
+1,1,7,3,1,1,1,486.16,capture008 copy.jpg
+1,1,7,4,2,2,1,382.99,famfemale08.jpg
+1,1,7,5,1,1,1,423.71,athlete28.jpg
+1,1,7,6,1,1,1,432.55,actorprac1.jpg
+1,1,7,7,1,1,1,409.28,capture027 copy.jpg
+1,1,7,8,2,2,1,394.06,famfemale12.jpg
+1,1,7,9,2,2,1,442.91,famfemale21.jpg
+1,1,7,10,1,1,1,435.69,actor14.jpg
+1,1,7,11,1,1,1,412.41,athlete1.jpg
+1,1,7,12,1,1,1,421.26,actor17.jpg
+1,1,7,13,2,2,1,390.04,famfemale02.jpg
+1,1,7,14,1,1,1,414.83,actor53.jpg
+1,1,7,15,2,2,1,351.62,famfemale34.jpg
+1,1,7,16,2,2,1,344.38,famfemale30.jpg
+1,1,7,17,2,2,1,441.12,famfemale36.jpg
+1,1,7,18,2,2,1,441.96,famfemale40.jpg
+1,1,7,19,1,1,1,466.7,athlete6.jpg
+1,1,7,20,2,2,1,347.49,famfemale22.jpg
+1,1,7,21,1,1,1,452.32,actor51.jpg
+1,1,7,22,1,1,1,477.1,actor49.jpg
+1,1,7,23,2,2,1,341.84,famfemale39.jpg
+1,1,7,24,2,2,1,430.67,famfemale01.jpg
+1,1,8,1,2,2,1,359.7,famfemale30.jpg
+1,1,8,2,2,2,1,360.53,famfemale40.jpg
+1,1,8,3,1,1,1,441.28,capture027 copy.jpg
+1,1,8,4,2,2,1,442.1,famfemale34.jpg
+1,1,8,5,1,1,1,442.92,actor51.jpg
+1,1,8,6,1,1,1,379.66,actorprac1.jpg
+1,1,8,7,1,1,1,372.49,actor17.jpg
+1,1,8,8,1,1,1,341.25,actor53.jpg
+1,1,8,9,1,1,1,342.06,athlete1.jpg
+1,1,8,10,2,2,1,358.82,famfemale21.jpg
+1,1,8,11,1,1,1,375.62,capture025 copy.jpg
+1,1,8,12,1,1,1,352.41,actor49.jpg
+1,1,8,13,2,2,1,377.2,famfemale01.jpg
+1,1,8,14,2,2,1,345.97,famfemale12.jpg
+1,1,8,15,2,2,1,434.77,famfemale39.jpg
+1,1,8,16,2,2,1,531.49,famfemale36.jpg
+1,1,8,17,1,1,1,524.31,capture008 copy.jpg
+1,1,8,18,2,2,1,341.12,famfemale08.jpg
+1,1,8,19,1,1,1,493.87,athlete6.jpg
+1,1,8,20,2,2,1,406.66,famfemale02.jpg
+1,1,8,21,2,2,1,455.47,famfemale38.jpg
+1,1,8,22,2,2,1,408.25,famfemale22.jpg
+1,1,8,23,1,1,1,544.97,athlete28.jpg
+1,1,8,24,1,1,1,441.82,actor14.jpg
+2,1,1,1,1,1,1,359.52,actor35.jpg
+2,1,1,2,1,1,1,378.97,capture026 copy.jpg
+2,1,1,3,1,1,1,435.77,athlete7.jpg
+2,1,1,4,1,1,1,340.51,actor41.jpg
+2,1,1,5,2,2,1,333.36,famfemale22.jpg
+2,1,1,6,1,1,1,334.09,actor9.jpg
+2,1,1,7,2,2,1,318.89,famfemale01.jpg
+2,1,1,8,2,2,1,455.68,famfemale34.jpg
+2,1,1,9,2,2,1,440.48,famfemale30.jpg
+2,1,1,10,2,2,1,441.23,famfemale40.jpg
+2,1,1,11,1,1,1,386.07,athlete13.jpg
+2,1,1,12,1,1,1,370.8,actor19.jpg
+2,1,1,13,2,2,1,371.64,famfemale36.jpg
+2,1,1,14,1,1,1,604.41,actor54.jpg
+2,1,1,15,1,1,1,373.19,capture003 copy.jpg
+2,1,1,16,1,1,1,309.99,actor12.jpg
+2,1,1,17,2,2,1,326.71,famfemale08.jpg
+2,1,1,18,2,2,1,495.51,famfemale12.jpg
+2,1,1,19,1,1,1,376.34,actor7.jpg
+2,1,1,20,2,2,1,345.13,famfemale02.jpg
+2,1,1,21,2,2,1,369.86,famfemale21.jpg
+2,1,1,22,2,2,1,402.64,famfemale38.jpg
+2,1,1,23,2,2,1,387.48,famfemale39.jpg
+2,1,1,24,1,1,1,364.26,actor44.jpg
+2,1,2,1,1,1,1,396.28,actor9.jpg
+2,1,2,2,2,2,1,381.11,famfemale22.jpg
+2,1,2,3,2,2,1,397.87,famfemale30.jpg
+2,1,2,4,2,2,1,374.68,famfemale40.jpg
+2,1,2,5,1,1,1,383.4,actor54.jpg
+2,1,2,6,2,2,1,480.19,famfemale36.jpg
+2,1,2,7,1,1,1,496.98,actor19.jpg
+2,1,2,8,2,2,1,409.81,famfemale12.jpg
+2,1,2,9,1,1,1,362.58,actor35.jpg
+2,1,2,10,1,1,1,411.38,capture003 copy.jpg
+2,1,2,11,2,2,1,396.11,famfemale34.jpg
+2,1,2,12,1,1,1,332.9,actor7.jpg
+2,1,2,13,2,2,1,341.73,famfemale02.jpg
+2,1,2,14,1,1,1,326.48,actor41.jpg
+2,1,2,15,2,2,1,455.3,famfemale38.jpg
+2,1,2,16,1,1,1,344.04,actor44.jpg
+2,1,2,17,1,1,1,384.86,actor12.jpg
+2,1,2,18,1,1,1,377.63,athlete13.jpg
+2,1,2,19,2,2,1,418.43,famfemale39.jpg
+2,1,2,20,2,2,1,419.2,famfemale21.jpg
+2,1,2,21,1,1,1,459.95,athlete7.jpg
+2,1,2,22,1,1,1,396.79,capture026 copy.jpg
+2,1,2,23,2,2,1,493.51,famfemale08.jpg
+2,1,2,24,2,2,1,438.33,famfemale01.jpg
+2,1,3,1,2,2,1,491.65,famfemale12.jpg
+2,1,3,2,2,2,1,444.41,famfemale40.jpg
+2,1,3,3,1,1,1,453.23,actor35.jpg
+2,1,3,4,2,2,1,413.96,famfemale38.jpg
+2,1,3,5,1,1,1,366.79,capture026 copy.jpg
+2,1,3,6,1,1,1,399.55,capture003 copy.jpg
+2,1,3,7,1,1,1,408.31,actor9.jpg
+2,1,3,8,2,2,1,409.11,famfemale39.jpg
+2,1,3,9,2,2,1,409.87,famfemale30.jpg
+2,1,3,10,1,1,1,418.69,actor54.jpg
+2,1,3,11,1,1,1,355.5,actor19.jpg
+2,1,3,12,2,2,1,388.25,famfemale21.jpg
+2,1,3,13,2,2,1,421.03,famfemale34.jpg
+2,1,3,14,2,2,1,373.85,famfemale02.jpg
+2,1,3,15,1,1,1,390.64,actor12.jpg
+2,1,3,16,1,1,1,423.4,actor7.jpg
+2,1,3,17,1,1,1,424.15,actor44.jpg
+2,1,3,18,2,2,1,360.98,famfemale01.jpg
+2,1,3,19,1,1,1,417.72,athlete13.jpg
+2,1,3,20,1,1,1,474.51,actor41.jpg
+2,1,3,21,2,2,1,419.34,famfemale22.jpg
+2,1,3,22,1,1,1,388.11,athlete7.jpg
+2,1,3,23,2,2,1,396.88,famfemale36.jpg
+2,1,3,24,2,2,1,397.68,famfemale08.jpg
+2,1,4,1,2,2,1,442.96,famfemale30.jpg
+2,1,4,2,1,1,1,531.7,capture003 copy.jpg
+2,1,4,3,2,2,1,420.52,famfemale01.jpg
+2,1,4,4,1,1,1,437.33,capture026 copy.jpg
+2,1,4,5,1,1,1,406.07,actor41.jpg
+2,1,4,6,2,2,1,334.86,famfemale02.jpg
+2,1,4,7,1,1,1,359.66,actor54.jpg
+2,1,4,8,2,1,0,424.46,famfemale38.jpg
+2,1,4,9,2,2,1,465.2,famfemale36.jpg
+2,1,4,10,1,1,1,498,actor19.jpg
+2,1,4,11,2,2,1,490.82,famfemale08.jpg
+2,1,4,12,2,2,1,691.6,famfemale22.jpg
+2,1,4,13,1,1,1,428.39,actor44.jpg
+2,1,4,14,1,1,1,405.13,athlete13.jpg
+2,1,4,15,2,2,1,357.95,famfemale12.jpg
+2,1,4,16,1,1,1,470.7,actor7.jpg
+2,1,4,17,1,1,1,487.49,actor9.jpg
+2,1,4,18,1,1,1,472.27,athlete7.jpg
+2,1,4,19,2,2,1,489.07,famfemale39.jpg
+2,1,4,20,2,2,1,385.87,famfemale40.jpg
+2,1,4,21,1,1,1,378.63,actor12.jpg
+2,1,4,22,2,2,1,539.38,famfemale34.jpg
+2,1,4,23,1,1,1,540.22,actor35.jpg
+2,1,4,24,2,2,1,556.97,famfemale21.jpg
+2,1,5,1,2,2,1,545.67,famfemale38.jpg
+2,1,5,2,1,1,1,466.43,actor12.jpg
+2,1,5,3,1,1,1,443.24,actor35.jpg
+2,1,5,4,1,1,1,492,actor44.jpg
+2,1,5,5,2,2,1,420.8,famfemale08.jpg
+2,1,5,6,1,1,1,469.63,actor19.jpg
+2,1,5,7,1,1,1,518.37,actor54.jpg
+2,1,5,8,1,1,1,383.19,actor7.jpg
+2,1,5,9,1,1,1,367.98,actor41.jpg
+2,1,5,10,2,2,1,376.72,famfemale36.jpg
+2,1,5,11,1,1,1,409.55,capture003 copy.jpg
+2,1,5,12,2,2,1,338.25,famfemale39.jpg
+2,1,5,13,2,2,1,475.11,famfemale22.jpg
+2,1,5,14,1,1,1,427.9,capture026 copy.jpg
+2,1,5,15,2,2,1,516.62,famfemale40.jpg
+2,1,5,16,1,1,1,477.44,athlete7.jpg
+2,1,5,17,2,2,1,582.25,famfemale34.jpg
+2,1,5,18,2,2,1,719.02,famfemale12.jpg
+2,1,5,19,1,1,1,455.82,athlete13.jpg
+2,1,5,20,1,1,1,392.55,actor9.jpg
+2,1,5,21,2,2,1,473.39,famfemale30.jpg
+2,1,5,22,2,2,1,458.15,famfemale02.jpg
+2,1,5,23,2,2,1,442.95,famfemale01.jpg
+2,1,5,24,2,2,1,355.71,famfemale21.jpg
+2,1,6,1,1,1,1,395.13,capture003 copy.jpg
+2,1,6,2,2,2,1,459.87,famfemale39.jpg
+2,1,6,3,2,2,1,460.71,famfemale30.jpg
+2,1,6,4,2,2,1,421.44,famfemale08.jpg
+2,1,6,5,1,1,1,494.23,actor44.jpg
+2,1,6,6,2,2,1,527.01,famfemale34.jpg
+2,1,6,7,2,2,1,503.81,famfemale01.jpg
+2,1,6,8,2,2,1,448.58,famfemale22.jpg
+2,1,6,9,2,2,1,393.42,famfemale02.jpg
+2,1,6,10,1,1,1,442.2,capture026 copy.jpg
+2,1,6,11,2,2,1,418.97,famfemale40.jpg
+2,1,6,12,1,1,1,499.77,actor41.jpg
+2,1,6,13,2,2,1,396.52,famfemale38.jpg
+2,1,6,14,1,1,1,461.3,actor12.jpg
+2,1,6,15,1,1,1,406.08,actor19.jpg
+2,1,6,16,1,1,1,446.87,actor54.jpg
+2,1,6,17,1,1,1,439.66,athlete7.jpg
+2,1,6,18,2,2,1,528.47,famfemale21.jpg
+2,1,6,19,1,1,1,457.21,actor7.jpg
+2,1,6,20,1,1,1,450.04,actor35.jpg
+2,1,6,21,2,2,1,370.78,famfemale36.jpg
+2,1,6,22,1,1,1,443.55,athlete13.jpg
+2,1,6,23,1,1,1,452.4,actor9.jpg
+2,1,6,24,2,2,1,429.14,famfemale12.jpg
+2,1,7,1,1,1,1,423.92,actor35.jpg
+2,1,7,2,1,1,1,408.7,actor9.jpg
+2,1,7,3,2,2,1,449.45,famfemale01.jpg
+2,1,7,4,1,1,1,426.25,actor19.jpg
+2,1,7,5,1,1,1,483.03,athlete13.jpg
+2,1,7,6,2,2,1,483.78,famfemale34.jpg
+2,1,7,7,1,1,1,524.62,actor44.jpg
+2,1,7,8,2,2,1,581.33,famfemale36.jpg
+2,1,7,9,2,2,1,462.19,famfemale39.jpg
+2,1,7,10,1,1,1,486.98,actor54.jpg
+2,1,7,11,1,1,1,407.72,actor41.jpg
+2,1,7,12,1,1,1,568.5,capture026 copy.jpg
+2,1,7,13,2,2,1,641.33,famfemale12.jpg
+2,1,7,14,2,2,1,522.1,famfemale30.jpg
+2,1,7,15,2,2,1,498.88,famfemale38.jpg
+2,1,7,16,2,2,1,491.68,famfemale22.jpg
+2,1,7,17,1,1,1,460.45,athlete7.jpg
+2,1,7,18,1,1,1,725.24,actor7.jpg
+2,1,7,19,1,1,1,669.99,actor12.jpg
+2,1,7,20,2,2,1,638.81,famfemale21.jpg
+2,1,7,21,1,1,1,655.55,capture003 copy.jpg
+2,1,7,22,2,2,1,736.38,famfemale02.jpg
+2,1,7,23,2,2,1,441.16,famfemale08.jpg
+2,1,7,24,2,2,1,561.89,famfemale40.jpg
+2,1,8,1,1,1,1,457.24,actor35.jpg
+2,1,8,2,1,1,1,465.97,actor19.jpg
+2,1,8,3,2,2,1,410.81,famfemale01.jpg
+2,1,8,4,1,1,1,619.59,actor54.jpg
+2,1,8,5,2,2,1,772.34,famfemale39.jpg
+2,1,8,6,2,2,1,645.1,famfemale22.jpg
+2,1,8,7,2,2,1,701.95,famfemale34.jpg
+2,1,8,8,1,1,1,534.68,capture003 copy.jpg
+2,1,8,9,2,2,1,503.5,famfemale40.jpg
+2,1,8,10,2,2,1,432.3,famfemale30.jpg
+2,1,8,11,1,1,1,561.08,athlete7.jpg
+2,1,8,12,2,2,1,601.87,famfemale08.jpg
+2,1,8,13,1,1,1,610.62,actor9.jpg
+2,1,8,14,2,2,1,499.44,famfemale36.jpg
+2,1,8,15,2,2,1,596.19,famfemale12.jpg
+2,1,8,16,1,1,1,645,actor12.jpg
+2,1,8,17,2,2,1,597.79,famfemale38.jpg
+2,1,8,18,1,1,1,550.57,actor7.jpg
+2,1,8,19,1,1,1,439.35,capture026 copy.jpg
+2,1,8,20,1,1,1,432.11,athlete13.jpg
+2,1,8,21,2,2,1,552.87,famfemale21.jpg
+2,1,8,22,1,1,1,561.7,actor41.jpg
+2,1,8,23,2,2,1,554.48,famfemale02.jpg
+2,1,8,24,1,1,1,627.27,actor44.jpg
+3,1,1,1,2,2,1,752.53,famfemale37.jpg
+3,1,1,2,1,1,1,547.93,actor14.jpg
+3,1,1,3,1,1,1,612.77,capture008 copy.jpg
+3,1,1,4,2,2,1,717.55,famfemale32.jpg
+3,1,1,5,1,1,1,542.33,actor53.jpg
+3,1,1,6,2,2,1,487.1,famfemale29.jpg
+3,1,1,7,2,2,1,455.83,famfemale09.jpg
+3,1,1,8,1,1,1,496.69,athlete28.jpg
+3,1,1,9,1,1,1,537.47,actor17.jpg
+3,1,1,10,2,2,1,554.22,famfemale06.jpg
+3,1,1,11,1,1,1,442.97,athlete1.jpg
+3,1,1,12,2,2,1,483.82,famfemale11.jpg
+3,1,1,13,2,2,1,484.59,famfemale04.jpg
+3,1,1,14,2,2,1,453.34,famfemale18.jpg
+3,1,1,15,2,2,1,494.17,famfemale23.jpg
+3,1,1,16,2,2,1,502.89,famfemale19.jpg
+3,1,1,17,2,2,1,463.74,famfemale24.jpg
+3,1,1,18,1,1,1,472.47,actor51.jpg
+3,1,1,19,1,1,1,441.31,actorprac1.jpg
+3,1,1,20,1,1,1,458.09,athlete6.jpg
+3,1,1,21,1,1,1,490.88,actor49.jpg
+3,1,1,22,2,2,1,483.59,famfemale26.jpg
+3,1,1,23,1,1,1,492.44,capture025 copy.jpg
+3,1,1,24,1,1,1,461.15,capture027 copy.jpg
+3,1,2,1,2,2,1,510.03,famfemale23.jpg
+3,1,2,2,2,2,1,494.83,famfemale26.jpg
+3,1,2,3,1,1,1,495.62,athlete1.jpg
+3,1,2,4,1,1,1,496.34,actor49.jpg
+3,1,2,5,2,2,1,457.18,famfemale37.jpg
+3,1,2,6,2,2,1,601.93,famfemale29.jpg
+3,1,2,7,2,2,1,514.71,famfemale18.jpg
+3,1,2,8,1,1,1,491.53,capture025 copy.jpg
+3,1,2,9,2,2,1,580.32,famfemale11.jpg
+3,1,2,10,2,2,1,469.1,famfemale06.jpg
+3,1,2,11,2,2,1,501.86,famfemale19.jpg
+3,1,2,12,1,1,1,494.64,actor51.jpg
+3,1,2,13,2,2,1,511.43,famfemale24.jpg
+3,1,2,14,1,1,1,600.24,actor17.jpg
+3,1,2,15,2,2,1,592.99,famfemale04.jpg
+3,1,2,16,1,1,1,529.81,athlete28.jpg
+3,1,2,17,1,1,1,514.59,actor53.jpg
+3,1,2,18,1,1,1,499.38,actorprac1.jpg
+3,1,2,19,2,2,1,596.11,famfemale32.jpg
+3,1,2,20,1,1,1,532.89,actor14.jpg
+3,1,2,21,1,1,1,573.73,capture027 copy.jpg
+3,1,2,22,1,1,1,510.48,capture008 copy.jpg
+3,1,2,23,2,2,1,487.24,famfemale09.jpg
+3,1,2,24,1,1,1,480.07,athlete6.jpg
+3,1,3,1,1,1,1,1154.82,actorprac1.jpg
+3,1,3,2,1,1,1,467.58,actor49.jpg
+3,1,3,3,2,2,1,436.33,famfemale26.jpg
+3,1,3,4,2,2,1,405.14,famfemale24.jpg
+3,1,3,5,1,1,1,429.91,capture025 copy.jpg
+3,1,3,6,1,1,1,510.69,actor14.jpg
+3,1,3,7,1,1,1,431.44,athlete1.jpg
+3,1,3,8,2,2,1,408.24,famfemale29.jpg
+3,1,3,9,2,2,1,417.06,famfemale19.jpg
+3,1,3,10,2,2,1,521.85,famfemale32.jpg
+3,1,3,11,1,1,1,466.63,capture027 copy.jpg
+3,1,3,12,2,2,1,499.36,famfemale09.jpg
+3,1,3,13,1,1,1,420.19,actor17.jpg
+3,1,3,14,1,1,1,548.98,athlete6.jpg
+3,1,3,15,2,2,1,477.76,famfemale06.jpg
+3,1,3,16,1,1,1,446.52,actor53.jpg
+3,1,3,17,2,2,1,447.3,famfemale04.jpg
+3,1,3,18,2,2,1,440.12,famfemale11.jpg
+3,1,3,19,2,2,1,656.85,famfemale37.jpg
+3,1,3,20,2,2,1,433.66,famfemale23.jpg
+3,1,3,21,1,1,1,554.48,actor51.jpg
+3,1,3,22,1,1,1,379.19,capture008 copy.jpg
+3,1,3,23,1,1,1,404.01,athlete28.jpg
+3,1,3,24,2,2,1,452.82,famfemale18.jpg
+3,1,4,1,2,2,1,490.98,famfemale19.jpg
+3,1,4,2,1,1,1,499.77,actor53.jpg
+3,1,4,3,2,2,1,524.5,famfemale09.jpg
+3,1,4,4,2,2,1,629.34,famfemale26.jpg
+3,1,4,5,2,2,1,422.12,famfemale24.jpg
+3,1,4,6,1,1,1,470.91,athlete1.jpg
+3,1,4,7,2,2,1,471.61,famfemale23.jpg
+3,1,4,8,2,2,1,856.42,famfemale11.jpg
+3,1,4,9,1,1,1,457.21,actorprac1.jpg
+3,1,4,10,1,1,1,586.04,capture008 copy.jpg
+3,1,4,11,1,1,1,482.79,actor49.jpg
+3,1,4,12,2,2,1,443.57,famfemale06.jpg
+3,1,4,13,2,2,1,420.34,famfemale37.jpg
+3,1,4,14,2,2,1,493.18,famfemale04.jpg
+3,1,4,15,1,1,1,437.96,actor51.jpg
+3,1,4,16,1,1,1,406.68,capture027 copy.jpg
+3,1,4,17,2,2,1,479.52,famfemale18.jpg
+3,1,4,18,1,1,1,456.25,capture025 copy.jpg
+3,1,4,19,1,1,1,465.1,athlete6.jpg
+3,1,4,20,1,1,1,449.82,athlete28.jpg
+3,1,4,21,1,1,1,402.67,actor17.jpg
+3,1,4,22,2,2,1,523.42,famfemale32.jpg
+3,1,4,23,1,1,1,484.21,actor14.jpg
+3,1,4,24,2,2,1,436.96,famfemale29.jpg
+3,1,5,1,2,2,1,413.49,famfemale37.jpg
+3,1,5,2,1,1,1,398.35,actorprac1.jpg
+3,1,5,3,1,1,1,431.1,actor14.jpg
+3,1,5,4,1,1,1,423.86,capture025 copy.jpg
+3,1,5,5,2,2,1,456.66,famfemale24.jpg
+3,1,5,6,2,2,1,457.44,famfemale23.jpg
+3,1,5,7,2,2,1,570.28,famfemale09.jpg
+3,1,5,8,1,1,1,523.06,capture008 copy.jpg
+3,1,5,9,1,1,1,443.83,actor17.jpg
+3,1,5,10,2,2,1,412.63,famfemale32.jpg
+3,1,5,11,1,1,1,461.41,athlete6.jpg
+3,1,5,12,1,1,1,446.17,athlete28.jpg
+3,1,5,13,1,1,1,414.98,actor51.jpg
+3,1,5,14,1,1,1,399.72,actor49.jpg
+3,1,5,15,1,1,1,424.49,actor53.jpg
+3,1,5,16,2,2,1,441.3,famfemale29.jpg
+3,1,5,17,2,2,1,442.11,famfemale11.jpg
+3,1,5,18,2,2,1,434.87,famfemale18.jpg
+3,1,5,19,2,2,1,459.69,famfemale04.jpg
+3,1,5,20,2,2,1,428.4,famfemale06.jpg
+3,1,5,21,1,1,1,501.2,capture027 copy.jpg
+3,1,5,22,2,2,1,470.02,famfemale26.jpg
+3,1,5,23,2,2,1,542.82,famfemale19.jpg
+3,1,5,24,1,1,1,487.61,athlete1.jpg
+3,1,6,1,1,1,1,508.27,actor49.jpg
+3,1,6,2,1,1,1,397.03,athlete1.jpg
+3,1,6,3,2,2,1,421.88,famfemale11.jpg
+3,1,6,4,2,2,1,382.66,famfemale26.jpg
+3,1,6,5,1,1,1,431.43,actor17.jpg
+3,1,6,6,2,2,1,504.2,famfemale19.jpg
+3,1,6,7,2,2,1,440.98,famfemale24.jpg
+3,1,6,8,1,1,1,481.81,capture008 copy.jpg
+3,1,6,9,2,2,1,450.59,famfemale18.jpg
+3,1,6,10,1,1,1,443.36,capture025 copy.jpg
+3,1,6,11,1,1,1,404.13,actor53.jpg
+3,1,6,12,1,1,1,444.91,athlete6.jpg
+3,1,6,13,1,1,1,557.73,athlete28.jpg
+3,1,6,14,2,2,1,462.48,famfemale06.jpg
+3,1,6,15,1,1,1,511.3,actor51.jpg
+3,1,6,16,2,2,1,439.93,famfemale32.jpg
+3,1,6,17,2,2,1,440.85,famfemale04.jpg
+3,1,6,18,2,2,1,489.59,famfemale23.jpg
+3,1,6,19,2,2,1,418.39,famfemale29.jpg
+3,1,6,20,1,1,1,451.15,actorprac1.jpg
+3,1,6,21,1,1,1,340,actor14.jpg
+3,1,6,22,2,2,1,468.73,famfemale09.jpg
+3,1,6,23,2,2,1,477.52,famfemale37.jpg
+3,1,6,24,1,1,1,494.33,capture027 copy.jpg
+3,1,7,1,2,2,1,513.17,famfemale32.jpg
+3,1,7,2,1,1,1,417.93,athlete1.jpg
+3,1,7,3,2,2,1,442.74,famfemale37.jpg
+3,1,7,4,1,1,1,419.53,actor51.jpg
+3,1,7,5,2,2,1,556.32,famfemale24.jpg
+3,1,7,6,1,1,1,509.08,athlete28.jpg
+3,1,7,7,1,1,1,405.86,actor53.jpg
+3,1,7,8,1,1,1,542.67,capture025 copy.jpg
+3,1,7,9,2,2,1,503.41,famfemale04.jpg
+3,1,7,10,2,2,1,400.23,famfemale29.jpg
+3,1,7,11,2,2,1,793.01,famfemale09.jpg
+3,1,7,12,2,2,1,385.75,famfemale11.jpg
+3,1,7,13,1,1,1,498.58,actor49.jpg
+3,1,7,14,2,2,1,531.31,famfemale19.jpg
+3,1,7,15,2,2,1,404.13,famfemale23.jpg
+3,1,7,16,1,1,1,439.61,capture027 copy.jpg
+3,1,7,17,1,1,1,384.39,capture008 copy.jpg
+3,1,7,18,2,2,1,441.17,famfemale06.jpg
+3,1,7,19,1,1,1,481.91,athlete6.jpg
+3,1,7,20,1,1,1,410.7,actor17.jpg
+3,1,7,21,2,0,0,0,famfemale18.jpg
+3,1,7,22,1,1,1,444.24,actor14.jpg
+3,1,7,23,2,2,1,461.08,famfemale26.jpg
+3,1,7,24,1,1,1,421.88,actorprac1.jpg
+3,1,8,1,2,2,1,386.5,famfemale26.jpg
+3,1,8,2,2,2,1,454.18,famfemale23.jpg
+3,1,8,3,2,2,1,388.1,famfemale29.jpg
+3,1,8,4,2,2,1,372.87,famfemale04.jpg
+3,1,8,5,2,2,1,381.66,famfemale11.jpg
+3,1,8,6,1,1,1,534.46,athlete1.jpg
+3,1,8,7,2,2,1,527.2,famfemale18.jpg
+3,1,8,8,1,1,1,440.03,athlete6.jpg
+3,1,8,9,1,1,1,440.75,actor14.jpg
+3,1,8,10,2,2,1,521.57,famfemale06.jpg
+3,1,8,11,2,2,1,538.33,famfemale19.jpg
+3,1,8,12,1,1,1,507.15,actor49.jpg
+3,1,8,13,2,2,1,459.93,famfemale37.jpg
+3,1,8,14,1,1,1,452.68,capture025 copy.jpg
+3,1,8,15,1,1,1,605.45,actorprac1.jpg
+3,1,8,16,2,2,1,438.3,famfemale24.jpg
+3,1,8,17,1,1,1,487.09,capture008 copy.jpg
+3,1,8,18,1,1,1,407.82,actor17.jpg
+3,1,8,19,2,2,1,448.61,famfemale09.jpg
+3,1,8,20,1,1,1,433.4,athlete28.jpg
+3,1,8,21,1,1,1,402.22,capture027 copy.jpg
+3,1,8,22,1,1,1,435,actor53.jpg
+3,1,8,23,2,2,1,491.74,famfemale32.jpg
+3,1,8,24,1,1,1,420.54,actor51.jpg
+4,1,1,1,1,1,1,1065.14,capture003 copy.jpg
+4,1,1,2,1,1,1,636.59,actor7.jpg
+4,1,1,3,2,2,1,589.39,famfemale02.jpg
+4,1,1,4,2,2,1,558.11,famfemale34.jpg
+4,1,1,5,1,1,1,926.94,actor54.jpg
+4,1,1,6,2,2,1,567.72,famfemale01.jpg
+4,1,1,7,2,2,1,496.48,famfemale38.jpg
+4,1,1,8,1,1,1,545.31,actor12.jpg
+4,1,1,9,1,1,1,802.1,actor9.jpg
+4,1,1,10,1,1,1,666.86,actor19.jpg
+4,1,1,11,2,2,1,531.65,famfemale39.jpg
+4,1,1,12,1,1,1,532.44,actor41.jpg
+4,1,1,13,1,1,1,525.23,actor35.jpg
+4,1,1,14,2,2,1,509.96,famfemale22.jpg
+4,1,1,15,2,2,1,574.75,famfemale30.jpg
+4,1,1,16,1,1,1,519.52,capture026 copy.jpg
+4,1,1,17,1,1,1,528.36,actor44.jpg
+4,1,1,18,2,2,1,537.08,famfemale36.jpg
+4,1,1,19,1,1,1,465.93,athlete13.jpg
+4,1,1,20,2,1,0,1058.65,famfemale08.jpg
+4,1,1,21,2,2,1,611.5,famfemale12.jpg
+4,1,1,22,1,1,1,540.28,athlete7.jpg
+4,1,1,23,2,2,1,565.01,famfemale40.jpg
+4,1,1,24,2,2,1,653.8,famfemale21.jpg
+4,1,2,1,2,2,1,548.74,famfemale36.jpg
+4,1,2,2,1,1,1,573.54,capture026 copy.jpg
+4,1,2,3,1,1,1,582.27,capture003 copy.jpg
+4,1,2,4,2,2,1,767.11,famfemale08.jpg
+4,1,2,5,1,1,1,495.83,athlete13.jpg
+4,1,2,6,1,1,1,584.67,actor41.jpg
+4,1,2,7,2,2,1,457.45,famfemale30.jpg
+4,1,2,8,2,2,1,546.16,famfemale40.jpg
+4,1,2,9,2,2,1,531,famfemale38.jpg
+4,1,2,10,1,1,1,515.81,actor44.jpg
+4,1,2,11,2,2,1,596.58,famfemale39.jpg
+4,1,2,12,2,2,1,437.33,famfemale22.jpg
+4,1,2,13,1,1,1,486.16,athlete7.jpg
+4,1,2,14,1,1,1,526.93,actor9.jpg
+4,1,2,15,2,2,1,615.71,famfemale01.jpg
+4,1,2,16,1,1,1,552.46,actor19.jpg
+4,1,2,17,2,2,1,497.24,famfemale12.jpg
+4,1,2,18,2,2,1,426.04,famfemale21.jpg
+4,1,2,19,1,1,1,426.84,actor35.jpg
+4,1,2,20,2,2,1,563.65,famfemale02.jpg
+4,1,2,21,2,2,1,588.43,famfemale34.jpg
+4,1,2,22,1,1,1,461.22,actor7.jpg
+4,1,2,23,1,1,1,574,actor12.jpg
+4,1,2,24,1,1,1,574.79,actor54.jpg
+4,1,3,1,1,1,1,460.23,actor35.jpg
+4,1,3,2,2,2,1,613.02,famfemale39.jpg
+4,1,3,3,1,1,1,509.85,athlete13.jpg
+4,1,3,4,2,2,1,574.59,famfemale30.jpg
+4,1,3,5,1,1,1,615.38,actor12.jpg
+4,1,3,6,2,2,1,536.16,famfemale08.jpg
+4,1,3,7,1,1,1,744.96,capture003 copy.jpg
+4,1,3,8,2,2,1,697.77,famfemale01.jpg
+4,1,3,9,2,2,1,610.55,famfemale22.jpg
+4,1,3,10,1,1,1,427.28,athlete7.jpg
+4,1,3,11,2,2,1,724.1,famfemale02.jpg
+4,1,3,12,1,1,1,588.92,actor54.jpg
+4,1,3,13,1,1,1,549.66,capture026 copy.jpg
+4,1,3,14,2,2,1,534.47,famfemale38.jpg
+4,1,3,15,1,1,1,511.21,actor44.jpg
+4,1,3,16,2,2,1,448.01,famfemale12.jpg
+4,1,3,17,1,1,1,472.77,actor7.jpg
+4,1,3,18,2,2,1,481.61,famfemale21.jpg
+4,1,3,19,1,1,1,498.39,actor9.jpg
+4,1,3,20,2,2,1,483.18,famfemale40.jpg
+4,1,3,21,1,1,1,427.9,actor19.jpg
+4,1,3,22,1,1,1,412.7,actor41.jpg
+4,1,3,23,2,2,1,573.53,famfemale34.jpg
+4,1,3,24,2,2,1,670.28,famfemale36.jpg
+4,1,4,1,1,1,1,500.88,athlete13.jpg
+4,1,4,2,2,2,1,437.65,famfemale40.jpg
+4,1,4,3,1,1,1,502.49,actor9.jpg
+4,1,4,4,2,2,1,423.27,famfemale38.jpg
+4,1,4,5,2,2,1,456.06,famfemale12.jpg
+4,1,4,6,2,2,1,544.81,famfemale34.jpg
+4,1,4,7,1,1,1,481.6,actor41.jpg
+4,1,4,8,1,1,1,538.36,actor12.jpg
+4,1,4,9,2,2,1,515.17,famfemale36.jpg
+4,1,4,10,2,2,1,539.98,famfemale01.jpg
+4,1,4,11,1,1,1,452.75,actor19.jpg
+4,1,4,12,2,2,1,517.55,famfemale02.jpg
+4,1,4,13,1,1,1,518.28,actor7.jpg
+4,1,4,14,2,2,1,471.09,famfemale22.jpg
+4,1,4,15,1,1,1,551.9,capture026 copy.jpg
+4,1,4,16,1,1,1,568.63,actor35.jpg
+4,1,4,17,2,2,1,587.72,famfemale08.jpg
+4,1,4,18,1,1,1,548.93,actor44.jpg
+4,1,4,19,2,2,1,485.71,famfemale21.jpg
+4,1,4,20,2,2,1,502.47,famfemale39.jpg
+4,1,4,21,2,2,1,655.22,famfemale30.jpg
+4,1,4,22,1,1,1,527.93,athlete7.jpg
+4,1,4,23,1,1,1,592.81,capture003 copy.jpg
+4,1,4,24,1,1,1,425.62,actor54.jpg
+4,1,5,1,2,2,1,505.81,famfemale34.jpg
+4,1,5,2,1,1,1,442.55,athlete13.jpg
+4,1,5,3,1,1,1,579.35,actor35.jpg
+4,1,5,4,1,1,1,492.14,actor54.jpg
+4,1,5,5,2,2,1,532.95,famfemale22.jpg
+4,1,5,6,2,2,1,461.69,famfemale36.jpg
+4,1,5,7,2,2,1,622.51,famfemale01.jpg
+4,1,5,8,1,1,1,519.3,actor7.jpg
+4,1,5,9,1,1,1,384.08,actor12.jpg
+4,1,5,10,1,1,1,472.87,actor44.jpg
+4,1,5,11,1,1,1,377.65,capture026 copy.jpg
+4,1,5,12,1,1,1,378.38,actor9.jpg
+4,1,5,13,2,2,1,507.23,famfemale12.jpg
+4,1,5,14,1,1,1,596.01,capture003 copy.jpg
+4,1,5,15,2,2,1,620.75,famfemale40.jpg
+4,1,5,16,2,2,1,757.56,famfemale30.jpg
+4,1,5,17,1,1,1,558.36,actor41.jpg
+4,1,5,18,2,2,1,551.1,famfemale02.jpg
+4,1,5,19,2,2,1,623.87,famfemale21.jpg
+4,1,5,20,2,2,1,552.64,famfemale08.jpg
+4,1,5,21,2,1,0,521.5,famfemale38.jpg
+4,1,5,22,2,2,1,1146.29,famfemale39.jpg
+4,1,5,23,1,1,1,483.01,actor19.jpg
+4,1,5,24,1,1,1,595.79,athlete7.jpg
+4,1,6,1,2,2,1,547.64,famfemale08.jpg
+4,1,6,2,2,2,1,508.42,famfemale39.jpg
+4,1,6,3,2,2,1,685.26,famfemale36.jpg
+4,1,6,4,1,1,1,510,actor41.jpg
+4,1,6,5,1,1,1,574.79,actor44.jpg
+4,1,6,6,2,2,1,695.58,famfemale34.jpg
+4,1,6,7,1,1,1,584.33,actor35.jpg
+4,1,6,8,1,1,1,561.08,athlete7.jpg
+4,1,6,9,2,2,1,489.93,famfemale01.jpg
+4,1,6,10,2,2,1,426.67,famfemale40.jpg
+4,1,6,11,2,2,1,499.5,famfemale30.jpg
+4,1,6,12,1,1,1,580.26,actor7.jpg
+4,1,6,13,1,1,1,557.04,actor54.jpg
+4,1,6,14,2,2,1,533.84,famfemale02.jpg
+4,1,6,15,1,1,1,398.63,actor19.jpg
+4,1,6,16,2,2,1,415.38,famfemale22.jpg
+4,1,6,17,1,1,1,600.2,actor12.jpg
+4,1,6,18,1,1,1,624.95,athlete13.jpg
+4,1,6,19,1,1,1,641.77,actor9.jpg
+4,1,6,20,1,1,1,474.53,capture026 copy.jpg
+4,1,6,21,2,2,1,499.33,famfemale12.jpg
+4,1,6,22,1,1,1,668.05,capture003 copy.jpg
+4,1,6,23,2,2,1,876.91,famfemale21.jpg
+4,1,6,24,2,2,1,653.69,famfemale38.jpg
+4,1,7,1,2,2,1,488.55,famfemale34.jpg
+4,1,7,2,2,2,1,489.31,famfemale39.jpg
+4,1,7,3,1,1,1,546.09,actor9.jpg
+4,1,7,4,2,2,1,581.52,famfemale08.jpg
+4,1,7,5,2,2,1,622.34,famfemale02.jpg
+4,1,7,6,2,2,1,567.15,famfemale30.jpg
+4,1,7,7,1,1,1,479.91,actor54.jpg
+4,1,7,8,1,1,1,504.62,actor19.jpg
+4,1,7,9,1,1,1,401.46,actor41.jpg
+4,1,7,10,2,2,1,426.28,famfemale22.jpg
+4,1,7,11,1,1,1,459.01,capture003 copy.jpg
+4,1,7,12,1,1,1,483.85,athlete13.jpg
+4,1,7,13,1,1,1,524.64,actor44.jpg
+4,1,7,14,1,1,1,581.4,actor12.jpg
+4,1,7,15,1,1,1,454.17,actor35.jpg
+4,1,7,16,1,1,1,390.99,capture026 copy.jpg
+4,1,7,17,2,2,1,439.72,famfemale01.jpg
+4,1,7,18,1,1,1,600.53,actor7.jpg
+4,1,7,19,2,2,1,641.34,famfemale21.jpg
+4,1,7,20,2,2,1,810.08,famfemale38.jpg
+4,1,7,21,2,2,1,522.89,famfemale40.jpg
+4,1,7,22,1,1,1,483.69,athlete7.jpg
+4,1,7,23,2,2,1,548.42,famfemale12.jpg
+4,1,7,24,2,2,1,741.23,famfemale36.jpg
+4,1,8,1,2,2,1,472.31,famfemale21.jpg
+4,1,8,2,1,1,1,585.09,actor9.jpg
+4,1,8,3,1,1,1,497.87,athlete7.jpg
+4,1,8,4,2,2,1,506.66,famfemale34.jpg
+4,1,8,5,2,2,1,395.44,famfemale12.jpg
+4,1,8,6,2,2,1,564.21,famfemale38.jpg
+4,1,8,7,1,1,1,485.01,athlete13.jpg
+4,1,8,8,1,1,1,581.77,capture026 copy.jpg
+4,1,8,9,1,1,1,574.55,actor7.jpg
+4,1,8,10,2,2,1,503.34,famfemale40.jpg
+4,1,8,11,2,2,1,536.11,famfemale22.jpg
+4,1,8,12,1,1,1,560.9,actor12.jpg
+4,1,8,13,1,1,1,457.65,actor54.jpg
+4,1,8,14,2,2,1,546.5,famfemale30.jpg
+4,1,8,15,2,2,1,571.28,famfemale08.jpg
+4,1,8,16,1,1,1,564.07,actor19.jpg
+4,1,8,17,2,2,1,492.8,famfemale36.jpg
+4,1,8,18,1,1,1,437.63,actor41.jpg
+4,1,8,19,2,2,1,558.42,famfemale01.jpg
+4,1,8,20,2,2,1,591.2,famfemale02.jpg
+4,1,8,21,1,1,1,463.95,actor35.jpg
+4,1,8,22,2,2,1,424.76,famfemale39.jpg
+4,1,8,23,1,1,1,593.51,actor44.jpg
+4,1,8,24,1,1,1,594.34,capture003 copy.jpg
+5,1,1,1,1,1,1,575.73,athlete28.jpg
+5,1,1,2,2,2,1,462.36,famfemale22.jpg
+5,1,1,3,1,1,1,536.72,actor53.jpg
+5,1,1,4,2,2,1,419.1,famfemale40.jpg
+5,1,1,5,2,2,1,533.45,famfemale12.jpg
+5,1,1,6,2,1,0,447.83,famfemale34.jpg
+5,1,1,7,2,2,1,594.16,famfemale36.jpg
+5,1,1,8,2,2,1,580.6,famfemale30.jpg
+5,1,1,9,1,1,1,587.19,actorprac1.jpg
+5,1,1,10,2,2,1,465.81,famfemale21.jpg
+5,1,1,11,1,2,0,560.39,capture025 copy.jpg
+5,1,1,12,1,1,1,718.99,actor17.jpg
+5,1,1,13,2,2,1,645.61,famfemale38.jpg
+5,1,1,14,1,1,1,748.14,actor49.jpg
+5,1,1,15,1,1,1,706.75,actor14.jpg
+5,1,1,16,2,2,1,561.36,famfemale01.jpg
+5,1,1,17,1,1,1,575.99,capture008 copy.jpg
+5,1,1,18,2,2,1,830.62,famfemale08.jpg
+5,1,1,19,1,1,1,613.19,actor51.jpg
+5,1,1,20,1,1,1,547.81,athlete1.jpg
+5,1,1,21,1,1,1,562.37,capture027 copy.jpg
+5,1,1,22,2,2,1,536.97,famfemale39.jpg
+5,1,1,23,2,2,1,447.58,famfemale02.jpg
+5,1,1,24,1,1,1,566.18,athlete6.jpg
+5,1,2,1,2,2,1,519.17,famfemale22.jpg
+5,1,2,2,1,1,1,561.57,actor53.jpg
+5,1,2,3,2,2,1,475.92,famfemale36.jpg
+5,1,2,4,1,1,1,534.24,capture008 copy.jpg
+5,1,2,5,2,2,1,584.66,famfemale02.jpg
+5,1,2,6,2,2,1,455.21,famfemale30.jpg
+5,1,2,7,1,1,1,529.6,actor51.jpg
+5,1,2,8,1,1,1,651.99,actor17.jpg
+5,1,2,9,1,1,1,598.33,athlete28.jpg
+5,1,2,10,2,2,1,600.72,famfemale21.jpg
+5,1,2,11,2,2,1,731.07,famfemale08.jpg
+5,1,2,12,2,2,1,789.46,famfemale34.jpg
+5,1,2,13,2,2,1,599.77,famfemale39.jpg
+5,1,2,14,1,1,1,586.18,capture025 copy.jpg
+5,1,2,15,2,2,1,620.51,famfemale38.jpg
+5,1,2,16,2,2,1,510.9,famfemale12.jpg
+5,1,2,17,2,2,1,425.19,famfemale40.jpg
+5,1,2,18,1,1,1,523.59,capture027 copy.jpg
+5,1,2,19,1,1,1,605.95,actor14.jpg
+5,1,2,20,1,1,1,488.33,actorprac1.jpg
+5,1,2,21,2,2,1,514.67,famfemale01.jpg
+5,1,2,22,1,1,1,557.05,athlete1.jpg
+5,1,2,23,1,1,1,631.42,actor49.jpg
+5,1,2,24,1,1,1,577.82,athlete6.jpg
+5,1,3,1,1,1,1,493.13,actorprac1.jpg
+5,1,3,2,1,1,1,783.48,athlete28.jpg
+5,1,3,3,1,1,1,526.12,actor51.jpg
+5,1,3,4,2,1,0,392.44,famfemale02.jpg
+5,1,3,5,1,1,1,514.8,athlete1.jpg
+5,1,3,6,1,1,1,677.22,actor53.jpg
+5,1,3,7,1,1,1,639.59,capture008 copy.jpg
+5,1,3,8,2,2,1,529.92,famfemale01.jpg
+5,1,3,9,2,2,1,484.32,famfemale08.jpg
+5,1,3,10,1,1,1,574.69,capture025 copy.jpg
+5,1,3,11,2,2,1,537,famfemale30.jpg
+5,1,3,12,1,1,1,475.36,actor49.jpg
+5,1,3,13,2,2,1,541.78,famfemale21.jpg
+5,1,3,14,1,1,1,528.08,actor14.jpg
+5,1,3,15,2,2,1,554.49,famfemale22.jpg
+5,1,3,16,1,1,1,532.84,athlete6.jpg
+5,1,3,17,2,2,1,527.19,famfemale36.jpg
+5,1,3,18,1,1,1,605.85,actor17.jpg
+5,1,3,19,1,1,1,536.2,capture027 copy.jpg
+5,1,3,20,2,2,1,602.56,famfemale40.jpg
+5,1,3,21,2,2,1,532.88,famfemale12.jpg
+5,1,3,22,2,2,1,647.3,famfemale39.jpg
+5,1,3,23,2,2,1,737.66,famfemale34.jpg
+5,1,3,24,2,2,1,636,famfemale38.jpg
+5,1,4,1,2,2,1,566.4,famfemale39.jpg
+5,1,4,2,1,1,1,512.75,actorprac1.jpg
+5,1,4,3,2,2,1,467.12,famfemale12.jpg
+5,1,4,4,2,2,1,453.51,famfemale40.jpg
+5,1,4,5,1,1,1,495.86,actor51.jpg
+5,1,4,6,2,2,1,434.24,famfemale08.jpg
+5,1,4,7,1,1,1,516.55,athlete1.jpg
+5,1,4,8,1,1,1,518.97,capture027 copy.jpg
+5,1,4,9,2,2,1,497.33,famfemale22.jpg
+5,1,4,10,2,2,1,499.7,famfemale30.jpg
+5,1,4,11,1,1,1,638.06,actor53.jpg
+5,1,4,12,1,1,1,552.41,athlete28.jpg
+5,1,4,13,1,1,1,450.76,actor14.jpg
+5,1,4,14,2,2,1,437.11,famfemale02.jpg
+5,1,4,15,1,1,1,447.5,athlete6.jpg
+5,1,4,16,1,1,1,473.84,actor49.jpg
+5,1,4,17,2,2,1,404.23,famfemale38.jpg
+5,1,4,18,1,1,1,446.56,capture025 copy.jpg
+5,1,4,19,1,1,1,560.97,capture008 copy.jpg
+5,1,4,20,2,2,1,507.3,famfemale21.jpg
+5,1,4,21,1,1,1,477.7,actor17.jpg
+5,1,4,22,2,2,1,464.06,famfemale36.jpg
+5,1,4,23,2,2,1,474.39,famfemale01.jpg
+5,1,4,24,2,2,1,468.77,famfemale34.jpg
+5,1,5,1,1,1,1,460.84,actorprac1.jpg
+5,1,5,2,2,2,1,391.17,famfemale38.jpg
+5,1,5,3,1,1,1,673.55,actor17.jpg
+5,1,5,4,1,1,1,507.92,actor51.jpg
+5,1,5,5,2,2,1,398.04,famfemale36.jpg
+5,1,5,6,2,2,1,432.47,famfemale01.jpg
+5,1,5,7,1,1,1,442.99,actor14.jpg
+5,1,5,8,2,2,1,485.36,famfemale21.jpg
+5,1,5,9,2,2,1,511.73,famfemale30.jpg
+5,1,5,10,2,2,1,546.04,famfemale12.jpg
+5,1,5,11,1,1,1,460.4,capture027 copy.jpg
+5,1,5,12,1,1,1,550.83,athlete1.jpg
+5,1,5,13,1,1,1,505.16,athlete6.jpg
+5,1,5,14,2,2,1,451.55,famfemale39.jpg
+5,1,5,15,1,1,1,477.91,athlete28.jpg
+5,1,5,16,2,2,1,432.28,famfemale22.jpg
+5,1,5,17,1,1,1,450.6,capture008 copy.jpg
+5,1,5,18,2,2,1,364.95,famfemale08.jpg
+5,1,5,19,2,2,1,479.31,famfemale40.jpg
+5,1,5,20,2,2,1,441.73,famfemale02.jpg
+5,1,5,21,1,1,1,476.09,capture025 copy.jpg
+5,1,5,22,2,2,1,566.42,famfemale34.jpg
+5,1,5,23,1,1,1,464.77,actor53.jpg
+5,1,5,24,1,1,1,555.18,actor49.jpg
+5,1,6,1,2,2,1,470.02,famfemale36.jpg
+5,1,6,2,2,2,1,472.36,famfemale30.jpg
+5,1,6,3,2,2,1,434.72,famfemale02.jpg
+5,1,6,4,2,2,1,453.08,famfemale01.jpg
+5,1,6,5,1,1,1,535.5,capture027 copy.jpg
+5,1,6,6,2,2,1,457.8,famfemale34.jpg
+5,1,6,7,1,1,1,516.23,actor49.jpg
+5,1,6,8,1,1,1,606.57,athlete1.jpg
+5,1,6,9,1,1,1,568.9,actorprac1.jpg
+5,1,6,10,2,2,1,459.31,famfemale08.jpg
+5,1,6,11,1,1,1,453.68,capture008 copy.jpg
+5,1,6,12,1,1,1,543.98,athlete6.jpg
+5,1,6,13,1,1,1,418.37,actor17.jpg
+5,1,6,14,2,2,1,484.77,famfemale21.jpg
+5,1,6,15,2,2,1,535.13,famfemale38.jpg
+5,1,6,16,2,2,1,417.44,famfemale40.jpg
+5,1,6,17,2,2,1,555.85,famfemale39.jpg
+5,1,6,18,1,1,1,510.22,athlete28.jpg
+5,1,6,19,1,1,1,536.57,actor14.jpg
+5,1,6,20,2,2,1,810.84,famfemale12.jpg
+5,1,6,21,2,2,1,661.27,famfemale22.jpg
+5,1,6,22,1,1,1,471.62,actor51.jpg
+5,1,6,23,1,1,1,466.04,actor53.jpg
+5,1,6,24,1,1,1,452.37,capture025 copy.jpg
+5,1,7,1,1,1,1,530.03,actorprac1.jpg
+5,1,7,2,1,1,1,444.41,actor51.jpg
+5,1,7,3,1,1,1,486.81,capture027 copy.jpg
+5,1,7,4,2,2,1,441.14,famfemale34.jpg
+5,1,7,5,2,2,1,483.48,famfemale22.jpg
+5,1,7,6,2,2,1,461.86,famfemale12.jpg
+5,1,7,7,1,1,1,528.22,athlete1.jpg
+5,1,7,8,2,2,1,426.62,famfemale01.jpg
+5,1,7,9,1,1,1,492.94,athlete6.jpg
+5,1,7,10,2,2,1,479.35,famfemale02.jpg
+5,1,7,11,2,2,1,433.45,famfemale39.jpg
+5,1,7,12,2,2,1,484.08,famfemale30.jpg
+5,1,7,13,1,1,1,462.36,capture025 copy.jpg
+5,1,7,14,2,2,1,840.79,famfemale08.jpg
+5,1,7,15,2,2,1,803.18,famfemale21.jpg
+5,1,7,16,2,2,1,517.49,famfemale38.jpg
+5,1,7,17,1,1,1,559.83,actor49.jpg
+5,1,7,18,1,0,0,0,capture008 copy.jpg
+5,1,7,19,1,1,1,516.6,athlete28.jpg
+5,1,7,20,1,1,1,662.96,actor14.jpg
+5,1,7,21,1,1,1,681.29,actor17.jpg
+5,1,7,22,2,2,1,538.93,famfemale40.jpg
+5,1,7,23,1,1,1,462.01,actor53.jpg
+5,1,7,24,2,2,1,464.38,famfemale36.jpg
+5,1,8,1,2,2,1,494.53,famfemale36.jpg
+5,1,8,2,1,1,1,496.95,actor51.jpg
+5,1,8,3,2,2,1,395.31,famfemale40.jpg
+5,1,8,4,1,1,1,405.65,athlete6.jpg
+5,1,8,5,1,1,1,567.94,athlete1.jpg
+5,1,8,6,2,2,1,450.35,famfemale38.jpg
+5,1,8,7,1,1,1,460.76,actor17.jpg
+5,1,8,8,1,1,1,455.09,actor14.jpg
+5,1,8,9,1,1,1,465.45,actorprac1.jpg
+5,1,8,10,2,2,1,427.79,famfemale39.jpg
+5,1,8,11,2,2,1,462.22,famfemale12.jpg
+5,1,8,12,1,1,1,472.52,capture008 copy.jpg
+5,1,8,13,2,2,1,546.9,famfemale08.jpg
+5,1,8,14,1,1,1,501.27,athlete28.jpg
+5,1,8,15,1,1,1,487.62,capture027 copy.jpg
+5,1,8,16,1,1,1,474.03,actor49.jpg
+5,1,8,17,2,2,1,500.4,famfemale21.jpg
+5,1,8,18,2,2,1,446.72,famfemale22.jpg
+5,1,8,19,2,2,1,569.07,famfemale02.jpg
+5,1,8,20,2,2,1,523.49,famfemale30.jpg
+5,1,8,21,1,1,1,533.82,actor53.jpg
+5,1,8,22,2,2,1,480.21,famfemale34.jpg
+5,1,8,23,2,2,1,578.57,famfemale01.jpg
+5,1,8,24,1,1,1,540.91,capture025 copy.jpg
+6,1,1,1,1,1,1,737.28,actor12.jpg
+6,1,1,2,1,1,1,620.76,capture003 copy.jpg
+6,1,1,3,2,2,1,589.27,famfemale29.jpg
+6,1,1,4,2,2,1,486.33,famfemale24.jpg
+6,1,1,5,2,2,1,631.1,famfemale06.jpg
+6,1,1,6,1,1,1,711.94,actor19.jpg
+6,1,1,7,2,2,1,656.66,famfemale23.jpg
+6,1,1,8,1,1,1,777.47,athlete13.jpg
+6,1,1,9,2,2,1,666.3,famfemale04.jpg
+6,1,1,10,1,1,1,675.07,actor7.jpg
+6,1,1,11,2,2,1,763.79,famfemale19.jpg
+6,1,1,12,1,1,1,828.61,athlete7.jpg
+6,1,1,13,2,2,1,909.43,famfemale32.jpg
+6,1,1,14,1,1,1,680.83,actor35.jpg
+6,1,1,15,1,1,1,881.62,capture026 copy.jpg
+6,1,1,16,2,2,1,714.41,famfemale09.jpg
+6,1,1,17,2,2,1,1259.24,famfemale11.jpg
+6,1,1,18,1,1,1,635.96,actor54.jpg
+6,1,1,19,2,2,1,508.74,famfemale18.jpg
+6,1,1,20,2,2,1,501.53,famfemale26.jpg
+6,1,1,21,2,2,1,374.33,famfemale37.jpg
+6,1,1,22,1,1,1,367.1,actor9.jpg
+6,1,1,23,1,1,1,479.86,actor41.jpg
+6,1,1,24,1,1,1,560.64,actor44.jpg
+6,1,2,1,2,2,1,576.63,famfemale19.jpg
+6,1,2,2,1,1,1,561.41,actor44.jpg
+6,1,2,3,1,1,1,442.2,actor41.jpg
+6,1,2,4,2,2,1,410.99,famfemale23.jpg
+6,1,2,5,2,2,1,547.8,famfemale11.jpg
+6,1,2,6,2,2,1,476.58,famfemale24.jpg
+6,1,2,7,1,1,1,533.34,athlete13.jpg
+6,1,2,8,1,1,1,486.14,actor7.jpg
+6,1,2,9,1,1,1,478.92,actor35.jpg
+6,1,2,10,1,1,1,415.71,athlete7.jpg
+6,1,2,11,1,1,1,736.5,actor19.jpg
+6,1,2,12,1,1,1,449.26,capture026 copy.jpg
+6,1,2,13,2,2,1,466.06,famfemale37.jpg
+6,1,2,14,2,2,1,490.81,famfemale06.jpg
+6,1,2,15,1,1,1,603.63,actor9.jpg
+6,1,2,16,2,2,1,500.42,famfemale32.jpg
+6,1,2,17,1,1,1,549.2,actor54.jpg
+6,1,2,18,2,2,1,485.97,famfemale29.jpg
+6,1,2,19,1,1,1,494.74,actor12.jpg
+6,1,2,20,2,2,1,559.51,famfemale09.jpg
+6,1,2,21,2,2,1,680.33,famfemale26.jpg
+6,1,2,22,2,2,1,553.11,famfemale18.jpg
+6,1,2,23,2,2,1,505.88,famfemale04.jpg
+6,1,2,24,1,1,1,522.63,capture003 copy.jpg
+6,1,3,1,2,2,1,559.92,famfemale06.jpg
+6,1,3,2,2,2,1,472.62,famfemale23.jpg
+6,1,3,3,2,2,1,361.47,famfemale26.jpg
+6,1,3,4,2,2,1,354.23,famfemale04.jpg
+6,1,3,5,1,1,1,475.04,actor12.jpg
+6,1,3,6,1,1,1,331.82,actor54.jpg
+6,1,3,7,1,1,1,388.6,actor19.jpg
+6,1,3,8,2,2,1,493.39,famfemale11.jpg
+6,1,3,9,2,2,1,446.17,famfemale32.jpg
+6,1,3,10,1,1,1,550.89,capture026 copy.jpg
+6,1,3,11,1,1,1,439.68,capture003 copy.jpg
+6,1,3,12,2,2,1,392.52,famfemale29.jpg
+6,1,3,13,2,2,1,329.3,famfemale18.jpg
+6,1,3,14,2,2,1,402.05,famfemale09.jpg
+6,1,3,15,1,1,1,530.82,athlete13.jpg
+6,1,3,16,1,1,1,451.63,actor41.jpg
+6,1,3,17,1,1,1,348.44,actor7.jpg
+6,1,3,18,2,1,0,389.2,famfemale19.jpg
+6,1,3,19,2,2,1,605.97,famfemale24.jpg
+6,1,3,20,1,1,1,1102.74,actor9.jpg
+6,1,3,21,1,1,1,495.51,actor44.jpg
+6,1,3,22,1,1,1,528.36,athlete7.jpg
+6,1,3,23,1,1,1,409.11,actor35.jpg
+6,1,3,24,2,2,1,521.93,famfemale37.jpg
+6,1,4,1,1,1,1,633.27,actor41.jpg
+6,1,4,2,1,1,1,370.13,athlete7.jpg
+6,1,4,3,2,2,1,562.92,famfemale19.jpg
+6,1,4,4,2,2,1,419.68,famfemale26.jpg
+6,1,4,5,1,1,1,540.42,actor44.jpg
+6,1,4,6,1,1,1,597.27,actor12.jpg
+6,1,4,7,2,2,1,454.05,famfemale18.jpg
+6,1,4,8,1,1,1,566.8,capture003 copy.jpg
+6,1,4,9,2,2,1,599.62,famfemale11.jpg
+6,1,4,10,2,2,1,504.39,famfemale04.jpg
+6,1,4,11,2,2,1,417.17,famfemale32.jpg
+6,1,4,12,2,2,1,409.97,famfemale09.jpg
+6,1,4,13,1,1,1,426.75,actor54.jpg
+6,1,4,14,2,2,1,555.54,famfemale37.jpg
+6,1,4,15,1,1,1,460.32,actor7.jpg
+6,1,4,16,1,1,1,477.1,athlete13.jpg
+6,1,4,17,2,2,1,477.89,famfemale24.jpg
+6,1,4,18,2,2,1,446.67,famfemale23.jpg
+6,1,4,19,1,1,1,631.42,capture026 copy.jpg
+6,1,4,20,2,2,1,512.24,famfemale29.jpg
+6,1,4,21,1,1,1,577.02,actor35.jpg
+6,1,4,22,1,1,1,457.74,actor9.jpg
+6,1,4,23,1,1,1,506.53,actor19.jpg
+6,1,4,24,2,2,1,483.31,famfemale06.jpg
+6,1,5,1,1,1,1,942,capture003 copy.jpg
+6,1,5,2,1,1,1,470.74,actor44.jpg
+6,1,5,3,1,1,1,455.57,actor7.jpg
+6,1,5,4,1,0,0,0,capture026 copy.jpg
+6,1,5,5,1,1,1,473.15,actor35.jpg
+6,1,5,6,1,1,1,577.93,athlete13.jpg
+6,1,5,7,1,1,1,474.7,athlete7.jpg
+6,1,5,8,2,2,1,483.5,famfemale04.jpg
+6,1,5,9,2,2,1,460.28,famfemale09.jpg
+6,1,5,10,2,2,1,469.06,famfemale18.jpg
+6,1,5,11,1,1,1,469.85,actor41.jpg
+6,1,5,12,1,1,1,566.57,actor19.jpg
+6,1,5,13,1,1,1,391.41,actor54.jpg
+6,1,5,14,1,1,1,416.2,actor12.jpg
+6,1,5,15,1,1,1,480.93,actor9.jpg
+6,1,5,16,2,2,1,465.77,famfemale11.jpg
+6,1,5,17,2,2,1,650.55,famfemale32.jpg
+6,1,5,18,2,2,1,443.3,famfemale19.jpg
+6,1,5,19,2,2,1,484.1,famfemale37.jpg
+6,1,5,20,2,2,1,604.88,famfemale23.jpg
+6,1,5,21,2,2,1,381.65,famfemale26.jpg
+6,1,5,22,2,2,1,374.48,famfemale24.jpg
+6,1,5,23,2,2,1,455.24,famfemale29.jpg
+6,1,5,24,2,2,1,472.03,famfemale06.jpg
+6,1,6,1,2,2,1,513.91,famfemale06.jpg
+6,1,6,2,1,1,1,506.67,capture026 copy.jpg
+6,1,6,3,1,1,1,491.52,actor12.jpg
+6,1,6,4,1,1,1,436.3,actor19.jpg
+6,1,6,5,2,2,1,493.08,famfemale19.jpg
+6,1,6,6,2,2,1,589.81,famfemale11.jpg
+6,1,6,7,1,1,1,590.62,actor9.jpg
+6,1,6,8,2,2,1,519.43,famfemale26.jpg
+6,1,6,9,1,1,1,568.19,athlete13.jpg
+6,1,6,10,2,2,1,512.99,famfemale04.jpg
+6,1,6,11,2,2,1,457.76,famfemale24.jpg
+6,1,6,12,1,1,1,474.57,athlete7.jpg
+6,1,6,13,1,1,1,459.31,actor35.jpg
+6,1,6,14,1,1,1,460.14,capture003 copy.jpg
+6,1,6,15,1,1,1,516.92,actor44.jpg
+6,1,6,16,2,2,1,445.66,famfemale18.jpg
+6,1,6,17,2,1,0,702.46,famfemale23.jpg
+6,1,6,18,1,1,1,455.19,actor7.jpg
+6,1,6,19,2,2,1,680.01,famfemale29.jpg
+6,1,6,20,2,2,1,496.84,famfemale37.jpg
+6,1,6,21,2,2,1,657.59,famfemale09.jpg
+6,1,6,22,1,1,1,554.4,actor41.jpg
+6,1,6,23,1,1,1,419.19,actor54.jpg
+6,1,6,24,2,2,1,571.95,famfemale32.jpg
+6,1,7,1,2,2,1,523.72,famfemale37.jpg
+6,1,7,2,1,1,1,420.48,actor7.jpg
+6,1,7,3,1,1,1,453.29,actor44.jpg
+6,1,7,4,1,1,1,382.07,actor35.jpg
+6,1,7,5,2,2,1,406.79,famfemale18.jpg
+6,1,7,6,1,1,1,503.64,actor19.jpg
+6,1,7,7,2,2,1,592.37,famfemale06.jpg
+6,1,7,8,1,1,1,633.21,athlete13.jpg
+6,1,7,9,2,2,1,745.97,famfemale09.jpg
+6,1,7,10,1,1,1,490.77,capture003 copy.jpg
+6,1,7,11,1,1,1,523.56,actor54.jpg
+6,1,7,12,2,2,1,564.32,famfemale29.jpg
+6,1,7,13,2,2,1,533.12,famfemale26.jpg
+6,1,7,14,2,2,1,421.85,famfemale23.jpg
+6,1,7,15,1,1,1,398.69,athlete7.jpg
+6,1,7,16,2,2,1,639.41,famfemale04.jpg
+6,1,7,17,1,1,1,528.26,actor12.jpg
+6,1,7,18,1,1,1,441.04,actor41.jpg
+6,1,7,19,2,2,1,441.76,famfemale19.jpg
+6,1,7,20,1,1,1,738.58,actor9.jpg
+6,1,7,21,2,2,1,627.39,famfemale24.jpg
+6,1,7,22,1,1,1,668.12,capture026 copy.jpg
+6,1,7,23,2,2,1,492.94,famfemale32.jpg
+6,1,7,24,2,2,1,541.75,famfemale11.jpg
+6,1,8,1,1,1,1,720.19,capture003 copy.jpg
+6,1,8,2,1,1,1,432.99,athlete13.jpg
+6,1,8,3,2,2,1,513.75,famfemale19.jpg
+6,1,8,4,1,1,1,578.51,actor12.jpg
+6,1,8,5,1,1,1,611.28,actor7.jpg
+6,1,8,6,1,1,1,508.12,actor44.jpg
+6,1,8,7,2,2,1,628.91,famfemale26.jpg
+6,1,8,8,1,1,1,557.69,actor9.jpg
+6,1,8,9,1,1,1,534.48,actor19.jpg
+6,1,8,10,1,1,1,863.74,actor35.jpg
+6,1,8,11,2,2,1,407.93,famfemale29.jpg
+6,1,8,12,1,1,1,376.82,capture026 copy.jpg
+6,1,8,13,2,2,1,409.6,famfemale06.jpg
+6,1,8,14,2,2,1,1058.37,famfemale04.jpg
+6,1,8,15,2,2,1,371.15,famfemale18.jpg
+6,1,8,16,2,2,1,515.96,famfemale37.jpg
+6,1,8,17,2,2,1,468.73,famfemale23.jpg
+6,1,8,18,1,1,1,397.49,actor54.jpg
+6,1,8,19,1,1,1,302.27,actor41.jpg
+6,1,8,20,2,2,1,439.1,famfemale32.jpg
+6,1,8,21,2,2,1,623.83,famfemale09.jpg
+6,1,8,22,2,2,1,448.64,famfemale24.jpg
+6,1,8,23,2,2,1,457.39,famfemale11.jpg
+6,1,8,24,1,1,1,466.18,athlete7.jpg
+7,1,1,1,1,1,1,883.67,actor14.jpg
+7,1,1,2,2,2,1,477.98,famfemale09.jpg
+7,1,1,3,2,2,1,492.15,famfemale26.jpg
+7,1,1,4,1,1,1,634.25,capture027 copy.jpg
+7,1,1,5,2,2,1,584.39,famfemale06.jpg
+7,1,1,6,2,1,0,1150.51,famfemale11.jpg
+7,1,1,7,1,1,1,524.63,actorprac1.jpg
+7,1,1,8,1,1,1,466.78,actor51.jpg
+7,1,1,9,1,1,1,533.16,athlete1.jpg
+7,1,1,10,2,2,1,495.52,famfemale24.jpg
+7,1,1,11,1,1,1,777.91,actor17.jpg
+7,1,1,12,2,2,1,428.27,famfemale29.jpg
+7,1,1,13,2,2,1,494.54,famfemale19.jpg
+7,1,1,14,1,1,1,448.97,capture008 copy.jpg
+7,1,1,15,1,1,1,571.29,athlete28.jpg
+7,1,1,16,2,2,1,389.66,famfemale23.jpg
+7,1,1,17,2,2,1,504.06,famfemale37.jpg
+7,1,1,18,1,1,1,378.42,capture025 copy.jpg
+7,1,1,19,2,2,1,340.73,famfemale18.jpg
+7,1,1,20,2,2,1,335.19,famfemale32.jpg
+7,1,1,21,1,1,1,457.53,athlete6.jpg
+7,1,1,22,2,2,1,483.91,famfemale04.jpg
+7,1,1,23,1,1,1,678.26,actor49.jpg
+7,1,1,24,1,1,1,448.65,actor53.jpg
+7,1,2,1,1,1,1,712.66,capture027 copy.jpg
+7,1,2,2,2,2,1,414.81,famfemale11.jpg
+7,1,2,3,2,2,1,444.94,famfemale18.jpg
+7,1,2,4,1,1,1,451.01,actor49.jpg
+7,1,2,5,1,1,1,521.16,actor51.jpg
+7,1,2,6,2,0,0,0,famfemale24.jpg
+7,1,2,7,2,2,1,437.42,famfemale29.jpg
+7,1,2,8,2,2,1,387.59,famfemale26.jpg
+7,1,2,9,1,1,1,561.72,actor14.jpg
+7,1,2,10,1,1,1,439.83,actorprac1.jpg
+7,1,2,11,2,2,1,581.94,famfemale23.jpg
+7,1,2,12,1,1,1,620.07,capture008 copy.jpg
+7,1,2,13,2,2,1,522.24,famfemale06.jpg
+7,1,2,14,1,1,1,448.32,capture025 copy.jpg
+7,1,2,15,1,1,1,678.52,actor17.jpg
+7,1,2,16,2,2,1,276.62,famfemale04.jpg
+7,1,2,17,2,1,0,402.73,famfemale37.jpg
+7,1,2,18,2,2,1,480.89,famfemale09.jpg
+7,1,2,19,1,0,0,0,athlete28.jpg
+7,1,2,20,1,1,1,493.09,athlete1.jpg
+7,1,2,21,1,1,1,883.26,athlete6.jpg
+7,1,2,22,1,1,1,497.36,actor53.jpg
+7,1,2,23,2,2,1,335.49,famfemale19.jpg
+7,1,2,24,2,2,1,477.62,famfemale32.jpg
+7,1,3,1,1,1,1,555.36,capture008 copy.jpg
+7,1,3,2,1,1,1,913.46,athlete6.jpg
+7,1,3,3,2,2,1,519.45,famfemale11.jpg
+7,1,3,4,2,2,1,373.73,famfemale09.jpg
+7,1,3,5,2,2,1,395.81,famfemale24.jpg
+7,1,3,6,1,1,1,434,capture027 copy.jpg
+7,1,3,7,1,1,1,624.1,actor17.jpg
+7,1,3,8,1,1,1,422.21,actor51.jpg
+7,1,3,9,1,1,1,460.38,capture025 copy.jpg
+7,1,3,10,2,2,1,482.49,famfemale29.jpg
+7,1,3,11,2,2,1,368.61,famfemale37.jpg
+7,1,3,12,1,1,1,478.76,actorprac1.jpg
+7,1,3,13,1,1,1,412.84,athlete28.jpg
+7,1,3,14,1,1,1,362.99,actor49.jpg
+7,1,3,15,2,2,1,409.12,famfemale26.jpg
+7,1,3,16,1,1,1,559.3,actor14.jpg
+7,1,3,17,2,2,1,429.37,famfemale19.jpg
+7,1,3,18,1,1,1,459.55,athlete1.jpg
+7,1,3,19,1,1,1,473.62,actor53.jpg
+7,1,3,20,2,2,1,487.82,famfemale06.jpg
+7,1,3,21,2,2,1,453.91,famfemale32.jpg
+7,1,3,22,2,2,1,388.07,famfemale23.jpg
+7,1,3,23,2,2,1,521.96,famfemale04.jpg
+7,1,3,24,2,2,1,456.33,famfemale18.jpg
+7,1,4,1,1,1,1,698.72,actor53.jpg
+7,1,4,2,2,2,1,560.82,famfemale06.jpg
+7,1,4,3,1,1,1,430.93,capture008 copy.jpg
+7,1,4,4,2,2,1,269.06,famfemale18.jpg
+7,1,4,5,2,2,1,403.16,famfemale24.jpg
+7,1,4,6,2,2,1,497.33,famfemale37.jpg
+7,1,4,7,1,1,1,543.44,actor17.jpg
+7,1,4,8,1,1,1,541.62,capture027 copy.jpg
+7,1,4,9,1,1,1,411.75,actor14.jpg
+7,1,4,10,1,1,1,409.87,actor49.jpg
+7,1,4,11,2,2,1,352.01,famfemale23.jpg
+7,1,4,12,2,2,1,570.37,famfemale11.jpg
+7,1,4,13,2,2,1,552.46,famfemale26.jpg
+7,1,4,14,1,1,1,462.63,actorprac1.jpg
+7,1,4,15,2,2,1,556.77,famfemale32.jpg
+7,1,4,16,1,1,1,1002.91,athlete28.jpg
+7,1,4,17,1,1,1,521.02,athlete6.jpg
+7,1,4,18,2,2,1,439.15,famfemale19.jpg
+7,1,4,19,2,2,1,389.27,famfemale04.jpg
+7,1,4,20,1,2,0,371.42,athlete1.jpg
+7,1,4,21,2,1,0,409.54,famfemale09.jpg
+7,1,4,22,1,1,1,575.62,actor51.jpg
+7,1,4,23,1,1,1,469.8,capture025 copy.jpg
+7,1,4,24,2,2,1,499.89,famfemale29.jpg
+7,1,5,1,1,1,1,521.61,actorprac1.jpg
+7,1,5,2,1,1,1,359.74,capture025 copy.jpg
+7,1,5,3,2,2,1,805.88,famfemale37.jpg
+7,1,5,4,2,2,1,611.99,famfemale24.jpg
+7,1,5,5,2,2,1,378.11,famfemale06.jpg
+7,1,5,6,2,2,1,400.26,famfemale04.jpg
+7,1,5,7,1,1,1,502.39,athlete6.jpg
+7,1,5,8,2,2,1,380.45,famfemale26.jpg
+7,1,5,9,2,2,1,490.65,famfemale29.jpg
+7,1,5,10,2,2,1,464.78,famfemale11.jpg
+7,1,5,11,1,1,1,494.88,actor17.jpg
+7,1,5,12,2,2,1,757.04,famfemale19.jpg
+7,1,5,13,1,1,1,563.17,athlete28.jpg
+7,1,5,14,1,1,1,529.29,actor14.jpg
+7,1,5,15,2,2,1,535.41,famfemale32.jpg
+7,1,5,16,1,1,1,933.57,actor53.jpg
+7,1,5,17,1,1,1,447.89,capture027 copy.jpg
+7,1,5,18,1,1,1,590.03,capture008 copy.jpg
+7,1,5,19,1,1,1,828.19,actor51.jpg
+7,1,5,20,2,2,1,346.29,famfemale09.jpg
+7,1,5,21,2,2,1,344.43,famfemale23.jpg
+7,1,5,22,2,2,1,514.78,famfemale18.jpg
+7,1,5,23,1,1,1,424.89,athlete1.jpg
+7,1,5,24,1,1,1,554.98,actor49.jpg
+7,1,6,1,2,2,1,488.89,famfemale06.jpg
+7,1,6,2,1,1,1,471.05,actor14.jpg
+7,1,6,3,2,2,1,397.21,famfemale19.jpg
+7,1,6,4,2,2,1,419.35,famfemale11.jpg
+7,1,6,5,1,1,1,513.49,actorprac1.jpg
+7,1,6,6,2,2,1,639.56,famfemale29.jpg
+7,1,6,7,2,2,1,525.73,famfemale26.jpg
+7,1,6,8,1,1,1,675.88,athlete28.jpg
+7,1,6,9,1,1,1,514.01,capture008 copy.jpg
+7,1,6,10,1,1,1,552.14,athlete6.jpg
+7,1,6,11,2,2,1,318.26,famfemale32.jpg
+7,1,6,12,2,2,1,340.38,famfemale23.jpg
+7,1,6,13,2,2,1,506.49,famfemale37.jpg
+7,1,6,14,2,2,1,492.84,famfemale18.jpg
+7,1,6,15,2,2,1,418.99,famfemale09.jpg
+7,1,6,16,2,2,1,401.14,famfemale24.jpg
+7,1,6,17,2,2,1,455.26,famfemale04.jpg
+7,1,6,18,1,1,1,429.4,capture025 copy.jpg
+7,1,6,19,1,1,1,459.47,actor53.jpg
+7,1,6,20,1,1,1,529.64,actor49.jpg
+7,1,6,21,1,1,1,367.74,athlete1.jpg
+7,1,6,22,1,1,1,549.92,actor51.jpg
+7,1,6,23,1,1,1,528.25,capture027 copy.jpg
+7,1,6,24,1,1,1,498.67,actor17.jpg
+7,1,7,1,2,2,1,513.19,famfemale19.jpg
+7,1,7,2,2,2,1,359.4,famfemale29.jpg
+7,1,7,3,2,2,1,341.5,famfemale23.jpg
+7,1,7,4,2,2,1,247.69,famfemale04.jpg
+7,1,7,5,1,1,1,518.02,athlete6.jpg
+7,1,7,6,2,2,1,452.13,famfemale24.jpg
+7,1,7,7,2,2,1,354.28,famfemale11.jpg
+7,1,7,8,1,1,1,568.36,actorprac1.jpg
+7,1,7,9,2,2,1,446.51,famfemale26.jpg
+7,1,7,10,2,1,0,468.67,famfemale09.jpg
+7,1,7,11,1,1,1,562.75,capture008 copy.jpg
+7,1,7,12,1,1,1,568.91,actor17.jpg
+7,1,7,13,1,1,1,487.03,athlete1.jpg
+7,1,7,14,1,1,1,449.39,actor51.jpg
+7,1,7,15,1,1,1,623.52,capture025 copy.jpg
+7,1,7,16,2,2,1,477.67,famfemale06.jpg
+7,1,7,17,2,2,1,371.78,famfemale18.jpg
+7,1,7,18,2,2,1,337.93,famfemale37.jpg
+7,1,7,19,2,2,1,447.93,famfemale32.jpg
+7,1,7,20,1,1,1,478.13,actor49.jpg
+7,1,7,21,1,1,1,444.29,capture027 copy.jpg
+7,1,7,22,1,1,1,410.45,actor53.jpg
+7,1,7,23,1,1,1,348.73,actor14.jpg
+7,1,7,24,1,1,1,434.93,athlete28.jpg
+7,1,8,1,1,1,1,482.96,athlete1.jpg
+7,1,8,2,2,2,1,593.1,famfemale04.jpg
+7,1,8,3,1,1,1,495.23,athlete6.jpg
+7,1,8,4,2,2,1,397.36,famfemale18.jpg
+7,1,8,5,2,2,1,395.47,famfemale26.jpg
+7,1,8,6,2,2,1,457.6,famfemale24.jpg
+7,1,8,7,1,1,1,523.97,actor14.jpg
+7,1,8,8,2,2,1,554.12,famfemale23.jpg
+7,1,8,9,1,1,1,696.23,actorprac1.jpg
+7,1,8,10,1,1,1,1166.38,athlete28.jpg
+7,1,8,11,2,2,1,444.25,famfemale19.jpg
+7,1,8,12,1,1,1,506.63,capture027 copy.jpg
+7,1,8,13,2,2,1,600.69,famfemale09.jpg
+7,1,8,14,2,2,1,526.89,famfemale32.jpg
+7,1,8,15,2,1,0,676.99,famfemale29.jpg
+7,1,8,16,1,1,1,435.13,actor17.jpg
+7,1,8,17,1,1,1,537.28,actor51.jpg
+7,1,8,18,2,2,1,467.61,famfemale37.jpg
+7,1,8,19,1,1,1,473.72,actor49.jpg
+7,1,8,20,2,2,1,431.87,famfemale06.jpg
+7,1,8,21,1,1,1,597.98,capture008 copy.jpg
+7,1,8,22,1,1,1,588.11,capture025 copy.jpg
+7,1,8,23,2,2,1,338.25,famfemale11.jpg
+7,1,8,24,1,1,1,512.41,actor53.jpg
+8,1,1,1,2,2,1,735.65,famfemale38.jpg
+8,1,1,2,1,1,1,845.78,capture003 copy.jpg
+8,1,1,3,1,1,1,526.59,actor7.jpg
+8,1,1,4,1,1,1,551.4,athlete13.jpg
+8,1,1,5,1,1,1,616.19,actor9.jpg
+8,1,1,6,1,1,1,624.92,actor12.jpg
+8,1,1,7,2,2,1,577.68,famfemale40.jpg
+8,1,1,8,2,2,1,594.53,famfemale30.jpg
+8,1,1,9,2,2,1,635.24,famfemale34.jpg
+8,1,1,10,1,1,1,708.1,capture026 copy.jpg
+8,1,1,11,1,1,1,572.86,actor35.jpg
+8,1,1,12,2,2,1,645.67,famfemale02.jpg
+8,1,1,13,1,1,1,590.41,athlete7.jpg
+8,1,1,14,2,2,1,569.84,famfemale12.jpg
+8,1,1,15,1,1,1,554.67,actor41.jpg
+8,1,1,16,2,2,1,571.43,famfemale08.jpg
+8,1,1,17,1,1,1,532.18,actor19.jpg
+8,1,1,18,1,1,1,548.97,actor54.jpg
+8,1,1,19,2,2,1,549.81,famfemale22.jpg
+8,1,1,20,1,1,1,598.56,actor44.jpg
+8,1,1,21,2,2,1,551.31,famfemale39.jpg
+8,1,1,22,2,2,1,424.1,famfemale21.jpg
+8,1,1,23,2,2,1,424.93,famfemale01.jpg
+8,1,1,24,2,2,1,433.69,famfemale36.jpg
+8,1,2,1,1,1,1,637.05,athlete13.jpg
+8,1,2,2,1,1,1,549.82,actor7.jpg
+8,1,2,3,2,2,1,542.58,famfemale08.jpg
+8,1,2,4,2,2,1,447.37,famfemale36.jpg
+8,1,2,5,1,1,1,512.1,actor9.jpg
+8,1,2,6,2,2,1,544.88,famfemale12.jpg
+8,1,2,7,1,1,1,561.73,actor41.jpg
+8,1,2,8,1,1,1,442.49,athlete7.jpg
+8,1,2,9,2,2,1,387.29,famfemale01.jpg
+8,1,2,10,1,1,1,628.08,actor44.jpg
+8,1,2,11,1,1,1,476.86,actor12.jpg
+8,1,2,12,1,2,0,357.62,actor35.jpg
+8,1,2,13,1,1,1,510.4,actor54.jpg
+8,1,2,14,2,2,1,447.17,famfemale40.jpg
+8,1,2,15,2,2,1,359.96,famfemale39.jpg
+8,1,2,16,1,1,1,448.71,capture003 copy.jpg
+8,1,2,17,2,1,0,417.53,famfemale02.jpg
+8,1,2,18,2,2,1,530.31,famfemale30.jpg
+8,1,2,19,2,2,1,555.12,famfemale22.jpg
+8,1,2,20,2,2,1,467.85,famfemale38.jpg
+8,1,2,21,1,1,1,556.68,actor19.jpg
+8,1,2,22,2,2,1,525.45,famfemale21.jpg
+8,1,2,23,2,2,1,462.26,famfemale34.jpg
+8,1,2,24,1,1,1,639.04,capture026 copy.jpg
+8,1,3,1,2,2,1,536.14,famfemale40.jpg
+8,1,3,2,2,2,1,384.93,famfemale01.jpg
+8,1,3,3,1,1,1,585.72,actor44.jpg
+8,1,3,4,2,2,1,898.45,famfemale08.jpg
+8,1,3,5,2,2,1,563.28,famfemale02.jpg
+8,1,3,6,1,1,1,540.06,actor54.jpg
+8,1,3,7,2,2,1,452.83,famfemale36.jpg
+8,1,3,8,1,1,1,757.63,actor35.jpg
+8,1,3,9,2,2,1,574.38,famfemale34.jpg
+8,1,3,10,1,1,1,455.18,capture026 copy.jpg
+8,1,3,11,2,2,1,527.9,famfemale22.jpg
+8,1,3,12,1,1,1,624.75,athlete7.jpg
+8,1,3,13,1,1,1,785.55,capture003 copy.jpg
+8,1,3,14,1,1,1,466.33,actor12.jpg
+8,1,3,15,2,2,1,443.11,famfemale21.jpg
+8,1,3,16,1,1,1,547.88,actor7.jpg
+8,1,3,17,1,1,1,628.63,athlete13.jpg
+8,1,3,18,2,2,1,517.39,famfemale38.jpg
+8,1,3,19,2,2,1,574.25,famfemale12.jpg
+8,1,3,20,1,1,1,535.01,actor19.jpg
+8,1,3,21,1,1,1,527.81,actor9.jpg
+8,1,3,22,2,2,1,616.57,famfemale30.jpg
+8,1,3,23,2,2,1,433.33,famfemale39.jpg
+8,1,3,24,1,1,1,522.16,actor41.jpg
+8,1,4,1,2,2,1,447.25,famfemale01.jpg
+8,1,4,2,2,2,1,560.05,famfemale36.jpg
+8,1,4,3,1,1,1,632.83,actor44.jpg
+8,1,4,4,2,2,1,577.54,famfemale22.jpg
+8,1,4,5,1,1,1,642.36,actor7.jpg
+8,1,4,6,2,2,1,507.13,famfemale21.jpg
+8,1,4,7,1,1,1,555.94,capture003 copy.jpg
+8,1,4,8,1,1,1,540.73,actor19.jpg
+8,1,4,9,2,2,1,477.53,famfemale40.jpg
+8,1,4,10,1,1,1,582.31,athlete13.jpg
+8,1,4,11,1,1,1,527.1,actor54.jpg
+8,1,4,12,2,2,1,639.84,famfemale34.jpg
+8,1,4,13,1,1,1,552.66,actor12.jpg
+8,1,4,14,1,1,1,689.44,actor9.jpg
+8,1,4,15,1,1,1,666.2,actor35.jpg
+8,1,4,16,2,2,1,523.01,famfemale02.jpg
+8,1,4,17,1,1,1,1091.77,capture026 copy.jpg
+8,1,4,18,2,2,1,748.53,famfemale08.jpg
+8,1,4,19,2,2,1,653.3,famfemale38.jpg
+8,1,4,20,2,2,1,486.14,famfemale30.jpg
+8,1,4,21,1,1,1,526.9,actor41.jpg
+8,1,4,22,1,1,1,407.71,athlete7.jpg
+8,1,4,23,2,2,1,544.49,famfemale12.jpg
+8,1,4,24,2,2,1,417.27,famfemale39.jpg
+8,1,5,1,1,1,1,531.03,capture026 copy.jpg
+8,1,5,2,1,1,1,470.54,actor54.jpg
+8,1,5,3,2,2,1,463.3,famfemale40.jpg
+8,1,5,4,2,2,1,424.13,famfemale02.jpg
+8,1,5,5,1,1,1,449.01,athlete13.jpg
+8,1,5,6,2,2,1,489.7,famfemale38.jpg
+8,1,5,7,2,2,1,722.43,famfemale39.jpg
+8,1,5,8,1,1,1,515.26,athlete7.jpg
+8,1,5,9,2,2,1,491.99,famfemale01.jpg
+8,1,5,10,1,1,1,540.8,actor35.jpg
+8,1,5,11,2,2,1,661.61,famfemale08.jpg
+8,1,5,12,1,1,1,470.37,actor44.jpg
+8,1,5,13,1,1,1,511.18,actor7.jpg
+8,1,5,14,2,2,1,407.94,famfemale12.jpg
+8,1,5,15,1,1,1,552.74,actor12.jpg
+8,1,5,16,1,1,1,633.5,capture003 copy.jpg
+8,1,5,17,2,2,1,554.26,famfemale34.jpg
+8,1,5,18,2,2,1,443.02,famfemale30.jpg
+8,1,5,19,1,1,1,515.85,actor41.jpg
+8,1,5,20,2,2,1,500.63,famfemale36.jpg
+8,1,5,21,2,2,1,541.41,famfemale21.jpg
+8,1,5,22,1,1,1,558.17,actor19.jpg
+8,1,5,23,1,1,1,463.01,actor9.jpg
+8,1,5,24,2,2,1,511.79,famfemale22.jpg
+8,1,6,1,1,1,1,516.28,actor9.jpg
+8,1,6,2,2,2,1,445.07,famfemale01.jpg
+8,1,6,3,1,1,1,429.82,actor44.jpg
+8,1,6,4,1,1,1,454.67,actor19.jpg
+8,1,6,5,2,2,1,407.41,famfemale39.jpg
+8,1,6,6,2,2,1,392.23,famfemale36.jpg
+8,1,6,7,1,1,1,488.98,actor41.jpg
+8,1,6,8,1,1,1,601.8,actor7.jpg
+8,1,6,9,2,2,1,442.58,famfemale12.jpg
+8,1,6,10,2,2,1,395.35,famfemale38.jpg
+8,1,6,11,2,2,1,380.11,famfemale30.jpg
+8,1,6,12,2,2,1,372.88,famfemale02.jpg
+8,1,6,13,2,2,1,333.65,famfemale21.jpg
+8,1,6,14,1,2,0,278.47,athlete13.jpg
+8,1,6,15,2,2,1,303.27,famfemale40.jpg
+8,1,6,16,1,2,0,272.03,actor54.jpg
+8,1,6,17,2,2,1,664.82,famfemale34.jpg
+8,1,6,18,2,2,1,529.59,famfemale08.jpg
+8,1,6,19,1,1,1,442.41,actor12.jpg
+8,1,6,20,1,1,1,387.19,actor35.jpg
+8,1,6,21,1,1,1,379.94,capture026 copy.jpg
+8,1,6,22,2,2,1,420.69,famfemale22.jpg
+8,1,6,23,1,1,1,565.55,athlete7.jpg
+8,1,6,24,1,1,1,438.32,capture003 copy.jpg
+8,1,7,1,2,2,1,655.02,famfemale01.jpg
+8,1,7,2,2,2,1,463.83,famfemale36.jpg
+8,1,7,3,2,2,1,472.66,famfemale40.jpg
+8,1,7,4,1,1,1,537.45,capture003 copy.jpg
+8,1,7,5,1,1,1,546.21,actor54.jpg
+8,1,7,6,1,1,1,474.99,athlete13.jpg
+8,1,7,7,1,1,1,443.8,actor41.jpg
+8,1,7,8,2,2,1,468.53,famfemale30.jpg
+8,1,7,9,1,1,1,549.3,actor9.jpg
+8,1,7,10,2,2,1,414.14,famfemale02.jpg
+8,1,7,11,2,2,1,510.9,famfemale21.jpg
+8,1,7,12,1,1,1,607.67,actor12.jpg
+8,1,7,13,1,1,1,752.49,capture026 copy.jpg
+8,1,7,14,1,1,1,545.23,athlete7.jpg
+8,1,7,15,2,2,1,505.15,famfemale39.jpg
+8,1,7,16,2,2,1,514.84,famfemale22.jpg
+8,1,7,17,1,1,1,635.62,actor19.jpg
+8,1,7,18,2,2,1,796.42,famfemale08.jpg
+8,1,7,19,2,2,1,605.15,famfemale34.jpg
+8,1,7,20,1,1,1,629.97,actor44.jpg
+8,1,7,21,2,2,1,726.76,famfemale12.jpg
+8,1,7,22,1,1,1,455.54,actor35.jpg
+8,1,7,23,1,1,1,544.32,actor7.jpg
+8,1,7,24,2,2,1,585.07,famfemale38.jpg
+8,1,8,1,2,2,1,502.41,famfemale30.jpg
+8,1,8,2,1,1,1,663.19,capture026 copy.jpg
+8,1,8,3,2,2,1,543.97,famfemale39.jpg
+8,1,8,4,1,1,1,512.71,capture003 copy.jpg
+8,1,8,5,2,2,1,609.54,famfemale02.jpg
+8,1,8,6,1,1,1,490.29,actor12.jpg
+8,1,8,7,1,1,1,411.08,athlete13.jpg
+8,1,8,8,2,2,1,603.88,famfemale36.jpg
+8,1,8,9,1,1,1,860.63,athlete7.jpg
+8,1,8,10,2,2,1,405.41,famfemale01.jpg
+8,1,8,11,1,1,1,430.17,actor54.jpg
+8,1,8,12,1,1,1,431,actor9.jpg
+8,1,8,13,2,2,1,527.8,famfemale34.jpg
+8,1,8,14,2,2,1,632.53,famfemale21.jpg
+8,1,8,15,1,1,1,473.36,actor19.jpg
+8,1,8,16,1,1,1,490.14,actor35.jpg
+8,1,8,17,2,2,1,570.93,famfemale38.jpg
+8,1,8,18,1,1,1,459.71,actor41.jpg
+8,1,8,19,1,1,1,436.45,actor44.jpg
+8,1,8,20,2,2,1,485.25,famfemale22.jpg
+8,1,8,21,2,2,1,406.04,famfemale12.jpg
+8,1,8,22,2,2,1,406.8,famfemale40.jpg
+8,1,8,23,2,2,1,327.62,famfemale08.jpg
+8,1,8,24,1,1,1,552.35,actor7.jpg
+9,1,1,1,1,1,1,560.41,actorprac1.jpg
+9,1,1,2,1,1,1,603.87,athlete28.jpg
+9,1,1,3,2,2,1,676.54,famfemale12.jpg
+9,1,1,4,2,2,1,661.3,famfemale34.jpg
+9,1,1,5,1,1,1,798.03,athlete6.jpg
+9,1,1,6,2,2,1,718.79,famfemale01.jpg
+9,1,1,7,2,2,1,591.5,famfemale02.jpg
+9,1,1,8,2,2,1,504.25,famfemale38.jpg
+9,1,1,9,1,1,1,587.6,actor14.jpg
+9,1,1,10,1,1,1,503.01,actor53.jpg
+9,1,1,11,2,2,1,538.4,famfemale36.jpg
+9,1,1,12,2,2,1,501.85,famfemale40.jpg
+9,1,1,13,1,1,1,545.25,actor51.jpg
+9,1,1,14,2,2,1,604.65,famfemale08.jpg
+9,1,1,15,2,2,1,624.07,famfemale21.jpg
+9,1,1,16,1,1,1,611.47,actor49.jpg
+9,1,1,17,1,1,1,566.89,capture027 copy.jpg
+9,1,1,18,1,1,1,594.29,actor17.jpg
+9,1,1,19,1,1,1,653.55,athlete1.jpg
+9,1,1,20,1,1,1,686.35,capture025 copy.jpg
+9,1,1,21,2,2,1,689.76,famfemale30.jpg
+9,1,1,22,1,1,1,746.56,capture008 copy.jpg
+9,1,1,23,2,2,1,563.27,famfemale22.jpg
+9,1,1,24,2,2,1,502.59,famfemale39.jpg
+9,1,2,1,1,1,1,593.57,capture027 copy.jpg
+9,1,2,2,1,1,1,442.34,actor14.jpg
+9,1,2,3,2,2,1,507.06,famfemale02.jpg
+9,1,2,4,1,1,1,499.73,actorprac1.jpg
+9,1,2,5,1,1,1,532.53,athlete6.jpg
+9,1,2,6,2,2,1,541.2,famfemale22.jpg
+9,1,2,7,2,2,1,493.93,famfemale21.jpg
+9,1,2,8,1,1,1,518.7,athlete28.jpg
+9,1,2,9,2,2,1,487.45,famfemale38.jpg
+9,1,2,10,2,2,1,560.12,famfemale39.jpg
+9,1,2,11,1,1,1,528.85,actor51.jpg
+9,1,2,12,2,2,1,497.64,famfemale01.jpg
+9,1,2,13,2,2,1,474.32,famfemale30.jpg
+9,1,2,14,1,1,1,555.06,capture008 copy.jpg
+9,1,2,15,2,2,1,659.81,famfemale40.jpg
+9,1,2,16,1,1,1,596.5,capture025 copy.jpg
+9,1,2,17,2,2,1,501.29,famfemale36.jpg
+9,1,2,18,2,2,1,645.99,famfemale34.jpg
+9,1,2,19,1,1,1,486.69,actor17.jpg
+9,1,2,20,1,1,1,447.47,actor53.jpg
+9,1,2,21,2,2,1,448.21,famfemale12.jpg
+9,1,2,22,2,2,1,744.91,famfemale08.jpg
+9,1,2,23,1,1,1,473.67,athlete1.jpg
+9,1,2,24,1,1,1,546.37,actor49.jpg
+9,1,3,1,2,2,1,596.15,famfemale40.jpg
+9,1,3,2,1,1,1,556.92,athlete6.jpg
+9,1,3,3,2,2,1,477.65,famfemale22.jpg
+9,1,3,4,1,1,1,470.36,actor14.jpg
+9,1,3,5,1,1,1,455.08,actor49.jpg
+9,1,3,6,2,2,1,471.85,famfemale30.jpg
+9,1,3,7,2,2,1,528.53,famfemale21.jpg
+9,1,3,8,2,2,1,489.32,famfemale39.jpg
+9,1,3,9,2,2,1,706.05,famfemale12.jpg
+9,1,3,10,1,1,1,586.7,athlete28.jpg
+9,1,3,11,2,2,1,587.51,famfemale34.jpg
+9,1,3,12,2,2,1,652.2,famfemale36.jpg
+9,1,3,13,1,1,1,668.94,capture025 copy.jpg
+9,1,3,14,1,1,1,517.66,athlete1.jpg
+9,1,3,15,2,2,1,550.39,famfemale38.jpg
+9,1,3,16,2,2,1,583.11,famfemale02.jpg
+9,1,3,17,2,2,1,495.82,famfemale01.jpg
+9,1,3,18,1,1,1,496.56,actor53.jpg
+9,1,3,19,1,1,1,569.33,actor17.jpg
+9,1,3,20,1,1,1,490.01,actor51.jpg
+9,1,3,21,1,1,1,626.77,actorprac1.jpg
+9,1,3,22,1,1,1,483.52,capture008 copy.jpg
+9,1,3,23,1,1,1,468.27,capture027 copy.jpg
+9,1,3,24,2,2,1,925.01,famfemale08.jpg
+9,1,4,1,2,2,1,585.2,famfemale36.jpg
+9,1,4,2,1,1,1,433.97,actor53.jpg
+9,1,4,3,1,1,1,578.65,actor49.jpg
+9,1,4,4,1,1,1,419.41,actor14.jpg
+9,1,4,5,2,2,1,708.12,famfemale08.jpg
+9,1,4,6,1,1,1,612.85,capture008 copy.jpg
+9,1,4,7,1,1,1,693.62,athlete1.jpg
+9,1,4,8,2,2,1,622.29,famfemale34.jpg
+9,1,4,9,2,2,1,551.09,famfemale12.jpg
+9,1,4,10,2,2,1,495.82,famfemale02.jpg
+9,1,4,11,1,1,1,552.55,actor51.jpg
+9,1,4,12,2,2,1,481.27,famfemale30.jpg
+9,1,4,13,2,2,1,505.99,famfemale38.jpg
+9,1,4,14,2,2,1,474.71,famfemale39.jpg
+9,1,4,15,2,2,1,419.43,famfemale01.jpg
+9,1,4,16,1,1,1,548.2,athlete6.jpg
+9,1,4,17,2,2,1,420.87,famfemale40.jpg
+9,1,4,18,1,1,1,453.64,capture027 copy.jpg
+9,1,4,19,1,1,1,598.39,actor17.jpg
+9,1,4,20,2,2,1,495.11,famfemale22.jpg
+9,1,4,21,1,1,1,431.82,athlete28.jpg
+9,1,4,22,2,2,1,608.52,famfemale21.jpg
+9,1,4,23,1,1,1,377.3,actorprac1.jpg
+9,1,4,24,1,1,1,666.04,capture025 copy.jpg
+9,1,5,1,2,2,1,894.39,famfemale36.jpg
+9,1,5,2,1,1,1,503.1,athlete28.jpg
+9,1,5,3,1,1,1,471.82,capture027 copy.jpg
+9,1,5,4,1,1,1,512.54,actor49.jpg
+9,1,5,5,1,1,1,361.29,actor51.jpg
+9,1,5,6,1,1,1,409.99,actor53.jpg
+9,1,5,7,2,2,1,458.75,famfemale12.jpg
+9,1,5,8,1,1,1,459.43,actor14.jpg
+9,1,5,9,2,2,1,484.21,famfemale01.jpg
+9,1,5,10,1,1,1,428.94,athlete1.jpg
+9,1,5,11,1,1,1,525.65,capture008 copy.jpg
+9,1,5,12,2,2,1,462.38,famfemale38.jpg
+9,1,5,13,2,2,1,639.12,famfemale39.jpg
+9,1,5,14,1,1,1,423.86,actor17.jpg
+9,1,5,15,2,2,1,592.53,famfemale40.jpg
+9,1,5,16,2,2,1,569.26,famfemale02.jpg
+9,1,5,17,2,2,1,498,famfemale34.jpg
+9,1,5,18,2,2,1,370.77,famfemale30.jpg
+9,1,5,19,2,2,1,387.45,famfemale08.jpg
+9,1,5,20,2,2,1,492.24,famfemale21.jpg
+9,1,5,21,1,1,1,556.93,athlete6.jpg
+9,1,5,22,1,1,1,576.36,capture025 copy.jpg
+9,1,5,23,2,2,1,721.11,famfemale22.jpg
+9,1,5,24,1,1,1,545.77,actorprac1.jpg
+9,1,6,1,1,1,1,1523.5,capture025 copy.jpg
+9,1,6,2,1,1,1,620.25,capture027 copy.jpg
+9,1,6,3,1,1,1,476.96,actor49.jpg
+9,1,6,4,2,2,1,501.72,famfemale21.jpg
+9,1,6,5,1,1,1,550.39,actor51.jpg
+9,1,6,6,2,2,1,583.18,famfemale38.jpg
+9,1,6,7,2,2,1,695.91,famfemale08.jpg
+9,1,6,8,2,2,1,520.59,famfemale34.jpg
+9,1,6,9,1,1,1,681.37,actor14.jpg
+9,1,6,10,2,2,1,458.09,famfemale36.jpg
+9,1,6,11,1,1,1,530.79,actorprac1.jpg
+9,1,6,12,2,2,1,499.53,famfemale02.jpg
+9,1,6,13,2,2,1,500.28,famfemale01.jpg
+9,1,6,14,2,2,1,516.96,famfemale22.jpg
+9,1,6,15,1,1,1,533.71,actor53.jpg
+9,1,6,16,1,1,1,550.47,athlete28.jpg
+9,1,6,17,2,2,1,567.2,famfemale12.jpg
+9,1,6,18,1,1,1,519.89,capture008 copy.jpg
+9,1,6,19,2,2,1,552.64,famfemale40.jpg
+9,1,6,20,2,2,1,433.39,famfemale30.jpg
+9,1,6,21,1,1,1,626.08,athlete1.jpg
+9,1,6,22,1,1,1,730.8,actor17.jpg
+9,1,6,23,2,2,1,499.58,famfemale39.jpg
+9,1,6,24,1,1,1,452.31,athlete6.jpg
+9,1,7,1,1,1,1,478.21,athlete1.jpg
+9,1,7,2,2,2,1,391.02,famfemale30.jpg
+9,1,7,3,1,1,1,431.75,actor17.jpg
+9,1,7,4,2,1,0,400.42,famfemale01.jpg
+9,1,7,5,1,1,1,489.21,actorprac1.jpg
+9,1,7,6,2,2,1,385.91,famfemale21.jpg
+9,1,7,7,1,1,1,378.66,capture027 copy.jpg
+9,1,7,8,1,1,1,515.36,athlete28.jpg
+9,1,7,9,2,2,1,460.09,famfemale36.jpg
+9,1,7,10,1,1,1,572.8,athlete6.jpg
+9,1,7,11,2,2,1,453.54,famfemale02.jpg
+9,1,7,12,2,2,1,878.29,famfemale38.jpg
+9,1,7,13,2,2,1,559.05,famfemale08.jpg
+9,1,7,14,2,2,1,431.71,famfemale40.jpg
+9,1,7,15,2,2,1,456.5,famfemale12.jpg
+9,1,7,16,2,2,1,441.17,famfemale39.jpg
+9,1,7,17,1,1,1,433.93,actor53.jpg
+9,1,7,18,2,2,1,474.69,famfemale22.jpg
+9,1,7,19,1,1,1,419.42,capture008 copy.jpg
+9,1,7,20,1,1,1,500.14,actor14.jpg
+9,1,7,21,1,1,1,404.87,actor51.jpg
+9,1,7,22,1,1,1,397.61,capture025 copy.jpg
+9,1,7,23,1,1,1,414.28,actor49.jpg
+9,1,7,24,2,2,1,479.07,famfemale34.jpg
+9,1,8,1,1,1,1,502.01,athlete6.jpg
+9,1,8,2,1,1,1,374.78,actor14.jpg
+9,1,8,3,1,1,1,327.51,actor53.jpg
+9,1,8,4,1,1,1,360.2,capture008 copy.jpg
+9,1,8,5,1,1,1,344.95,athlete1.jpg
+9,1,8,6,2,2,1,409.7,famfemale21.jpg
+9,1,8,7,2,2,1,370.39,famfemale22.jpg
+9,1,8,8,1,1,1,570.51,athlete28.jpg
+9,1,8,9,1,1,1,603.86,actor49.jpg
+9,1,8,10,2,2,1,780.59,famfemale08.jpg
+9,1,8,11,1,1,1,469.3,capture025 copy.jpg
+9,1,8,12,1,1,1,462.06,actor17.jpg
+9,1,8,13,2,2,1,518.8,famfemale36.jpg
+9,1,8,14,2,2,1,519.52,famfemale38.jpg
+9,1,8,15,2,2,1,512.2,famfemale40.jpg
+9,1,8,16,2,2,1,616.94,famfemale01.jpg
+9,1,8,17,2,2,1,449.71,famfemale39.jpg
+9,1,8,18,2,2,1,546.45,famfemale34.jpg
+9,1,8,19,2,2,1,483.18,famfemale30.jpg
+9,1,8,20,2,2,1,475.85,famfemale02.jpg
+9,1,8,21,2,2,1,508.63,famfemale12.jpg
+9,1,8,22,1,1,1,581.34,actor51.jpg
+9,1,8,23,1,1,1,422.06,actorprac1.jpg
+9,1,8,24,1,1,1,534.81,capture027 copy.jpg
+10,1,1,1,1,1,1,713.1,actor7.jpg
+10,1,1,2,1,1,1,772.54,actor12.jpg
+10,1,1,3,1,1,1,533.23,actor35.jpg
+10,1,1,4,1,1,1,421.97,actor19.jpg
+10,1,1,5,2,2,1,398.73,famfemale06.jpg
+10,1,1,6,2,2,1,415.44,famfemale23.jpg
+10,1,1,7,1,1,1,560.18,athlete7.jpg
+10,1,1,8,2,2,1,456.88,famfemale04.jpg
+10,1,1,9,1,1,1,508.33,actor41.jpg
+10,1,1,10,1,1,1,471.73,actor54.jpg
+10,1,1,11,1,1,1,459.13,actor44.jpg
+10,1,1,12,2,2,1,414.48,famfemale11.jpg
+10,1,1,13,2,2,1,465.9,famfemale18.jpg
+10,1,1,14,1,1,1,405.3,capture026 copy.jpg
+10,1,1,15,2,2,1,312.7,famfemale24.jpg
+10,1,1,16,2,2,1,652.22,famfemale19.jpg
+10,1,1,17,2,2,1,551.53,famfemale26.jpg
+10,1,1,18,1,1,1,394.99,actor9.jpg
+10,1,1,19,1,1,1,491.7,capture003 copy.jpg
+10,1,1,20,2,2,1,532.45,famfemale09.jpg
+10,1,1,21,2,2,1,429.2,famfemale37.jpg
+10,1,1,22,1,1,1,509.95,athlete13.jpg
+10,1,1,23,2,2,1,566.68,famfemale32.jpg
+10,1,1,24,2,2,1,439.42,famfemale29.jpg
+10,1,2,1,1,1,1,508.34,actor41.jpg
+10,1,2,2,2,2,1,469.07,famfemale24.jpg
+10,1,2,3,2,2,1,341.83,famfemale32.jpg
+10,1,2,4,1,1,1,358.57,actor9.jpg
+10,1,2,5,1,1,1,463.31,actor54.jpg
+10,1,2,6,2,2,1,368.04,famfemale18.jpg
+10,1,2,7,1,1,1,528.78,athlete7.jpg
+10,1,2,8,1,1,1,473.52,actor44.jpg
+10,1,2,9,2,2,1,418.23,famfemale23.jpg
+10,1,2,10,1,1,1,538.95,actor35.jpg
+10,1,2,11,1,1,1,451.72,actor7.jpg
+10,1,2,12,2,2,1,540.44,famfemale37.jpg
+10,1,2,13,2,2,1,453.19,famfemale09.jpg
+10,1,2,14,1,1,1,397.88,capture026 copy.jpg
+10,1,2,15,2,2,1,414.65,famfemale11.jpg
+10,1,2,16,2,2,1,479.4,famfemale29.jpg
+10,1,2,17,2,2,1,472.09,famfemale19.jpg
+10,1,2,18,2,2,1,496.87,famfemale26.jpg
+10,1,2,19,2,2,1,577.58,famfemale06.jpg
+10,1,2,20,1,1,1,498.3,capture003 copy.jpg
+10,1,2,21,1,1,1,467.06,actor12.jpg
+10,1,2,22,2,2,1,355.78,famfemale04.jpg
+10,1,2,23,1,1,1,356.51,actor19.jpg
+10,1,2,24,1,1,1,517.21,athlete13.jpg
+10,1,3,1,1,1,1,449.65,athlete7.jpg
+10,1,3,2,2,2,1,322.39,famfemale23.jpg
+10,1,3,3,2,2,1,339.13,famfemale09.jpg
+10,1,3,4,2,2,1,387.87,famfemale19.jpg
+10,1,3,5,2,2,1,412.54,famfemale37.jpg
+10,1,3,6,1,1,1,381.29,capture026 copy.jpg
+10,1,3,7,2,2,1,446.08,famfemale24.jpg
+10,1,3,8,2,2,1,422.8,famfemale29.jpg
+10,1,3,9,1,1,1,415.55,actor7.jpg
+10,1,3,10,1,1,1,496.29,actor41.jpg
+10,1,3,11,2,1,0,536.98,famfemale11.jpg
+10,1,3,12,1,1,1,561.76,actor9.jpg
+10,1,3,13,2,2,1,426.49,famfemale18.jpg
+10,1,3,14,2,2,1,403.22,famfemale06.jpg
+10,1,3,15,2,2,1,379.95,famfemale04.jpg
+10,1,3,16,1,1,1,324.66,actor19.jpg
+10,1,3,17,2,2,1,333.43,famfemale26.jpg
+10,1,3,18,1,1,1,406.17,actor12.jpg
+10,1,3,19,1,1,1,454.9,actor44.jpg
+10,1,3,20,1,1,1,415.61,athlete13.jpg
+10,1,3,21,1,1,1,464.38,capture003 copy.jpg
+10,1,3,22,1,1,1,393.11,actor54.jpg
+10,1,3,23,1,1,1,377.85,actor35.jpg
+10,1,3,24,2,2,1,410.58,famfemale32.jpg
+10,1,4,1,1,1,1,449.56,actor35.jpg
+10,1,4,2,2,2,1,370.25,famfemale19.jpg
+10,1,4,3,1,1,1,378.99,actor7.jpg
+10,1,4,4,2,2,1,379.72,famfemale09.jpg
+10,1,4,5,1,1,1,444.48,actor54.jpg
+10,1,4,6,2,2,1,365.22,famfemale06.jpg
+10,1,4,7,2,2,1,501.91,famfemale23.jpg
+10,1,4,8,1,1,1,374.69,actor44.jpg
+10,1,4,9,2,2,1,535.41,famfemale37.jpg
+10,1,4,10,1,1,1,496.12,actor9.jpg
+10,1,4,11,1,1,1,424.9,athlete13.jpg
+10,1,4,12,1,1,1,505.63,actor12.jpg
+10,1,4,13,2,2,1,402.34,famfemale26.jpg
+10,1,4,14,2,2,1,427.1,famfemale32.jpg
+10,1,4,15,2,2,1,435.83,famfemale29.jpg
+10,1,4,16,2,2,1,428.58,famfemale04.jpg
+10,1,4,17,2,2,1,373.25,famfemale18.jpg
+10,1,4,18,1,1,1,398.05,athlete7.jpg
+10,1,4,19,2,2,1,310.78,famfemale24.jpg
+10,1,4,20,1,1,1,407.46,capture003 copy.jpg
+10,1,4,21,1,1,1,456.22,capture026 copy.jpg
+10,1,4,22,1,1,1,416.94,actor19.jpg
+10,1,4,23,1,1,1,401.72,actor41.jpg
+10,1,4,24,2,2,1,338.46,famfemale11.jpg
+10,1,5,1,2,2,1,332.05,famfemale11.jpg
+10,1,5,2,2,2,1,564.82,famfemale32.jpg
+10,1,5,3,2,2,1,421.49,famfemale19.jpg
+10,1,5,4,1,1,1,454.23,actor12.jpg
+10,1,5,5,2,2,1,414.98,famfemale26.jpg
+10,1,5,6,1,1,1,415.73,athlete7.jpg
+10,1,5,7,2,2,1,544.49,famfemale24.jpg
+10,1,5,8,1,1,1,401.23,actor35.jpg
+10,1,5,9,2,2,1,369.96,famfemale18.jpg
+10,1,5,10,1,1,1,458.69,athlete13.jpg
+10,1,5,11,1,1,1,571.44,actor19.jpg
+10,1,5,12,2,2,1,380.15,famfemale09.jpg
+10,1,5,13,1,1,1,732.89,capture003 copy.jpg
+10,1,5,14,1,1,1,429.61,actor7.jpg
+10,1,5,15,1,1,1,374.34,actor9.jpg
+10,1,5,16,2,2,1,359.1,famfemale04.jpg
+10,1,5,17,2,2,1,319.85,famfemale23.jpg
+10,1,5,18,1,1,1,408.55,capture026 copy.jpg
+10,1,5,19,1,1,1,577.32,actor44.jpg
+10,1,5,20,2,2,1,345.84,famfemale37.jpg
+10,1,5,21,2,2,1,466.74,famfemale29.jpg
+10,1,5,22,1,1,1,451.54,actor54.jpg
+10,1,5,23,1,1,1,460.22,actor41.jpg
+10,1,5,24,2,2,1,388.91,famfemale06.jpg
+10,1,6,1,1,1,1,401.23,actor9.jpg
+10,1,6,2,2,2,1,457.96,famfemale06.jpg
+10,1,6,3,2,2,1,474.7,famfemale19.jpg
+10,1,6,4,1,1,1,395.46,athlete7.jpg
+10,1,6,5,1,2,0,324.2,actor44.jpg
+10,1,6,6,2,2,1,396.94,famfemale09.jpg
+10,1,6,7,1,1,1,429.62,actor7.jpg
+10,1,6,8,2,2,1,462.41,famfemale26.jpg
+10,1,6,9,1,1,1,479.11,actor41.jpg
+10,1,6,10,2,2,1,375.83,famfemale29.jpg
+10,1,6,11,2,2,1,448.59,famfemale18.jpg
+10,1,6,12,2,2,1,537.32,famfemale23.jpg
+10,1,6,13,2,2,1,378.08,famfemale37.jpg
+10,1,6,14,1,1,1,410.78,actor12.jpg
+10,1,6,15,1,1,1,483.54,actor19.jpg
+10,1,6,16,1,1,1,460.3,capture026 copy.jpg
+10,1,6,17,2,2,1,396.98,famfemale11.jpg
+10,1,6,18,1,1,1,493.78,actor35.jpg
+10,1,6,19,1,1,1,446.48,capture003 copy.jpg
+10,1,6,20,2,2,1,519.25,famfemale32.jpg
+10,1,6,21,2,2,1,463.98,famfemale04.jpg
+10,1,6,22,1,1,1,480.71,athlete13.jpg
+10,1,6,23,1,1,1,481.45,actor54.jpg
+10,1,6,24,2,2,1,386.13,famfemale24.jpg
+10,1,7,1,2,2,1,339.73,famfemale29.jpg
+10,1,7,2,2,2,1,452.52,famfemale09.jpg
+10,1,7,3,1,1,1,365.2,actor7.jpg
+10,1,7,4,1,1,1,950,capture026 copy.jpg
+10,1,7,5,2,2,1,518.7,famfemale23.jpg
+10,1,7,6,2,2,1,383.41,famfemale04.jpg
+10,1,7,7,2,2,1,352.15,famfemale32.jpg
+10,1,7,8,1,1,1,488.9,athlete13.jpg
+10,1,7,9,1,1,1,449.66,actor35.jpg
+10,1,7,10,1,1,1,370.37,actor9.jpg
+10,1,7,11,2,2,1,755.16,famfemale26.jpg
+10,1,7,12,2,2,1,459.83,famfemale06.jpg
+10,1,7,13,2,2,1,492.6,famfemale11.jpg
+10,1,7,14,1,1,1,453.36,capture003 copy.jpg
+10,1,7,15,1,1,1,470.08,actor19.jpg
+10,1,7,16,1,1,1,358.78,actor41.jpg
+10,1,7,17,1,1,1,399.56,actor54.jpg
+10,1,7,18,1,1,1,456.3,actor44.jpg
+10,1,7,19,2,2,1,569.04,famfemale19.jpg
+10,1,7,20,2,2,1,329.72,famfemale18.jpg
+10,1,7,21,1,1,1,426.51,athlete7.jpg
+10,1,7,22,2,2,1,523.24,famfemale24.jpg
+10,1,7,23,2,2,1,443.98,famfemale37.jpg
+10,1,7,24,1,1,1,396.72,actor12.jpg
+10,1,8,1,2,2,1,360.96,famfemale04.jpg
+10,1,8,2,1,1,1,393.74,actor44.jpg
+10,1,8,3,2,2,1,410.44,famfemale06.jpg
+10,1,8,4,1,1,1,379.21,actor54.jpg
+10,1,8,5,1,1,1,403.94,athlete7.jpg
+10,1,8,6,2,2,1,388.68,famfemale23.jpg
+10,1,8,7,1,1,1,477.43,actor12.jpg
+10,1,8,8,1,1,1,454.16,actor7.jpg
+10,1,8,9,2,2,1,358.89,famfemale19.jpg
+10,1,8,10,1,1,1,367.63,actor41.jpg
+10,1,8,11,2,2,1,376.36,famfemale32.jpg
+10,1,8,12,2,0,0,0,famfemale09.jpg
+10,1,8,13,2,1,0,313.83,famfemale24.jpg
+10,1,8,14,1,1,1,346.57,capture003 copy.jpg
+10,1,8,15,1,1,1,419.29,actor9.jpg
+10,1,8,16,2,2,1,404.02,famfemale18.jpg
+10,1,8,17,1,1,1,476.79,actor35.jpg
+10,1,8,18,2,2,1,413.47,famfemale11.jpg
+10,1,8,19,2,2,1,430.21,famfemale37.jpg
+10,1,8,20,1,1,1,334.93,actor19.jpg
+10,1,8,21,1,1,1,415.73,capture026 copy.jpg
+10,1,8,22,2,2,1,336.42,famfemale26.jpg
+10,1,8,23,1,1,1,513.15,athlete13.jpg
+10,1,8,24,2,2,1,345.9,famfemale29.jpg
+11,1,1,1,2,2,1,1403.34,famfemale18.jpg
+11,1,1,2,1,1,1,566.72,capture027 copy.jpg
+11,1,1,3,1,1,1,767.43,actor51.jpg
+11,1,1,4,1,1,1,608.13,capture008 copy.jpg
+11,1,1,5,1,1,1,616.93,actor14.jpg
+11,1,1,6,2,2,1,441.66,famfemale04.jpg
+11,1,1,7,2,2,1,530.34,famfemale09.jpg
+11,1,1,8,1,1,1,515.1,actor17.jpg
+11,1,1,9,2,2,1,550.5,famfemale06.jpg
+11,1,1,10,1,1,1,481.95,athlete28.jpg
+11,1,1,11,1,1,1,661.34,actor49.jpg
+11,1,1,12,1,1,1,456.74,actorprac1.jpg
+11,1,1,13,2,2,1,420.19,famfemale24.jpg
+11,1,1,14,2,2,1,527.58,famfemale23.jpg
+11,1,1,15,2,2,1,523.02,famfemale19.jpg
+11,1,1,16,1,1,1,494.34,capture025 copy.jpg
+11,1,1,17,1,1,1,505.74,athlete1.jpg
+11,1,1,18,2,2,1,573.15,famfemale37.jpg
+11,1,1,19,2,2,1,797.99,famfemale11.jpg
+11,1,1,20,1,1,1,662.67,athlete6.jpg
+11,1,1,21,1,1,1,567.4,actor53.jpg
+11,1,1,22,2,2,1,520.19,famfemale32.jpg
+11,1,1,23,2,1,0,416.92,famfemale26.jpg
+11,1,1,24,2,2,1,505.64,famfemale29.jpg
+11,1,2,1,1,1,1,494.23,actor14.jpg
+11,1,2,2,2,2,1,447.01,famfemale29.jpg
+11,1,2,3,2,2,1,615.69,famfemale18.jpg
+11,1,2,4,1,1,1,496.46,athlete6.jpg
+11,1,2,5,2,2,1,457.21,famfemale24.jpg
+11,1,2,6,2,2,1,481.89,famfemale32.jpg
+11,1,2,7,1,1,1,466.7,actor17.jpg
+11,1,2,8,2,2,1,475.41,famfemale04.jpg
+11,1,2,9,1,1,1,820.13,actor51.jpg
+11,1,2,10,2,2,1,572.91,famfemale06.jpg
+11,1,2,11,2,2,1,653.65,famfemale37.jpg
+11,1,2,12,1,1,1,478.38,athlete28.jpg
+11,1,2,13,2,2,1,671.07,famfemale11.jpg
+11,1,2,14,2,2,1,591.86,famfemale09.jpg
+11,1,2,15,1,1,1,552.35,actorprac1.jpg
+11,1,2,16,2,2,1,641.33,famfemale26.jpg
+11,1,2,17,1,1,1,578.02,capture025 copy.jpg
+11,1,2,18,1,1,1,570.81,capture027 copy.jpg
+11,1,2,19,2,2,1,611.49,famfemale19.jpg
+11,1,2,20,2,2,1,588.23,famfemale23.jpg
+11,1,2,21,1,1,1,589.03,actor49.jpg
+11,1,2,22,1,1,1,605.77,athlete1.jpg
+11,1,2,23,1,1,1,558.5,capture008 copy.jpg
+11,1,2,24,1,1,1,511.24,actor53.jpg
+11,1,3,1,2,2,1,563.57,famfemale06.jpg
+11,1,3,2,1,1,1,540.31,athlete1.jpg
+11,1,3,3,1,1,1,477.02,actor53.jpg
+11,1,3,4,2,2,1,469.77,famfemale24.jpg
+11,1,3,5,2,2,1,774.57,famfemale37.jpg
+11,1,3,6,1,1,1,511.29,athlete6.jpg
+11,1,3,7,1,1,1,647.95,actor14.jpg
+11,1,3,8,2,2,1,552.74,famfemale18.jpg
+11,1,3,9,1,1,1,689.51,capture027 copy.jpg
+11,1,3,10,1,1,1,554.2,actor49.jpg
+11,1,3,11,1,1,1,530.95,actor51.jpg
+11,1,3,12,1,1,1,459.71,actor17.jpg
+11,1,3,13,2,2,1,340.43,famfemale11.jpg
+11,1,3,14,2,2,1,509.18,famfemale09.jpg
+11,1,3,15,2,2,1,453.86,famfemale29.jpg
+11,1,3,16,1,1,1,446.67,actorprac1.jpg
+11,1,3,17,2,2,1,503.41,famfemale04.jpg
+11,1,3,18,1,1,1,504.11,capture025 copy.jpg
+11,1,3,19,1,1,1,480.81,athlete28.jpg
+11,1,3,20,1,1,1,441.62,capture008 copy.jpg
+11,1,3,21,2,2,1,394.29,famfemale19.jpg
+11,1,3,22,2,2,1,427.09,famfemale32.jpg
+11,1,3,23,2,2,1,467.83,famfemale26.jpg
+11,1,3,24,2,2,1,532.52,famfemale23.jpg
+11,1,4,1,2,2,1,640.94,famfemale04.jpg
+11,1,4,2,1,1,1,473.65,actor53.jpg
+11,1,4,3,1,1,1,578.37,athlete6.jpg
+11,1,4,4,1,1,1,469.77,capture008 copy.jpg
+11,1,4,5,1,1,1,486.49,athlete28.jpg
+11,1,4,6,1,1,1,415.28,actorprac1.jpg
+11,1,4,7,1,1,1,575.97,actor51.jpg
+11,1,4,8,2,2,1,480.76,famfemale19.jpg
+11,1,4,9,2,2,1,449.45,famfemale26.jpg
+11,1,4,10,2,2,1,482.23,famfemale09.jpg
+11,1,4,11,2,2,1,578.98,famfemale29.jpg
+11,1,4,12,2,2,1,603.66,famfemale11.jpg
+11,1,4,13,2,2,1,508.39,famfemale37.jpg
+11,1,4,14,1,1,1,389.18,actor14.jpg
+11,1,4,15,2,2,1,421.91,famfemale06.jpg
+11,1,4,16,1,1,1,462.65,capture025 copy.jpg
+11,1,4,17,2,2,1,487.38,famfemale32.jpg
+11,1,4,18,1,1,1,512.14,actor17.jpg
+11,1,4,19,1,1,1,472.87,capture027 copy.jpg
+11,1,4,20,2,2,1,457.59,famfemale24.jpg
+11,1,4,21,2,2,1,434.3,famfemale23.jpg
+11,1,4,22,1,1,1,467.05,actor49.jpg
+11,1,4,23,2,2,1,403.76,famfemale18.jpg
+11,1,4,24,1,1,1,364.5,athlete1.jpg
+11,1,5,1,1,1,1,600.89,capture008 copy.jpg
+11,1,5,2,1,1,1,489.61,actor14.jpg
+11,1,5,3,1,1,1,434.34,actor53.jpg
+11,1,5,4,1,1,1,499.11,athlete28.jpg
+11,1,5,5,1,1,1,427.85,capture027 copy.jpg
+11,1,5,6,1,1,1,380.53,actor17.jpg
+11,1,5,7,1,1,1,389.26,actorprac1.jpg
+11,1,5,8,1,1,1,438.01,athlete1.jpg
+11,1,5,9,2,2,1,422.76,famfemale11.jpg
+11,1,5,10,2,2,1,399.48,famfemale37.jpg
+11,1,5,11,1,1,1,384.27,actor51.jpg
+11,1,5,12,2,2,1,424.99,famfemale29.jpg
+11,1,5,13,2,2,1,585.75,famfemale24.jpg
+11,1,5,14,1,0,0,0,actor49.jpg
+11,1,5,15,2,2,1,507.22,famfemale32.jpg
+11,1,5,16,2,2,1,539.96,famfemale18.jpg
+11,1,5,17,2,2,1,332.69,famfemale26.jpg
+11,1,5,18,1,1,1,485.43,capture025 copy.jpg
+11,1,5,19,2,2,1,638.18,famfemale04.jpg
+11,1,5,20,1,1,1,542.91,athlete6.jpg
+11,1,5,21,2,2,1,511.64,famfemale19.jpg
+11,1,5,22,2,2,1,616.38,famfemale09.jpg
+11,1,5,23,2,2,1,561.1,famfemale23.jpg
+11,1,5,24,2,2,1,633.85,famfemale06.jpg
+11,1,6,1,1,1,1,566.36,capture025 copy.jpg
+11,1,6,2,1,1,1,463.15,actor49.jpg
+11,1,6,3,1,1,1,431.83,actor51.jpg
+11,1,6,4,1,1,1,368.6,capture027 copy.jpg
+11,1,6,5,2,2,1,633.37,famfemale23.jpg
+11,1,6,6,2,2,1,450.1,famfemale09.jpg
+11,1,6,7,1,1,1,498.84,athlete6.jpg
+11,1,6,8,2,2,1,571.58,famfemale37.jpg
+11,1,6,9,1,1,1,884.3,actor53.jpg
+11,1,6,10,2,2,1,557.06,famfemale04.jpg
+11,1,6,11,1,1,1,493.73,athlete28.jpg
+11,1,6,12,2,2,1,470.53,famfemale29.jpg
+11,1,6,13,1,1,1,639.21,capture008 copy.jpg
+11,1,6,14,2,2,1,608.01,famfemale11.jpg
+11,1,6,15,1,1,1,560.74,actor14.jpg
+11,1,6,16,2,2,1,601.47,famfemale18.jpg
+11,1,6,17,2,2,1,466.22,famfemale06.jpg
+11,1,6,18,2,2,1,426.95,famfemale32.jpg
+11,1,6,19,2,2,1,371.65,famfemale26.jpg
+11,1,6,20,2,2,1,516.43,famfemale19.jpg
+11,1,6,21,2,2,1,461.16,famfemale24.jpg
+11,1,6,22,1,1,1,525.88,athlete1.jpg
+11,1,6,23,1,1,1,414.62,actor17.jpg
+11,1,6,24,1,1,1,431.3,actorprac1.jpg
+11,1,7,1,1,1,1,886.34,capture008 copy.jpg
+11,1,7,2,2,2,1,511.09,famfemale32.jpg
+11,1,7,3,1,1,1,551.85,athlete6.jpg
+11,1,7,4,1,1,1,640.54,actor53.jpg
+11,1,7,5,2,2,1,457.26,famfemale37.jpg
+11,1,7,6,1,1,1,458.04,actorprac1.jpg
+11,1,7,7,2,2,1,530.75,famfemale19.jpg
+11,1,7,8,1,1,1,459.53,actor49.jpg
+11,1,7,9,2,2,1,452.23,famfemale29.jpg
+11,1,7,10,1,1,1,549.03,athlete1.jpg
+11,1,7,11,1,1,1,413.74,actor14.jpg
+11,1,7,12,1,1,1,374.47,capture027 copy.jpg
+11,1,7,13,2,2,1,471.22,famfemale18.jpg
+11,1,7,14,1,1,1,463.9,capture025 copy.jpg
+11,1,7,15,1,1,1,528.67,athlete28.jpg
+11,1,7,16,2,2,1,561.43,famfemale24.jpg
+11,1,7,17,2,2,1,442.17,famfemale26.jpg
+11,1,7,18,2,2,1,546.9,famfemale11.jpg
+11,1,7,19,1,1,1,427.62,actor51.jpg
+11,1,7,20,2,2,1,596.38,famfemale06.jpg
+11,1,7,21,2,2,1,389.11,famfemale04.jpg
+11,1,7,22,1,1,1,413.82,actor17.jpg
+11,1,7,23,2,2,1,390.59,famfemale09.jpg
+11,1,7,24,2,2,1,479.33,famfemale23.jpg
+11,1,8,1,2,2,1,502.32,famfemale26.jpg
+11,1,8,2,1,1,1,439,actor51.jpg
+11,1,8,3,1,1,1,471.76,athlete6.jpg
+11,1,8,4,1,1,1,480.47,capture008 copy.jpg
+11,1,8,5,2,2,1,441.22,famfemale04.jpg
+11,1,8,6,2,2,1,585.99,famfemale06.jpg
+11,1,8,7,2,2,1,410.72,famfemale37.jpg
+11,1,8,8,1,1,1,411.44,capture027 copy.jpg
+11,1,8,9,2,2,1,844.16,famfemale18.jpg
+11,1,8,10,2,2,1,476.94,famfemale19.jpg
+11,1,8,11,1,1,1,461.66,actor14.jpg
+11,1,8,12,2,2,1,470.4,famfemale24.jpg
+11,1,8,13,2,2,1,383.15,famfemale32.jpg
+11,1,8,14,1,1,1,487.83,capture025 copy.jpg
+11,1,8,15,2,2,1,376.59,famfemale23.jpg
+11,1,8,16,2,2,1,425.35,famfemale11.jpg
+11,1,8,17,1,1,1,570.1,actorprac1.jpg
+11,1,8,18,1,2,0,402.84,actor17.jpg
+11,1,8,19,1,1,1,435.53,actor53.jpg
+11,1,8,20,2,2,1,428.31,famfemale29.jpg
+11,1,8,21,1,1,1,517.05,athlete28.jpg
+11,1,8,22,1,1,1,485.76,athlete1.jpg
+11,1,8,23,1,1,1,598.51,actor49.jpg
+11,1,8,24,2,2,1,423.21,famfemale09.jpg
+12,1,1,1,1,1,1,658.45,actor12.jpg
+12,1,1,2,2,2,1,509.93,famfemale34.jpg
+12,1,1,3,2,2,1,478.67,famfemale39.jpg
+12,1,1,4,2,2,1,519.5,famfemale36.jpg
+12,1,1,5,1,1,1,464.25,actor41.jpg
+12,1,1,6,2,2,1,537.03,famfemale02.jpg
+12,1,1,7,1,1,1,545.83,actor9.jpg
+12,1,1,8,2,2,1,538.6,famfemale21.jpg
+12,1,1,9,2,2,1,419.39,famfemale22.jpg
+12,1,1,10,2,2,1,548.2,famfemale08.jpg
+12,1,1,11,1,1,1,484.92,athlete7.jpg
+12,1,1,12,2,2,1,453.76,famfemale01.jpg
+12,1,1,13,1,2,0,446.52,athlete13.jpg
+12,1,1,14,1,1,1,567.26,capture026 copy.jpg
+12,1,1,15,1,1,1,514.72,actor7.jpg
+12,1,1,16,2,2,1,443.56,famfemale40.jpg
+12,1,1,17,1,1,1,500.35,actor54.jpg
+12,1,1,18,2,2,1,525.14,famfemale38.jpg
+12,1,1,19,1,1,1,749.91,capture003 copy.jpg
+12,1,1,20,2,2,1,686.64,famfemale12.jpg
+12,1,1,21,1,1,1,575.48,actor44.jpg
+12,1,1,22,1,1,1,536.22,actor19.jpg
+12,1,1,23,2,2,1,673,famfemale30.jpg
+12,1,1,24,1,1,1,489.78,actor35.jpg
+12,1,2,1,2,2,1,593.21,famfemale40.jpg
+12,1,2,2,1,1,1,474.04,capture003 copy.jpg
+12,1,2,3,2,2,1,546.81,famfemale30.jpg
+12,1,2,4,1,1,1,619.6,actor44.jpg
+12,1,2,5,1,1,1,684.32,capture026 copy.jpg
+12,1,2,6,2,2,1,525.15,famfemale12.jpg
+12,1,2,7,2,2,1,549.96,famfemale22.jpg
+12,1,2,8,1,1,1,478.74,athlete7.jpg
+12,1,2,9,1,1,1,655.48,athlete13.jpg
+12,1,2,10,2,2,1,504.3,famfemale39.jpg
+12,1,2,11,2,2,1,529.03,famfemale21.jpg
+12,1,2,12,1,1,1,673.88,actor9.jpg
+12,1,2,13,1,1,1,538.62,actor12.jpg
+12,1,2,14,2,2,1,563.44,famfemale38.jpg
+12,1,2,15,2,2,1,460.17,famfemale36.jpg
+12,1,2,16,1,1,1,492.96,actor41.jpg
+12,1,2,17,1,1,1,493.79,actor7.jpg
+12,1,2,18,2,2,1,566.57,famfemale02.jpg
+12,1,2,19,1,1,1,695.32,actor19.jpg
+12,1,2,20,2,2,1,568.09,famfemale34.jpg
+12,1,2,21,2,2,1,520.89,famfemale08.jpg
+12,1,2,22,1,1,1,457.7,actor54.jpg
+12,1,2,23,2,2,1,498.42,famfemale01.jpg
+12,1,2,24,1,1,1,467.27,actor35.jpg
+12,1,3,1,1,1,1,597.03,athlete7.jpg
+12,1,3,2,2,2,1,445.86,famfemale39.jpg
+12,1,3,3,1,1,1,502.66,actor35.jpg
+12,1,3,4,2,2,1,487.43,famfemale21.jpg
+12,1,3,5,1,1,1,496.21,athlete13.jpg
+12,1,3,6,1,1,1,408.99,capture026 copy.jpg
+12,1,3,7,1,1,1,433.76,actor7.jpg
+12,1,3,8,2,2,1,522.58,famfemale08.jpg
+12,1,3,9,2,2,1,523.37,famfemale34.jpg
+12,1,3,10,2,2,1,564.15,famfemale12.jpg
+12,1,3,11,2,2,1,492.88,famfemale22.jpg
+12,1,3,12,2,2,1,461.68,famfemale30.jpg
+12,1,3,13,1,1,1,502.49,actor41.jpg
+12,1,3,14,2,2,1,447.26,famfemale38.jpg
+12,1,3,15,1,1,1,448.02,actor12.jpg
+12,1,3,16,2,2,1,536.82,famfemale02.jpg
+12,1,3,17,2,2,1,433.61,famfemale40.jpg
+12,1,3,18,2,2,1,410.42,famfemale01.jpg
+12,1,3,19,1,1,1,475.2,actor54.jpg
+12,1,3,20,2,2,1,443.98,famfemale36.jpg
+12,1,3,21,1,1,1,460.73,actor9.jpg
+12,1,3,22,1,1,1,573.53,actor44.jpg
+12,1,3,23,1,1,1,574.34,actor19.jpg
+12,1,3,24,1,1,1,639.08,capture003 copy.jpg
+12,1,4,1,1,1,1,651.78,actor44.jpg
+12,1,4,2,2,2,1,596.5,famfemale30.jpg
+12,1,4,3,1,1,1,653.36,capture003 copy.jpg
+12,1,4,4,1,1,1,550.09,actor35.jpg
+12,1,4,5,2,2,1,550.9,famfemale02.jpg
+12,1,4,6,1,1,1,559.71,actor9.jpg
+12,1,4,7,2,2,1,584.45,famfemale38.jpg
+12,1,4,8,2,2,1,457.26,famfemale39.jpg
+12,1,4,9,2,2,1,450.01,famfemale01.jpg
+12,1,4,10,1,1,1,426.8,athlete7.jpg
+12,1,4,11,1,1,1,507.55,athlete13.jpg
+12,1,4,12,2,2,1,708.41,famfemale34.jpg
+12,1,4,13,1,1,1,485.14,capture026 copy.jpg
+12,1,4,14,1,1,1,477.96,actor12.jpg
+12,1,4,15,2,2,1,502.74,famfemale22.jpg
+12,1,4,16,1,1,1,511.53,actor19.jpg
+12,1,4,17,2,2,1,456.3,famfemale40.jpg
+12,1,4,18,2,2,1,505.08,famfemale12.jpg
+12,1,4,19,2,2,1,417.88,famfemale36.jpg
+12,1,4,20,1,1,1,418.67,actor54.jpg
+12,1,4,21,2,2,1,483.44,famfemale21.jpg
+12,1,4,22,2,2,1,468.17,famfemale08.jpg
+12,1,4,23,1,1,1,453.02,actor7.jpg
+12,1,4,24,1,1,1,429.74,actor41.jpg
+12,1,5,1,1,1,1,564.93,actor44.jpg
+12,1,5,2,1,1,1,477.66,actor9.jpg
+12,1,5,3,2,2,1,422.43,famfemale22.jpg
+12,1,5,4,2,2,1,399.22,famfemale12.jpg
+12,1,5,5,1,1,1,416.04,capture026 copy.jpg
+12,1,5,6,1,1,1,400.83,capture003 copy.jpg
+12,1,5,7,2,2,1,401.55,famfemale01.jpg
+12,1,5,8,2,2,1,394.39,famfemale02.jpg
+12,1,5,9,2,2,1,579.13,famfemale21.jpg
+12,1,5,10,1,1,1,451.96,actor12.jpg
+12,1,5,11,1,1,1,460.68,athlete7.jpg
+12,1,5,12,2,2,1,445.48,famfemale34.jpg
+12,1,5,13,2,2,1,414.28,famfemale39.jpg
+12,1,5,14,2,2,1,399.09,famfemale38.jpg
+12,1,5,15,1,1,1,423.82,actor35.jpg
+12,1,5,16,1,1,1,360.66,actor19.jpg
+12,1,5,17,2,2,1,465.42,famfemale36.jpg
+12,1,5,18,1,1,1,490.17,actor41.jpg
+12,1,5,19,2,2,1,442.95,famfemale40.jpg
+12,1,5,20,1,1,1,419.74,actor7.jpg
+12,1,5,21,1,1,1,460.52,actor54.jpg
+12,1,5,22,1,1,1,517.35,athlete13.jpg
+12,1,5,23,2,2,1,510.14,famfemale30.jpg
+12,1,5,24,2,2,1,446.89,famfemale08.jpg
+12,1,6,1,1,1,1,491.26,athlete13.jpg
+12,1,6,2,1,1,1,460.07,actor19.jpg
+12,1,6,3,1,1,1,452.91,athlete7.jpg
+12,1,6,4,1,1,1,525.66,capture026 copy.jpg
+12,1,6,5,2,2,1,582.48,famfemale34.jpg
+12,1,6,6,1,1,1,647.26,actor9.jpg
+12,1,6,7,2,2,1,528,famfemale40.jpg
+12,1,6,8,2,2,1,400.79,famfemale21.jpg
+12,1,6,9,1,1,1,409.6,actor35.jpg
+12,1,6,10,1,1,1,426.36,actor44.jpg
+12,1,6,11,2,2,1,483.16,famfemale01.jpg
+12,1,6,12,1,1,1,427.95,actor41.jpg
+12,1,6,13,2,2,1,460.73,famfemale39.jpg
+12,1,6,14,1,1,1,477.49,actor12.jpg
+12,1,6,15,2,2,1,606.31,famfemale22.jpg
+12,1,6,16,2,2,1,463.09,famfemale02.jpg
+12,1,6,17,1,1,1,439.82,actor7.jpg
+12,1,6,18,2,2,1,544.6,famfemale12.jpg
+12,1,6,19,2,2,1,417.4,famfemale08.jpg
+12,1,6,20,2,2,1,466.19,famfemale36.jpg
+12,1,6,21,2,2,1,451,famfemale30.jpg
+12,1,6,22,1,1,1,419.77,capture003 copy.jpg
+12,1,6,23,2,2,1,428.55,famfemale38.jpg
+12,1,6,24,1,1,1,437.3,actor54.jpg
+12,1,7,1,2,2,1,500.42,famfemale36.jpg
+12,1,7,2,1,1,1,453.26,athlete7.jpg
+12,1,7,3,2,2,1,438.05,famfemale01.jpg
+12,1,7,4,2,2,1,446.8,famfemale39.jpg
+12,1,7,5,1,1,1,431.56,actor7.jpg
+12,1,7,6,2,2,1,472.35,famfemale02.jpg
+12,1,7,7,1,1,1,465.16,capture026 copy.jpg
+12,1,7,8,1,1,1,521.93,actor44.jpg
+12,1,7,9,1,1,1,570.72,actor19.jpg
+12,1,7,10,1,1,1,523.49,athlete13.jpg
+12,1,7,11,1,1,1,628.32,actor54.jpg
+12,1,7,12,2,2,1,557.1,famfemale12.jpg
+12,1,7,13,2,2,1,493.85,famfemale08.jpg
+12,1,7,14,2,2,1,470.66,famfemale30.jpg
+12,1,7,15,1,1,1,495.41,capture003 copy.jpg
+12,1,7,16,2,2,1,464.23,famfemale40.jpg
+12,1,7,17,1,1,1,457.01,actor12.jpg
+12,1,7,18,1,1,1,481.78,actor41.jpg
+12,1,7,19,2,2,1,658.55,famfemale38.jpg
+12,1,7,20,1,1,1,483.31,actor35.jpg
+12,1,7,21,1,1,1,476.08,actor9.jpg
+12,1,7,22,2,2,1,564.92,famfemale21.jpg
+12,1,7,23,2,2,1,589.71,famfemale34.jpg
+12,1,7,24,2,2,1,494.5,famfemale22.jpg
+12,1,8,1,2,2,1,448.29,famfemale38.jpg
+12,1,8,2,1,1,1,489.08,athlete7.jpg
+12,1,8,3,2,2,1,513.87,famfemale01.jpg
+12,1,8,4,2,2,1,402.63,famfemale21.jpg
+12,1,8,5,2,2,1,379.39,famfemale22.jpg
+12,1,8,6,2,2,1,364.17,famfemale08.jpg
+12,1,8,7,2,2,1,372.99,famfemale12.jpg
+12,1,8,8,1,1,1,461.74,actor54.jpg
+12,1,8,9,2,2,1,454.51,famfemale40.jpg
+12,1,8,10,2,2,1,431.31,famfemale39.jpg
+12,1,8,11,1,1,1,440.13,actor19.jpg
+12,1,8,12,2,2,1,456.85,famfemale02.jpg
+12,1,8,13,2,2,1,441.7,famfemale30.jpg
+12,1,8,14,2,2,1,554.45,famfemale34.jpg
+12,1,8,15,1,1,1,435.27,capture003 copy.jpg
+12,1,8,16,1,1,1,396,actor9.jpg
+12,1,8,17,1,1,1,404.83,actor12.jpg
+12,1,8,18,2,2,1,437.59,famfemale36.jpg
+12,1,8,19,1,1,1,406.38,actor35.jpg
+12,1,8,20,1,1,1,439.14,actor44.jpg
+12,1,8,21,1,1,1,407.94,capture026 copy.jpg
+12,1,8,22,1,1,1,392.75,actor7.jpg
+12,1,8,23,1,1,1,449.48,athlete13.jpg
+12,1,8,24,1,1,1,450.29,actor41.jpg
+13,2,1,1,2,2,1,748.23,unfamfemale06.jpg
+13,2,1,2,2,2,1,767.73,unfamfemale39.jpg
+13,2,1,3,1,1,1,632.49,unfammale12.jpg
+13,2,1,4,2,2,1,737.24,unfamfemale38.jpg
+13,2,1,5,1,1,1,698.04,capture011 copy.jpg
+13,2,1,6,2,2,1,698.85,unfamfemale03.jpg
+13,2,1,7,1,1,1,587.62,capture020 copy.jpg
+13,2,1,8,1,1,1,452.41,capture016 copy.jpg
+13,2,1,9,2,2,1,621.16,unfamfemale20.jpg
+13,2,1,10,2,2,1,517.95,unfamfemale24.jpg
+13,2,1,11,2,2,1,494.69,capture017 copy.jpg
+13,2,1,12,1,1,1,527.54,unfammale33.jpg
+13,2,1,13,1,1,1,584.32,unfammale16.jpg
+13,2,1,14,1,1,1,625.04,unfammale09.jpg
+13,2,1,15,2,2,1,412.54,unfamfemale15.jpg
+13,2,1,16,1,1,1,1093.34,capture013 copy.jpg
+13,2,1,17,2,2,1,598.1,capture001 copy.jpg
+13,2,1,18,1,1,1,494.91,unfammale35.jpg
+13,2,1,19,1,1,1,471.63,capture003 copy.jpg
+13,2,1,20,2,2,1,424.48,unfamfemale26.jpg
+13,2,1,21,1,1,1,433.25,capture012 copy.jpg
+13,2,1,22,2,2,1,442.04,capture002 copy.jpg
+13,2,1,23,1,1,1,434.8,unfammale28.jpg
+13,2,1,24,2,2,1,451.56,unfamfemale05.jpg
+13,2,2,1,2,2,1,536.72,unfamfemale39.jpg
+13,2,2,2,1,1,1,473.53,unfammale33.jpg
+13,2,2,3,1,1,1,426.29,unfammale35.jpg
+13,2,2,4,2,2,1,379.07,capture002 copy.jpg
+13,2,2,5,2,2,1,427.86,unfamfemale03.jpg
+13,2,2,6,2,1,0,348.62,unfamfemale05.jpg
+13,2,2,7,2,2,1,533.45,unfamfemale38.jpg
+13,2,2,8,1,1,1,478.17,capture016 copy.jpg
+13,2,2,9,1,1,1,575,unfammale12.jpg
+13,2,2,10,1,1,1,463.75,unfammale28.jpg
+13,2,2,11,1,1,1,424.58,capture011 copy.jpg
+13,2,2,12,1,1,1,433.31,capture003 copy.jpg
+13,2,2,13,2,2,1,522.08,capture001 copy.jpg
+13,2,2,14,1,1,1,418.93,unfammale09.jpg
+13,2,2,15,2,2,1,515.65,unfamfemale06.jpg
+13,2,2,16,1,1,1,644.49,capture013 copy.jpg
+13,2,2,17,2,2,1,413.22,unfamfemale24.jpg
+13,2,2,18,2,2,1,526.06,capture017 copy.jpg
+13,2,2,19,2,2,1,430.79,unfamfemale26.jpg
+13,2,2,20,1,1,1,391.59,capture020 copy.jpg
+13,2,2,21,2,2,1,464.35,unfamfemale15.jpg
+13,2,2,22,1,1,1,545.19,unfammale16.jpg
+13,2,2,23,2,2,1,409.94,unfamfemale20.jpg
+13,2,2,24,1,1,1,514.76,capture012 copy.jpg
+13,2,3,1,2,2,1,544.97,unfamfemale38.jpg
+13,2,3,2,1,1,1,457.78,capture003 copy.jpg
+13,2,3,3,1,1,1,554.53,capture020 copy.jpg
+13,2,3,4,2,2,1,499.32,unfamfemale24.jpg
+13,2,3,5,1,1,1,460.1,unfammale33.jpg
+13,2,3,6,1,1,1,452.9,unfammale28.jpg
+13,2,3,7,1,1,1,501.66,unfammale12.jpg
+13,2,3,8,2,2,1,470.46,capture017 copy.jpg
+13,2,3,9,2,2,1,631.25,unfamfemale05.jpg
+13,2,3,10,1,1,1,480.05,capture013 copy.jpg
+13,2,3,11,2,2,1,472.83,capture002 copy.jpg
+13,2,3,12,2,2,1,633.62,unfamfemale06.jpg
+13,2,3,13,1,1,1,610.39,unfammale16.jpg
+13,2,3,14,2,2,1,483.14,unfamfemale39.jpg
+13,2,3,15,2,2,1,563.89,unfamfemale15.jpg
+13,2,3,16,1,2,0,636.75,capture012 copy.jpg
+13,2,3,17,1,1,1,477.53,unfammale09.jpg
+13,2,3,18,1,1,1,430.31,unfammale35.jpg
+13,2,3,19,2,2,1,639.05,unfamfemale03.jpg
+13,2,3,20,2,2,1,559.88,capture001 copy.jpg
+13,2,3,21,1,1,1,536.65,capture011 copy.jpg
+13,2,3,22,2,2,1,457.44,unfamfemale20.jpg
+13,2,3,23,2,2,1,490.17,unfamfemale26.jpg
+13,2,3,24,1,1,1,466.99,capture016 copy.jpg
+13,2,4,1,1,1,1,503.6,capture012 copy.jpg
+13,2,4,2,2,2,1,496.36,unfamfemale20.jpg
+13,2,4,3,1,1,1,433.13,capture020 copy.jpg
+13,2,4,4,1,1,1,409.88,capture013 copy.jpg
+13,2,4,5,1,1,1,466.67,unfammale16.jpg
+13,2,4,6,1,1,1,355.44,unfammale28.jpg
+13,2,4,7,2,2,1,436.21,unfamfemale26.jpg
+13,2,4,8,1,1,1,437.06,capture016 copy.jpg
+13,2,4,9,2,2,1,525.84,capture002 copy.jpg
+13,2,4,10,2,2,1,414.62,unfamfemale06.jpg
+13,2,4,11,2,2,1,407.35,unfamfemale15.jpg
+13,2,4,12,1,1,1,432.17,unfammale35.jpg
+13,2,4,13,1,1,1,552.97,unfammale09.jpg
+13,2,4,14,1,1,1,409.76,unfammale12.jpg
+13,2,4,15,2,2,1,690.5,unfamfemale05.jpg
+13,2,4,16,2,2,1,723.31,unfamfemale03.jpg
+13,2,4,17,2,2,1,476.1,capture001 copy.jpg
+13,2,4,18,1,1,1,476.83,capture011 copy.jpg
+13,2,4,19,2,2,1,581.67,capture017 copy.jpg
+13,2,4,20,1,1,1,478.46,unfammale33.jpg
+13,2,4,21,2,2,1,591.21,unfamfemale39.jpg
+13,2,4,22,2,2,1,471.96,unfamfemale38.jpg
+13,2,4,23,2,2,1,472.75,unfamfemale24.jpg
+13,2,4,24,1,1,1,801.54,capture003 copy.jpg
+13,2,5,1,2,2,1,464.54,capture017 copy.jpg
+13,2,5,2,2,2,1,433.39,unfamfemale26.jpg
+13,2,5,3,2,2,1,410.09,capture002 copy.jpg
+13,2,5,4,1,1,1,378.95,unfammale33.jpg
+13,2,5,5,1,1,1,395.74,unfammale09.jpg
+13,2,5,6,1,1,1,380.51,unfammale12.jpg
+13,2,5,7,2,2,1,509.31,unfamfemale38.jpg
+13,2,5,8,1,1,1,558.08,capture020 copy.jpg
+13,2,5,9,1,1,1,422.87,unfammale28.jpg
+13,2,5,10,1,1,1,367.62,unfammale35.jpg
+13,2,5,11,2,2,1,376.41,unfamfemale06.jpg
+13,2,5,12,1,1,1,441.22,capture013 copy.jpg
+13,2,5,13,1,1,1,346,capture016 copy.jpg
+13,2,5,14,2,2,1,394.74,unfamfemale39.jpg
+13,2,5,15,2,2,1,379.56,unfamfemale15.jpg
+13,2,5,16,2,2,1,412.31,unfamfemale03.jpg
+13,2,5,17,1,1,1,381.09,unfammale16.jpg
+13,2,5,18,1,1,1,397.92,capture003 copy.jpg
+13,2,5,19,2,2,1,438.69,unfamfemale24.jpg
+13,2,5,20,1,1,1,439.49,capture011 copy.jpg
+13,2,5,21,1,1,1,528.24,capture012 copy.jpg
+13,2,5,22,2,2,1,465,unfamfemale05.jpg
+13,2,5,23,2,2,1,537.8,capture001 copy.jpg
+13,2,5,24,2,2,1,554.57,unfamfemale20.jpg
+13,2,6,1,2,2,1,393.56,capture017 copy.jpg
+13,2,6,2,1,1,1,362.42,capture012 copy.jpg
+13,2,6,3,2,2,1,411.2,capture002 copy.jpg
+13,2,6,4,2,2,1,371.92,unfamfemale24.jpg
+13,2,6,5,1,1,1,412.72,unfammale35.jpg
+13,2,6,6,1,1,1,333.55,capture020 copy.jpg
+13,2,6,7,2,2,1,630.34,unfamfemale26.jpg
+13,2,6,8,1,1,1,375.12,unfammale33.jpg
+13,2,6,9,1,1,1,631.91,capture013 copy.jpg
+13,2,6,10,1,1,1,352.65,unfammale16.jpg
+13,2,6,11,2,2,1,361.41,unfamfemale38.jpg
+13,2,6,12,2,2,1,314.22,unfamfemale15.jpg
+13,2,6,13,1,1,1,443.03,capture003 copy.jpg
+13,2,6,14,1,1,1,427.82,unfammale12.jpg
+13,2,6,15,2,2,1,420.61,unfamfemale39.jpg
+13,2,6,16,1,1,1,413.33,unfammale09.jpg
+13,2,6,17,2,2,1,510.13,unfamfemale06.jpg
+13,2,6,18,2,2,1,398.95,unfamfemale05.jpg
+13,2,6,19,1,1,1,423.71,capture016 copy.jpg
+13,2,6,20,1,1,1,456.46,capture011 copy.jpg
+13,2,6,21,2,2,1,425.25,capture001 copy.jpg
+13,2,6,22,2,1,0,370.02,unfamfemale03.jpg
+13,2,6,23,2,2,1,506.87,unfamfemale20.jpg
+13,2,6,24,1,1,1,395.65,unfammale28.jpg
+13,2,7,1,1,1,1,683.33,capture016 copy.jpg
+13,2,7,2,2,2,1,396.11,capture002 copy.jpg
+13,2,7,3,1,1,1,972.87,unfammale12.jpg
+13,2,7,4,1,1,1,429.66,unfammale33.jpg
+13,2,7,5,2,2,1,374.42,unfamfemale15.jpg
+13,2,7,6,1,1,1,415.24,capture003 copy.jpg
+13,2,7,7,1,1,1,328.02,unfammale28.jpg
+13,2,7,8,1,1,1,376.8,unfammale16.jpg
+13,2,7,9,2,2,1,425.59,unfamfemale06.jpg
+13,2,7,10,1,1,1,602.36,unfammale09.jpg
+13,2,7,11,2,2,1,475.16,unfamfemale39.jpg
+13,2,7,12,2,2,1,507.93,capture017 copy.jpg
+13,2,7,13,2,2,1,340.7,unfamfemale05.jpg
+13,2,7,14,2,2,1,381.45,unfamfemale20.jpg
+13,2,7,15,1,1,1,342.28,unfammale35.jpg
+13,2,7,16,1,1,1,335.07,capture011 copy.jpg
+13,2,7,17,1,1,1,351.85,capture013 copy.jpg
+13,2,7,18,2,2,1,408.63,unfamfemale38.jpg
+13,2,7,19,2,2,1,377.37,unfamfemale26.jpg
+13,2,7,20,2,2,1,322.14,unfamfemale03.jpg
+13,2,7,21,2,2,1,322.98,unfamfemale24.jpg
+13,2,7,22,1,1,1,323.76,capture012 copy.jpg
+13,2,7,23,2,1,0,252.55,capture001 copy.jpg
+13,2,7,24,1,1,1,405.34,capture020 copy.jpg
+13,2,8,1,2,2,1,447.2,unfamfemale05.jpg
+13,2,8,2,1,1,1,431.99,capture012 copy.jpg
+13,2,8,3,1,2,0,432.81,unfammale09.jpg
+13,2,8,4,2,2,1,425.54,unfamfemale38.jpg
+13,2,8,5,1,1,1,474.38,capture016 copy.jpg
+13,2,8,6,1,1,1,323.14,unfammale35.jpg
+13,2,8,7,1,1,1,467.95,capture011 copy.jpg
+13,2,8,8,2,2,1,540.73,unfamfemale03.jpg
+13,2,8,9,2,2,1,381.5,capture001 copy.jpg
+13,2,8,10,2,2,1,446.3,unfamfemale20.jpg
+13,2,8,11,1,1,1,847.09,capture013 copy.jpg
+13,2,8,12,1,1,1,327.86,capture020 copy.jpg
+13,2,8,13,2,2,1,408.65,capture002 copy.jpg
+13,2,8,14,1,1,1,465.39,capture003 copy.jpg
+13,2,8,15,1,1,1,402.15,unfammale16.jpg
+13,2,8,16,1,1,1,355,unfammale12.jpg
+13,2,8,17,2,2,1,435.77,unfamfemale39.jpg
+13,2,8,18,1,1,1,364.55,unfammale28.jpg
+13,2,8,19,1,1,1,453.39,unfammale33.jpg
+13,2,8,20,2,2,1,350.13,unfamfemale26.jpg
+13,2,8,21,2,2,1,342.91,unfamfemale24.jpg
+13,2,8,22,2,2,1,423.69,unfamfemale15.jpg
+13,2,8,23,2,2,1,432.41,capture017 copy.jpg
+13,2,8,24,2,2,1,425.26,unfamfemale06.jpg
+14,2,1,1,1,1,1,738.66,unfammale05.jpg
+14,2,1,2,2,2,1,518.09,unfamfemale38.jpg
+14,2,1,3,1,1,1,366.83,unfammale25.jpg
+14,2,1,4,1,1,1,351.58,unfammale39.jpg
+14,2,1,5,1,1,1,376.27,unfammale02.jpg
+14,2,1,6,2,2,1,353.02,unfamfemale39.jpg
+14,2,1,7,1,1,1,353.79,unfammale21.jpg
+14,2,1,8,2,2,1,322.47,capture002 copy.jpg
+14,2,1,9,2,2,1,413.87,unfamfemale03.jpg
+14,2,1,10,1,1,1,313.31,unfammale18.jpg
+14,2,1,11,2,2,1,348.72,unfamfemale05.jpg
+14,2,1,12,1,1,1,312.14,capture010 copy.jpg
+14,2,1,13,1,1,1,315.56,unfammale19.jpg
+14,2,1,14,2,2,1,334.98,capture017 copy.jpg
+14,2,1,15,1,1,1,314.36,unfammale14.jpg
+14,2,1,16,2,2,1,309.76,unfamfemale24.jpg
+14,2,1,17,2,2,1,441.18,capture001 copy.jpg
+14,2,1,18,1,1,1,332.59,unfammale23.jpg
+14,2,1,19,1,1,1,399.95,unfammale38.jpg
+14,2,1,20,2,2,1,312.74,unfamfemale06.jpg
+14,2,1,21,1,1,1,329.28,unfammale08.jpg
+14,2,1,22,2,2,1,292.81,unfamfemale15.jpg
+14,2,1,23,2,2,1,344.22,unfamfemale20.jpg
+14,2,1,24,2,2,1,336.85,unfamfemale26.jpg
+14,2,2,1,1,1,1,388.41,capture010 copy.jpg
+14,2,2,2,1,1,1,349.14,unfammale18.jpg
+14,2,2,3,1,1,1,365.87,unfammale38.jpg
+14,2,2,4,2,2,1,334.63,unfamfemale15.jpg
+14,2,2,5,1,1,1,279.3,unfammale39.jpg
+14,2,2,6,1,1,1,328.11,unfammale05.jpg
+14,2,2,7,1,1,1,304.79,unfammale25.jpg
+14,2,2,8,2,2,1,297.58,unfamfemale38.jpg
+14,2,2,9,2,2,1,282.28,unfamfemale20.jpg
+14,2,2,10,2,2,1,315.03,capture017 copy.jpg
+14,2,2,11,1,1,1,315.74,unfammale23.jpg
+14,2,2,12,1,1,1,332.47,unfammale08.jpg
+14,2,2,13,2,2,1,317.26,unfamfemale03.jpg
+14,2,2,14,2,1,0,318.01,capture001 copy.jpg
+14,2,2,15,2,2,1,406.69,unfamfemale26.jpg
+14,2,2,16,1,1,1,343.48,unfammale14.jpg
+14,2,2,17,2,2,1,312.16,unfamfemale39.jpg
+14,2,2,18,2,2,1,376.96,unfamfemale24.jpg
+14,2,2,19,1,1,1,353.69,unfammale19.jpg
+14,2,2,20,2,2,1,362.36,unfamfemale05.jpg
+14,2,2,21,2,2,1,307.16,unfamfemale06.jpg
+14,2,2,22,2,2,1,371.89,capture002 copy.jpg
+14,2,2,23,1,1,1,308.58,unfammale02.jpg
+14,2,2,24,1,1,1,293.32,unfammale21.jpg
+14,2,3,1,2,2,1,418.35,unfamfemale05.jpg
+14,2,3,2,2,2,1,323.03,unfamfemale38.jpg
+14,2,3,3,1,1,1,323.77,unfammale14.jpg
+14,2,3,4,2,2,1,340.5,unfamfemale15.jpg
+14,2,3,5,1,1,1,325.24,unfammale18.jpg
+14,2,3,6,2,2,1,357.99,unfamfemale20.jpg
+14,2,3,7,1,1,1,414.76,unfammale25.jpg
+14,2,3,8,1,1,1,327.49,unfammale23.jpg
+14,2,3,9,2,2,1,320.17,unfamfemale24.jpg
+14,2,3,10,2,2,1,368.92,unfamfemale39.jpg
+14,2,3,11,1,1,1,409.68,unfammale38.jpg
+14,2,3,12,2,2,1,298.44,capture002 copy.jpg
+14,2,3,13,2,2,1,347.14,capture017 copy.jpg
+14,2,3,14,1,1,1,339.92,unfammale05.jpg
+14,2,3,15,1,1,1,332.6,unfammale08.jpg
+14,2,3,16,2,2,1,309.35,unfamfemale26.jpg
+14,2,3,17,1,1,1,342.11,unfammale02.jpg
+14,2,3,18,1,1,1,294.86,unfammale39.jpg
+14,2,3,19,1,1,1,375.61,unfammale21.jpg
+14,2,3,20,1,1,1,400.34,capture010 copy.jpg
+14,2,3,21,2,2,1,345.05,unfamfemale06.jpg
+14,2,3,22,2,2,1,329.77,capture001 copy.jpg
+14,2,3,23,1,1,1,330.55,unfammale19.jpg
+14,2,3,24,2,2,1,355.23,unfamfemale03.jpg
+14,2,4,1,2,2,1,332.41,capture001 copy.jpg
+14,2,4,2,1,1,1,317.12,unfammale21.jpg
+14,2,4,3,1,1,1,357.81,unfammale02.jpg
+14,2,4,4,1,1,1,302.59,capture010 copy.jpg
+14,2,4,5,2,2,1,343.34,unfamfemale39.jpg
+14,2,4,6,2,2,1,328.08,unfamfemale03.jpg
+14,2,4,7,2,0,0,0,unfamfemale05.jpg
+14,2,4,8,1,1,1,345.55,unfammale23.jpg
+14,2,4,9,1,1,1,274.26,unfammale19.jpg
+14,2,4,10,1,1,1,307.02,unfammale08.jpg
+14,2,4,11,2,2,1,339.76,unfamfemale24.jpg
+14,2,4,12,1,1,1,308.44,unfammale05.jpg
+14,2,4,13,1,1,1,301.24,unfammale18.jpg
+14,2,4,14,2,2,1,341.96,unfamfemale38.jpg
+14,2,4,15,2,2,1,286.69,capture017 copy.jpg
+14,2,4,16,2,2,1,303.41,capture002 copy.jpg
+14,2,4,17,1,1,1,264.15,unfammale14.jpg
+14,2,4,18,1,1,1,256.92,unfammale39.jpg
+14,2,4,19,2,1,0,225.64,unfamfemale26.jpg
+14,2,4,20,2,2,1,394.38,unfamfemale20.jpg
+14,2,4,21,1,1,1,347.12,unfammale25.jpg
+14,2,4,22,1,1,1,299.81,unfammale38.jpg
+14,2,4,23,2,2,1,324.61,unfamfemale06.jpg
+14,2,4,24,2,2,1,269.35,unfamfemale15.jpg
+14,2,5,1,1,1,1,577.4,unfammale38.jpg
+14,2,5,2,2,2,1,346.16,unfamfemale15.jpg
+14,2,5,3,2,2,1,290.86,unfamfemale05.jpg
+14,2,5,4,2,2,1,347.62,unfamfemale38.jpg
+14,2,5,5,2,2,1,324.31,unfamfemale26.jpg
+14,2,5,6,1,1,1,269.08,unfammale25.jpg
+14,2,5,7,1,1,1,309.84,unfammale23.jpg
+14,2,5,8,1,1,1,318.58,capture010 copy.jpg
+14,2,5,9,2,2,1,319.31,unfamfemale06.jpg
+14,2,5,10,2,2,1,640.04,capture017 copy.jpg
+14,2,5,11,1,1,1,416.74,unfammale39.jpg
+14,2,5,12,2,2,1,321.5,unfamfemale20.jpg
+14,2,5,13,2,2,1,362.27,unfamfemale03.jpg
+14,2,5,14,2,2,1,362.97,unfamfemale24.jpg
+14,2,5,15,1,1,1,395.74,unfammale08.jpg
+14,2,5,16,1,1,1,396.43,unfammale18.jpg
+14,2,5,17,2,2,1,341.21,capture002 copy.jpg
+14,2,5,18,1,1,1,357.94,unfammale05.jpg
+14,2,5,19,2,2,1,326.67,unfamfemale39.jpg
+14,2,5,20,1,1,1,327.43,unfammale02.jpg
+14,2,5,21,1,1,1,464.17,unfammale19.jpg
+14,2,5,22,2,2,1,336.87,capture001 copy.jpg
+14,2,5,23,1,1,1,369.64,unfammale21.jpg
+14,2,5,24,1,1,1,354.33,unfammale14.jpg
+14,2,6,1,2,2,1,497.59,unfamfemale24.jpg
+14,2,6,2,2,2,1,378.3,unfamfemale39.jpg
+14,2,6,3,2,2,1,355.06,capture002 copy.jpg
+14,2,6,4,2,2,1,411.77,unfamfemale20.jpg
+14,2,6,5,2,2,1,388.55,capture001 copy.jpg
+14,2,6,6,1,1,1,437.3,unfammale38.jpg
+14,2,6,7,1,1,1,310.04,unfammale02.jpg
+14,2,6,8,1,1,1,302.72,unfammale08.jpg
+14,2,6,9,2,2,1,343.51,unfamfemale06.jpg
+14,2,6,10,2,2,1,344.2,unfamfemale15.jpg
+14,2,6,11,1,1,1,328.99,unfammale19.jpg
+14,2,6,12,2,2,1,369.67,unfamfemale38.jpg
+14,2,6,13,1,1,1,330.46,unfammale14.jpg
+14,2,6,14,2,2,1,323.2,unfamfemale26.jpg
+14,2,6,15,1,1,1,339.88,unfammale23.jpg
+14,2,6,16,1,1,1,316.62,capture010 copy.jpg
+14,2,6,17,2,2,1,397.37,capture017 copy.jpg
+14,2,6,18,1,1,1,278.15,unfammale39.jpg
+14,2,6,19,1,1,1,286.88,unfammale18.jpg
+14,2,6,20,1,1,1,335.62,unfammale25.jpg
+14,2,6,21,2,2,1,368.37,unfamfemale05.jpg
+14,2,6,22,2,2,1,409.07,unfamfemale03.jpg
+14,2,6,23,1,1,1,337.8,unfammale05.jpg
+14,2,6,24,1,1,1,402.52,unfammale21.jpg
+14,2,7,1,1,1,1,470.76,unfammale14.jpg
+14,2,7,2,1,1,1,279.51,unfammale23.jpg
+14,2,7,3,2,2,1,296.23,unfamfemale03.jpg
+14,2,7,4,2,2,1,320.98,unfamfemale26.jpg
+14,2,7,5,1,1,1,345.72,unfammale38.jpg
+14,2,7,6,2,2,1,362.41,unfamfemale20.jpg
+14,2,7,7,2,2,1,371.13,unfamfemale38.jpg
+14,2,7,8,1,1,1,339.93,unfammale02.jpg
+14,2,7,9,2,2,1,404.67,capture001 copy.jpg
+14,2,7,10,2,2,1,357.41,unfamfemale15.jpg
+14,2,7,11,2,2,1,326.15,capture002 copy.jpg
+14,2,7,12,2,2,1,382.87,unfamfemale05.jpg
+14,2,7,13,2,2,1,391.57,capture017 copy.jpg
+14,2,7,14,2,2,1,360.35,unfamfemale39.jpg
+14,2,7,15,1,1,1,273.07,unfammale08.jpg
+14,2,7,16,1,1,1,281.83,unfammale18.jpg
+14,2,7,17,1,1,1,298.57,capture010 copy.jpg
+14,2,7,18,1,1,1,331.27,unfammale21.jpg
+14,2,7,19,2,2,1,364.05,unfamfemale24.jpg
+14,2,7,20,2,2,1,308.78,unfamfemale06.jpg
+14,2,7,21,1,1,1,357.49,unfammale25.jpg
+14,2,7,22,1,1,1,302.26,unfammale39.jpg
+14,2,7,23,1,1,1,334.96,unfammale05.jpg
+14,2,7,24,1,1,1,439.73,unfammale19.jpg
+14,2,8,1,1,1,1,395.84,unfammale38.jpg
+14,2,8,2,2,2,1,356.57,unfamfemale20.jpg
+14,2,8,3,1,1,1,317.31,unfammale02.jpg
+14,2,8,4,1,1,1,350.07,capture010 copy.jpg
+14,2,8,5,2,2,1,382.77,unfamfemale24.jpg
+14,2,8,6,2,2,1,335.51,capture001 copy.jpg
+14,2,8,7,2,2,1,360.27,unfamfemale39.jpg
+14,2,8,8,2,2,1,312.99,unfamfemale26.jpg
+14,2,8,9,1,1,1,337.74,unfammale05.jpg
+14,2,8,10,1,1,1,330.49,unfammale19.jpg
+14,2,8,11,1,1,1,331.22,unfammale21.jpg
+14,2,8,12,2,2,1,347.92,capture017 copy.jpg
+14,2,8,13,2,2,1,308.7,unfamfemale15.jpg
+14,2,8,14,1,1,1,261.43,unfammale39.jpg
+14,2,8,15,2,1,0,246.17,unfamfemale03.jpg
+14,2,8,16,1,1,1,438.92,unfammale08.jpg
+14,2,8,17,1,1,1,367.65,unfammale18.jpg
+14,2,8,18,1,1,1,328.39,unfammale23.jpg
+14,2,8,19,1,1,1,385.08,unfammale25.jpg
+14,2,8,20,2,2,1,369.86,unfamfemale38.jpg
+14,2,8,21,1,1,1,338.6,unfammale14.jpg
+14,2,8,22,2,0,0,0,unfamfemale05.jpg
+14,2,8,23,2,2,1,420.02,unfamfemale06.jpg
+14,2,8,24,2,2,1,340.81,capture002 copy.jpg
+15,2,1,1,1,1,1,864.11,capture011 copy.jpg
+15,2,1,2,2,2,1,531.59,unfamfemale04.jpg
+15,2,1,3,2,2,1,508.36,unfamfemale40.jpg
+15,2,1,4,2,2,1,509.2,unfamfemale32.jpg
+15,2,1,5,1,1,1,533.94,capture013 copy.jpg
+15,2,1,6,2,2,1,510.71,unfamfemale10.jpg
+15,2,1,7,1,1,1,423.48,capture012 copy.jpg
+15,2,1,8,1,1,1,440.27,unfammale35.jpg
+15,2,1,9,1,1,1,633.06,unfammale33.jpg
+15,2,1,10,1,1,1,457.89,unfammale12.jpg
+15,2,1,11,2,2,1,626.62,unfamfemale08.jpg
+15,2,1,12,2,2,1,499.45,capture015 copy.jpg
+15,2,1,13,1,1,1,524.24,unfammale09.jpg
+15,2,1,14,2,2,1,477.02,capture005 copy.jpg
+15,2,1,15,1,1,1,525.8,unfammale16.jpg
+15,2,1,16,2,2,1,382.54,unfamfemale17.jpg
+15,2,1,17,2,2,1,455.32,unfamfemale37.jpg
+15,2,1,18,2,2,1,480.1,unfamfemale01.jpg
+15,2,1,19,1,1,1,472.94,capture003 copy.jpg
+15,2,1,20,2,2,1,601.72,unfamfemale21.jpg
+15,2,1,21,2,2,1,594.44,capture021 copy.jpg
+15,2,1,22,1,1,1,563.26,unfammale28.jpg
+15,2,1,23,1,1,1,460.02,capture016 copy.jpg
+15,2,1,24,1,1,1,476.83,capture020 copy.jpg
+15,2,2,1,2,2,1,493.8,unfamfemale04.jpg
+15,2,2,2,1,1,1,486.53,capture020 copy.jpg
+15,2,2,3,2,2,1,487.36,capture021 copy.jpg
+15,2,2,4,1,1,1,520.13,capture012 copy.jpg
+15,2,2,5,2,2,1,440.92,unfamfemale10.jpg
+15,2,2,6,2,2,1,585.71,unfamfemale01.jpg
+15,2,2,7,1,1,1,498.48,unfammale12.jpg
+15,2,2,8,1,1,1,667.27,capture011 copy.jpg
+15,2,2,9,2,2,1,428.05,unfamfemale08.jpg
+15,2,2,10,1,1,1,524.84,capture013 copy.jpg
+15,2,2,11,2,2,1,589.6,unfamfemale21.jpg
+15,2,2,12,1,1,1,598.38,unfammale28.jpg
+15,2,2,13,1,1,1,711.19,capture016 copy.jpg
+15,2,2,14,2,2,1,519.89,unfamfemale40.jpg
+15,2,2,15,2,2,1,568.7,unfamfemale32.jpg
+15,2,2,16,1,1,1,761.49,unfammale33.jpg
+15,2,2,17,2,2,1,610.29,unfamfemale37.jpg
+15,2,2,18,1,1,1,475.1,capture003 copy.jpg
+15,2,2,19,2,2,1,419.85,capture015 copy.jpg
+15,2,2,20,2,2,1,516.66,capture005 copy.jpg
+15,2,2,21,1,1,1,429.4,unfammale35.jpg
+15,2,2,22,1,1,1,542.21,unfammale16.jpg
+15,2,2,23,2,2,1,375.01,unfamfemale17.jpg
+15,2,2,24,1,1,1,431.77,unfammale09.jpg
+15,2,3,1,1,1,1,568.18,capture012 copy.jpg
+15,2,3,2,1,1,1,713.02,capture011 copy.jpg
+15,2,3,3,2,2,1,513.79,capture021 copy.jpg
+15,2,3,4,1,1,1,578.58,capture020 copy.jpg
+15,2,3,5,2,2,1,435.36,unfamfemale40.jpg
+15,2,3,6,1,1,1,500.14,unfammale16.jpg
+15,2,3,7,1,1,1,420.88,unfammale12.jpg
+15,2,3,8,2,2,1,413.66,unfamfemale01.jpg
+15,2,3,9,2,2,1,694.48,capture005 copy.jpg
+15,2,3,10,1,1,1,479.28,unfammale33.jpg
+15,2,3,11,2,2,1,503.94,unfamfemale08.jpg
+15,2,3,12,2,2,1,520.85,unfamfemale10.jpg
+15,2,3,13,2,2,1,489.63,unfamfemale37.jpg
+15,2,3,14,2,2,1,546.36,unfamfemale04.jpg
+15,2,3,15,2,1,0,1443.21,unfamfemale21.jpg
+15,2,3,16,1,1,1,675.94,unfammale28.jpg
+15,2,3,17,1,1,1,468.76,unfammale35.jpg
+15,2,3,18,2,2,1,645.53,unfamfemale17.jpg
+15,2,3,19,2,2,1,454.32,unfamfemale32.jpg
+15,2,3,20,1,1,1,615.1,unfammale09.jpg
+15,2,3,21,2,2,1,487.87,capture015 copy.jpg
+15,2,3,22,1,1,1,640.62,capture003 copy.jpg
+15,2,3,23,1,1,1,609.44,capture013 copy.jpg
+15,2,3,24,1,1,1,522.24,capture016 copy.jpg
+15,2,4,1,2,2,1,546.61,capture021 copy.jpg
+15,2,4,2,2,2,1,475.35,capture005 copy.jpg
+15,2,4,3,1,1,1,420.13,unfammale12.jpg
+15,2,4,4,1,1,1,412.89,capture020 copy.jpg
+15,2,4,5,2,2,1,501.72,unfamfemale40.jpg
+15,2,4,6,2,2,1,558.54,capture015 copy.jpg
+15,2,4,7,1,1,1,535.3,unfammale33.jpg
+15,2,4,8,1,1,1,568.07,unfammale35.jpg
+15,2,4,9,1,1,1,512.83,capture013 copy.jpg
+15,2,4,10,1,1,1,521.65,capture011 copy.jpg
+15,2,4,11,2,2,1,490.43,unfamfemale04.jpg
+15,2,4,12,1,1,1,475.19,capture003 copy.jpg
+15,2,4,13,2,2,1,611.97,unfamfemale10.jpg
+15,2,4,14,1,1,1,524.75,capture016 copy.jpg
+15,2,4,15,1,1,1,485.54,capture012 copy.jpg
+15,2,4,16,2,2,1,398.35,unfamfemale01.jpg
+15,2,4,17,2,2,1,527.13,unfamfemale37.jpg
+15,2,4,18,2,2,1,631.87,unfamfemale21.jpg
+15,2,4,19,1,1,1,608.64,unfammale16.jpg
+15,2,4,20,2,2,1,977.45,unfamfemale17.jpg
+15,2,4,21,2,2,1,658.26,unfamfemale32.jpg
+15,2,4,22,2,2,1,522.99,unfamfemale08.jpg
+15,2,4,23,1,1,1,539.83,unfammale09.jpg
+15,2,4,24,1,1,1,532.57,unfammale28.jpg
+15,2,5,1,1,1,1,564.39,capture016 copy.jpg
+15,2,5,2,1,1,1,469.21,capture013 copy.jpg
+15,2,5,3,1,1,1,637.97,unfammale09.jpg
+15,2,5,4,1,1,1,534.76,unfammale33.jpg
+15,2,5,5,2,2,1,455.52,unfamfemale08.jpg
+15,2,5,6,2,2,1,464.31,unfamfemale01.jpg
+15,2,5,7,1,1,1,865.1,capture011 copy.jpg
+15,2,5,8,1,1,1,537.91,capture020 copy.jpg
+15,2,5,9,2,2,1,506.69,capture021 copy.jpg
+15,2,5,10,2,2,1,539.48,unfamfemale10.jpg
+15,2,5,11,2,2,1,484.26,unfamfemale04.jpg
+15,2,5,12,2,2,1,517,unfamfemale37.jpg
+15,2,5,13,2,2,1,597.78,unfamfemale17.jpg
+15,2,5,14,2,2,1,518.56,capture005 copy.jpg
+15,2,5,15,2,2,1,543.36,unfamfemale32.jpg
+15,2,5,16,1,1,1,528.14,capture003 copy.jpg
+15,2,5,17,1,1,1,496.91,unfammale35.jpg
+15,2,5,18,1,1,1,545.7,unfammale28.jpg
+15,2,5,19,2,2,1,674.51,unfamfemale21.jpg
+15,2,5,20,1,1,1,595.28,capture012 copy.jpg
+15,2,5,21,1,1,1,828.07,unfammale16.jpg
+15,2,5,22,2,2,1,860.8,unfamfemale40.jpg
+15,2,5,23,1,1,1,533.59,unfammale12.jpg
+15,2,5,24,2,2,1,430.37,capture015 copy.jpg
+15,2,6,1,1,1,1,731.14,unfammale28.jpg
+15,2,6,2,1,1,1,475.93,unfammale09.jpg
+15,2,6,3,1,1,1,436.71,capture011 copy.jpg
+15,2,6,4,2,2,1,469.47,unfamfemale04.jpg
+15,2,6,5,2,2,1,430.27,unfamfemale08.jpg
+15,2,6,6,2,2,1,575,unfamfemale21.jpg
+15,2,6,7,2,2,1,415.83,unfamfemale37.jpg
+15,2,6,8,1,2,0,504.63,unfammale33.jpg
+15,2,6,9,1,1,1,521.41,capture016 copy.jpg
+15,2,6,10,2,2,1,602.16,unfamfemale32.jpg
+15,2,6,11,2,2,1,522.98,unfamfemale40.jpg
+15,2,6,12,1,1,1,531.71,unfammale35.jpg
+15,2,6,13,2,2,1,468.52,capture015 copy.jpg
+15,2,6,14,1,1,1,445.32,capture003 copy.jpg
+15,2,6,15,2,2,1,534.1,capture021 copy.jpg
+15,2,6,16,1,1,1,590.89,capture013 copy.jpg
+15,2,6,17,2,2,1,519.67,capture005 copy.jpg
+15,2,6,18,2,2,1,720.45,unfamfemale17.jpg
+15,2,6,19,2,2,1,449.18,unfamfemale10.jpg
+15,2,6,20,1,1,1,498.02,capture020 copy.jpg
+15,2,6,21,1,1,1,562.77,unfammale16.jpg
+15,2,6,22,1,1,1,443.56,capture012 copy.jpg
+15,2,6,23,2,2,1,572.31,unfamfemale01.jpg
+15,2,6,24,1,1,1,509.13,unfammale12.jpg
+15,2,7,1,2,2,1,504.94,unfamfemale40.jpg
+15,2,7,2,1,1,1,489.71,unfammale12.jpg
+15,2,7,3,2,2,1,434.51,unfamfemale08.jpg
+15,2,7,4,2,2,1,467.28,capture021 copy.jpg
+15,2,7,5,2,2,1,476.09,unfamfemale10.jpg
+15,2,7,6,2,2,1,460.84,unfamfemale17.jpg
+15,2,7,7,1,1,1,397.63,unfammale28.jpg
+15,2,7,8,1,1,1,622.38,capture020 copy.jpg
+15,2,7,9,2,2,1,575.22,unfamfemale37.jpg
+15,2,7,10,1,1,1,503.91,unfammale09.jpg
+15,2,7,11,1,1,1,472.73,unfammale35.jpg
+15,2,7,12,1,1,1,649.55,unfammale33.jpg
+15,2,7,13,1,1,1,474.35,capture003 copy.jpg
+15,2,7,14,2,2,1,467.07,capture005 copy.jpg
+15,2,7,15,1,1,1,643.92,capture011 copy.jpg
+15,2,7,16,1,1,1,532.7,capture012 copy.jpg
+15,2,7,17,2,2,1,437.47,capture015 copy.jpg
+15,2,7,18,2,2,1,430.27,unfamfemale21.jpg
+15,2,7,19,1,1,1,519,capture016 copy.jpg
+15,2,7,20,2,2,1,479.77,unfamfemale01.jpg
+15,2,7,21,1,1,1,472.54,unfammale16.jpg
+15,2,7,22,2,2,1,497.4,unfamfemale32.jpg
+15,2,7,23,1,2,0,466.18,capture013 copy.jpg
+15,2,7,24,2,2,1,946.97,unfamfemale04.jpg
+15,2,8,1,1,1,1,874.2,unfammale09.jpg
+15,2,8,2,1,1,1,547.04,unfammale33.jpg
+15,2,8,3,2,2,1,531.84,unfamfemale04.jpg
+15,2,8,4,2,2,1,468.62,unfamfemale10.jpg
+15,2,8,5,1,1,1,717.35,capture011 copy.jpg
+15,2,8,6,2,2,1,758.19,unfamfemale40.jpg
+15,2,8,7,2,2,1,518.97,capture021 copy.jpg
+15,2,8,8,2,2,1,503.72,capture005 copy.jpg
+15,2,8,9,1,1,1,512.52,unfammale12.jpg
+15,2,8,10,1,1,1,689.27,capture012 copy.jpg
+15,2,8,11,2,2,1,514.06,capture015 copy.jpg
+15,2,8,12,1,1,1,546.83,unfammale16.jpg
+15,2,8,13,2,2,1,443.62,unfamfemale08.jpg
+15,2,8,14,1,1,1,564.41,capture003 copy.jpg
+15,2,8,15,2,2,1,557.24,unfamfemale17.jpg
+15,2,8,16,1,1,1,421.99,capture016 copy.jpg
+15,2,8,17,1,1,1,526.8,capture020 copy.jpg
+15,2,8,18,2,2,1,759.59,unfamfemale37.jpg
+15,2,8,19,1,1,1,576.33,capture013 copy.jpg
+15,2,8,20,1,1,1,689.12,unfammale35.jpg
+15,2,8,21,2,2,1,577.91,unfamfemale01.jpg
+15,2,8,22,2,2,1,474.71,unfamfemale32.jpg
+15,2,8,23,1,1,1,531.44,unfammale28.jpg
+15,2,8,24,2,2,1,548.25,unfamfemale21.jpg
+16,2,1,1,2,2,1,500.1,unfamfemale37.jpg
+16,2,1,2,1,1,1,455.5,unfammale02.jpg
+16,2,1,3,2,2,1,496.23,unfamfemale21.jpg
+16,2,1,4,2,2,1,408.96,unfamfemale40.jpg
+16,2,1,5,1,1,1,473.66,unfammale25.jpg
+16,2,1,6,1,1,1,378.42,unfammale23.jpg
+16,2,1,7,2,2,1,483.11,capture021 copy.jpg
+16,2,1,8,1,1,1,411.87,unfammale39.jpg
+16,2,1,9,2,2,1,495.29,unfamfemale32.jpg
+16,2,1,10,1,1,1,418.72,unfammale19.jpg
+16,2,1,11,1,1,1,382.11,unfammale08.jpg
+16,2,1,12,1,1,1,369.5,unfammale38.jpg
+16,2,1,13,2,2,1,428.95,unfamfemale01.jpg
+16,2,1,14,1,1,1,464.27,capture010 copy.jpg
+16,2,1,15,2,2,1,411.71,capture015 copy.jpg
+16,2,1,16,2,2,1,463.18,unfamfemale08.jpg
+16,2,1,17,2,2,1,394.52,unfamfemale10.jpg
+16,2,1,18,2,2,1,445.92,capture005 copy.jpg
+16,2,1,19,2,2,1,366.65,unfamfemale04.jpg
+16,2,1,20,1,0,0,0,unfammale18.jpg
+16,2,1,21,2,2,1,736.2,unfamfemale17.jpg
+16,2,1,22,1,1,1,440.9,unfammale14.jpg
+16,2,1,23,1,0,0,0,unfammale05.jpg
+16,2,1,24,1,1,1,746.35,unfammale21.jpg
+16,2,2,1,2,2,1,1223.73,unfamfemale04.jpg
+16,2,2,2,1,1,1,496.42,unfammale18.jpg
+16,2,2,3,1,1,1,489.09,unfammale02.jpg
+16,2,2,4,1,1,1,497.83,unfammale19.jpg
+16,2,2,5,2,2,1,482.41,unfamfemale37.jpg
+16,2,2,6,2,2,1,419.33,unfamfemale40.jpg
+16,2,2,7,1,1,1,452.03,unfammale21.jpg
+16,2,2,8,2,2,1,444.81,unfamfemale32.jpg
+16,2,2,9,1,1,1,421.57,unfammale05.jpg
+16,2,2,10,2,2,1,414.29,unfamfemale10.jpg
+16,2,2,11,1,1,1,647.05,unfammale14.jpg
+16,2,2,12,1,1,1,439.77,capture010 copy.jpg
+16,2,2,13,2,2,1,584.5,unfamfemale17.jpg
+16,2,2,14,2,2,1,449.25,capture015 copy.jpg
+16,2,2,15,2,2,1,465.98,unfamfemale01.jpg
+16,2,2,16,1,1,1,474.72,unfammale38.jpg
+16,2,2,17,2,2,1,483.44,capture021 copy.jpg
+16,2,2,18,1,1,1,460.16,unfammale25.jpg
+16,2,2,19,1,1,1,468.91,unfammale23.jpg
+16,2,2,20,2,2,1,469.66,capture005 copy.jpg
+16,2,2,21,2,2,1,598.41,unfamfemale21.jpg
+16,2,2,22,2,2,1,447.11,unfamfemale08.jpg
+16,2,2,23,1,1,1,615.84,unfammale39.jpg
+16,2,2,24,1,1,1,376.6,unfammale08.jpg
+16,2,3,1,1,1,1,493.42,capture010 copy.jpg
+16,2,3,2,2,2,1,398.09,unfamfemale21.jpg
+16,2,3,3,1,1,1,422.87,unfammale39.jpg
+16,2,3,4,2,2,1,319.61,unfamfemale37.jpg
+16,2,3,5,1,1,1,392.3,unfammale05.jpg
+16,2,3,6,2,2,1,537.07,capture005 copy.jpg
+16,2,3,7,1,1,1,553.8,unfammale38.jpg
+16,2,3,8,1,1,1,730.56,unfammale21.jpg
+16,2,3,9,2,2,1,499.25,unfamfemale08.jpg
+16,2,3,10,1,1,1,420.03,unfammale19.jpg
+16,2,3,11,1,1,1,380.7,unfammale18.jpg
+16,2,3,12,2,2,1,413.46,unfamfemale01.jpg
+16,2,3,13,2,2,1,478.18,unfamfemale17.jpg
+16,2,3,14,1,1,1,438.98,unfammale08.jpg
+16,2,3,15,1,0,0,0,unfammale02.jpg
+16,2,3,16,2,2,1,432.45,unfamfemale10.jpg
+16,2,3,17,1,1,1,385.13,unfammale23.jpg
+16,2,3,18,1,1,1,417.92,unfammale14.jpg
+16,2,3,19,2,2,1,450.64,capture021 copy.jpg
+16,2,3,20,2,2,1,411.39,unfamfemale40.jpg
+16,2,3,21,2,2,1,388.07,unfamfemale04.jpg
+16,2,3,22,2,2,1,364.86,capture015 copy.jpg
+16,2,3,23,1,1,1,413.6,unfammale25.jpg
+16,2,3,24,2,2,1,446.31,unfamfemale32.jpg
+16,2,4,1,2,2,1,840.8,unfamfemale40.jpg
+16,2,4,2,2,2,1,481.54,capture005 copy.jpg
+16,2,4,3,2,2,1,378.29,unfamfemale17.jpg
+16,2,4,4,2,2,1,355.03,capture021 copy.jpg
+16,2,4,5,1,1,1,475.73,unfammale14.jpg
+16,2,4,6,1,1,1,332.5,unfammale23.jpg
+16,2,4,7,1,1,1,373.24,unfammale19.jpg
+16,2,4,8,1,1,1,349.97,unfammale08.jpg
+16,2,4,9,2,2,1,414.64,unfamfemale08.jpg
+16,2,4,10,2,2,1,399.42,unfamfemale32.jpg
+16,2,4,11,1,1,1,656.16,unfammale38.jpg
+16,2,4,12,1,1,1,552.93,unfammale39.jpg
+16,2,4,13,2,1,0,321.6,unfamfemale37.jpg
+16,2,4,14,2,2,1,802.4,unfamfemale01.jpg
+16,2,4,15,2,2,1,395.11,unfamfemale10.jpg
+16,2,4,16,1,1,1,483.83,unfammale02.jpg
+16,2,4,17,1,1,1,396.58,unfammale21.jpg
+16,2,4,18,2,1,0,469.29,unfamfemale21.jpg
+16,2,4,19,1,1,1,854.09,unfammale25.jpg
+16,2,4,20,2,2,1,502.82,unfamfemale04.jpg
+16,2,4,21,1,1,1,431.55,capture010 copy.jpg
+16,2,4,22,2,2,1,480.28,capture015 copy.jpg
+16,2,4,23,1,1,1,457.01,unfammale05.jpg
+16,2,4,24,1,1,1,441.76,unfammale18.jpg
+16,2,5,1,1,1,1,547.61,unfammale23.jpg
+16,2,5,2,2,2,1,476.42,capture015 copy.jpg
+16,2,5,3,1,1,1,469.11,unfammale39.jpg
+16,2,5,4,1,1,1,453.84,unfammale18.jpg
+16,2,5,5,1,1,1,422.63,unfammale19.jpg
+16,2,5,6,1,1,1,391.33,unfammale02.jpg
+16,2,5,7,1,1,1,384.1,unfammale14.jpg
+16,2,5,8,1,1,1,368.84,unfammale05.jpg
+16,2,5,9,2,2,1,593.55,unfamfemale21.jpg
+16,2,5,10,2,2,1,618.32,unfamfemale32.jpg
+16,2,5,11,1,1,1,723.06,unfammale21.jpg
+16,2,5,12,2,2,1,547.79,unfamfemale10.jpg
+16,2,5,13,2,2,1,540.47,unfamfemale01.jpg
+16,2,5,14,2,2,1,445.22,capture021 copy.jpg
+16,2,5,15,2,2,1,397.96,unfamfemale37.jpg
+16,2,5,16,2,2,1,398.68,unfamfemale17.jpg
+16,2,5,17,2,2,1,415.47,capture005 copy.jpg
+16,2,5,18,2,2,1,368.21,unfamfemale04.jpg
+16,2,5,19,1,2,0,352.9,unfammale38.jpg
+16,2,5,20,2,2,1,881.7,unfamfemale40.jpg
+16,2,5,21,1,1,1,554.42,capture010 copy.jpg
+16,2,5,22,1,1,1,427.14,unfammale25.jpg
+16,2,5,23,1,1,1,323.83,unfammale08.jpg
+16,2,5,24,2,2,1,652.6,unfamfemale08.jpg
+16,2,6,1,2,2,1,593.18,unfamfemale10.jpg
+16,2,6,2,1,1,1,457.94,unfammale39.jpg
+16,2,6,3,2,2,1,482.71,unfamfemale01.jpg
+16,2,6,4,1,1,1,395.39,unfammale05.jpg
+16,2,6,5,1,1,1,380.16,unfammale14.jpg
+16,2,6,6,1,1,1,380.86,unfammale23.jpg
+16,2,6,7,2,2,1,477.66,capture005 copy.jpg
+16,2,6,8,1,1,1,614.38,unfammale18.jpg
+16,2,6,9,2,2,1,471.1,unfamfemale40.jpg
+16,2,6,10,2,2,1,503.86,unfamfemale08.jpg
+16,2,6,11,2,2,1,456.6,unfamfemale32.jpg
+16,2,6,12,1,1,1,537.28,unfammale38.jpg
+16,2,6,13,2,1,0,922.1,unfamfemale37.jpg
+16,2,6,14,2,2,1,498.76,unfamfemale17.jpg
+16,2,6,15,1,1,1,483.54,unfammale02.jpg
+16,2,6,16,1,1,1,428.27,capture010 copy.jpg
+16,2,6,17,2,2,1,461.03,unfamfemale04.jpg
+16,2,6,18,2,2,1,437.75,unfamfemale21.jpg
+16,2,6,19,1,1,1,438.44,unfammale25.jpg
+16,2,6,20,2,2,1,495.24,capture015 copy.jpg
+16,2,6,21,2,2,1,463.95,capture021 copy.jpg
+16,2,6,22,1,1,1,464.71,unfammale19.jpg
+16,2,6,23,1,1,1,457.41,unfammale21.jpg
+16,2,6,24,1,1,1,386.17,unfammale08.jpg
+16,2,7,1,2,2,1,500.04,unfamfemale40.jpg
+16,2,7,2,1,1,1,468.86,unfammale19.jpg
+16,2,7,3,1,1,1,429.59,unfammale08.jpg
+16,2,7,4,1,1,1,438.28,unfammale38.jpg
+16,2,7,5,2,2,1,535.07,unfamfemale37.jpg
+16,2,7,6,2,2,1,575.81,capture015 copy.jpg
+16,2,7,7,2,2,1,528.54,unfamfemale32.jpg
+16,2,7,8,1,1,1,513.25,capture010 copy.jpg
+16,2,7,9,1,1,1,474.02,unfammale23.jpg
+16,2,7,10,2,2,1,522.76,capture005 copy.jpg
+16,2,7,11,1,1,1,795.46,unfammale18.jpg
+16,2,7,12,1,1,1,708.23,unfammale02.jpg
+16,2,7,13,2,2,1,724.9,unfamfemale01.jpg
+16,2,7,14,2,2,1,821.71,unfamfemale08.jpg
+16,2,7,15,2,2,1,478.38,unfamfemale21.jpg
+16,2,7,16,1,1,1,519.18,unfammale39.jpg
+16,2,7,17,1,1,1,479.91,unfammale25.jpg
+16,2,7,18,2,2,1,488.65,unfamfemale10.jpg
+16,2,7,19,1,1,1,545.39,unfammale05.jpg
+16,2,7,20,2,2,1,490.08,unfamfemale17.jpg
+16,2,7,21,1,1,1,466.83,unfammale21.jpg
+16,2,7,22,2,2,1,483.59,capture021 copy.jpg
+16,2,7,23,2,2,1,508.28,unfamfemale04.jpg
+16,2,7,24,1,1,1,629.03,unfammale14.jpg
+16,2,8,1,2,2,1,513.6,unfamfemale01.jpg
+16,2,8,2,1,1,1,426.4,unfammale14.jpg
+16,2,8,3,2,2,1,643.14,unfamfemale37.jpg
+16,2,8,4,2,2,1,435.83,unfamfemale17.jpg
+16,2,8,5,2,2,1,364.53,capture015 copy.jpg
+16,2,8,6,1,1,1,517.31,unfammale23.jpg
+16,2,8,7,2,2,1,526.09,unfamfemale10.jpg
+16,2,8,8,1,1,1,446.82,unfammale19.jpg
+16,2,8,9,2,2,1,847.55,unfamfemale32.jpg
+16,2,8,10,1,1,1,744.28,unfammale21.jpg
+16,2,8,11,1,1,1,712.98,unfammale02.jpg
+16,2,8,12,2,2,1,561.76,unfamfemale21.jpg
+16,2,8,13,2,2,1,466.5,unfamfemale40.jpg
+16,2,8,14,2,2,1,571.24,unfamfemale08.jpg
+16,2,8,15,1,1,1,699.98,capture010 copy.jpg
+16,2,8,16,1,1,1,708.72,unfammale25.jpg
+16,2,8,17,1,1,1,549.44,unfammale38.jpg
+16,2,8,18,1,1,1,494.19,unfammale39.jpg
+16,2,8,19,2,2,1,502.9,unfamfemale04.jpg
+16,2,8,20,1,1,1,615.67,unfammale05.jpg
+16,2,8,21,2,2,1,432.37,capture005 copy.jpg
+16,2,8,22,1,1,1,457.11,unfammale08.jpg
+16,2,8,23,1,1,1,465.86,unfammale18.jpg
+16,2,8,24,2,2,1,466.53,capture021 copy.jpg
+17,2,1,1,1,1,1,566.02,capture016 copy.jpg
+17,2,1,2,1,1,1,529.47,capture011 copy.jpg
+17,2,1,3,1,1,1,506.21,unfammale12.jpg
+17,2,1,4,1,1,1,450.98,capture003 copy.jpg
+17,2,1,5,2,2,1,483.76,unfamfemale39.jpg
+17,2,1,6,2,2,1,524.6,unfamfemale38.jpg
+17,2,1,7,2,2,1,517.38,unfamfemale26.jpg
+17,2,1,8,1,1,1,558.17,capture020 copy.jpg
+17,2,1,9,2,2,1,510.94,unfamfemale03.jpg
+17,2,1,10,2,2,1,503.73,capture001 copy.jpg
+17,2,1,11,2,2,1,448.49,unfamfemale20.jpg
+17,2,1,12,2,2,1,433.26,unfamfemale24.jpg
+17,2,1,13,1,1,1,418.02,unfammale09.jpg
+17,2,1,14,1,1,1,370.86,unfammale16.jpg
+17,2,1,15,2,2,1,563.58,capture017 copy.jpg
+17,2,1,16,2,2,1,444.38,unfamfemale15.jpg
+17,2,1,17,2,2,1,501.17,capture002 copy.jpg
+17,2,1,18,1,1,1,493.99,capture013 copy.jpg
+17,2,1,19,2,2,1,550.78,unfamfemale06.jpg
+17,2,1,20,1,1,1,551.52,unfammale28.jpg
+17,2,1,21,1,1,1,512.29,unfammale33.jpg
+17,2,1,22,1,1,1,433.07,unfammale35.jpg
+17,2,1,23,1,1,1,353.9,capture012 copy.jpg
+17,2,1,24,2,2,1,450.67,unfamfemale05.jpg
+17,2,2,1,1,1,1,399.26,capture016 copy.jpg
+17,2,2,2,1,1,1,320.11,unfammale33.jpg
+17,2,2,3,2,2,1,584.9,unfamfemale26.jpg
+17,2,2,4,1,1,1,641.69,capture013 copy.jpg
+17,2,2,5,2,1,0,634.41,capture017 copy.jpg
+17,2,2,6,1,1,1,427.25,unfammale35.jpg
+17,2,2,7,1,1,1,483.97,unfammale16.jpg
+17,2,2,8,1,1,1,500.82,capture011 copy.jpg
+17,2,2,9,2,2,1,373.59,unfamfemale06.jpg
+17,2,2,10,2,2,1,606.38,unfamfemale24.jpg
+17,2,2,11,2,2,1,511.16,capture001 copy.jpg
+17,2,2,12,2,2,1,447.92,unfamfemale15.jpg
+17,2,2,13,2,2,1,624.7,unfamfemale20.jpg
+17,2,2,14,2,2,1,449.48,capture002 copy.jpg
+17,2,2,15,2,2,1,426.29,unfamfemale38.jpg
+17,2,2,16,2,2,1,355.08,unfamfemale03.jpg
+17,2,2,17,1,1,1,459.8,capture020 copy.jpg
+17,2,2,18,2,2,1,468.62,unfamfemale05.jpg
+17,2,2,19,2,2,1,637.43,unfamfemale39.jpg
+17,2,2,20,1,1,1,582.19,unfammale28.jpg
+17,2,2,21,1,1,1,590.98,unfammale12.jpg
+17,2,2,22,1,1,1,487.72,capture012 copy.jpg
+17,2,2,23,1,1,1,504.52,capture003 copy.jpg
+17,2,2,24,1,1,1,577.34,unfammale09.jpg
+17,2,3,1,1,1,1,520.43,capture011 copy.jpg
+17,2,3,2,2,2,1,433.19,unfamfemale05.jpg
+17,2,3,3,2,2,1,506,unfamfemale24.jpg
+17,2,3,4,2,2,1,458.82,capture002 copy.jpg
+17,2,3,5,1,1,1,619.6,unfammale16.jpg
+17,2,3,6,2,2,1,604.33,unfamfemale20.jpg
+17,2,3,7,1,1,1,525.14,capture013 copy.jpg
+17,2,3,8,1,1,1,469.95,unfammale09.jpg
+17,2,3,9,2,2,1,558.73,unfamfemale38.jpg
+17,2,3,10,1,1,1,567.5,unfammale33.jpg
+17,2,3,11,2,2,1,680.26,unfamfemale39.jpg
+17,2,3,12,1,1,1,553.04,unfammale35.jpg
+17,2,3,13,2,2,1,489.86,unfamfemale26.jpg
+17,2,3,14,2,2,1,506.6,unfamfemale06.jpg
+17,2,3,15,2,2,1,427.43,capture001 copy.jpg
+17,2,3,16,1,1,1,516.21,capture003 copy.jpg
+17,2,3,17,1,1,1,588.96,unfammale28.jpg
+17,2,3,18,2,2,1,453.77,unfamfemale15.jpg
+17,2,3,19,2,2,1,462.56,capture017 copy.jpg
+17,2,3,20,1,1,1,423.31,capture020 copy.jpg
+17,2,3,21,2,2,1,472.07,unfamfemale03.jpg
+17,2,3,22,1,1,1,664.89,capture016 copy.jpg
+17,2,3,23,1,1,1,513.69,capture012 copy.jpg
+17,2,3,24,1,1,1,386.4,unfammale12.jpg
+17,2,4,1,2,2,1,521.48,unfamfemale20.jpg
+17,2,4,2,1,1,1,578.3,unfammale12.jpg
+17,2,4,3,2,2,1,539.13,unfamfemale15.jpg
+17,2,4,4,2,2,1,467.91,unfamfemale03.jpg
+17,2,4,5,2,2,1,492.64,unfamfemale38.jpg
+17,2,4,6,2,2,1,525.46,unfamfemale39.jpg
+17,2,4,7,1,1,1,526.27,unfammale33.jpg
+17,2,4,8,1,1,1,815.03,capture020 copy.jpg
+17,2,4,9,2,2,1,431.81,unfamfemale06.jpg
+17,2,4,10,1,1,1,472.57,capture012 copy.jpg
+17,2,4,11,2,2,1,417.34,capture002 copy.jpg
+17,2,4,12,2,2,1,394.17,unfamfemale24.jpg
+17,2,4,13,1,1,1,490.96,unfammale09.jpg
+17,2,4,14,2,2,1,523.75,unfamfemale26.jpg
+17,2,4,15,2,2,1,516.48,capture001 copy.jpg
+17,2,4,16,2,2,1,357.29,capture017 copy.jpg
+17,2,4,17,1,1,1,518.06,capture003 copy.jpg
+17,2,4,18,1,1,1,446.88,capture016 copy.jpg
+17,2,4,19,1,1,1,975.67,unfammale16.jpg
+17,2,4,20,1,1,1,408.43,capture011 copy.jpg
+17,2,4,21,1,1,1,329.16,unfammale35.jpg
+17,2,4,22,2,2,1,337.97,unfamfemale05.jpg
+17,2,4,23,1,1,1,578.73,capture013 copy.jpg
+17,2,4,24,1,1,1,499.54,unfammale28.jpg
+17,2,5,1,1,1,1,650.84,unfammale28.jpg
+17,2,5,2,2,2,1,515.63,unfamfemale20.jpg
+17,2,5,3,2,2,1,508.41,unfamfemale15.jpg
+17,2,5,4,1,1,1,429.16,capture016 copy.jpg
+17,2,5,5,2,2,1,557.98,unfamfemale39.jpg
+17,2,5,6,2,2,1,430.76,unfamfemale06.jpg
+17,2,5,7,2,2,1,415.54,unfamfemale24.jpg
+17,2,5,8,1,1,1,432.26,capture020 copy.jpg
+17,2,5,9,1,1,1,369.08,capture003 copy.jpg
+17,2,5,10,2,2,1,449.85,capture001 copy.jpg
+17,2,5,11,2,2,1,698.66,unfamfemale05.jpg
+17,2,5,12,1,1,1,531.45,unfammale35.jpg
+17,2,5,13,2,2,1,916.19,unfamfemale38.jpg
+17,2,5,14,2,2,1,429,unfamfemale03.jpg
+17,2,5,15,1,1,1,405.78,capture012 copy.jpg
+17,2,5,16,1,1,1,462.59,capture013 copy.jpg
+17,2,5,17,1,1,1,447.34,unfammale16.jpg
+17,2,5,18,1,1,1,544.11,unfammale33.jpg
+17,2,5,19,2,2,1,464.94,capture002 copy.jpg
+17,2,5,20,1,1,1,521.12,unfammale09.jpg
+17,2,5,21,1,1,1,786.46,capture011 copy.jpg
+17,2,5,22,1,1,1,323.25,unfammale12.jpg
+17,2,5,23,2,2,1,444.03,capture017 copy.jpg
+17,2,5,24,2,2,1,308.85,unfamfemale26.jpg
+17,2,6,1,1,1,1,417.24,unfammale28.jpg
+17,2,6,2,2,2,1,434.03,capture002 copy.jpg
+17,2,6,3,2,2,1,538.83,unfamfemale39.jpg
+17,2,6,4,1,1,1,475.62,unfammale35.jpg
+17,2,6,5,1,1,1,412.4,capture012 copy.jpg
+17,2,6,6,2,2,1,429.14,unfamfemale24.jpg
+17,2,6,7,1,1,1,645.97,unfammale16.jpg
+17,2,6,8,2,2,1,438.68,capture001 copy.jpg
+17,2,6,9,1,1,1,415.53,unfammale33.jpg
+17,2,6,10,2,2,1,432.31,capture017 copy.jpg
+17,2,6,11,1,1,1,385.06,unfammale12.jpg
+17,2,6,12,2,2,1,745.86,unfamfemale26.jpg
+17,2,6,13,1,1,1,458.61,capture003 copy.jpg
+17,2,6,14,2,2,1,451.45,unfamfemale05.jpg
+17,2,6,15,1,1,1,524.2,capture011 copy.jpg
+17,2,6,16,1,1,1,404.99,capture016 copy.jpg
+17,2,6,17,2,2,1,381.74,unfamfemale20.jpg
+17,2,6,18,1,1,1,438.58,capture020 copy.jpg
+17,2,6,19,2,2,1,423.36,unfamfemale38.jpg
+17,2,6,20,2,2,1,496.14,unfamfemale06.jpg
+17,2,6,21,2,2,1,472.87,unfamfemale03.jpg
+17,2,6,22,1,1,1,409.71,unfammale09.jpg
+17,2,6,23,2,2,1,474.46,unfamfemale15.jpg
+17,2,6,24,1,1,1,547.28,capture013 copy.jpg
+17,2,7,1,2,2,1,423.65,unfamfemale15.jpg
+17,2,7,2,2,2,1,400.48,capture002 copy.jpg
+17,2,7,3,1,1,1,425.26,capture012 copy.jpg
+17,2,7,4,2,2,1,634.05,capture001 copy.jpg
+17,2,7,5,1,1,1,490.84,capture016 copy.jpg
+17,2,7,6,1,1,1,419.57,capture020 copy.jpg
+17,2,7,7,2,2,1,372.41,unfamfemale24.jpg
+17,2,7,8,1,1,1,365.14,unfammale09.jpg
+17,2,7,9,1,1,1,397.93,capture013 copy.jpg
+17,2,7,10,2,2,1,382.76,unfamfemale38.jpg
+17,2,7,11,1,1,1,423.52,unfammale16.jpg
+17,2,7,12,2,2,1,400.33,unfamfemale20.jpg
+17,2,7,13,1,1,1,521.05,capture011 copy.jpg
+17,2,7,14,2,2,1,705.91,unfamfemale03.jpg
+17,2,7,15,1,1,1,594.67,unfammale28.jpg
+17,2,7,16,2,2,1,491.38,unfamfemale05.jpg
+17,2,7,17,1,1,1,540.22,capture003 copy.jpg
+17,2,7,18,2,2,1,477.03,unfamfemale26.jpg
+17,2,7,19,1,1,1,421.81,unfammale35.jpg
+17,2,7,20,2,2,1,446.59,capture017 copy.jpg
+17,2,7,21,2,2,1,439.32,unfamfemale06.jpg
+17,2,7,22,1,1,1,472.1,unfammale33.jpg
+17,2,7,23,1,1,1,472.94,unfammale12.jpg
+17,2,7,24,2,2,1,529.73,unfamfemale39.jpg
+17,2,8,1,2,1,0,347.5,capture002 copy.jpg
+17,2,8,2,2,2,1,532.24,unfamfemale20.jpg
+17,2,8,3,1,1,1,429.04,unfammale28.jpg
+17,2,8,4,1,1,1,413.84,capture020 copy.jpg
+17,2,8,5,2,2,1,390.58,capture017 copy.jpg
+17,2,8,6,2,2,1,415.4,unfamfemale05.jpg
+17,2,8,7,1,1,1,496.16,capture016 copy.jpg
+17,2,8,8,1,1,1,440.94,capture013 copy.jpg
+17,2,8,9,2,2,1,433.75,unfamfemale39.jpg
+17,2,8,10,2,2,1,458.52,unfamfemale06.jpg
+17,2,8,11,2,2,1,371.32,unfamfemale24.jpg
+17,2,8,12,2,2,1,300.1,unfamfemale03.jpg
+17,2,8,13,1,1,1,620.83,unfammale33.jpg
+17,2,8,14,1,1,1,501.66,unfammale09.jpg
+17,2,8,15,2,2,1,494.41,unfamfemale15.jpg
+17,2,8,16,1,1,1,671.24,capture003 copy.jpg
+17,2,8,17,2,2,1,479.92,unfamfemale26.jpg
+17,2,8,18,1,1,1,424.8,unfammale12.jpg
+17,2,8,19,2,2,1,449.52,unfamfemale38.jpg
+17,2,8,20,2,2,1,474.36,capture001 copy.jpg
+17,2,8,21,1,1,1,723.13,unfammale16.jpg
+17,2,8,22,1,1,1,507.88,capture012 copy.jpg
+17,2,8,23,1,1,1,380.71,unfammale35.jpg
+17,2,8,24,1,1,1,421.46,capture011 copy.jpg
+18,2,1,1,1,1,1,475.36,unfammale12.jpg
+18,2,1,2,2,2,1,582.87,unfamfemale17.jpg
+18,2,1,3,2,2,1,447.66,capture005 copy.jpg
+18,2,1,4,2,2,1,512.47,unfamfemale37.jpg
+18,2,1,5,1,1,1,353.21,unfammale09.jpg
+18,2,1,6,1,1,1,402,unfammale35.jpg
+18,2,1,7,2,2,1,370.8,unfamfemale01.jpg
+18,2,1,8,1,1,1,451.53,unfammale33.jpg
+18,2,1,9,2,2,1,372.37,unfamfemale10.jpg
+18,2,1,10,1,1,1,373.15,unfammale16.jpg
+18,2,1,11,2,2,1,413.9,capture015 copy.jpg
+18,2,1,12,2,2,1,438.73,capture021 copy.jpg
+18,2,1,13,1,1,1,471.51,unfammale28.jpg
+18,2,1,14,1,1,1,424.3,capture013 copy.jpg
+18,2,1,15,2,2,1,345,unfamfemale32.jpg
+18,2,1,16,1,1,1,377.82,capture003 copy.jpg
+18,2,1,17,2,2,1,402.62,unfamfemale21.jpg
+18,2,1,18,1,1,1,563.43,capture011 copy.jpg
+18,2,1,19,2,2,1,420.21,unfamfemale08.jpg
+18,2,1,20,1,1,1,412.95,capture020 copy.jpg
+18,2,1,21,2,0,0,0,unfamfemale04.jpg
+18,2,1,22,1,1,1,334.56,capture016 copy.jpg
+18,2,1,23,1,1,1,375.31,capture012 copy.jpg
+18,2,1,24,2,2,1,352.06,unfamfemale40.jpg
+18,2,2,1,2,2,1,478.3,unfamfemale21.jpg
+18,2,2,2,1,1,1,375.01,unfammale12.jpg
+18,2,2,3,1,1,1,511.85,unfammale33.jpg
+18,2,2,4,1,1,1,320.62,capture003 copy.jpg
+18,2,2,5,2,2,1,369.38,unfamfemale17.jpg
+18,2,2,6,2,2,1,426.14,unfamfemale04.jpg
+18,2,2,7,1,1,1,386.97,unfammale28.jpg
+18,2,2,8,2,2,1,387.73,capture005 copy.jpg
+18,2,2,9,2,2,1,324.52,unfamfemale10.jpg
+18,2,2,10,1,1,1,325.33,unfammale09.jpg
+18,2,2,11,2,2,1,510.07,unfamfemale37.jpg
+18,2,2,12,2,0,0,0,unfamfemale08.jpg
+18,2,2,13,2,0,0,0,capture021 copy.jpg
+18,2,2,14,1,1,1,488.44,capture013 copy.jpg
+18,2,2,15,1,1,1,273.24,capture020 copy.jpg
+18,2,2,16,1,0,0,0,unfammale35.jpg
+18,2,2,17,2,2,1,298.79,unfamfemale40.jpg
+18,2,2,18,1,1,1,419.59,capture012 copy.jpg
+18,2,2,19,2,2,1,356.37,unfamfemale32.jpg
+18,2,2,20,2,2,1,309.14,capture015 copy.jpg
+18,2,2,21,1,1,1,373.94,capture011 copy.jpg
+18,2,2,22,2,2,1,486.7,unfamfemale01.jpg
+18,2,2,23,1,1,1,311.5,capture016 copy.jpg
+18,2,2,24,1,1,1,432.26,unfammale16.jpg
+18,2,3,1,1,0,0,0,unfammale28.jpg
+18,2,3,2,2,2,1,473.07,unfamfemale01.jpg
+18,2,3,3,2,2,1,345.91,unfamfemale21.jpg
+18,2,3,4,2,2,1,346.69,unfamfemale04.jpg
+18,2,3,5,2,2,1,323.48,capture015 copy.jpg
+18,2,3,6,1,1,1,340.26,unfammale35.jpg
+18,2,3,7,2,2,1,333.03,unfamfemale17.jpg
+18,2,3,8,2,2,1,365.83,capture021 copy.jpg
+18,2,3,9,1,1,1,374.6,capture020 copy.jpg
+18,2,3,10,1,1,1,375.37,unfammale09.jpg
+18,2,3,11,2,2,1,312.13,unfamfemale10.jpg
+18,2,3,12,2,2,1,384.96,unfamfemale40.jpg
+18,2,3,13,1,1,1,465.75,unfammale12.jpg
+18,2,3,14,1,1,1,314.53,unfammale16.jpg
+18,2,3,15,1,1,1,307.28,unfammale33.jpg
+18,2,3,16,2,2,1,324.09,unfamfemale32.jpg
+18,2,3,17,1,1,1,324.85,capture012 copy.jpg
+18,2,3,18,1,2,0,445.66,capture003 copy.jpg
+18,2,3,19,2,2,1,382.39,capture005 copy.jpg
+18,2,3,20,2,2,1,319.2,unfamfemale08.jpg
+18,2,3,21,1,1,1,439.92,capture016 copy.jpg
+18,2,3,22,1,1,1,464.73,capture011 copy.jpg
+18,2,3,23,1,1,1,321.53,capture013 copy.jpg
+18,2,3,24,2,2,1,306.36,unfamfemale37.jpg
+18,2,4,1,1,1,1,370.53,capture020 copy.jpg
+18,2,4,2,1,1,1,339.26,capture003 copy.jpg
+18,2,4,3,2,2,1,324.06,unfamfemale37.jpg
+18,2,4,4,1,0,0,0,capture016 copy.jpg
+18,2,4,5,1,1,1,453.66,unfammale12.jpg
+18,2,4,6,2,2,1,342.44,unfamfemale08.jpg
+18,2,4,7,2,2,1,391.22,capture005 copy.jpg
+18,2,4,8,1,0,0,0,unfammale09.jpg
+18,2,4,9,1,1,1,384.78,unfammale28.jpg
+18,2,4,10,2,2,1,521.58,unfamfemale04.jpg
+18,2,4,11,2,2,1,386.33,unfamfemale01.jpg
+18,2,4,12,2,2,1,387.14,capture021 copy.jpg
+18,2,4,13,2,2,1,291.92,capture015 copy.jpg
+18,2,4,14,2,2,1,348.71,unfamfemale10.jpg
+18,2,4,15,2,2,1,373.49,unfamfemale40.jpg
+18,2,4,16,2,2,1,350.27,unfamfemale32.jpg
+18,2,4,17,1,1,1,335.02,capture011 copy.jpg
+18,2,4,18,2,1,0,327.8,unfamfemale17.jpg
+18,2,4,19,2,0,0,0,unfamfemale21.jpg
+18,2,4,20,1,1,1,441.39,unfammale35.jpg
+18,2,4,21,1,0,0,0,capture012 copy.jpg
+18,2,4,22,1,0,0,0,unfammale33.jpg
+18,2,4,23,1,1,1,355.72,unfammale16.jpg
+18,2,4,24,1,1,1,372.53,capture013 copy.jpg
+18,2,5,1,2,2,1,480.98,unfamfemale04.jpg
+18,2,5,2,2,2,1,361.76,unfamfemale17.jpg
+18,2,5,3,1,1,1,418.57,capture012 copy.jpg
+18,2,5,4,2,2,1,451.37,unfamfemale21.jpg
+18,2,5,5,1,1,1,436.12,unfammale28.jpg
+18,2,5,6,1,1,1,332.93,unfammale09.jpg
+18,2,5,7,2,2,1,357.65,capture021 copy.jpg
+18,2,5,8,2,2,1,366.48,capture015 copy.jpg
+18,2,5,9,1,1,1,367.28,capture016 copy.jpg
+18,2,5,10,1,1,1,432.06,unfammale16.jpg
+18,2,5,11,2,2,1,440.84,unfamfemale01.jpg
+18,2,5,12,2,2,1,393.56,capture005 copy.jpg
+18,2,5,13,2,2,1,682.39,unfamfemale10.jpg
+18,2,5,14,2,2,1,315.19,unfamfemale40.jpg
+18,2,5,15,1,1,1,555.91,capture003 copy.jpg
+18,2,5,16,2,2,1,436.7,unfamfemale32.jpg
+18,2,5,17,1,1,1,381.54,unfammale35.jpg
+18,2,5,18,2,0,0,0,unfamfemale37.jpg
+18,2,5,19,2,2,1,383.1,unfamfemale08.jpg
+18,2,5,20,1,1,1,415.89,capture011 copy.jpg
+18,2,5,21,1,1,1,376.67,capture020 copy.jpg
+18,2,5,22,1,0,0,0,capture013 copy.jpg
+18,2,5,23,1,1,1,338.24,unfammale12.jpg
+18,2,5,24,1,1,1,347.02,unfammale33.jpg
+18,2,6,1,2,2,1,423.51,capture005 copy.jpg
+18,2,6,2,2,2,1,336.31,unfamfemale10.jpg
+18,2,6,3,1,1,1,345.09,capture013 copy.jpg
+18,2,6,4,2,2,1,473.87,unfamfemale17.jpg
+18,2,6,5,2,2,1,354.66,unfamfemale32.jpg
+18,2,6,6,2,2,1,323.47,unfamfemale04.jpg
+18,2,6,7,2,2,1,348.27,capture021 copy.jpg
+18,2,6,8,1,1,1,421,unfammale33.jpg
+18,2,6,9,1,1,1,381.78,capture016 copy.jpg
+18,2,6,10,1,1,1,382.58,capture011 copy.jpg
+18,2,6,11,1,1,1,359.39,unfammale12.jpg
+18,2,6,12,1,1,1,352.18,capture003 copy.jpg
+18,2,6,13,1,1,1,384.97,capture012 copy.jpg
+18,2,6,14,1,1,1,361.73,unfammale16.jpg
+18,2,6,15,1,1,1,378.53,unfammale35.jpg
+18,2,6,16,1,1,1,307.31,unfammale28.jpg
+18,2,6,17,2,2,1,308.07,capture015 copy.jpg
+18,2,6,18,1,1,1,436.83,capture020 copy.jpg
+18,2,6,19,2,2,1,389.65,unfamfemale40.jpg
+18,2,6,20,2,2,1,454.45,unfamfemale21.jpg
+18,2,6,21,2,2,1,319.19,unfamfemale37.jpg
+18,2,6,22,2,2,1,359.92,unfamfemale08.jpg
+18,2,6,23,1,1,1,648.75,unfammale09.jpg
+18,2,6,24,2,2,1,561.55,unfamfemale01.jpg
+18,2,7,1,1,1,1,847.77,capture012 copy.jpg
+18,2,7,2,1,1,1,416.6,capture003 copy.jpg
+18,2,7,3,1,1,1,513.39,unfammale33.jpg
+18,2,7,4,1,0,0,0,unfammale16.jpg
+18,2,7,5,2,2,1,498.95,unfamfemale32.jpg
+18,2,7,6,2,0,0,0,unfamfemale17.jpg
+18,2,7,7,2,2,1,332.49,unfamfemale08.jpg
+18,2,7,8,1,1,1,445.28,unfammale12.jpg
+18,2,7,9,2,2,1,408.74,unfamfemale10.jpg
+18,2,7,10,2,2,1,361.49,unfamfemale01.jpg
+18,2,7,11,2,2,1,354.33,capture015 copy.jpg
+18,2,7,12,1,1,1,507.12,capture011 copy.jpg
+18,2,7,13,1,1,1,427.9,unfammale35.jpg
+18,2,7,14,2,2,1,380.65,capture021 copy.jpg
+18,2,7,15,2,1,0,357.46,unfamfemale21.jpg
+18,2,7,16,2,2,1,486.21,unfamfemale40.jpg
+18,2,7,17,2,2,1,430.97,unfamfemale04.jpg
+18,2,7,18,1,1,1,543.78,unfammale28.jpg
+18,2,7,19,1,0,0,0,unfammale09.jpg
+18,2,7,20,1,1,1,353.35,capture016 copy.jpg
+18,2,7,21,2,2,1,370.16,unfamfemale37.jpg
+18,2,7,22,1,1,1,490.95,capture013 copy.jpg
+18,2,7,23,2,2,1,483.68,capture005 copy.jpg
+18,2,7,24,1,1,1,412.49,capture020 copy.jpg
+18,2,8,1,2,2,1,489,unfamfemale10.jpg
+18,2,8,2,1,1,1,433.83,unfammale16.jpg
+18,2,8,3,2,2,1,378.61,unfamfemale40.jpg
+18,2,8,4,1,1,1,451.38,unfammale09.jpg
+18,2,8,5,2,2,1,292.17,capture005 copy.jpg
+18,2,8,6,1,1,1,452.93,capture013 copy.jpg
+18,2,8,7,2,2,1,309.7,unfamfemale08.jpg
+18,2,8,8,1,1,1,382.48,capture012 copy.jpg
+18,2,8,9,1,0,0,0,capture016 copy.jpg
+18,2,8,10,1,1,1,312.06,unfammale35.jpg
+18,2,8,11,2,2,1,424.87,capture021 copy.jpg
+18,2,8,12,1,0,0,0,unfammale12.jpg
+18,2,8,13,1,0,0,0,capture020 copy.jpg
+18,2,8,14,2,2,1,403.22,unfamfemale37.jpg
+18,2,8,15,2,2,1,347.96,unfamfemale21.jpg
+18,2,8,16,1,1,1,396.77,capture003 copy.jpg
+18,2,8,17,2,2,1,365.57,capture015 copy.jpg
+18,2,8,18,1,1,1,502.36,capture011 copy.jpg
+18,2,8,19,2,2,1,495.13,unfamfemale04.jpg
+18,2,8,20,2,2,1,447.91,unfamfemale17.jpg
+18,2,8,21,1,1,1,616.71,unfammale33.jpg
+18,2,8,22,1,1,1,961.46,unfammale28.jpg
+18,2,8,23,2,2,1,434.22,unfamfemale32.jpg
+18,2,8,24,2,2,1,379.02,unfamfemale01.jpg
+19,2,1,1,2,2,1,613.82,capture005 copy.jpg
+19,2,1,2,1,1,1,459.92,unfammale14.jpg
+19,2,1,3,2,2,1,396.59,unfamfemale10.jpg
+19,2,1,4,1,1,1,413.37,capture010 copy.jpg
+19,2,1,5,2,2,1,446.05,unfamfemale17.jpg
+19,2,1,6,1,1,1,414.75,unfammale05.jpg
+19,2,1,7,2,2,1,495.55,unfamfemale40.jpg
+19,2,1,8,1,1,1,448.25,unfammale08.jpg
+19,2,1,9,2,2,1,411.69,capture015 copy.jpg
+19,2,1,10,1,1,1,655.11,unfammale25.jpg
+19,2,1,11,1,1,1,378.44,unfammale21.jpg
+19,2,1,12,2,2,1,501.87,unfamfemale04.jpg
+19,2,1,13,2,2,1,529.31,unfamfemale21.jpg
+19,2,1,14,1,1,1,444.67,unfammale18.jpg
+19,2,1,15,2,2,1,376.06,unfamfemale37.jpg
+19,2,1,16,2,2,1,499.5,unfamfemale08.jpg
+19,2,1,17,1,1,1,454.89,unfammale02.jpg
+19,2,1,18,1,1,1,402.32,unfammale39.jpg
+19,2,1,19,2,2,1,437.67,unfamfemale32.jpg
+19,2,1,20,2,2,1,470.39,unfamfemale01.jpg
+19,2,1,21,1,1,1,471.13,unfammale23.jpg
+19,2,1,22,1,1,1,431.87,unfammale38.jpg
+19,2,1,23,2,2,1,576.58,capture021 copy.jpg
+19,2,1,24,1,1,1,772.05,unfammale19.jpg
+19,2,2,1,2,2,1,408.93,unfamfemale32.jpg
+19,2,2,2,1,1,1,569.59,unfammale25.jpg
+19,2,2,3,2,2,1,602.38,unfamfemale21.jpg
+19,2,2,4,2,2,1,469.79,unfamfemale40.jpg
+19,2,2,5,1,1,1,486.48,unfammale08.jpg
+19,2,2,6,2,2,1,551.21,unfamfemale17.jpg
+19,2,2,7,2,2,1,519.97,unfamfemale10.jpg
+19,2,2,8,1,1,1,472.64,unfammale39.jpg
+19,2,2,9,2,2,1,553.39,unfamfemale08.jpg
+19,2,2,10,1,1,1,586.1,unfammale38.jpg
+19,2,2,11,2,2,1,562.88,unfamfemale01.jpg
+19,2,2,12,1,1,1,619.62,unfammale14.jpg
+19,2,2,13,2,2,1,532.34,capture015 copy.jpg
+19,2,2,14,1,1,1,533.04,capture010 copy.jpg
+19,2,2,15,1,1,1,605.77,unfammale18.jpg
+19,2,2,16,2,2,1,446.54,unfamfemale04.jpg
+19,2,2,17,2,2,1,455.27,capture021 copy.jpg
+19,2,2,18,1,1,1,447.9,unfammale19.jpg
+19,2,2,19,1,1,1,824.67,unfammale05.jpg
+19,2,2,20,1,1,1,393.45,unfammale02.jpg
+19,2,2,21,2,2,1,658.16,capture005 copy.jpg
+19,2,2,22,1,1,1,1034.93,unfammale23.jpg
+19,2,2,23,1,1,1,451.6,unfammale21.jpg
+19,2,2,24,2,2,1,564.32,unfamfemale37.jpg
+19,2,3,1,1,1,1,948.32,unfammale02.jpg
+19,2,3,2,2,2,1,517.08,unfamfemale37.jpg
+19,2,3,3,1,1,1,429.76,unfammale38.jpg
+19,2,3,4,2,2,1,662.54,unfamfemale21.jpg
+19,2,3,5,1,1,1,487.27,unfammale14.jpg
+19,2,3,6,2,2,1,487.96,unfamfemale17.jpg
+19,2,3,7,2,2,1,456.69,unfamfemale01.jpg
+19,2,3,8,2,2,1,921.46,unfamfemale40.jpg
+19,2,3,9,1,1,1,602.14,unfammale25.jpg
+19,2,3,10,1,1,1,442.89,unfammale23.jpg
+19,2,3,11,1,1,1,510.27,unfammale08.jpg
+19,2,3,12,2,2,1,375.04,capture005 copy.jpg
+19,2,3,13,1,1,1,391.77,unfammale39.jpg
+19,2,3,14,2,2,1,880.45,capture021 copy.jpg
+19,2,3,15,2,2,1,539.83,unfamfemale04.jpg
+19,2,3,16,1,1,1,500.58,unfammale21.jpg
+19,2,3,17,2,2,1,525.37,unfamfemale08.jpg
+19,2,3,18,2,2,1,510.1,unfamfemale10.jpg
+19,2,3,19,1,1,1,462.8,unfammale18.jpg
+19,2,3,20,1,1,1,495.56,unfammale19.jpg
+19,2,3,21,2,2,1,496.23,capture015 copy.jpg
+19,2,3,22,1,1,1,488.97,capture010 copy.jpg
+19,2,3,23,1,1,1,569.74,unfammale05.jpg
+19,2,3,24,2,2,1,370.41,unfamfemale32.jpg
+19,2,4,1,1,1,1,449.48,unfammale19.jpg
+19,2,4,2,2,2,1,370.27,unfamfemale10.jpg
+19,2,4,3,2,2,1,402.97,unfamfemale04.jpg
+19,2,4,4,2,2,1,355.69,unfamfemale08.jpg
+19,2,4,5,2,2,1,476.43,unfamfemale17.jpg
+19,2,4,6,2,2,1,413.12,capture015 copy.jpg
+19,2,4,7,1,1,1,381.85,unfammale23.jpg
+19,2,4,8,1,1,1,494.63,unfammale05.jpg
+19,2,4,9,1,1,1,575.32,unfammale02.jpg
+19,2,4,10,2,2,1,536.11,unfamfemale32.jpg
+19,2,4,11,2,2,1,376.83,unfamfemale21.jpg
+19,2,4,12,2,2,1,441.57,capture021 copy.jpg
+19,2,4,13,1,1,1,650.29,unfammale25.jpg
+19,2,4,14,2,2,1,491.01,unfamfemale01.jpg
+19,2,4,15,1,1,1,507.76,unfammale21.jpg
+19,2,4,16,1,1,1,404.46,unfammale08.jpg
+19,2,4,17,1,1,1,405.19,unfammale39.jpg
+19,2,4,18,2,2,1,469.94,unfamfemale40.jpg
+19,2,4,19,1,1,1,638.61,capture010 copy.jpg
+19,2,4,20,1,1,1,423.41,unfammale38.jpg
+19,2,4,21,1,1,1,512.13,unfammale18.jpg
+19,2,4,22,1,1,1,336.86,unfammale14.jpg
+19,2,4,23,2,2,1,433.59,capture005 copy.jpg
+19,2,4,24,2,2,1,450.32,unfamfemale37.jpg
+19,2,5,1,2,2,1,514.03,capture005 copy.jpg
+19,2,5,2,1,1,1,386.79,unfammale08.jpg
+19,2,5,3,2,2,1,515.49,unfamfemale21.jpg
+19,2,5,4,1,1,1,412.25,unfammale19.jpg
+19,2,5,5,1,1,1,348.92,unfammale02.jpg
+19,2,5,6,2,2,1,573.72,unfamfemale37.jpg
+19,2,5,7,2,2,1,366.38,capture015 copy.jpg
+19,2,5,8,2,2,1,575.17,unfamfemale01.jpg
+19,2,5,9,1,1,1,535.91,unfammale21.jpg
+19,2,5,10,2,2,1,480.57,unfamfemale08.jpg
+19,2,5,11,2,2,1,441.3,unfamfemale17.jpg
+19,2,5,12,2,2,1,610.09,unfamfemale04.jpg
+19,2,5,13,2,2,1,474.82,unfamfemale32.jpg
+19,2,5,14,1,1,1,387.54,unfammale38.jpg
+19,2,5,15,2,2,1,428.22,unfamfemale40.jpg
+19,2,5,16,1,1,1,428.95,capture010 copy.jpg
+19,2,5,17,1,1,1,445.72,unfammale05.jpg
+19,2,5,18,2,2,1,542.41,capture021 copy.jpg
+19,2,5,19,2,2,1,447.2,unfamfemale10.jpg
+19,2,5,20,1,1,1,415.92,unfammale23.jpg
+19,2,5,21,1,1,1,592.5,unfammale18.jpg
+19,2,5,22,1,1,1,921.34,unfammale39.jpg
+19,2,5,23,1,1,1,346.11,unfammale14.jpg
+19,2,5,24,1,1,1,434.82,unfammale25.jpg
+19,2,6,1,1,1,1,323.19,unfammale38.jpg
+19,2,6,2,2,2,1,411.93,unfamfemale10.jpg
+19,2,6,3,1,1,1,404.68,unfammale23.jpg
+19,2,6,4,2,2,1,429.35,unfamfemale32.jpg
+19,2,6,5,2,2,1,414.07,unfamfemale01.jpg
+19,2,6,6,2,2,1,350.87,capture021 copy.jpg
+19,2,6,7,2,2,1,367.58,unfamfemale17.jpg
+19,2,6,8,1,1,1,368.27,capture010 copy.jpg
+19,2,6,9,1,1,1,425.05,unfammale14.jpg
+19,2,6,10,1,1,1,329.76,unfammale21.jpg
+19,2,6,11,2,1,0,322.47,unfamfemale37.jpg
+19,2,6,12,2,2,1,475.22,unfamfemale21.jpg
+19,2,6,13,1,1,1,571.98,unfammale25.jpg
+19,2,6,14,2,2,1,662.27,unfamfemale40.jpg
+19,2,6,15,1,1,1,533.43,unfammale05.jpg
+19,2,6,16,1,1,1,430.16,unfammale18.jpg
+19,2,6,17,1,1,1,494.89,unfammale39.jpg
+19,2,6,18,1,1,1,391.61,unfammale19.jpg
+19,2,6,19,2,2,1,448.3,unfamfemale04.jpg
+19,2,6,20,2,2,1,441.04,capture015 copy.jpg
+19,2,6,21,2,2,1,633.77,unfamfemale08.jpg
+19,2,6,22,2,2,1,394.49,capture005 copy.jpg
+19,2,6,23,1,1,1,531.21,unfammale08.jpg
+19,2,6,24,1,1,1,355.98,unfammale02.jpg
+19,2,7,1,1,1,1,504.29,unfammale39.jpg
+19,2,7,2,2,2,1,361,capture015 copy.jpg
+19,2,7,3,1,1,1,361.73,unfammale08.jpg
+19,2,7,4,1,1,1,434.4,unfammale23.jpg
+19,2,7,5,1,1,1,371.17,unfammale18.jpg
+19,2,7,6,2,2,1,347.9,capture021 copy.jpg
+19,2,7,7,1,1,1,500.66,unfammale02.jpg
+19,2,7,8,1,1,1,541.39,unfammale14.jpg
+19,2,7,9,1,1,1,382.11,capture010 copy.jpg
+19,2,7,10,1,1,1,430.8,unfammale21.jpg
+19,2,7,11,2,2,1,423.57,unfamfemale32.jpg
+19,2,7,12,1,1,1,504.28,unfammale38.jpg
+19,2,7,13,2,2,1,384.97,unfamfemale10.jpg
+19,2,7,14,2,2,1,361.74,unfamfemale08.jpg
+19,2,7,15,2,2,1,362.48,unfamfemale40.jpg
+19,2,7,16,2,2,1,651.22,unfamfemale37.jpg
+19,2,7,17,2,2,1,347.9,unfamfemale04.jpg
+19,2,7,18,2,2,1,316.6,unfamfemale21.jpg
+19,2,7,19,1,1,1,437.4,unfammale05.jpg
+19,2,7,20,1,1,1,342.07,unfammale19.jpg
+19,2,7,21,2,2,1,382.85,unfamfemale01.jpg
+19,2,7,22,1,1,1,543.56,unfammale25.jpg
+19,2,7,23,2,2,1,704.25,capture005 copy.jpg
+19,2,7,24,2,1,0,409.01,unfamfemale17.jpg
+19,2,8,1,1,1,1,447.53,unfammale19.jpg
+19,2,8,2,1,1,1,368.34,unfammale25.jpg
+19,2,8,3,2,2,1,561.07,unfamfemale08.jpg
+19,2,8,4,1,1,1,441.74,unfammale08.jpg
+19,2,8,5,2,2,1,506.53,capture021 copy.jpg
+19,2,8,6,1,1,1,451.19,unfammale21.jpg
+19,2,8,7,2,2,1,451.97,unfamfemale40.jpg
+19,2,8,8,1,1,1,428.66,unfammale23.jpg
+19,2,8,9,1,1,1,373.43,unfammale18.jpg
+19,2,8,10,1,1,1,430.12,unfammale38.jpg
+19,2,8,11,1,1,1,334.81,unfammale39.jpg
+19,2,8,12,1,1,1,375.62,unfammale05.jpg
+19,2,8,13,1,1,1,528.33,unfammale02.jpg
+19,2,8,14,1,1,1,401.05,unfammale14.jpg
+19,2,8,15,2,2,1,465.78,unfamfemale04.jpg
+19,2,8,16,2,2,1,554.51,unfamfemale10.jpg
+19,2,8,17,2,2,1,323.26,unfamfemale21.jpg
+19,2,8,18,2,2,1,548,unfamfemale37.jpg
+19,2,8,19,2,2,1,612.72,unfamfemale17.jpg
+19,2,8,20,1,1,1,581.46,capture010 copy.jpg
+19,2,8,21,2,2,1,918.19,capture005 copy.jpg
+19,2,8,22,2,2,1,398.9,capture015 copy.jpg
+19,2,8,23,2,2,1,567.62,unfamfemale01.jpg
+19,2,8,24,2,2,1,440.34,unfamfemale32.jpg
+20,2,1,1,1,1,1,655.4,unfammale09.jpg
+20,2,1,2,2,2,1,464.15,capture002 copy.jpg
+20,2,1,3,1,1,1,512.99,unfammale16.jpg
+20,2,1,4,1,1,1,537.75,capture012 copy.jpg
+20,2,1,5,1,1,1,602.52,capture011 copy.jpg
+20,2,1,6,1,1,1,555.34,capture020 copy.jpg
+20,2,1,7,2,2,1,508.09,unfamfemale26.jpg
+20,2,1,8,1,1,1,588.83,unfammale35.jpg
+20,2,1,9,1,1,1,557.64,unfammale12.jpg
+20,2,1,10,2,2,1,518.47,unfamfemale38.jpg
+20,2,1,11,2,2,1,559.2,unfamfemale03.jpg
+20,2,1,12,2,2,1,543.96,unfamfemale20.jpg
+20,2,1,13,2,2,1,592.8,unfamfemale06.jpg
+20,2,1,14,2,2,1,628.22,capture001 copy.jpg
+20,2,1,15,2,2,1,645.05,unfamfemale15.jpg
+20,2,1,16,2,2,1,565.83,unfamfemale05.jpg
+20,2,1,17,2,2,1,606.51,unfamfemale24.jpg
+20,2,1,18,1,1,1,575.39,capture003 copy.jpg
+20,2,1,19,1,1,1,408.16,capture016 copy.jpg
+20,2,1,20,1,1,1,440.92,unfammale28.jpg
+20,2,1,21,1,1,1,545.69,capture013 copy.jpg
+20,2,1,22,2,2,1,578.46,capture017 copy.jpg
+20,2,1,23,2,2,1,603.3,unfamfemale39.jpg
+20,2,1,24,1,1,1,596.09,unfammale33.jpg
+20,2,2,1,2,2,1,539.98,unfamfemale05.jpg
+20,2,2,2,1,1,1,468.73,unfammale28.jpg
+20,2,2,3,1,1,1,741.56,capture011 copy.jpg
+20,2,2,4,1,1,1,542.35,capture012 copy.jpg
+20,2,2,5,2,2,1,511.13,unfamfemale26.jpg
+20,2,2,6,2,2,1,471.89,unfamfemale20.jpg
+20,2,2,7,1,1,1,480.69,unfammale35.jpg
+20,2,2,8,1,1,1,697.42,unfammale12.jpg
+20,2,2,9,2,2,1,548.89,capture017 copy.jpg
+20,2,2,10,2,2,1,533.71,capture001 copy.jpg
+20,2,2,11,1,1,1,590.48,unfammale16.jpg
+20,2,2,12,1,1,1,439.28,capture016 copy.jpg
+20,2,2,13,2,2,1,696.06,unfamfemale24.jpg
+20,2,2,14,2,2,1,624.81,unfamfemale15.jpg
+20,2,2,15,2,2,1,545.62,unfamfemale39.jpg
+20,2,2,16,1,1,1,466.38,capture003 copy.jpg
+20,2,2,17,1,1,1,451.14,capture013 copy.jpg
+20,2,2,18,1,1,1,531.97,unfammale09.jpg
+20,2,2,19,1,1,1,447.42,unfammale33.jpg
+20,2,2,20,2,2,1,480.18,unfamfemale38.jpg
+20,2,2,21,2,2,1,560.99,unfamfemale06.jpg
+20,2,2,22,1,1,1,689.78,capture020 copy.jpg
+20,2,2,23,2,2,1,522.55,capture002 copy.jpg
+20,2,2,24,2,2,1,507.29,unfamfemale03.jpg
+20,2,3,1,2,2,1,434.37,unfamfemale26.jpg
+20,2,3,2,2,2,1,507.1,unfamfemale15.jpg
+20,2,3,3,1,1,1,531.91,capture011 copy.jpg
+20,2,3,4,1,1,1,516.71,capture013 copy.jpg
+20,2,3,5,1,1,1,493.45,capture016 copy.jpg
+20,2,3,6,2,2,1,494.27,unfamfemale05.jpg
+20,2,3,7,1,1,1,423.07,unfammale16.jpg
+20,2,3,8,1,1,1,559.83,unfammale35.jpg
+20,2,3,9,1,1,1,552.58,unfammale33.jpg
+20,2,3,10,1,1,1,489.41,capture003 copy.jpg
+20,2,3,11,1,1,1,514.2,unfammale12.jpg
+20,2,3,12,2,2,1,498.95,capture002 copy.jpg
+20,2,3,13,2,2,1,475.75,capture001 copy.jpg
+20,2,3,14,1,1,1,636.54,unfammale09.jpg
+20,2,3,15,2,2,1,605.31,unfamfemale03.jpg
+20,2,3,16,2,2,1,598.04,unfamfemale20.jpg
+20,2,3,17,2,2,1,558.89,unfamfemale38.jpg
+20,2,3,18,1,1,1,575.61,capture012 copy.jpg
+20,2,3,19,2,2,1,608.41,unfamfemale24.jpg
+20,2,3,20,2,2,1,609.23,unfamfemale39.jpg
+20,2,3,21,2,2,1,633.99,capture017 copy.jpg
+20,2,3,22,2,2,1,544.88,unfamfemale06.jpg
+20,2,3,23,1,1,1,531.5,unfammale28.jpg
+20,2,3,24,1,1,1,436.31,capture020 copy.jpg
+20,2,4,1,2,2,1,468.61,unfamfemale05.jpg
+20,2,4,2,1,1,1,477.47,unfammale12.jpg
+20,2,4,3,2,2,1,518.25,capture002 copy.jpg
+20,2,4,4,1,1,1,654.99,capture011 copy.jpg
+20,2,4,5,2,2,1,495.82,unfamfemale38.jpg
+20,2,4,6,2,2,1,488.6,unfamfemale20.jpg
+20,2,4,7,1,1,1,537.37,capture012 copy.jpg
+20,2,4,8,2,2,1,482.16,capture001 copy.jpg
+20,2,4,9,1,1,1,682.93,capture016 copy.jpg
+20,2,4,10,2,2,1,627.73,unfamfemale39.jpg
+20,2,4,11,2,2,1,556.52,capture017 copy.jpg
+20,2,4,12,2,2,1,557.29,unfamfemale26.jpg
+20,2,4,13,1,1,1,502.01,unfammale16.jpg
+20,2,4,14,1,1,1,582.86,unfammale28.jpg
+20,2,4,15,2,2,1,567.61,unfamfemale06.jpg
+20,2,4,16,1,1,1,632.37,unfammale35.jpg
+20,2,4,17,1,1,1,449.18,capture020 copy.jpg
+20,2,4,18,2,2,1,713.95,unfamfemale03.jpg
+20,2,4,19,2,2,1,618.73,unfamfemale24.jpg
+20,2,4,20,1,1,1,699.51,capture003 copy.jpg
+20,2,4,21,1,1,1,788.32,unfammale33.jpg
+20,2,4,22,2,2,1,501.12,unfamfemale15.jpg
+20,2,4,23,1,1,1,493.86,capture013 copy.jpg
+20,2,4,24,1,1,1,718.6,unfammale09.jpg
+20,2,5,1,2,2,1,461.69,unfamfemale26.jpg
+20,2,5,2,2,2,1,518.47,capture017 copy.jpg
+20,2,5,3,1,1,1,423.18,capture013 copy.jpg
+20,2,5,4,2,2,1,487.93,unfamfemale03.jpg
+20,2,5,5,1,1,1,456.81,capture016 copy.jpg
+20,2,5,6,1,1,1,457.58,capture012 copy.jpg
+20,2,5,7,2,2,1,522.36,unfamfemale39.jpg
+20,2,5,8,2,2,1,515.13,capture002 copy.jpg
+20,2,5,9,1,1,1,611.89,unfammale33.jpg
+20,2,5,10,1,1,1,492.69,unfammale16.jpg
+20,2,5,11,1,1,1,445.49,capture003 copy.jpg
+20,2,5,12,2,2,1,542.26,capture001 copy.jpg
+20,2,5,13,1,1,1,519.07,unfammale09.jpg
+20,2,5,14,2,2,1,631.33,unfamfemale15.jpg
+20,2,5,15,1,1,1,544.61,unfammale12.jpg
+20,2,5,16,1,1,1,657.36,capture020 copy.jpg
+20,2,5,17,2,2,1,482.18,unfamfemale05.jpg
+20,2,5,18,1,1,1,562.97,capture011 copy.jpg
+20,2,5,19,2,2,1,491.7,unfamfemale24.jpg
+20,2,5,20,2,2,1,524.48,unfamfemale20.jpg
+20,2,5,21,2,2,1,557.33,unfamfemale38.jpg
+20,2,5,22,2,2,1,510.04,unfamfemale06.jpg
+20,2,5,23,1,1,1,686.89,unfammale35.jpg
+20,2,5,24,1,1,1,431.62,unfammale28.jpg
+20,2,6,1,1,1,1,687.78,capture013 copy.jpg
+20,2,6,2,1,1,1,448.61,capture016 copy.jpg
+20,2,6,3,2,2,1,489.37,unfamfemale24.jpg
+20,2,6,4,2,2,1,538.15,capture001 copy.jpg
+20,2,6,5,2,2,1,562.92,capture002 copy.jpg
+20,2,6,6,1,1,1,531.74,capture012 copy.jpg
+20,2,6,7,2,2,1,492.49,unfamfemale26.jpg
+20,2,6,8,2,2,1,549.24,unfamfemale39.jpg
+20,2,6,9,1,1,1,494.08,unfammale35.jpg
+20,2,6,10,2,2,1,430.86,unfamfemale05.jpg
+20,2,6,11,1,1,1,479.65,capture003 copy.jpg
+20,2,6,12,2,2,1,456.37,unfamfemale20.jpg
+20,2,6,13,1,1,1,369.15,unfammale09.jpg
+20,2,6,14,2,2,1,362,unfamfemale03.jpg
+20,2,6,15,1,1,1,306.74,unfammale28.jpg
+20,2,6,16,1,1,1,515.5,unfammale12.jpg
+20,2,6,17,2,2,1,452.34,unfamfemale38.jpg
+20,2,6,18,1,1,1,437.13,unfammale33.jpg
+20,2,6,19,2,2,1,461.85,unfamfemale15.jpg
+20,2,6,20,1,1,1,550.66,capture011 copy.jpg
+20,2,6,21,1,1,1,535.47,unfammale16.jpg
+20,2,6,22,1,1,1,456.2,capture020 copy.jpg
+20,2,6,23,2,2,1,601.03,capture017 copy.jpg
+20,2,6,24,2,2,1,537.82,unfamfemale06.jpg
+20,2,7,1,1,1,1,479.32,capture020 copy.jpg
+20,2,7,2,2,2,1,624.18,unfamfemale05.jpg
+20,2,7,3,2,2,1,608.97,capture017 copy.jpg
+20,2,7,4,2,2,1,585.75,unfamfemale20.jpg
+20,2,7,5,1,1,1,482.53,capture003 copy.jpg
+20,2,7,6,2,2,1,467.31,unfamfemale06.jpg
+20,2,7,7,1,1,1,524.1,unfammale28.jpg
+20,2,7,8,2,2,1,724.86,capture002 copy.jpg
+20,2,7,9,2,2,1,501.65,unfamfemale15.jpg
+20,2,7,10,1,1,1,534.4,unfammale33.jpg
+20,2,7,11,1,1,1,439.18,capture012 copy.jpg
+20,2,7,12,2,2,1,496,unfamfemale03.jpg
+20,2,7,13,2,2,1,544.79,capture001 copy.jpg
+20,2,7,14,2,2,1,529.57,unfamfemale38.jpg
+20,2,7,15,1,1,1,522.35,capture011 copy.jpg
+20,2,7,16,1,1,1,539.1,unfammale12.jpg
+20,2,7,17,1,1,1,499.92,unfammale09.jpg
+20,2,7,18,1,1,1,564.69,capture013 copy.jpg
+20,2,7,19,2,2,1,477.48,unfamfemale26.jpg
+20,2,7,20,2,2,1,462.25,unfamfemale39.jpg
+20,2,7,21,1,1,1,575,capture016 copy.jpg
+20,2,7,22,1,1,1,583.83,unfammale16.jpg
+20,2,7,23,2,2,1,472.58,unfamfemale24.jpg
+20,2,7,24,1,1,1,561.37,unfammale35.jpg
+20,2,8,1,2,2,1,499.98,unfamfemale39.jpg
+20,2,8,2,2,2,1,492.81,unfamfemale05.jpg
+20,2,8,3,1,1,1,533.59,unfammale33.jpg
+20,2,8,4,1,1,1,526.37,capture011 copy.jpg
+20,2,8,5,1,1,1,479.16,capture020 copy.jpg
+20,2,8,6,1,1,1,431.88,capture003 copy.jpg
+20,2,8,7,2,2,1,528.69,capture017 copy.jpg
+20,2,8,8,2,2,1,497.5,unfamfemale20.jpg
+20,2,8,9,1,1,1,610.28,capture012 copy.jpg
+20,2,8,10,2,2,1,491.03,unfamfemale15.jpg
+20,2,8,11,2,2,1,707.85,capture002 copy.jpg
+20,2,8,12,1,1,1,452.63,unfammale35.jpg
+20,2,8,13,1,1,1,461.41,capture013 copy.jpg
+20,2,8,14,1,1,1,598.17,unfammale28.jpg
+20,2,8,15,2,2,1,438.98,unfamfemale06.jpg
+20,2,8,16,2,2,1,447.71,capture001 copy.jpg
+20,2,8,17,2,2,1,488.54,unfamfemale24.jpg
+20,2,8,18,2,2,1,593.32,unfamfemale03.jpg
+20,2,8,19,2,2,1,490.06,unfamfemale26.jpg
+20,2,8,20,1,1,1,474.89,unfammale09.jpg
+20,2,8,21,1,1,1,555.64,unfammale16.jpg
+20,2,8,22,1,1,1,516.45,capture016 copy.jpg
+20,2,8,23,1,1,1,597.23,unfammale12.jpg
+20,2,8,24,2,2,1,509.96,unfamfemale38.jpg
+21,2,1,1,1,1,1,1107.72,unfammale05.jpg
+21,2,1,2,2,2,1,487.06,unfamfemale39.jpg
+21,2,1,3,2,2,1,399.8,unfamfemale06.jpg
+21,2,1,4,2,2,1,464.5,capture002 copy.jpg
+21,2,1,5,1,1,1,433.23,unfammale08.jpg
+21,2,1,6,1,2,0,433.99,unfammale25.jpg
+21,2,1,7,1,1,1,554.75,unfammale19.jpg
+21,2,1,8,1,1,1,299.45,capture010 copy.jpg
+21,2,1,9,1,1,1,502.86,unfammale14.jpg
+21,2,1,10,2,2,1,410.26,capture001 copy.jpg
+21,2,1,11,2,2,1,501.67,unfamfemale03.jpg
+21,2,1,12,2,2,1,505.1,unfamfemale20.jpg
+21,2,1,13,1,1,1,396.46,unfammale18.jpg
+21,2,1,14,1,1,1,359.88,unfammale23.jpg
+21,2,1,15,2,2,1,379.26,unfamfemale15.jpg
+21,2,1,16,2,2,1,366.7,unfamfemale26.jpg
+21,2,1,17,1,2,0,586.08,unfammale38.jpg
+21,2,1,18,1,2,0,485.5,unfammale21.jpg
+21,2,1,19,2,2,1,453.99,unfamfemale05.jpg
+21,2,1,20,2,2,1,422.94,unfamfemale24.jpg
+21,2,1,21,2,2,1,551.68,capture017 copy.jpg
+21,2,1,22,1,1,1,443.08,unfammale39.jpg
+21,2,1,23,1,1,1,427.81,unfammale02.jpg
+21,2,1,24,2,2,1,495.22,unfamfemale38.jpg
+21,2,2,1,1,1,1,594.9,unfammale25.jpg
+21,2,2,2,2,2,1,427.66,unfamfemale06.jpg
+21,2,2,3,1,1,1,452.4,unfammale21.jpg
+21,2,2,4,2,2,1,429.1,capture002 copy.jpg
+21,2,2,5,2,2,1,445.8,capture017 copy.jpg
+21,2,2,6,1,1,1,1150.55,unfammale38.jpg
+21,2,2,7,2,2,1,1335.35,unfamfemale24.jpg
+21,2,2,8,2,2,1,1200.07,unfamfemale05.jpg
+21,2,2,9,1,1,1,424.8,unfammale23.jpg
+21,2,2,10,2,2,1,633.47,unfamfemale39.jpg
+21,2,2,11,1,1,1,554.24,unfammale05.jpg
+21,2,2,12,2,2,1,466.93,unfamfemale26.jpg
+21,2,2,13,2,2,1,403.65,unfamfemale20.jpg
+21,2,2,14,2,2,1,484.4,unfamfemale38.jpg
+21,2,2,15,1,1,1,613.14,unfammale08.jpg
+21,2,2,16,1,1,1,557.86,unfammale39.jpg
+21,2,2,17,2,2,1,486.62,unfamfemale03.jpg
+21,2,2,18,1,1,1,895.32,unfammale14.jpg
+21,2,2,19,1,1,1,440.08,unfammale02.jpg
+21,2,2,20,1,1,1,416.81,capture010 copy.jpg
+21,2,2,21,2,2,1,385.53,unfamfemale15.jpg
+21,2,2,22,1,1,1,386.25,unfammale19.jpg
+21,2,2,23,1,1,1,565.6,unfammale18.jpg
+21,2,2,24,2,2,1,526.38,capture001 copy.jpg
+21,2,3,1,2,2,1,580.53,unfamfemale06.jpg
+21,2,3,2,1,1,1,397.26,unfammale19.jpg
+21,2,3,3,2,2,1,430.04,unfamfemale20.jpg
+21,2,3,4,2,2,1,494.75,capture017 copy.jpg
+21,2,3,5,1,1,1,439.47,unfammale05.jpg
+21,2,3,6,2,2,1,408.2,unfamfemale03.jpg
+21,2,3,7,1,1,1,384.9,unfammale23.jpg
+21,2,3,8,1,1,1,345.48,unfammale02.jpg
+21,2,3,9,2,2,1,362.36,unfamfemale24.jpg
+21,2,3,10,1,1,1,347.11,capture010 copy.jpg
+21,2,3,11,1,1,1,443.87,unfammale21.jpg
+21,2,3,12,1,1,1,412.58,unfammale08.jpg
+21,2,3,13,1,1,1,429.26,unfammale18.jpg
+21,2,3,14,1,1,1,446,unfammale39.jpg
+21,2,3,15,2,2,1,446.78,capture001 copy.jpg
+21,2,3,16,1,1,1,375.44,unfammale38.jpg
+21,2,3,17,2,2,1,376.22,unfamfemale26.jpg
+21,2,3,18,2,2,1,656.91,unfamfemale38.jpg
+21,2,3,19,2,2,1,449.64,unfamfemale05.jpg
+21,2,3,20,2,1,0,426.41,unfamfemale39.jpg
+21,2,3,21,2,2,1,379.08,unfamfemale15.jpg
+21,2,3,22,2,2,1,379.88,capture002 copy.jpg
+21,2,3,23,1,1,1,388.54,unfammale14.jpg
+21,2,3,24,1,1,1,637.34,unfammale25.jpg
+21,2,4,1,2,2,1,423.04,unfamfemale26.jpg
+21,2,4,2,2,2,1,423.72,capture001 copy.jpg
+21,2,4,3,2,2,1,440.49,unfamfemale20.jpg
+21,2,4,4,1,1,1,729.17,unfammale08.jpg
+21,2,4,5,2,2,1,489.95,unfamfemale06.jpg
+21,2,4,6,1,1,1,490.63,unfammale21.jpg
+21,2,4,7,1,1,1,563.41,unfammale25.jpg
+21,2,4,8,1,1,1,412.1,unfammale39.jpg
+21,2,4,9,1,1,1,500.42,unfammale38.jpg
+21,2,4,10,2,2,1,485.53,capture017 copy.jpg
+21,2,4,11,1,1,1,478.32,unfammale18.jpg
+21,2,4,12,2,2,1,535.04,capture002 copy.jpg
+21,2,4,13,2,2,1,535.75,unfamfemale39.jpg
+21,2,4,14,2,2,1,368.47,unfamfemale03.jpg
+21,2,4,15,1,1,1,473.19,unfammale02.jpg
+21,2,4,16,2,2,1,345.91,unfamfemale15.jpg
+21,2,4,17,2,2,1,434.69,unfamfemale24.jpg
+21,2,4,18,1,1,1,403.39,unfammale19.jpg
+21,2,4,19,2,2,1,492.09,unfamfemale38.jpg
+21,2,4,20,1,1,1,508.84,unfammale05.jpg
+21,2,4,21,2,2,1,509.56,unfamfemale05.jpg
+21,2,4,22,1,1,1,398.29,unfammale14.jpg
+21,2,4,23,1,1,1,431,capture010 copy.jpg
+21,2,4,24,1,1,1,999.8,unfammale23.jpg
+21,2,5,1,1,2,0,484.07,unfammale14.jpg
+21,2,5,2,1,1,1,428.77,unfammale19.jpg
+21,2,5,3,2,2,1,501.44,capture002 copy.jpg
+21,2,5,4,2,2,1,598.18,unfamfemale05.jpg
+21,2,5,5,2,1,0,486.93,capture001 copy.jpg
+21,2,5,6,1,1,1,383.66,unfammale08.jpg
+21,2,5,7,1,1,1,528.38,unfammale39.jpg
+21,2,5,8,1,1,1,625.15,unfammale25.jpg
+21,2,5,9,2,0,0,0,unfamfemale38.jpg
+21,2,5,10,2,2,1,442.58,unfamfemale39.jpg
+21,2,5,11,2,2,1,683.33,unfamfemale20.jpg
+21,2,5,12,2,2,1,395.99,unfamfemale24.jpg
+21,2,5,13,1,1,1,356.78,capture010 copy.jpg
+21,2,5,14,2,2,1,421.49,unfamfemale15.jpg
+21,2,5,15,2,2,1,390.24,unfamfemale03.jpg
+21,2,5,16,2,2,1,358.96,unfamfemale26.jpg
+21,2,5,17,1,1,1,407.69,unfammale23.jpg
+21,2,5,18,2,2,1,320.4,unfamfemale06.jpg
+21,2,5,19,1,0,0,0,unfammale21.jpg
+21,2,5,20,1,1,1,489.72,unfammale18.jpg
+21,2,5,21,1,1,1,490.57,unfammale05.jpg
+21,2,5,22,2,1,0,443.33,capture017 copy.jpg
+21,2,5,23,1,1,1,660.05,unfammale38.jpg
+21,2,5,24,1,1,1,668.77,unfammale02.jpg
+21,2,6,1,2,2,1,427.76,capture017 copy.jpg
+21,2,6,2,2,2,1,380.43,unfamfemale15.jpg
+21,2,6,3,1,2,0,269.19,unfammale39.jpg
+21,2,6,4,2,2,1,485.93,unfamfemale38.jpg
+21,2,6,5,1,1,1,510.61,unfammale25.jpg
+21,2,6,6,1,1,1,599.37,capture010 copy.jpg
+21,2,6,7,2,2,1,424.05,unfamfemale26.jpg
+21,2,6,8,1,1,1,488.8,unfammale23.jpg
+21,2,6,9,2,2,1,353.56,capture002 copy.jpg
+21,2,6,10,2,2,1,410.29,unfamfemale24.jpg
+21,2,6,11,2,2,1,1178.98,unfamfemale20.jpg
+21,2,6,12,2,2,1,507.7,unfamfemale06.jpg
+21,2,6,13,1,1,1,380.48,unfammale21.jpg
+21,2,6,14,1,1,1,397.21,unfammale14.jpg
+21,2,6,15,1,1,1,357.9,unfammale18.jpg
+21,2,6,16,1,1,1,446.66,unfammale02.jpg
+21,2,6,17,1,1,1,351.39,unfammale38.jpg
+21,2,6,18,2,2,1,392.1,capture001 copy.jpg
+21,2,6,19,2,2,1,440.85,unfamfemale39.jpg
+21,2,6,20,1,1,1,513.57,unfammale05.jpg
+21,2,6,21,2,2,1,362.31,unfamfemale05.jpg
+21,2,6,22,2,2,1,475.03,unfamfemale03.jpg
+21,2,6,23,1,1,1,419.75,unfammale08.jpg
+21,2,6,24,1,1,1,428.48,unfammale19.jpg
+21,2,7,1,1,1,1,654.15,unfammale08.jpg
+21,2,7,2,2,2,1,478.85,capture017 copy.jpg
+21,2,7,3,2,2,1,535.62,capture001 copy.jpg
+21,2,7,4,2,2,1,376.34,unfamfemale26.jpg
+21,2,7,5,1,1,1,521.05,unfammale18.jpg
+21,2,7,6,2,2,1,393.79,unfamfemale24.jpg
+21,2,7,7,1,1,1,458.43,capture010 copy.jpg
+21,2,7,8,1,1,1,507.26,unfammale14.jpg
+21,2,7,9,1,1,1,331.93,unfammale19.jpg
+21,2,7,10,1,1,1,356.72,unfammale25.jpg
+21,2,7,11,1,1,1,357.44,unfammale02.jpg
+21,2,7,12,1,1,1,318.15,unfammale38.jpg
+21,2,7,13,1,1,1,262.88,unfammale05.jpg
+21,2,7,14,2,2,1,407.63,unfamfemale15.jpg
+21,2,7,15,2,2,1,344.29,unfamfemale38.jpg
+21,2,7,16,1,1,1,505.08,unfammale21.jpg
+21,2,7,17,2,2,1,497.76,unfamfemale03.jpg
+21,2,7,18,2,2,1,338.53,unfamfemale20.jpg
+21,2,7,19,2,2,1,275.26,unfamfemale05.jpg
+21,2,7,20,2,2,1,316,unfamfemale39.jpg
+21,2,7,21,1,2,0,284.65,unfammale39.jpg
+21,2,7,22,2,1,0,365.43,unfamfemale06.jpg
+21,2,7,23,1,1,1,374.17,unfammale23.jpg
+21,2,7,24,2,2,1,446.9,capture002 copy.jpg
+21,2,8,1,2,2,1,463.55,unfamfemale20.jpg
+21,2,8,2,1,1,1,384.3,unfammale38.jpg
+21,2,8,3,1,1,1,440.99,unfammale23.jpg
+21,2,8,4,2,2,1,353.77,unfamfemale05.jpg
+21,2,8,5,1,1,1,362.48,unfammale19.jpg
+21,2,8,6,2,2,1,355.22,unfamfemale06.jpg
+21,2,8,7,1,1,1,403.95,unfammale08.jpg
+21,2,8,8,2,2,1,428.67,capture001 copy.jpg
+21,2,8,9,1,1,1,549.41,capture010 copy.jpg
+21,2,8,10,2,2,1,454.09,unfamfemale15.jpg
+21,2,8,11,1,1,1,334.83,unfammale21.jpg
+21,2,8,12,2,2,1,471.54,unfamfemale26.jpg
+21,2,8,13,1,1,1,368.32,unfammale39.jpg
+21,2,8,14,2,2,1,609,unfamfemale03.jpg
+21,2,8,15,2,1,0,329.75,unfamfemale24.jpg
+21,2,8,16,1,1,1,290.44,unfammale18.jpg
+21,2,8,17,2,2,1,339.2,unfamfemale39.jpg
+21,2,8,18,1,0,0,0,unfammale05.jpg
+21,2,8,19,2,2,1,348.63,unfamfemale38.jpg
+21,2,8,20,1,1,1,477.38,unfammale14.jpg
+21,2,8,21,1,1,1,358.14,unfammale02.jpg
+21,2,8,22,2,2,1,406.86,capture002 copy.jpg
+21,2,8,23,2,1,0,455.59,capture017 copy.jpg
+21,2,8,24,1,1,1,552.32,unfammale25.jpg
+22,2,1,1,2,2,1,540.29,unfamfemale04.jpg
+22,2,1,2,1,1,1,439.72,unfammale28.jpg
+22,2,1,3,1,1,1,584.42,unfammale35.jpg
+22,2,1,4,1,1,1,465.2,capture012 copy.jpg
+22,2,1,5,1,1,1,361.92,unfammale12.jpg
+22,2,1,6,1,1,1,466.66,capture013 copy.jpg
+22,2,1,7,2,2,1,379.34,capture021 copy.jpg
+22,2,1,8,2,2,1,428.1,unfamfemale17.jpg
+22,2,1,9,2,2,1,351.51,unfamfemale01.jpg
+22,2,1,10,2,2,1,314.85,unfamfemale21.jpg
+22,2,1,11,2,2,1,406.3,unfamfemale32.jpg
+22,2,1,12,2,2,1,369.7,unfamfemale08.jpg
+22,2,1,13,1,1,1,573.07,capture011 copy.jpg
+22,2,1,14,2,2,1,504.5,capture005 copy.jpg
+22,2,1,15,2,2,1,555.92,unfamfemale10.jpg
+22,2,1,16,1,1,1,447.35,unfammale16.jpg
+22,2,1,17,1,1,1,314.74,unfammale33.jpg
+22,2,1,18,2,2,1,406.08,capture015 copy.jpg
+22,2,1,19,1,1,1,689.49,unfammale09.jpg
+22,2,1,20,1,1,1,524.91,capture020 copy.jpg
+22,2,1,21,1,1,1,413.66,capture016 copy.jpg
+22,2,1,22,2,2,1,390.33,unfamfemale40.jpg
+22,2,1,23,1,1,1,551.11,capture003 copy.jpg
+22,2,1,24,2,2,1,554.47,unfamfemale37.jpg
+22,2,2,1,2,2,1,418.18,capture021 copy.jpg
+22,2,2,2,2,2,1,442.99,capture005 copy.jpg
+22,2,2,3,2,2,1,419.72,unfamfemale04.jpg
+22,2,2,4,2,2,1,436.43,unfamfemale17.jpg
+22,2,2,5,1,1,1,357.18,capture016 copy.jpg
+22,2,2,6,2,2,1,381.91,unfamfemale10.jpg
+22,2,2,7,1,1,1,422.6,unfammale16.jpg
+22,2,2,8,2,2,1,463.35,unfamfemale37.jpg
+22,2,2,9,1,1,1,336.07,capture020 copy.jpg
+22,2,2,10,2,2,1,336.83,unfamfemale01.jpg
+22,2,2,11,2,2,1,593.57,capture015 copy.jpg
+22,2,2,12,1,1,1,410.29,capture011 copy.jpg
+22,2,2,13,1,1,1,771.03,unfammale33.jpg
+22,2,2,14,1,1,1,459.73,capture003 copy.jpg
+22,2,2,15,1,1,1,396.43,unfammale09.jpg
+22,2,2,16,2,2,1,357.18,unfamfemale32.jpg
+22,2,2,17,1,1,1,397.89,unfammale28.jpg
+22,2,2,18,2,2,1,486.63,unfamfemale21.jpg
+22,2,2,19,1,1,1,311.15,unfammale35.jpg
+22,2,2,20,1,1,1,352.06,capture012 copy.jpg
+22,2,2,21,2,2,1,448.83,unfamfemale40.jpg
+22,2,2,22,1,1,1,441.59,unfammale12.jpg
+22,2,2,23,1,1,1,434.28,capture013 copy.jpg
+22,2,2,24,2,2,1,363.05,unfamfemale08.jpg
+22,2,3,1,1,1,1,418.53,unfammale28.jpg
+22,2,3,2,1,1,1,355.31,unfammale12.jpg
+22,2,3,3,2,2,1,468.03,unfamfemale37.jpg
+22,2,3,4,1,1,1,460.79,unfammale33.jpg
+22,2,3,5,1,1,1,349.5,unfammale16.jpg
+22,2,3,6,1,1,1,518.25,capture011 copy.jpg
+22,2,3,7,1,2,0,358.98,capture016 copy.jpg
+22,2,3,8,2,2,1,543.67,unfamfemale40.jpg
+22,2,3,9,2,2,1,384.43,unfamfemale10.jpg
+22,2,3,10,2,2,1,545.17,unfamfemale32.jpg
+22,2,3,11,2,2,1,481.9,capture021 copy.jpg
+22,2,3,12,2,2,1,410.59,unfamfemale01.jpg
+22,2,3,13,2,2,1,411.31,capture005 copy.jpg
+22,2,3,14,1,1,1,372.04,unfammale35.jpg
+22,2,3,15,2,2,1,452.82,unfamfemale17.jpg
+22,2,3,16,1,1,1,341.49,unfammale09.jpg
+22,2,3,17,2,2,1,422.26,unfamfemale04.jpg
+22,2,3,18,2,2,1,494.98,unfamfemale08.jpg
+22,2,3,19,1,1,1,391.73,capture020 copy.jpg
+22,2,3,20,2,2,1,416.39,capture015 copy.jpg
+22,2,3,21,1,1,1,411.87,capture013 copy.jpg
+22,2,3,22,1,1,1,444.57,capture003 copy.jpg
+22,2,3,23,2,2,1,405.31,unfamfemale21.jpg
+22,2,3,24,1,1,1,382.05,capture012 copy.jpg
+22,2,4,1,1,1,1,410.06,unfammale16.jpg
+22,2,4,2,2,2,1,386.81,capture021 copy.jpg
+22,2,4,3,2,2,1,363.51,unfamfemale37.jpg
+22,2,4,4,1,1,1,404.26,unfammale35.jpg
+22,2,4,5,1,1,1,340.92,unfammale09.jpg
+22,2,4,6,2,2,1,453.71,unfamfemale17.jpg
+22,2,4,7,1,1,1,438.46,unfammale33.jpg
+22,2,4,8,1,1,1,383.19,capture020 copy.jpg
+22,2,4,9,1,1,1,399.87,capture012 copy.jpg
+22,2,4,10,2,2,1,352.65,unfamfemale04.jpg
+22,2,4,11,2,2,1,353.34,unfamfemale10.jpg
+22,2,4,12,1,1,1,394.11,capture016 copy.jpg
+22,2,4,13,2,2,1,442.79,unfamfemale32.jpg
+22,2,4,14,1,1,1,403.57,unfammale12.jpg
+22,2,4,15,2,2,1,396.3,unfamfemale01.jpg
+22,2,4,16,1,1,1,460.99,capture003 copy.jpg
+22,2,4,17,2,2,1,413.76,capture005 copy.jpg
+22,2,4,18,1,1,1,886.5,unfammale28.jpg
+22,2,4,19,1,1,1,487.21,capture013 copy.jpg
+22,2,4,20,2,2,1,391.9,unfamfemale08.jpg
+22,2,4,21,2,2,1,472.67,unfamfemale40.jpg
+22,2,4,22,2,2,1,481.41,capture015 copy.jpg
+22,2,4,23,1,1,1,394.14,capture011 copy.jpg
+22,2,4,24,2,2,1,538.84,unfamfemale21.jpg
+22,2,5,1,2,2,1,500.88,unfamfemale32.jpg
+22,2,5,2,2,2,1,293.63,unfamfemale37.jpg
+22,2,5,3,1,1,1,390.38,capture013 copy.jpg
+22,2,5,4,2,2,1,359.11,capture005 copy.jpg
+22,2,5,5,1,1,1,527.83,unfammale09.jpg
+22,2,5,6,1,1,1,520.51,unfammale35.jpg
+22,2,5,7,1,1,1,457.26,capture003 copy.jpg
+22,2,5,8,1,1,1,489.98,capture012 copy.jpg
+22,2,5,9,1,1,1,506.7,unfammale12.jpg
+22,2,5,10,2,2,1,419.47,unfamfemale17.jpg
+22,2,5,11,2,2,1,420.22,unfamfemale10.jpg
+22,2,5,12,2,2,1,396.9,unfamfemale21.jpg
+22,2,5,13,1,1,1,413.63,unfammale16.jpg
+22,2,5,14,2,2,1,406.41,capture015 copy.jpg
+22,2,5,15,1,1,1,479.14,capture011 copy.jpg
+22,2,5,16,1,1,1,439.83,unfammale33.jpg
+22,2,5,17,2,2,1,368.6,unfamfemale08.jpg
+22,2,5,18,2,2,1,361.28,unfamfemale04.jpg
+22,2,5,19,1,2,0,322.05,capture016 copy.jpg
+22,2,5,20,2,2,1,482.76,unfamfemale40.jpg
+22,2,5,21,2,2,1,459.52,capture021 copy.jpg
+22,2,5,22,2,2,1,404.25,unfamfemale01.jpg
+22,2,5,23,1,1,1,572.98,unfammale28.jpg
+22,2,5,24,1,1,1,421.67,capture020 copy.jpg
+22,2,6,1,2,2,1,450.18,unfamfemale08.jpg
+22,2,6,2,2,2,1,338.87,capture005 copy.jpg
+22,2,6,3,1,1,1,371.61,unfammale35.jpg
+22,2,6,4,2,2,1,452.38,unfamfemale01.jpg
+22,2,6,5,1,1,1,453.12,unfammale16.jpg
+22,2,6,6,2,2,1,397.8,unfamfemale10.jpg
+22,2,6,7,2,2,1,566.58,unfamfemale17.jpg
+22,2,6,8,1,1,1,471.3,capture011 copy.jpg
+22,2,6,9,2,2,1,463.94,unfamfemale37.jpg
+22,2,6,10,1,1,1,360.73,unfammale28.jpg
+22,2,6,11,1,1,1,409.48,unfammale12.jpg
+22,2,6,12,1,1,1,386.22,capture013 copy.jpg
+22,2,6,13,2,2,1,362.9,unfamfemale04.jpg
+22,2,6,14,2,2,1,355.68,capture021 copy.jpg
+22,2,6,15,2,2,1,356.36,unfamfemale21.jpg
+22,2,6,16,1,1,1,573.11,capture016 copy.jpg
+22,2,6,17,2,2,1,413.17,unfamfemale32.jpg
+22,2,6,18,1,1,1,414.55,capture003 copy.jpg
+22,2,6,19,1,1,1,415.3,unfammale33.jpg
+22,2,6,20,2,2,1,352.06,unfamfemale40.jpg
+22,2,6,21,2,2,1,424.79,capture015 copy.jpg
+22,2,6,22,1,2,0,321.52,unfammale09.jpg
+22,2,6,23,1,1,1,458.22,capture012 copy.jpg
+22,2,6,24,1,1,1,466.95,capture020 copy.jpg
+22,2,7,1,2,2,1,476.66,unfamfemale10.jpg
+22,2,7,2,2,2,1,461.48,unfamfemale01.jpg
+22,2,7,3,1,1,1,366.15,capture003 copy.jpg
+22,2,7,4,1,1,1,342.93,unfammale35.jpg
+22,2,7,5,1,1,1,359.65,capture011 copy.jpg
+22,2,7,6,2,2,1,392.35,capture021 copy.jpg
+22,2,7,7,2,2,1,337.12,unfamfemale21.jpg
+22,2,7,8,1,1,1,449.8,unfammale12.jpg
+22,2,7,9,2,2,1,410.55,unfamfemale40.jpg
+22,2,7,10,1,1,1,483.28,capture020 copy.jpg
+22,2,7,11,1,1,1,364.01,unfammale28.jpg
+22,2,7,12,2,2,1,388.72,unfamfemale08.jpg
+22,2,7,13,2,2,1,541.47,capture015 copy.jpg
+22,2,7,14,1,1,1,406.19,unfammale33.jpg
+22,2,7,15,2,2,1,430.91,unfamfemale37.jpg
+22,2,7,16,1,1,1,375.68,capture013 copy.jpg
+22,2,7,17,2,2,1,568.42,unfamfemale32.jpg
+22,2,7,18,1,1,1,312.94,unfammale09.jpg
+22,2,7,19,2,2,1,345.81,unfamfemale17.jpg
+22,2,7,20,2,2,1,378.54,capture005 copy.jpg
+22,2,7,21,1,1,1,363.27,unfammale16.jpg
+22,2,7,22,2,2,1,380.06,unfamfemale04.jpg
+22,2,7,23,1,1,1,364.79,capture016 copy.jpg
+22,2,7,24,1,1,1,461.52,capture012 copy.jpg
+22,2,8,1,2,2,1,353.63,unfamfemale17.jpg
+22,2,8,2,2,2,1,458.32,unfamfemale04.jpg
+22,2,8,3,1,1,1,427.06,unfammale35.jpg
+22,2,8,4,1,1,1,571.82,capture016 copy.jpg
+22,2,8,5,2,2,1,356.53,unfamfemale37.jpg
+22,2,8,6,1,2,0,389.27,unfammale12.jpg
+22,2,8,7,2,2,1,477.97,unfamfemale32.jpg
+22,2,8,8,1,1,1,470.69,capture013 copy.jpg
+22,2,8,9,1,1,1,511.43,unfammale33.jpg
+22,2,8,10,1,1,1,480.17,capture011 copy.jpg
+22,2,8,11,2,2,1,360.89,unfamfemale01.jpg
+22,2,8,12,2,2,1,537.58,unfamfemale08.jpg
+22,2,8,13,2,2,1,418.35,capture015 copy.jpg
+22,2,8,14,1,1,1,443.06,capture012 copy.jpg
+22,2,8,15,2,2,1,459.82,unfamfemale10.jpg
+22,2,8,16,1,1,1,356.56,unfammale09.jpg
+22,2,8,17,2,2,1,389.29,capture021 copy.jpg
+22,2,8,18,2,2,1,454.01,unfamfemale40.jpg
+22,2,8,19,2,2,1,470.71,unfamfemale21.jpg
+22,2,8,20,2,2,1,439.47,capture005 copy.jpg
+22,2,8,21,1,1,1,368.18,unfammale28.jpg
+22,2,8,22,1,1,1,360.94,unfammale16.jpg
+22,2,8,23,1,1,1,385.67,capture003 copy.jpg
+22,2,8,24,1,1,1,322.4,capture020 copy.jpg
+23,2,1,1,1,0,0,0,unfammale02.jpg
+23,2,1,2,2,0,0,0,unfamfemale10.jpg
+23,2,1,3,1,0,0,0,unfammale08.jpg
+23,2,1,4,2,0,0,0,capture015 copy.jpg
+23,2,1,5,1,0,0,0,unfammale18.jpg
+23,2,1,6,1,0,0,0,unfammale19.jpg
+23,2,1,7,1,0,0,0,unfammale05.jpg
+23,2,1,8,2,2,1,641.03,unfamfemale08.jpg
+23,2,1,9,2,1,0,657.81,unfamfemale21.jpg
+23,2,1,10,2,1,0,506.66,unfamfemale37.jpg
+23,2,1,11,1,1,1,547.41,unfammale25.jpg
+23,2,1,12,2,2,1,716.17,unfamfemale01.jpg
+23,2,1,13,1,2,0,613.01,unfammale14.jpg
+23,2,1,14,2,2,1,925.73,capture021 copy.jpg
+23,2,1,15,2,2,1,726.56,unfamfemale40.jpg
+23,2,1,16,1,1,1,383.31,unfammale39.jpg
+23,2,1,17,2,2,1,424.13,unfamfemale32.jpg
+23,2,1,18,2,2,1,728.92,unfamfemale17.jpg
+23,2,1,19,1,1,1,409.65,unfammale38.jpg
+23,2,1,20,2,1,0,386.46,unfamfemale04.jpg
+23,2,1,21,1,1,1,531.25,unfammale21.jpg
+23,2,1,22,2,2,1,380.04,capture005 copy.jpg
+23,2,1,23,1,1,1,548.82,capture010 copy.jpg
+23,2,1,24,1,2,0,261.56,unfammale23.jpg
+23,2,2,1,1,1,1,583.99,unfammale38.jpg
+23,2,2,2,1,1,1,424.77,unfammale25.jpg
+23,2,2,3,2,2,1,433.56,unfamfemale08.jpg
+23,2,2,4,1,1,1,418.35,unfammale23.jpg
+23,2,2,5,1,1,1,443.16,unfammale39.jpg
+23,2,2,6,2,2,1,403.9,unfamfemale32.jpg
+23,2,2,7,2,2,1,644.69,capture021 copy.jpg
+23,2,2,8,1,1,1,557.47,unfammale14.jpg
+23,2,2,9,1,1,1,446.22,unfammale19.jpg
+23,2,2,10,1,1,1,431.07,unfammale18.jpg
+23,2,2,11,2,2,1,359.85,unfamfemale40.jpg
+23,2,2,12,2,2,1,568.64,capture005 copy.jpg
+23,2,2,13,2,2,1,377.37,unfamfemale37.jpg
+23,2,2,14,1,1,1,522.16,capture010 copy.jpg
+23,2,2,15,1,1,1,370.93,unfammale02.jpg
+23,2,2,16,2,1,0,275.72,unfamfemale21.jpg
+23,2,2,17,1,1,1,452.53,unfammale21.jpg
+23,2,2,18,2,2,1,501.31,unfamfemale10.jpg
+23,2,2,19,2,2,1,502.07,unfamfemale04.jpg
+23,2,2,20,2,2,1,494.89,unfamfemale01.jpg
+23,2,2,21,1,1,1,463.67,unfammale08.jpg
+23,2,2,22,1,1,1,600.44,unfammale05.jpg
+23,2,2,23,2,2,1,401.17,capture015 copy.jpg
+23,2,2,24,2,2,1,529.97,unfamfemale17.jpg
+23,2,3,1,2,2,1,521.29,unfamfemale04.jpg
+23,2,3,2,2,2,1,370.02,unfamfemale37.jpg
+23,2,3,3,2,1,0,402.81,capture021 copy.jpg
+23,2,3,4,1,1,1,435.6,unfammale23.jpg
+23,2,3,5,2,1,0,308.4,capture015 copy.jpg
+23,2,3,6,2,2,1,253.18,unfamfemale21.jpg
+23,2,3,7,2,2,1,253.96,unfamfemale17.jpg
+23,2,3,8,1,2,0,318.7,unfammale21.jpg
+23,2,3,9,1,1,1,519.51,unfammale02.jpg
+23,2,3,10,2,2,1,480.31,unfamfemale40.jpg
+23,2,3,11,2,2,1,393.07,unfamfemale10.jpg
+23,2,3,12,1,1,1,417.87,unfammale19.jpg
+23,2,3,13,2,2,1,306.62,unfamfemale01.jpg
+23,2,3,14,2,0,0,0,unfamfemale32.jpg
+23,2,3,15,2,2,1,372.22,unfamfemale08.jpg
+23,2,3,16,1,1,1,581,capture010 copy.jpg
+23,2,3,17,1,1,1,597.79,unfammale38.jpg
+23,2,3,18,2,2,1,510.55,capture005 copy.jpg
+23,2,3,19,1,1,1,743.29,unfammale14.jpg
+23,2,3,20,1,1,1,608.13,unfammale08.jpg
+23,2,3,21,1,1,1,560.91,unfammale05.jpg
+23,2,3,22,1,1,1,385.66,unfammale39.jpg
+23,2,3,23,1,1,1,570.48,unfammale25.jpg
+23,2,3,24,1,1,1,451.22,unfammale18.jpg
+23,2,4,1,1,1,1,989.5,unfammale02.jpg
+23,2,4,2,1,1,1,382.27,unfammale38.jpg
+23,2,4,3,1,1,1,495.11,unfammale25.jpg
+23,2,4,4,2,1,0,439.86,unfamfemale21.jpg
+23,2,4,5,2,2,1,752.68,unfamfemale10.jpg
+23,2,4,6,1,1,1,521.46,unfammale08.jpg
+23,2,4,7,2,2,1,522.24,unfamfemale04.jpg
+23,2,4,8,2,1,0,611.02,unfamfemale08.jpg
+23,2,4,9,1,2,0,603.75,unfammale19.jpg
+23,2,4,10,1,1,1,500.59,unfammale23.jpg
+23,2,4,11,1,1,1,885.37,unfammale21.jpg
+23,2,4,12,2,2,1,462.15,unfamfemale37.jpg
+23,2,4,13,1,0,0,0,unfammale18.jpg
+23,2,4,14,2,2,1,823.72,capture021 copy.jpg
+23,2,4,15,2,2,1,624.48,capture015 copy.jpg
+23,2,4,16,2,2,1,561.28,unfamfemale32.jpg
+23,2,4,17,1,1,1,434.06,unfammale14.jpg
+23,2,4,18,2,2,1,482.84,unfamfemale40.jpg
+23,2,4,19,2,2,1,491.59,capture005 copy.jpg
+23,2,4,20,1,1,1,628.35,capture010 copy.jpg
+23,2,4,21,1,1,1,1141.19,unfammale05.jpg
+23,2,4,22,2,0,0,0,unfamfemale01.jpg
+23,2,4,23,1,2,0,222.75,unfammale39.jpg
+23,2,4,24,2,2,1,511.52,unfamfemale17.jpg
+23,2,5,1,2,2,1,830.59,unfamfemale04.jpg
+23,2,5,2,1,1,1,543.4,unfammale18.jpg
+23,2,5,3,1,1,1,416.19,unfammale25.jpg
+23,2,5,4,2,2,1,480.91,capture021 copy.jpg
+23,2,5,5,2,1,0,465.68,unfamfemale08.jpg
+23,2,5,6,1,2,0,410.49,unfammale08.jpg
+23,2,5,7,1,1,1,523.31,unfammale38.jpg
+23,2,5,8,2,2,1,444.07,unfamfemale17.jpg
+23,2,5,9,2,2,1,628.89,unfamfemale21.jpg
+23,2,5,10,2,2,1,485.65,capture005 copy.jpg
+23,2,5,11,1,2,0,318.45,capture010 copy.jpg
+23,2,5,12,1,1,1,631.21,unfammale05.jpg
+23,2,5,13,1,1,1,520.01,unfammale19.jpg
+23,2,5,14,2,2,1,936.78,unfamfemale10.jpg
+23,2,5,15,1,1,1,609.58,unfammale02.jpg
+23,2,5,16,2,2,1,522.36,unfamfemale01.jpg
+23,2,5,17,2,2,1,691.14,unfamfemale37.jpg
+23,2,5,18,1,1,1,1163.88,unfammale21.jpg
+23,2,5,19,1,1,1,364.68,unfammale39.jpg
+23,2,5,20,2,2,1,477.44,unfamfemale40.jpg
+23,2,5,21,1,1,1,510.21,unfammale14.jpg
+23,2,5,22,2,1,0,335.01,capture015 copy.jpg
+23,2,5,23,1,1,1,471.83,unfammale23.jpg
+23,2,5,24,2,2,1,576.62,unfamfemale32.jpg
+23,2,6,1,1,1,1,511.68,unfammale05.jpg
+23,2,6,2,1,1,1,520.42,unfammale38.jpg
+23,2,6,3,2,2,1,649.26,unfamfemale01.jpg
+23,2,6,4,2,2,1,434.01,capture005 copy.jpg
+23,2,6,5,2,2,1,410.58,capture015 copy.jpg
+23,2,6,6,2,2,1,555.52,unfamfemale10.jpg
+23,2,6,7,2,1,0,1612.4,unfamfemale21.jpg
+23,2,6,8,1,1,1,501.16,capture010 copy.jpg
+23,2,6,9,1,2,0,525.95,unfammale19.jpg
+23,2,6,10,1,0,0,0,unfammale23.jpg
+23,2,6,11,1,1,1,519.51,unfammale21.jpg
+23,2,6,12,2,2,1,432.29,unfamfemale37.jpg
+23,2,6,13,2,2,1,433.08,unfamfemale40.jpg
+23,2,6,14,1,1,1,465.85,unfammale39.jpg
+23,2,6,15,1,2,0,250.62,unfammale25.jpg
+23,2,6,16,2,2,1,467.38,unfamfemale32.jpg
+23,2,6,17,2,1,0,476.18,unfamfemale08.jpg
+23,2,6,18,1,1,1,348.98,unfammale18.jpg
+23,2,6,19,2,2,1,461.77,unfamfemale17.jpg
+23,2,6,20,2,2,1,550.55,capture021 copy.jpg
+23,2,6,21,1,1,1,463.28,unfammale14.jpg
+23,2,6,22,2,2,1,480.07,unfamfemale04.jpg
+23,2,6,23,1,1,1,552.89,unfammale08.jpg
+23,2,6,24,1,1,1,473.66,unfammale02.jpg
+23,2,7,1,2,2,1,472.74,unfamfemale32.jpg
+23,2,7,2,1,2,0,681.59,unfammale38.jpg
+23,2,7,3,1,1,1,546.39,unfammale25.jpg
+23,2,7,4,2,2,1,371.17,capture021 copy.jpg
+23,2,7,5,1,1,1,475.94,unfammale21.jpg
+23,2,7,6,1,1,1,484.74,unfammale18.jpg
+23,2,7,7,1,1,1,421.52,unfammale39.jpg
+23,2,7,8,2,1,0,342.25,unfamfemale01.jpg
+23,2,7,9,2,2,1,503.09,unfamfemale04.jpg
+23,2,7,10,1,1,1,447.86,capture010 copy.jpg
+23,2,7,11,1,1,1,488.6,unfammale19.jpg
+23,2,7,12,1,1,1,465.43,unfammale02.jpg
+23,2,7,13,2,2,1,466.19,capture015 copy.jpg
+23,2,7,14,1,1,1,474.99,unfammale14.jpg
+23,2,7,15,2,2,1,443.73,unfamfemale17.jpg
+23,2,7,16,2,2,1,428.5,unfamfemale10.jpg
+23,2,7,17,2,2,1,357.34,unfamfemale21.jpg
+23,2,7,18,2,1,0,278.07,unfamfemale40.jpg
+23,2,7,19,1,2,0,278.9,unfammale23.jpg
+23,2,7,20,2,1,0,263.68,unfamfemale08.jpg
+23,2,7,21,1,2,0,512.44,unfammale08.jpg
+23,2,7,22,1,1,1,425.25,unfammale05.jpg
+23,2,7,23,2,2,1,594.03,unfamfemale37.jpg
+23,2,7,24,2,2,1,642.81,capture005 copy.jpg
+23,2,8,1,2,2,1,540.63,unfamfemale10.jpg
+23,2,8,2,2,2,1,501.4,unfamfemale40.jpg
+23,2,8,3,1,1,1,446.14,unfammale39.jpg
+23,2,8,4,2,2,1,574.97,unfamfemale17.jpg
+23,2,8,5,1,1,1,487.69,unfammale08.jpg
+23,2,8,6,1,1,1,368.47,unfammale18.jpg
+23,2,8,7,1,1,1,433.31,unfammale02.jpg
+23,2,8,8,1,1,1,410.06,unfammale14.jpg
+23,2,8,9,1,1,1,298.82,unfammale19.jpg
+23,2,8,10,2,1,0,251.65,unfamfemale04.jpg
+23,2,8,11,1,1,1,252.41,unfammale38.jpg
+23,2,8,12,1,1,1,317.22,unfammale05.jpg
+23,2,8,13,2,2,1,334,capture005 copy.jpg
+23,2,8,14,2,2,1,342.75,unfamfemale01.jpg
+23,2,8,15,2,2,1,287.51,unfamfemale37.jpg
+23,2,8,16,2,1,0,288.33,unfamfemale21.jpg
+23,2,8,17,1,1,1,577.09,unfammale25.jpg
+23,2,8,18,2,2,1,465.91,capture021 copy.jpg
+23,2,8,19,1,1,1,506.65,unfammale23.jpg
+23,2,8,20,2,2,1,563.42,capture015 copy.jpg
+23,2,8,21,2,2,1,716.26,unfamfemale32.jpg
+23,2,8,22,2,1,0,285.03,unfamfemale08.jpg
+23,2,8,23,1,1,1,517.81,unfammale21.jpg
+23,2,8,24,1,2,0,718.58,capture010 copy.jpg
+24,2,1,1,2,2,1,580.5,unfamfemale38.jpg
+24,2,1,2,2,2,1,411.1,unfamfemale24.jpg
+24,2,1,3,1,1,1,313.18,unfammale35.jpg
+24,2,1,4,1,1,1,359.34,unfammale16.jpg
+24,2,1,5,1,1,1,373.47,capture012 copy.jpg
+24,2,1,6,2,2,1,403.57,unfamfemale06.jpg
+24,2,1,7,1,1,1,401.69,unfammale28.jpg
+24,2,1,8,2,2,1,447.83,unfamfemale20.jpg
+24,2,1,9,2,2,1,378.16,unfamfemale39.jpg
+24,2,1,10,1,1,1,404.57,capture020 copy.jpg
+24,2,1,11,2,2,1,446.95,capture017 copy.jpg
+24,2,1,12,2,2,1,569.31,unfamfemale03.jpg
+24,2,1,13,1,1,1,435.66,unfammale12.jpg
+24,2,1,14,2,2,1,398.02,unfamfemale15.jpg
+24,2,1,15,2,2,1,400.35,unfamfemale26.jpg
+24,2,1,16,2,2,1,402.75,unfamfemale05.jpg
+24,2,1,17,1,1,1,373.08,capture003 copy.jpg
+24,2,1,18,2,2,1,423.46,capture002 copy.jpg
+24,2,1,19,1,1,1,481.84,capture016 copy.jpg
+24,2,1,20,1,1,1,348.19,unfammale09.jpg
+24,2,1,21,1,1,1,582.5,capture013 copy.jpg
+24,2,1,22,2,2,1,408.89,capture001 copy.jpg
+24,2,1,23,1,1,1,379.28,unfammale33.jpg
+24,2,1,24,1,1,1,613.62,capture011 copy.jpg
+24,2,2,1,2,2,1,426.35,unfamfemale39.jpg
+24,2,2,2,2,2,1,372.67,unfamfemale26.jpg
+24,2,2,3,2,2,1,367.1,unfamfemale06.jpg
+24,2,2,4,2,2,1,333.02,unfamfemale38.jpg
+24,2,2,5,2,2,1,323.31,unfamfemale03.jpg
+24,2,2,6,1,1,1,361.45,capture012 copy.jpg
+24,2,2,7,2,2,1,471.61,unfamfemale05.jpg
+24,2,2,8,1,1,1,437.67,capture003 copy.jpg
+24,2,2,9,1,1,1,336.04,unfammale28.jpg
+24,2,2,10,2,2,1,358.22,unfamfemale20.jpg
+24,2,2,11,2,2,1,420.35,capture002 copy.jpg
+24,2,2,12,2,2,1,354.45,unfamfemale24.jpg
+24,2,2,13,1,1,1,352.6,capture016 copy.jpg
+24,2,2,14,1,1,1,350.69,unfammale12.jpg
+24,2,2,15,1,1,1,393.01,unfammale09.jpg
+24,2,2,16,1,1,1,399.21,capture013 copy.jpg
+24,2,2,17,1,1,1,373.34,unfammale35.jpg
+24,2,2,18,1,1,1,387.41,capture011 copy.jpg
+24,2,2,19,2,2,1,401.55,capture001 copy.jpg
+24,2,2,20,2,2,1,279.71,unfamfemale15.jpg
+24,2,2,21,1,1,1,349.81,capture020 copy.jpg
+24,2,2,22,1,1,1,307.96,unfammale16.jpg
+24,2,2,23,2,2,1,322.09,capture017 copy.jpg
+24,2,2,24,1,1,1,312.17,unfammale33.jpg
+24,2,3,1,2,2,1,412.42,unfamfemale38.jpg
+24,2,3,2,1,1,1,354.61,capture020 copy.jpg
+24,2,3,3,1,1,1,512.76,capture011 copy.jpg
+24,2,3,4,1,1,1,534.84,unfammale35.jpg
+24,2,3,5,2,2,1,396.95,unfamfemale26.jpg
+24,2,3,6,2,2,1,351.32,unfamfemale06.jpg
+24,2,3,7,1,1,1,385.74,unfammale33.jpg
+24,2,3,8,2,2,1,343.82,unfamfemale24.jpg
+24,2,3,9,1,1,1,349.93,capture003 copy.jpg
+24,2,3,10,2,2,1,416.35,unfamfemale05.jpg
+24,2,3,11,2,2,1,398.47,unfamfemale15.jpg
+24,2,3,12,2,2,1,392.82,capture002 copy.jpg
+24,2,3,13,2,2,1,382.96,unfamfemale20.jpg
+24,2,3,14,2,2,1,325.04,unfamfemale03.jpg
+24,2,3,15,1,1,1,355.18,unfammale16.jpg
+24,2,3,16,2,2,1,901.58,capture017 copy.jpg
+24,2,3,17,1,1,1,395.7,capture016 copy.jpg
+24,2,3,18,1,1,1,377.79,unfammale09.jpg
+24,2,3,19,2,2,1,439.95,capture001 copy.jpg
+24,2,3,20,1,1,1,734.03,capture013 copy.jpg
+24,2,3,21,1,2,0,332.17,unfammale12.jpg
+24,2,3,22,2,2,1,386.32,unfamfemale39.jpg
+24,2,3,23,1,1,1,448.46,capture012 copy.jpg
+24,2,3,24,1,1,1,414.57,unfammale28.jpg
+24,2,4,1,2,2,1,393.98,capture001 copy.jpg
+24,2,4,2,1,1,1,320.08,capture003 copy.jpg
+24,2,4,3,2,2,1,446.23,unfamfemale03.jpg
+24,2,4,4,1,1,1,372.32,unfammale28.jpg
+24,2,4,5,1,1,1,438.64,unfammale33.jpg
+24,2,4,6,2,2,1,452.85,unfamfemale26.jpg
+24,2,4,7,1,1,1,450.98,capture011 copy.jpg
+24,2,4,8,2,2,1,673.1,capture002 copy.jpg
+24,2,4,9,1,1,1,311.2,capture013 copy.jpg
+24,2,4,10,2,2,1,333.36,unfamfemale24.jpg
+24,2,4,11,1,1,1,283.48,unfammale35.jpg
+24,2,4,12,1,1,1,313.61,unfammale09.jpg
+24,2,4,13,1,1,1,319.73,capture016 copy.jpg
+24,2,4,14,1,1,1,277.86,capture020 copy.jpg
+24,2,4,15,2,2,1,355.99,unfamfemale39.jpg
+24,2,4,16,1,1,1,282.12,unfammale16.jpg
+24,2,4,17,1,1,1,336.21,capture012 copy.jpg
+24,2,4,18,2,2,1,382.35,unfamfemale15.jpg
+24,2,4,19,2,2,1,396.49,unfamfemale20.jpg
+24,2,4,20,2,2,1,338.63,unfamfemale38.jpg
+24,2,4,21,2,2,1,368.75,unfamfemale05.jpg
+24,2,4,22,1,1,1,326.86,unfammale12.jpg
+24,2,4,23,2,2,1,365.01,unfamfemale06.jpg
+24,2,4,24,2,2,1,387.09,capture017 copy.jpg
+24,2,5,1,1,1,1,469.03,capture012 copy.jpg
+24,2,5,2,1,1,1,355.17,capture011 copy.jpg
+24,2,5,3,1,1,1,321.28,unfammale28.jpg
+24,2,5,4,1,1,1,311.41,capture016 copy.jpg
+24,2,5,5,1,1,1,353.74,capture013 copy.jpg
+24,2,5,6,2,2,1,359.92,capture002 copy.jpg
+24,2,5,7,2,2,1,477.99,unfamfemale05.jpg
+24,2,5,8,2,2,1,440.39,capture001 copy.jpg
+24,2,5,9,2,2,1,358.51,unfamfemale38.jpg
+24,2,5,10,1,1,1,328.85,capture020 copy.jpg
+24,2,5,11,2,2,1,495.04,capture017 copy.jpg
+24,2,5,12,1,2,0,389.11,unfammale09.jpg
+24,2,5,13,1,1,1,603.26,unfammale16.jpg
+24,2,5,14,2,2,1,521.38,unfamfemale26.jpg
+24,2,5,15,2,2,1,495.52,unfamfemale20.jpg
+24,2,5,16,1,1,1,357.65,unfammale12.jpg
+24,2,5,17,2,2,1,723.78,unfamfemale24.jpg
+24,2,5,18,2,2,1,657.9,unfamfemale15.jpg
+24,2,5,19,2,2,1,400.01,unfamfemale06.jpg
+24,2,5,20,1,1,1,414.1,unfammale33.jpg
+24,2,5,21,2,2,1,428.31,unfamfemale39.jpg
+24,2,5,22,1,1,1,578.41,capture003 copy.jpg
+24,2,5,23,1,1,1,352.55,unfammale35.jpg
+24,2,5,24,2,2,1,374.71,unfamfemale03.jpg
+24,2,6,1,2,2,1,362.59,capture002 copy.jpg
+24,2,6,2,2,2,1,360.71,capture017 copy.jpg
+24,2,6,3,2,2,1,334.8,unfamfemale15.jpg
+24,2,6,4,1,1,1,420.91,capture011 copy.jpg
+24,2,6,5,2,2,1,435.09,capture001 copy.jpg
+24,2,6,6,2,2,1,361.19,unfamfemale38.jpg
+24,2,6,7,1,1,1,319.2,unfammale33.jpg
+24,2,6,8,1,1,1,301.48,capture003 copy.jpg
+24,2,6,9,1,1,1,299.56,capture016 copy.jpg
+24,2,6,10,1,1,1,337.75,capture013 copy.jpg
+24,2,6,11,1,1,1,375.82,unfammale35.jpg
+24,2,6,12,2,2,1,334.01,unfamfemale24.jpg
+24,2,6,13,1,1,1,500.11,unfammale09.jpg
+24,2,6,14,2,2,1,418.25,unfamfemale39.jpg
+24,2,6,15,2,2,1,572.6,unfamfemale05.jpg
+24,2,6,16,2,2,1,602.77,unfamfemale06.jpg
+24,2,6,17,1,1,1,408.84,capture020 copy.jpg
+24,2,6,18,1,1,1,439.02,capture012 copy.jpg
+24,2,6,19,1,1,1,397.15,unfammale12.jpg
+24,2,6,20,1,1,1,335.07,unfammale16.jpg
+24,2,6,21,1,1,1,557.66,unfammale28.jpg
+24,2,6,22,2,2,1,443.73,unfamfemale03.jpg
+24,2,6,23,2,2,1,361.91,unfamfemale26.jpg
+24,2,6,24,2,2,1,423.99,unfamfemale20.jpg
+24,2,7,1,2,2,1,445.8,capture001 copy.jpg
+24,2,7,2,2,2,1,355.93,capture002 copy.jpg
+24,2,7,3,1,1,1,386.01,capture003 copy.jpg
+24,2,7,4,1,1,1,392.19,unfammale33.jpg
+24,2,7,5,2,2,1,398.32,unfamfemale24.jpg
+24,2,7,6,2,2,1,540.42,unfamfemale26.jpg
+24,2,7,7,1,1,1,530.54,unfammale09.jpg
+24,2,7,8,2,2,1,496.72,unfamfemale39.jpg
+24,2,7,9,2,2,1,462.84,unfamfemale03.jpg
+24,2,7,10,2,2,1,404.74,unfamfemale20.jpg
+24,2,7,11,1,1,1,459.04,capture011 copy.jpg
+24,2,7,12,2,2,1,665.25,capture017 copy.jpg
+24,2,7,13,1,1,1,487.36,unfammale12.jpg
+24,2,7,14,2,2,1,413.46,unfamfemale05.jpg
+24,2,7,15,1,1,1,387.64,capture012 copy.jpg
+24,2,7,16,2,2,1,505.73,unfamfemale38.jpg
+24,2,7,17,1,1,1,423.89,capture013 copy.jpg
+24,2,7,18,1,1,1,382.03,capture020 copy.jpg
+24,2,7,19,1,1,1,308.12,unfammale16.jpg
+24,2,7,20,1,1,1,326.49,capture016 copy.jpg
+24,2,7,21,1,1,1,380.66,unfammale28.jpg
+24,2,7,22,1,1,1,442.75,unfammale35.jpg
+24,2,7,23,2,2,1,336.92,unfamfemale06.jpg
+24,2,7,24,2,2,1,275.29,unfamfemale15.jpg
+24,2,8,1,2,2,1,455.02,unfamfemale03.jpg
+24,2,8,2,1,1,1,341.23,unfammale28.jpg
+24,2,8,3,1,1,1,443.37,unfammale12.jpg
+24,2,8,4,1,1,1,321.46,capture020 copy.jpg
+24,2,8,5,1,1,1,311.57,capture003 copy.jpg
+24,2,8,6,2,2,1,309.75,unfamfemale24.jpg
+24,2,8,7,1,1,1,395.88,capture013 copy.jpg
+24,2,8,8,1,1,1,362.01,capture016 copy.jpg
+24,2,8,9,1,1,1,444.32,unfammale33.jpg
+24,2,8,10,1,1,1,338.52,unfammale09.jpg
+24,2,8,11,2,2,1,388.83,unfamfemale39.jpg
+24,2,8,12,2,2,1,690.98,unfamfemale26.jpg
+24,2,8,13,1,1,1,401.16,unfammale16.jpg
+24,2,8,14,1,1,1,335.24,capture012 copy.jpg
+24,2,8,15,2,2,1,377.65,unfamfemale38.jpg
+24,2,8,16,2,2,1,415.71,capture002 copy.jpg
+24,2,8,17,1,1,1,317.88,unfammale35.jpg
+24,2,8,18,2,2,1,476.05,unfamfemale20.jpg
+24,2,8,19,2,2,1,458.18,capture017 copy.jpg
+24,2,8,20,2,2,1,344.31,unfamfemale05.jpg
+24,2,8,21,2,2,1,318.38,unfamfemale15.jpg
+24,2,8,22,2,2,1,804.58,capture001 copy.jpg
+24,2,8,23,2,2,1,346.66,unfamfemale06.jpg
+24,2,8,24,1,1,1,368.84,capture011 copy.jpg
