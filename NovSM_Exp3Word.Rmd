@@ -10,10 +10,9 @@ output:
       collapse: false
       smooth_scroll: false
     number_sections: true
-    theme: united 
+    theme: simplex 
     highlight: tango
     code_folding: show
-  pdf_document: default
 subtitle: Experiment 3B
 mainfont: Noto Sans CJK KR
 ---

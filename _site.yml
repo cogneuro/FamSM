@@ -7,5 +7,7 @@ navbar:
       href: exp1.html
     - text: "Exp 2"
       href: exp2.html
+    - text: "Exp 4B"
+      href: NovSM_Exp3Word.html
     - text: "Workshop"
       href: workshop.html
