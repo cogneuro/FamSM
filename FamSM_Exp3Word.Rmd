@@ -1,5 +1,5 @@
 ---
-title: "Stimulus Familiarity & Source Memory"
+title: "Experiment 3B"
 author: "Hongmi Lee, Kyungmi Kim, Do-Joon Yi"
 date: "`r Sys.Date()`"
 output:
@@ -13,7 +13,7 @@ output:
     theme: simplex 
     highlight: tango
     code_folding: show
-subtitle: Experiment 3B
+subtitle: Two-day experiment with pseudowords
 mainfont: Noto Sans CJK KR
 ---
 

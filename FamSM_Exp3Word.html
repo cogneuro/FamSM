@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Hongmi Lee, Kyungmi Kim, Do-Joon Yi" />
+
+<meta name="date" content="2019-02-23" />
+
+<title>Experiment 3B</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/simplex.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code > span.dt { color: #204a87; } /* DataType */
+code > span.dv { color: #0000cf; } /* DecVal */
+code > span.bn { color: #0000cf; } /* BaseN */
+code > span.fl { color: #0000cf; } /* Float */
+code > span.ch { color: #4e9a06; } /* Char */
+code > span.st { color: #4e9a06; } /* String */
+code > span.co { color: #8f5902; font-style: italic; } /* Comment */
+code > span.ot { color: #8f5902; } /* Other */
+code > span.al { color: #ef2929; } /* Alert */
+code > span.fu { color: #000000; } /* Function */
+code > span.er { color: #a40000; font-weight: bold; } /* Error */
+code > span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #000000; } /* Constant */
+code > span.sc { color: #000000; } /* SpecialChar */
+code > span.vs { color: #4e9a06; } /* VerbatimString */
+code > span.ss { color: #4e9a06; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #000000; } /* Variable */
+code > span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code > span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code > span.ex { } /* Extension */
+code > span.at { color: #c4a000; } /* Attribute */
+code > span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code > span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+
+.sourceCode .row {
+  width: 100%;
+}
+.sourceCode {
+  overflow-x: auto;
+}
+.code-folding-btn {
+  margin-right: -30px;
+}
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' || rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 41px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h2 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h3 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h4 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h5 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h6 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("show" === "show");
+});
+</script>
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = false;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">My Website</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="exp1.html">Exp 1</a>
+</li>
+<li>
+  <a href="exp2.html">Exp 2</a>
+</li>
+<li>
+  <a href="FamSM_Exp3Word.html">Exp 4B</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">Experiment 3B</h1>
+<h3 class="subtitle"><em>Two-day experiment with pseudowords</em></h3>
+<h4 class="author"><em>Hongmi Lee, Kyungmi Kim, Do-Joon Yi</em></h4>
+<h4 class="date"><em>2019-02-23</em></h4>
+
+</div>
+
+
+<div id="pre-experimental-familiarization" class="section level1">
+<h1><span class="header-section-number">1</span> Pre-experimental Familiarization</h1>
+<p>Thirteen participants were pre-familiarized with 48 <code>pseudowords</code>. Participants completed a total of 1,440 trials, divided into 10 blocks of 144 trials each. Each item was repeated three times within a block. Thus, participants were exposed to each item 30 times in total. In each trial, participants indicated whether it was the first, second, or third time the given item was presented within the block.</p>
+<p>To analyze the data, some packages need to be loaded. We use <code>pacman</code> as a package manager, which takes care of the other packages.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="cf">if</span> (<span class="op">!</span><span class="kw">require</span>(<span class="st">&quot;pacman&quot;</span>, <span class="dt">quietly =</span> <span class="ot">TRUE</span>)) <span class="kw">install.packages</span>(<span class="st">&quot;pacman&quot;</span>)
+pacman<span class="op">::</span><span class="kw">p_load</span>(tidyverse, knitr, beeswarm, car, afex, emmeans, cowplot)
+pacman<span class="op">::</span><span class="kw">p_load_gh</span>(<span class="st">&quot;crsh/papaja&quot;</span>)</code></pre></div>
+<p>The sum-to-zero coding scheme was used whenever <code>(g)lmer</code> was invoked or the type III tests were calculated (<a href="http://singmann.org/download/publications/singmann_kellen-introduction-mixed-models.pdf">Singmann &amp; Kellen, in press</a>).</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">afex<span class="op">::</span><span class="kw">set_sum_contrasts</span>()</code></pre></div>
+<div id="data" class="section level2">
+<h2><span class="header-section-number">1.1</span> Data</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">EE &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/data_NovSM_Exp3Word_PRE.csv&quot;</span>, <span class="dt">header =</span> T)
+<span class="kw">glimpse</span>(EE, <span class="dt">width=</span><span class="dv">70</span>)</code></pre></div>
+<pre><code>## Observations: 18,309
+## Variables: 8
+## $ SID     &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
+## $ Block   &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
+## $ Trial   &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, …
+## $ RepTime &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, …
+## $ Resp    &lt;int&gt; 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 1, …
+## $ Corr    &lt;int&gt; 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, …
+## $ RT      &lt;dbl&gt; 1119.89, 0.00, 56.97, 742.86, 580.71, 498.61, 424.4…
+## $ ImgName &lt;fct&gt; nonwex6.png, nonwin2_11.png, nonwex12.png, nonwin2_…</code></pre>
+<ol style="list-style-type: decimal">
+<li>SID: participant ID</li>
+<li>Block: 1~10</li>
+<li>Trial: 1~144</li>
+<li>RepTime: 3 repetitions per image per block. 1~3</li>
+<li>Resp: repetition counting, 1~3, 0 = no response</li>
+<li>Corr: Correctness, 1=correct, 0=incorrect or no response</li>
+<li>RT: reaction times in ms.</li>
+<li>ImgName: name of stimuli</li>
+</ol>
+<p>Two participants (5th &amp; 6th) did not complete the session due to a technical issue.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">table</span>(EE<span class="op">$</span>SID)</code></pre></div>
+<pre><code>## 
+##    1    2    3    4    5    6    7    8    9   10   11   12   13 
+## 1440 1440 1440 1440 1243 1226 1440 1440 1440 1440 1440 1440 1440</code></pre>
+</div>
+<div id="accuracy-rt" class="section level2">
+<h2><span class="header-section-number">1.2</span> Accuracy &amp; RT</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">data &lt;-<span class="st"> </span>EE <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(SID, Block) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Accuracy =</span> <span class="kw">mean</span>(Corr)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ungroup</span>()
+h1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(data, <span class="kw">aes</span>(<span class="dt">x=</span>Block, <span class="dt">y=</span>Accuracy, <span class="dt">group=</span>SID)) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">geom_line</span>() <span class="op">+</span>
+<span class="st">  </span><span class="kw">scale_x_continuous</span>(<span class="dt">breaks=</span><span class="kw">seq</span>(<span class="dv">1</span>,<span class="dv">10</span>,<span class="dv">1</span>)) <span class="op">+</span>
+<span class="st">  </span><span class="co"># scale_y_continuous(limits=c(0, 1)) +</span>
+<span class="st">  </span><span class="kw">theme_apa</span>()
+
+data &lt;-<span class="st"> </span>EE <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(Corr <span class="op">==</span><span class="st"> </span><span class="dv">1</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">group_by</span>(SID, Block) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">RT =</span> <span class="kw">mean</span>(RT)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ungroup</span>()
+h2 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(data, <span class="kw">aes</span>(<span class="dt">x=</span>Block, <span class="dt">y=</span>RT, <span class="dt">group=</span>SID)) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">geom_line</span>() <span class="op">+</span>
+<span class="st">  </span><span class="kw">scale_x_continuous</span>(<span class="dt">breaks=</span><span class="kw">seq</span>(<span class="dv">1</span>,<span class="dv">10</span>,<span class="dv">1</span>)) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">expand_limits</span>(<span class="dt">y=</span><span class="dv">0</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">y =</span> <span class="st">&quot;Correct RT&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">theme_apa</span>()
+
+<span class="kw">plot_grid</span>(h1, h2)</code></pre></div>
+<p><img src="FamSM_Exp3Word_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>Two participants (6th &amp; 7th) did not make responses in all or most of trials in Block 1. In subsequent blocks, participants made faster correct responses while maintaining a similar level of accuracy. Overall accuracy was 59.43%.</p>
+</div>
+</div>
+<div id="item-repetition-phase" class="section level1">
+<h1><span class="header-section-number">2</span> Item Repetition Phase</h1>
+<p>Twenty four pseudowords were repeated eight times, producing 192 trials. In each trial, participants made a preference judgment for an item.</p>
+<div id="data-1" class="section level2">
+<h2><span class="header-section-number">2.1</span> Data</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">RR &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/data_NovSM_Exp3Word_REP.csv&quot;</span>, <span class="dt">header =</span> T)
+RR<span class="op">$</span>Pref &lt;-<span class="st"> </span><span class="kw">ifelse</span>(RR<span class="op">$</span>Resp<span class="op">==</span><span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">0</span>)
+
+<span class="kw">glimpse</span>(RR, <span class="dt">width=</span><span class="dv">70</span>)</code></pre></div>
+<pre><code>## Observations: 2,496
+## Variables: 8
+## $ SID     &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
+## $ RepTime &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
+## $ Trial   &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, …
+## $ Resp    &lt;int&gt; 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1, …
+## $ Corr    &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
+## $ RT      &lt;dbl&gt; 1226.19, 752.28, 673.00, 745.71, 634.42, 667.20, 69…
+## $ ImgName &lt;fct&gt; nonwin2_8.png, nonwin2_4.png, nonwex4.png, nonwex2_…
+## $ Pref    &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, …</code></pre>
+<ol style="list-style-type: decimal">
+<li>SID: participant ID</li>
+<li>RepTime: number of repetition, 1~8</li>
+<li>Trial: 1~24</li>
+<li>Resp: preference judgment, 1 = like, 2 = dislike, 3 = no response</li>
+<li>Corr: Correctness, 1=response, 0 = no response</li>
+<li>RT: reaction times in ms.</li>
+<li>ImgName: name of stimuli</li>
+<li>Pref: preference, 0=dislike (treating no response as ‘dislike’), 1=like</li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">table</span>(RR<span class="op">$</span>SID)</code></pre></div>
+<pre><code>## 
+##   1   2   3   4   5   6   7   8   9  10  11  12  13 
+## 192 192 192 192 192 192 192 192 192 192 192 192 192</code></pre>
+<p>Participants did not make responses in 3.04% of trials.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(RR<span class="op">$</span>Corr)</code></pre></div>
+<pre><code>## [1] 0.03044872</code></pre>
+</div>
+<div id="preference" class="section level2">
+<h2><span class="header-section-number">2.2</span> Preference</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">data &lt;-<span class="st"> </span>RR <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(SID) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Preference =</span> <span class="kw">mean</span>(Pref)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span>ungroup
+
+<span class="kw">boxplot</span>(data<span class="op">$</span>Preference, <span class="dt">horizontal =</span> <span class="ot">TRUE</span>, 
+        <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">1</span>), <span class="dt">boxwex =</span> .<span class="dv">8</span>, <span class="dt">boxcol =</span> <span class="st">&quot;grey&quot;</span>, 
+        <span class="dt">xlab =</span> <span class="st">&quot;Preference Judgment (0 = dislike, 1 = like)&quot;</span>)
+<span class="kw">beeswarm</span>(data<span class="op">$</span>Preference, <span class="dt">horizontal =</span> <span class="ot">TRUE</span>, <span class="dt">add =</span> <span class="ot">TRUE</span>,
+         <span class="dt">col =</span> <span class="kw">alpha</span>(<span class="st">&quot;blue&quot;</span>, <span class="fl">0.5</span>), <span class="dt">pch=</span><span class="dv">16</span>)</code></pre></div>
+<p><img src="FamSM_Exp3Word_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>The mean preference was 47.44%.</p>
+<hr />
+</div>
+</div>
+<div id="item-source-association-phase" class="section level1">
+<h1><span class="header-section-number">3</span> Item-Source Association Phase</h1>
+<p>Participants learned 48 pairs of a pseudoword and a quadrant on the screen. Half of pseudowords were those shown in the first phase. The other half were new. Participants were instructed to pay attention to the location of each pseudowords while making a preference judgment.</p>
+<div id="data-2" class="section level2">
+<h2><span class="header-section-number">3.1</span> Data</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">SS &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/data_NovSM_Exp3Word_SRC.csv&quot;</span>, <span class="dt">header =</span> T)
+SS<span class="op">$</span>Repetition =<span class="st"> </span><span class="kw">factor</span>(SS<span class="op">$</span>Repetition, <span class="dt">levels=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>), <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Repetition&quot;</span>,<span class="st">&quot;No Repetition&quot;</span>))
+SS<span class="op">$</span>Pref &lt;-<span class="st"> </span><span class="kw">ifelse</span>(SS<span class="op">$</span>Resp<span class="op">==</span><span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">0</span>)
+
+<span class="kw">glimpse</span>(SS, <span class="dt">width=</span><span class="dv">70</span>)</code></pre></div>
+<pre><code>## Observations: 624
+## Variables: 9
+## $ SID        &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
+## $ Trial      &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 1…
+## $ Repetition &lt;fct&gt; Repetition, No Repetition, Repetition, No Repeti…
+## $ Loc        &lt;int&gt; 4, 4, 2, 1, 2, 2, 4, 2, 1, 3, 2, 1, 4, 1, 3, 2, …
+## $ Resp       &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, …
+## $ Corr       &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
+## $ RT         &lt;dbl&gt; 1664.67, 1228.73, 1697.13, 1421.39, 1449.71, 122…
+## $ ImgName    &lt;fct&gt; nonwex6.png, nonwex2_4.png, nonwex3.png, nonwin2…
+## $ Pref       &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, …</code></pre>
+<ol style="list-style-type: decimal">
+<li>SID: participant ID</li>
+<li>Trial: 1~48</li>
+<li>Repetition: 1 = repetition, 2 = no repetition</li>
+<li>Loc: location (source) of memory item; quadrants, 1~4</li>
+<li>Resp: preference judgment, 1 = like, 2 = dislike, 3 = no response</li>
+<li>Corr: Correctness, 1=response, 0 = no response</li>
+<li>RT: reaction times in ms.</li>
+<li>ImgName: name of stimuli</li>
+<li>Pref: preference, 0=dislike (treating no response as ‘dislike’), 1=like</li>
+</ol>
+<p>The within-participant <strong>item repetition</strong> was the single factor in Experiment 3B. Participants had 24 <code>repetition</code> trials and 24 <code>no repetition</code> trials.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">table</span>(SS<span class="op">$</span>Repetition, SS<span class="op">$</span>SID)</code></pre></div>
+<pre><code>##                
+##                  1  2  3  4  5  6  7  8  9 10 11 12 13
+##   Repetition    24 24 24 24 24 24 24 24 24 24 24 24 24
+##   No Repetition 24 24 24 24 24 24 24 24 24 24 24 24 24</code></pre>
+<p>Participants did not make responses in 2.72% of trials.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(SS<span class="op">$</span>Corr)</code></pre></div>
+<pre><code>## [1] 0.02724359</code></pre>
+</div>
+<div id="preference-1" class="section level2">
+<h2><span class="header-section-number">3.2</span> Preference</h2>
+<p>As in Experiment 2, preference for <code>pseudowords</code> increased after <code>repetition</code>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">apa_beeplot</span>(<span class="dt">data =</span> SS,
+            <span class="dt">id=</span><span class="st">&quot;SID&quot;</span>, <span class="dt">dv=</span><span class="st">&quot;Pref&quot;</span>, <span class="dt">factors=</span><span class="kw">c</span>(<span class="st">&quot;Repetition&quot;</span>), 
+            <span class="dt">dispersion =</span> within_subjects_conf_int,
+            <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">1</span>),
+            <span class="dt">xlab =</span> <span class="st">&quot;Item Repetition&quot;</span>,
+            <span class="dt">ylab =</span> <span class="st">&quot;Preference Judgment (0 = dislike, 1 = like)&quot;</span>,
+            <span class="dt">las=</span><span class="dv">1</span>)</code></pre></div>
+<p><img src="FamSM_Exp3Word_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">SS <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(SID, Repetition) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Preference =</span> <span class="kw">mean</span>(Pref)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span>ungroup <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">group_by</span>(Repetition) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">meanAcc =</span> <span class="kw">mean</span>(Preference), <span class="dt">ciAcc =</span> <span class="kw">ci</span>(Preference)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span>ungroup <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Repetition</th>
+<th align="right">meanAcc</th>
+<th align="right">ciAcc</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Repetition</td>
+<td align="right">0.5448718</td>
+<td align="right">0.1480574</td>
+</tr>
+<tr class="even">
+<td align="left">No Repetition</td>
+<td align="right">0.4038462</td>
+<td align="right">0.1455102</td>
+</tr>
+</tbody>
+</table>
+<div id="anova" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> ANOVA</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ss.aov &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;Pref&quot;</span>, <span class="dt">data =</span> SS, <span class="dt">within =</span> <span class="st">&quot;Repetition&quot;</span>)
+<span class="kw">anova</span>(ss.aov, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">num Df</th>
+<th align="right">den Df</th>
+<th align="right">MSE</th>
+<th align="right">F</th>
+<th align="right">pes</th>
+<th align="right">Pr(&gt;F)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Repetition</td>
+<td align="right">1</td>
+<td align="right">12</td>
+<td align="right">0.008</td>
+<td align="right">16.0886</td>
+<td align="right">0.5728</td>
+<td align="right">0.0017</td>
+</tr>
+</tbody>
+</table>
+<p>Participants preferred the pseudowords of the <code>repetition</code> condition significantly to those of the <code>no repetition</code> condition (<em>familiarity benefit</em>).</p>
+</div>
+<div id="glmm" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> GLMM</h3>
+<p>The full model (<code>ss.m1</code>) included a fixed effect (<strong>item repetition</strong>). The model was maximal in that it included both by-participant and by-item random intercepts, and by-participant random slopes for <strong>item repetition</strong> (<a href="https://www.sciencedirect.com/science/article/pii/S0749596X12001180">Barr, Levy, Scheepers, &amp; Tily, 2013</a>).</p>
+<p>To fit the models, we used the <code>mixed()</code> of the <code>afex</code> package (<a href="https://afex.singmann.science/forums/topic/citing-afex">Singmann, Bolker, &amp; Westfall, 2017</a>) which was built on the <code>lmer()</code> of the <code>lme4</code> package (<a href="https://www.jstatsoft.org/article/view/v067i01/0">Bates, Maechler, Bolker, &amp; Walker, 2015</a>). The <code>mixed()</code> assessed the statistical significance of fixed effects by comparing a model with the effect in question against its nested model which lacked the effect in question. <em>P</em>-values of the effects were obtained by both likelihood ratio tests.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pacman<span class="op">::</span><span class="kw">p_load</span>(parallel)
+(nc &lt;-<span class="st"> </span><span class="kw">detectCores</span>())
+cl &lt;-<span class="st"> </span><span class="kw">makeCluster</span>(<span class="kw">rep</span>(<span class="st">&quot;localhost&quot;</span>, nc))
+
+ss.m1 &lt;-<span class="st"> </span><span class="kw">mixed</span>(Pref <span class="op">~</span><span class="st"> </span>Repetition <span class="op">+</span><span class="st"> </span>(Repetition<span class="op">|</span>SID) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>ImgName), 
+               SS, <span class="dt">method =</span> <span class="st">&quot;LRT&quot;</span>, <span class="dt">cl =</span> cl, 
+               <span class="dt">family=</span><span class="kw">binomial</span>(<span class="dt">link=</span><span class="st">&quot;logit&quot;</span>),
+               <span class="dt">control =</span> <span class="kw">glmerControl</span>(<span class="dt">optCtrl =</span> <span class="kw">list</span>(<span class="dt">maxfun =</span> <span class="fl">1e6</span>)))
+
+<span class="kw">stopCluster</span>(cl)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(<span class="kw">anova</span>(ss.m1))</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">Df</th>
+<th align="right">Chisq</th>
+<th align="right">Chi Df</th>
+<th align="right">Pr(&gt;Chisq)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Repetition</td>
+<td align="right">5</td>
+<td align="right">10.16475</td>
+<td align="right">1</td>
+<td align="right">0.0014315</td>
+</tr>
+</tbody>
+</table>
+<p>The result is consistent with those from the ANOVA.</p>
+<hr />
+</div>
+</div>
+</div>
+<div id="source-memory-test-phase" class="section level1">
+<h1><span class="header-section-number">4</span> Source Memory Test Phase</h1>
+<p>In each trial, participants first indicated in which quadrant a given pseudoword appeared during the item-source association phase. Participants then rated how confident they were about their memory judgment.</p>
+<div id="data-3" class="section level2">
+<h2><span class="header-section-number">4.1</span> Data</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">WW &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/data_NovSM_Exp3Word_TST.csv&quot;</span>, <span class="dt">header =</span> T)
+WW<span class="op">$</span>Repetition =<span class="st"> </span><span class="kw">factor</span>(WW<span class="op">$</span>Repetition, <span class="dt">levels=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>), <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Repetition&quot;</span>,<span class="st">&quot;No Repetition&quot;</span>))
+
+<span class="kw">glimpse</span>(WW, <span class="dt">width=</span><span class="dv">70</span>)</code></pre></div>
+<pre><code>## Observations: 624
+## Variables: 9
+## $ SID        &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
+## $ Trial      &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 1…
+## $ Repetition &lt;fct&gt; No Repetition, Repetition, No Repetition, No Rep…
+## $ AscLoc     &lt;int&gt; 2, 4, 4, 1, 3, 4, 4, 1, 2, 1, 2, 4, 4, 4, 3, 1, …
+## $ ScrResp    &lt;int&gt; 2, 1, 4, 1, 3, 4, 4, 1, 2, 1, 1, 1, 4, 4, 4, 3, …
+## $ Corr       &lt;int&gt; 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, …
+## $ RT         &lt;dbl&gt; 2144.57, 6669.51, 1793.32, 1672.23, 1580.44, 132…
+## $ Confident  &lt;int&gt; 4, 1, 4, 4, 4, 4, 4, 2, 1, 4, 1, 1, 4, 4, 1, 1, …
+## $ ImgName    &lt;fct&gt; nonwex2_2.png, nonwin2.png, nonwex12.png, nonwex…</code></pre>
+<ol style="list-style-type: decimal">
+<li>SID: participant ID</li>
+<li>Trial: 1~48</li>
+<li>Repetition: 1 = repetition, 2 = no repetition</li>
+<li>AscLoc: location (source) in which the item was presented in Phase 2; quadrants, 1~4</li>
+<li>SrcResp: source response; quadrants, 1~4</li>
+<li>Corr: Correctness, 1=correct ,2=incorrect &amp; no response</li>
+<li>RT: reaction times in ms.</li>
+<li>Confident: confidence rating, 1~4</li>
+<li>ImgName: name of stimuli</li>
+</ol>
+<p>The design was the same as that in the second phase. A single factor was the within-participant <strong>item repetition</strong> (<code>repetition</code> vs. <code>no repetition</code>).</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">table</span>(WW<span class="op">$</span>Repetition, WW<span class="op">$</span>SID)</code></pre></div>
+<pre><code>##                
+##                  1  2  3  4  5  6  7  8  9 10 11 12 13
+##   Repetition    24 24 24 24 24 24 24 24 24 24 24 24 24
+##   No Repetition 24 24 24 24 24 24 24 24 24 24 24 24 24</code></pre>
+</div>
+<div id="accuracy" class="section level2">
+<h2><span class="header-section-number">4.2</span> Accuracy</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">apa_beeplot</span>(<span class="dt">data =</span> WW, 
+            <span class="dt">id=</span><span class="st">&quot;SID&quot;</span>, <span class="dt">dv=</span><span class="st">&quot;Corr&quot;</span>, <span class="dt">factors=</span><span class="st">&quot;Repetition&quot;</span>, 
+            <span class="dt">dispersion =</span> within_subjects_conf_int,
+            <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">1</span>),
+            <span class="dt">xlab =</span> <span class="st">&quot;Item Repetition&quot;</span>,
+            <span class="dt">ylab =</span> <span class="st">&quot;Source Memory Accuracy&quot;</span>,
+            <span class="dt">las=</span><span class="dv">1</span>)</code></pre></div>
+<p><img src="FamSM_Exp3Word_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">WW <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(SID, Repetition) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Accuracy =</span> <span class="kw">mean</span>(Corr)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span>ungroup <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">group_by</span>(Repetition) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">mean.Accuracy =</span> <span class="kw">mean</span>(Accuracy), <span class="dt">ci.Accuracy =</span> <span class="kw">ci</span>(Accuracy)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span>ungroup <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Repetition</th>
+<th align="right">mean.Accuracy</th>
+<th align="right">ci.Accuracy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Repetition</td>
+<td align="right">0.4038462</td>
+<td align="right">0.0862383</td>
+</tr>
+<tr class="even">
+<td align="left">No Repetition</td>
+<td align="right">0.4935897</td>
+<td align="right">0.1077343</td>
+</tr>
+</tbody>
+</table>
+<p>Source memory accuracy was greater in the <code>no repetition</code> condition than the <code>repetition</code> condition (<em>novelty benefit</em>).</p>
+<div id="anova-1" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> ANOVA</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ww.corr.aov &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;Corr&quot;</span>, <span class="dt">data =</span> WW, <span class="dt">within =</span> <span class="st">&quot;Repetition&quot;</span>)
+<span class="kw">anova</span>(ww.corr.aov, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">num Df</th>
+<th align="right">den Df</th>
+<th align="right">MSE</th>
+<th align="right">F</th>
+<th align="right">pes</th>
+<th align="right">Pr(&gt;F)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Repetition</td>
+<td align="right">1</td>
+<td align="right">12</td>
+<td align="right">0.0102</td>
+<td align="right">5.1075</td>
+<td align="right">0.2986</td>
+<td align="right">0.0432</td>
+</tr>
+</tbody>
+</table>
+<p>The source of unrepeated pseudowords was significantly better remembered than that of repeated pseudowords.</p>
+</div>
+<div id="glmm-1" class="section level3">
+<h3><span class="header-section-number">4.2.2</span> GLMM</h3>
+<p>We built the full model (<code>full1</code>) with a fixed effect (<strong>item repetition</strong>). The model was maximal in that it included both by-participant and by-item random intercepts, and by-participant random slopes for <strong>item repetition</strong> (<a href="https://www.sciencedirect.com/science/article/pii/S0749596X12001180">Barr, Levy, Scheepers, &amp; Tily, 2013</a>). In case the maximal model does not converge successfully, we built another model (<code>full2</code>) with the maximal random structure but with the correlations among the random terms removed (<a href="https://cran.r-project.org/web/packages/afex/vignettes/afex_mixed_example.html#lrt-results">Singmann, 2018</a>). <em>P</em>-values of the effects were obtained by both likelihood ratio tests and parametric bootstrap tests with 1,000 simulations.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pacman<span class="op">::</span><span class="kw">p_load</span>(parallel, optimx)
+(nc &lt;-<span class="st"> </span><span class="kw">detectCores</span>())
+cl &lt;-<span class="st"> </span><span class="kw">makeCluster</span>(<span class="kw">rep</span>(<span class="st">&quot;localhost&quot;</span>, nc))
+
+full1 &lt;-<span class="st"> </span><span class="kw">mixed</span>(Corr <span class="op">~</span><span class="st"> </span>Repetition <span class="op">+</span><span class="st"> </span>(Repetition<span class="op">|</span>SID) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>ImgName), 
+               WW, <span class="dt">method =</span> <span class="st">&quot;LRT&quot;</span>, <span class="dt">cl =</span> cl, 
+               <span class="dt">family=</span><span class="kw">binomial</span>(<span class="dt">link=</span><span class="st">&quot;logit&quot;</span>),
+               <span class="dt">control =</span> <span class="kw">glmerControl</span>(<span class="dt">optCtrl =</span> <span class="kw">list</span>(<span class="dt">maxfun =</span> <span class="fl">1e6</span>)))
+full2 &lt;-<span class="st"> </span><span class="kw">mixed</span>(Corr <span class="op">~</span><span class="st"> </span>Repetition <span class="op">+</span><span class="st"> </span>(Repetition<span class="op">||</span>SID) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>ImgName),
+               WW, <span class="dt">method =</span> <span class="st">&quot;LRT&quot;</span>, <span class="dt">cl =</span> cl, 
+               <span class="dt">family=</span><span class="kw">binomial</span>(<span class="dt">link=</span><span class="st">&quot;logit&quot;</span>),
+               <span class="dt">control =</span> <span class="kw">glmerControl</span>(<span class="dt">optCtrl =</span> <span class="kw">list</span>(<span class="dt">maxfun =</span> <span class="fl">1e6</span>)), <span class="dt">expand_re =</span> <span class="ot">TRUE</span>)
+
+<span class="kw">clusterEvalQ</span>(cl, <span class="kw">library</span>(optimx))
+
+full1pb &lt;-<span class="st"> </span><span class="kw">mixed</span>(Corr <span class="op">~</span><span class="st"> </span>Repetition <span class="op">+</span><span class="st"> </span>(Repetition<span class="op">|</span>SID) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>ImgName), 
+               WW, <span class="dt">method =</span> <span class="st">&quot;PB&quot;</span>, <span class="dt">args_test =</span> <span class="kw">list</span>(<span class="dt">nsim =</span> <span class="dv">1000</span>, <span class="dt">cl =</span> cl), 
+               <span class="dt">cl =</span> cl, <span class="dt">family=</span><span class="kw">binomial</span>(<span class="dt">link=</span><span class="st">&quot;logit&quot;</span>),
+               <span class="dt">control =</span> <span class="kw">glmerControl</span>(<span class="dt">optCtrl =</span> <span class="kw">list</span>(<span class="dt">maxfun =</span> <span class="fl">1e6</span>)))
+full2pb &lt;-<span class="st"> </span><span class="kw">mixed</span>(Corr <span class="op">~</span><span class="st"> </span>Repetition <span class="op">+</span><span class="st"> </span>(Repetition<span class="op">||</span>SID) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>ImgName),
+               WW, <span class="dt">method =</span> <span class="st">&quot;PB&quot;</span>, <span class="dt">args_test =</span> <span class="kw">list</span>(<span class="dt">nsim =</span> <span class="dv">1000</span>, <span class="dt">cl =</span> cl), 
+               <span class="dt">cl =</span> cl, <span class="dt">family=</span><span class="kw">binomial</span>(<span class="dt">link=</span><span class="st">&quot;logit&quot;</span>),
+               <span class="dt">control =</span> <span class="kw">glmerControl</span>(<span class="dt">optCtrl =</span> <span class="kw">list</span>(<span class="dt">maxfun =</span> <span class="fl">1e6</span>)), <span class="dt">expand_re =</span> <span class="ot">TRUE</span>)
+
+<span class="kw">stopCluster</span>(cl)</code></pre></div>
+<p>Here are the LRT results.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">full.compare &lt;-<span class="st"> </span><span class="kw">cbind</span>(afex<span class="op">::</span><span class="kw">nice</span>(full1), afex<span class="op">::</span><span class="kw">nice</span>(full2)[,<span class="op">-</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>)])
+<span class="kw">colnames</span>(full.compare)[<span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>)] &lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="kw">rep</span>(<span class="kw">c</span>(<span class="st">&quot;full1_&quot;</span>, <span class="st">&quot;full2_&quot;</span>), <span class="dt">each =</span> <span class="dv">2</span>), 
+                                             <span class="kw">colnames</span>(full.compare)[<span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">4</span>)])
+full.compare <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Effect</th>
+<th align="right">df</th>
+<th align="left">full1_Chisq</th>
+<th align="left">full1_p.value</th>
+<th align="left">full2_Chisq</th>
+<th align="left">full2_p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Repetition</td>
+<td align="right">1</td>
+<td align="left">4.37 *</td>
+<td align="left">.04</td>
+<td align="left">4.68 *</td>
+<td align="left">.03</td>
+</tr>
+</tbody>
+</table>
+<p>Here are the parametric bootstrap test results.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">full.compare &lt;-<span class="st"> </span><span class="kw">cbind</span>(afex<span class="op">::</span><span class="kw">nice</span>(full1pb), afex<span class="op">::</span><span class="kw">nice</span>(full2pb)[,<span class="op">-</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>)])
+<span class="kw">colnames</span>(full.compare)[<span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>)] &lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="kw">rep</span>(<span class="kw">c</span>(<span class="st">&quot;full1pb_&quot;</span>, <span class="st">&quot;full2pb_&quot;</span>), <span class="dt">each =</span> <span class="dv">2</span>), 
+                                             <span class="kw">colnames</span>(full.compare)[<span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">4</span>)])
+full.compare <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Effect</th>
+<th align="right">df</th>
+<th align="left">full1pb_Chisq</th>
+<th align="left">full1pb_p.value</th>
+<th align="left">full2pb_Chisq</th>
+<th align="left">full2pb_p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Repetition</td>
+<td align="right">1</td>
+<td align="left">4.37 *</td>
+<td align="left">.04</td>
+<td align="left">4.68 *</td>
+<td align="left">.03</td>
+</tr>
+</tbody>
+</table>
+<p>The <em>p</em>-values from all models agreed strongly providing a high degree of confidence in the results.</p>
+</div>
+</div>
+<div id="confidence" class="section level2">
+<h2><span class="header-section-number">4.3</span> Confidence</h2>
+<p>There was only negligible difference in confidence between the <code>repetition</code> vs. <code>no repetition</code> conditions.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">apa_beeplot</span>(<span class="dt">data =</span> WW, 
+            <span class="dt">id=</span><span class="st">&quot;SID&quot;</span>, <span class="dt">dv=</span><span class="st">&quot;Confident&quot;</span>, <span class="dt">factors=</span><span class="st">&quot;Repetition&quot;</span>, 
+            <span class="dt">dispersion =</span> within_subjects_conf_int,
+            <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">4</span>),
+            <span class="dt">xlab =</span> <span class="st">&quot;Item Repetition&quot;</span>,
+            <span class="dt">ylab =</span> <span class="st">&quot;Source Memory Confidence&quot;</span>,
+            <span class="dt">las=</span><span class="dv">1</span>)</code></pre></div>
+<p><img src="FamSM_Exp3Word_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">WW <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(SID, Repetition) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Confidence =</span> <span class="kw">mean</span>(Confident)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span>ungroup <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">group_by</span>(Repetition) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">mean.Confidence =</span> <span class="kw">mean</span>(Confidence), <span class="dt">ci.Confidence =</span> <span class="kw">ci</span>(Confidence)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span>ungroup <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Repetition</th>
+<th align="right">mean.Confidence</th>
+<th align="right">ci.Confidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Repetition</td>
+<td align="right">2.490385</td>
+<td align="right">0.3175196</td>
+</tr>
+<tr class="even">
+<td align="left">No Repetition</td>
+<td align="right">2.493590</td>
+<td align="right">0.3230770</td>
+</tr>
+</tbody>
+</table>
+<div id="anova-2" class="section level3">
+<h3><span class="header-section-number">4.3.1</span> ANOVA</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ww.conf.aov &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;Confident&quot;</span>, <span class="dt">data =</span> WW, <span class="dt">within =</span> <span class="st">&quot;Repetition&quot;</span>)
+<span class="kw">anova</span>(ww.conf.aov, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">num Df</th>
+<th align="right">den Df</th>
+<th align="right">MSE</th>
+<th align="right">F</th>
+<th align="right">pes</th>
+<th align="right">Pr(&gt;F)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Repetition</td>
+<td align="right">1</td>
+<td align="right">12</td>
+<td align="right">0.083</td>
+<td align="right">8e-04</td>
+<td align="right">1e-04</td>
+<td align="right">0.9778</td>
+</tr>
+</tbody>
+</table>
+<p>The effect of <code>item repetition</code> was not significant in confidence ratings.</p>
+</div>
+<div id="clmm" class="section level3">
+<h3><span class="header-section-number">4.3.2</span> CLMM</h3>
+<p>The responses from a Likert-type scale are ordinal. Especially for the rating items with numerical response formats containing four or fewer categories, it is recommended to use categorical data analysis approaches, rather than treating the responses as continuous data (<a href="https://ac.els-cdn.com/S1877129715200196/1-s2.0-S1877129715200196-main.pdf?_tid=589e7c17-4d55-49e6-a80f-5aef938a1f44&amp;acdnat=1549722329_bb934739b91ee6554cafadb39565dc25">Harpe, 2015</a>).</p>
+<p>Here we employed the cumulative link mixed modeling using the <code>clmm()</code> of the package <code>ordinal</code> (<a href="https://cran.r-project.org/web/packages/ordinal/vignettes/clm_article.pdf">Christensen, submitted</a>). The model specification of fixed and random effects was the same as the <code>mixed()</code> above.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pacman<span class="op">::</span><span class="kw">p_load</span>(ordinal)
+
+WW2 &lt;-<span class="st"> </span>WW
+WW2<span class="op">$</span>Confident =<span class="st"> </span><span class="kw">factor</span>(WW2<span class="op">$</span>Confident, <span class="dt">ordered =</span> <span class="ot">TRUE</span>)
+WW2<span class="op">$</span>SID =<span class="st"> </span><span class="kw">factor</span>(WW2<span class="op">$</span>SID)
+
+cm.full &lt;-<span class="st"> </span><span class="kw">clmm</span>(Confident <span class="op">~</span><span class="st"> </span>Repetition <span class="op">+</span><span class="st"> </span>(Repetition<span class="op">|</span>SID) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>ImgName), <span class="dt">data=</span>WW2)
+cm.red1 &lt;-<span class="st"> </span><span class="kw">clmm</span>(Confident <span class="op">~</span><span class="st"> </span><span class="dv">1</span> <span class="op">+</span><span class="st"> </span>(Repetition<span class="op">|</span>SID) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>ImgName), <span class="dt">data=</span>WW2) </code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">kable</span>(<span class="kw">anova</span>(cm.full, cm.red1))</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">no.par</th>
+<th align="right">AIC</th>
+<th align="right">logLik</th>
+<th align="right">LR.stat</th>
+<th align="right">df</th>
+<th align="right">Pr(&gt;Chisq)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>cm.red1</td>
+<td align="right">7</td>
+<td align="right">1657.994</td>
+<td align="right">-821.9968</td>
+<td align="right"></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+<tr class="even">
+<td>cm.full</td>
+<td align="right">8</td>
+<td align="right">1659.983</td>
+<td align="right">-821.9917</td>
+<td align="right">0.0101447</td>
+<td align="right">1</td>
+<td align="right">0.919772</td>
+</tr>
+</tbody>
+</table>
+<p>The effect of <code>item repetition</code> was not significant.</p>
+<p>Below is the plot of estimated marginal means, which were extracted from the fitted CLMM. There was little difference between the <code>repetition</code> and <code>no repetition</code> conditions.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pacman<span class="op">::</span><span class="kw">p_load</span>(RVAideMemoire)
+temp &lt;-<span class="st"> </span><span class="kw">emmeans</span>(cm.full,<span class="op">~</span>Repetition<span class="op">|</span>cut,<span class="dt">mode=</span><span class="st">&quot;linear.predictor&quot;</span>)
+temp &lt;-<span class="st"> </span><span class="kw">rating.emmeans</span>(temp)
+
+<span class="kw">colnames</span>(temp)[<span class="dv">1</span>] &lt;-<span class="st"> &quot;Condition&quot;</span>
+
+<span class="kw">ggplot</span>(<span class="dt">data =</span> temp, <span class="kw">aes</span>(<span class="dt">x =</span> Rating, <span class="dt">y =</span> Prob, <span class="dt">group =</span> Condition)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">color =</span> Condition), <span class="dt">size =</span> <span class="fl">1.2</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">shape =</span> Condition, <span class="dt">color =</span> Condition), 
+             <span class="dt">size =</span> <span class="dv">4</span>, <span class="dt">fill =</span> <span class="st">&quot;white&quot;</span>, <span class="dt">stroke =</span> <span class="fl">1.2</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">scale_color_manual</span>(<span class="dt">values=</span><span class="kw">c</span>(<span class="st">&quot;#56B4E9&quot;</span>, <span class="st">&quot;#56B4E9&quot;</span>)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">scale_shape_manual</span>(<span class="dt">name=</span><span class="st">&quot;Condition&quot;</span>, <span class="dt">values=</span><span class="kw">c</span>(<span class="dv">24</span>,<span class="dv">21</span>)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">y =</span> <span class="st">&quot;Response Probability&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;Rating&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">expand_limits</span>(<span class="dt">y=</span><span class="dv">0</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">limits =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="fl">0.5</span>)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">scale_x_discrete</span>(<span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;1&quot;</span> =<span class="st"> &quot;1(Guessed)&quot;</span>,<span class="st">&quot;4&quot;</span>=<span class="st">&quot;4(Sure)&quot;</span>)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">theme_minimal</span>() <span class="op">+</span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">18</span>))</code></pre></div>
+<p><img src="FamSM_Exp3Word_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>
+</div>
+</div>
+<div id="rt" class="section level2">
+<h2><span class="header-section-number">4.4</span> RT</h2>
+<p>Only RTs in correct trials were analyzed. Before analysis, we first removed RTs either shorter than 200ms or longer than 10s. Then, from the RT distribution of each condition, RTs beyond 3 SD from the mean were removed.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">cWW &lt;-<span class="st"> </span>WW <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(Corr<span class="op">==</span><span class="dv">1</span>)
+
+sWW &lt;-<span class="st"> </span>cWW <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(RT <span class="op">&gt;</span><span class="st"> </span><span class="dv">200</span> <span class="op">&amp;</span><span class="st"> </span>RT <span class="op">&lt;</span><span class="st"> </span><span class="dv">10000</span>) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">group_by</span>(Repetition) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">nest</span>() <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">lbound =</span> <span class="kw">map</span>(data, <span class="op">~</span><span class="kw">mean</span>(.<span class="op">$</span>RT)<span class="op">-</span><span class="dv">3</span><span class="op">*</span><span class="kw">sd</span>(.<span class="op">$</span>RT)),
+         <span class="dt">ubound =</span> <span class="kw">map</span>(data, <span class="op">~</span><span class="kw">mean</span>(.<span class="op">$</span>RT)<span class="op">+</span><span class="dv">3</span><span class="op">*</span><span class="kw">sd</span>(.<span class="op">$</span>RT))) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">unnest</span>(lbound, ubound) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">unnest</span>(data) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">Outlier =</span> (RT <span class="op">&lt;</span><span class="st"> </span>lbound)<span class="op">|</span>(RT <span class="op">&gt;</span><span class="st"> </span>ubound)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">filter</span>(Outlier <span class="op">==</span><span class="st"> </span><span class="ot">FALSE</span>) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">select</span>(SID, Repetition, RT, ImgName)
+
+<span class="dv">100</span> <span class="op">-</span><span class="st"> </span><span class="dv">100</span><span class="op">*</span><span class="kw">nrow</span>(sWW)<span class="op">/</span><span class="kw">nrow</span>(cWW)</code></pre></div>
+<pre><code>## [1] 3.928571</code></pre>
+<p>This trimming procedure removed 3.93% of correct RTs.</p>
+<p>Since the overall accuracy of source memory was not high, only small numbers of correct trials remained after trimming. None of participants had more than 20 valid trials.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">sWW <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(SID, Repetition) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">NumTrial =</span> <span class="kw">length</span>(RT)) <span class="op">%&gt;%</span>
+<span class="st">  </span>ungroup <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">group_by</span>(Repetition) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Avg =</span> <span class="kw">mean</span>(NumTrial), 
+            <span class="dt">Med =</span> <span class="kw">median</span>(NumTrial), 
+            <span class="dt">Min =</span> <span class="kw">min</span>(NumTrial), 
+            <span class="dt">Max =</span> <span class="kw">max</span>(NumTrial)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span>ungroup <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Repetition</th>
+<th align="right">Avg</th>
+<th align="right">Med</th>
+<th align="right">Min</th>
+<th align="right">Max</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Repetition</td>
+<td align="right">9.461538</td>
+<td align="right">10</td>
+<td align="right">3</td>
+<td align="right">15</td>
+</tr>
+<tr class="even">
+<td align="left">No Repetition</td>
+<td align="right">11.230769</td>
+<td align="right">9</td>
+<td align="right">5</td>
+<td align="right">19</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">h1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(cWW, <span class="kw">aes</span>(<span class="dt">x=</span>RT)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_density</span>()
+h2 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(sWW, <span class="kw">aes</span>(<span class="dt">x=</span>RT)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_density</span>() <span class="op">+</span><span class="st"> </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Trimmed RT&quot;</span>)
+
+pacman<span class="op">::</span><span class="kw">p_load</span>(cowplot)
+<span class="kw">plot_grid</span>(h1, h2)</code></pre></div>
+<p><img src="FamSM_Exp3Word_files/figure-html/unnamed-chunk-41-1.png" width="672" /></p>
+<p>The overall RT distribution was highly skewed even after trimming.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">apa_beeplot</span>(<span class="dt">data =</span> sWW, 
+            <span class="dt">id=</span><span class="st">&quot;SID&quot;</span>, <span class="dt">dv=</span><span class="st">&quot;RT&quot;</span>, <span class="dt">factors=</span><span class="st">&quot;Repetition&quot;</span>, 
+            <span class="dt">dispersion =</span> conf_int,
+            <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">5000</span>),
+            <span class="dt">xlab =</span> <span class="st">&quot;Item Repetition&quot;</span>,
+            <span class="dt">ylab =</span> <span class="st">&quot;Source Memory RT&quot;</span>,
+            <span class="dt">las=</span><span class="dv">1</span>)</code></pre></div>
+<p><img src="FamSM_Exp3Word_files/figure-html/unnamed-chunk-42-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">sWW <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(SID, Repetition) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">RT =</span> <span class="kw">mean</span>(RT)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span>ungroup <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">group_by</span>(Repetition) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">mean.RT =</span> <span class="kw">mean</span>(RT), <span class="dt">ci.RT =</span> <span class="kw">ci</span>(RT)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span>ungroup <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Repetition</th>
+<th align="right">mean.RT</th>
+<th align="right">ci.RT</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Repetition</td>
+<td align="right">2196.454</td>
+<td align="right">204.7738</td>
+</tr>
+<tr class="even">
+<td align="left">No Repetition</td>
+<td align="right">2202.957</td>
+<td align="right">512.8699</td>
+</tr>
+</tbody>
+</table>
+<div id="anova-3" class="section level3">
+<h3><span class="header-section-number">4.4.1</span> ANOVA</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ww.rt.aov &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;RT&quot;</span>, <span class="dt">data =</span> sWW, <span class="dt">within =</span> <span class="st">&quot;Repetition&quot;</span>)
+<span class="kw">anova</span>(ww.rt.aov, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">num Df</th>
+<th align="right">den Df</th>
+<th align="right">MSE</th>
+<th align="right">F</th>
+<th align="right">pes</th>
+<th align="right">Pr(&gt;F)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Repetition</td>
+<td align="right">1</td>
+<td align="right">12</td>
+<td align="right">238446.8</td>
+<td align="right">0.0012</td>
+<td align="right">1e-04</td>
+<td align="right">0.9735</td>
+</tr>
+</tbody>
+</table>
+<p>The difference was not significant.</p>
+</div>
+<div id="glmm-2" class="section level3">
+<h3><span class="header-section-number">4.4.2</span> GLMM</h3>
+<p>We built a linear mixed model that assumes an inverse Gaussian distribution and a linear relationship (identity link function) between the predictors and RT (<a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2015.01171/full">Lo &amp; Andrews, 2015</a>). The current approach should be better than the conventional ANOVA in dealing with such small, unbalanced, and skewed data as the current RTs.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">require</span>(parallel)
+(nc &lt;-<span class="st"> </span><span class="kw">detectCores</span>())
+cl &lt;-<span class="st"> </span><span class="kw">makeCluster</span>(<span class="kw">rep</span>(<span class="st">&quot;localhost&quot;</span>, nc))
+
+rt.full &lt;-<span class="st"> </span><span class="kw">mixed</span>(RT <span class="op">~</span><span class="st"> </span>Repetition <span class="op">+</span><span class="st"> </span>(Repetition<span class="op">|</span>SID) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>ImgName),
+               sWW, <span class="dt">method =</span> <span class="st">&quot;LRT&quot;</span>, <span class="dt">cl =</span> cl, 
+               <span class="dt">family=</span><span class="kw">inverse.gaussian</span>(<span class="dt">link=</span><span class="st">&quot;identity&quot;</span>),
+               <span class="dt">control =</span> <span class="kw">glmerControl</span>(<span class="dt">optCtrl =</span> <span class="kw">list</span>(<span class="dt">maxfun =</span> <span class="fl">1e6</span>)))
+
+<span class="kw">stopCluster</span>(cl)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">anova</span>(rt.full) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">Df</th>
+<th align="right">Chisq</th>
+<th align="right">Chi Df</th>
+<th align="right">Pr(&gt;Chisq)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Repetition</td>
+<td align="right">6</td>
+<td align="right">1.573836</td>
+<td align="right">1</td>
+<td align="right">0.2096508</td>
+</tr>
+</tbody>
+</table>
+<p>The difference was not significant.</p>
+</div>
+</div>
+</div>
+<div id="session-info" class="section level1">
+<h1><span class="header-section-number">5</span> Session Info</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">devtools<span class="op">::</span><span class="kw">session_info</span>()</code></pre></div>
+<pre><code>## ─ Session info ──────────────────────────────────────────────────────────
+##  setting  value                       
+##  version  R version 3.5.2 (2018-12-20)
+##  os       macOS Mojave 10.14.3        
+##  system   x86_64, darwin15.6.0        
+##  ui       X11                         
+##  language (EN)                        
+##  collate  en_US.UTF-8                 
+##  ctype    en_US.UTF-8                 
+##  tz       Asia/Seoul                  
+##  date     2019-02-23                  
+## 
+## ─ Packages ──────────────────────────────────────────────────────────────
+##  package       * version    date       lib source                      
+##  abind           1.4-5      2016-07-21 [1] CRAN (R 3.5.0)              
+##  afex          * 0.23-0     2019-02-19 [1] CRAN (R 3.5.2)              
+##  assertthat      0.2.0      2017-04-11 [1] CRAN (R 3.5.0)              
+##  backports       1.1.3      2018-12-14 [1] CRAN (R 3.5.1)              
+##  beeswarm      * 0.2.3      2016-04-25 [1] CRAN (R 3.5.0)              
+##  broom           0.5.1      2018-12-05 [1] CRAN (R 3.5.1)              
+##  callr           3.1.1      2018-12-21 [1] CRAN (R 3.5.0)              
+##  car           * 3.0-2      2018-08-23 [1] CRAN (R 3.5.0)              
+##  carData       * 3.0-2      2018-09-30 [1] CRAN (R 3.5.0)              
+##  cellranger      1.1.0      2016-07-27 [1] CRAN (R 3.5.0)              
+##  cli             1.0.1      2018-09-25 [1] CRAN (R 3.5.1)              
+##  coda            0.19-2     2018-10-08 [1] CRAN (R 3.5.1)              
+##  codetools       0.2-16     2018-12-24 [1] CRAN (R 3.5.2)              
+##  colorspace      1.4-0      2019-01-13 [1] CRAN (R 3.5.2)              
+##  cowplot       * 0.9.4      2019-01-08 [1] CRAN (R 3.5.1)              
+##  crayon          1.3.4      2017-09-16 [1] CRAN (R 3.5.0)              
+##  curl            3.3        2019-01-10 [1] CRAN (R 3.5.2)              
+##  data.table      1.12.0     2019-01-13 [1] CRAN (R 3.5.2)              
+##  desc            1.2.0      2018-05-01 [1] CRAN (R 3.5.0)              
+##  devtools        2.0.1      2018-10-26 [1] CRAN (R 3.5.1)              
+##  digest          0.6.18     2018-10-10 [1] CRAN (R 3.5.1)              
+##  dplyr         * 0.8.0.1    2019-02-15 [1] CRAN (R 3.5.2)              
+##  emmeans       * 1.3.2      2019-01-22 [1] CRAN (R 3.5.1)              
+##  estimability    1.3        2018-02-11 [1] CRAN (R 3.5.0)              
+##  evaluate        0.13       2019-02-12 [1] CRAN (R 3.5.2)              
+##  fansi           0.4.0      2018-10-05 [1] CRAN (R 3.5.0)              
+##  forcats       * 0.4.0      2019-02-17 [1] CRAN (R 3.5.2)              
+##  foreign         0.8-71     2018-07-20 [1] CRAN (R 3.5.2)              
+##  fs              1.2.6      2018-08-23 [1] CRAN (R 3.5.0)              
+##  generics        0.0.2      2018-11-29 [1] CRAN (R 3.5.0)              
+##  ggplot2       * 3.1.0      2018-10-25 [1] CRAN (R 3.5.0)              
+##  glue            1.3.0      2018-07-17 [1] CRAN (R 3.5.0)              
+##  gtable          0.2.0      2016-02-26 [1] CRAN (R 3.5.0)              
+##  haven           2.1.0      2019-02-19 [1] CRAN (R 3.5.2)              
+##  highr           0.7        2018-06-09 [1] CRAN (R 3.5.0)              
+##  hms             0.4.2      2018-03-10 [1] CRAN (R 3.5.0)              
+##  htmltools       0.3.6      2017-04-28 [1] CRAN (R 3.5.0)              
+##  httr            1.4.0      2018-12-11 [1] CRAN (R 3.5.0)              
+##  jsonlite        1.6        2018-12-07 [1] CRAN (R 3.5.0)              
+##  knitr         * 1.21       2018-12-10 [1] CRAN (R 3.5.1)              
+##  labeling        0.3        2014-08-23 [1] CRAN (R 3.5.0)              
+##  lattice         0.20-38    2018-11-04 [1] CRAN (R 3.5.2)              
+##  lazyeval        0.2.1      2017-10-29 [1] CRAN (R 3.5.0)              
+##  lme4          * 1.1-20     2019-02-04 [1] CRAN (R 3.5.2)              
+##  lmerTest        3.1-0      2019-02-11 [1] CRAN (R 3.5.2)              
+##  lubridate       1.7.4      2018-04-11 [1] CRAN (R 3.5.0)              
+##  magrittr        1.5        2014-11-22 [1] CRAN (R 3.5.0)              
+##  MASS            7.3-51.1   2018-11-01 [1] CRAN (R 3.5.2)              
+##  Matrix        * 1.2-15     2018-11-01 [1] CRAN (R 3.5.2)              
+##  memoise         1.1.0      2017-04-21 [1] CRAN (R 3.5.0)              
+##  minqa           1.2.4      2014-10-09 [1] CRAN (R 3.5.0)              
+##  modelr          0.1.4      2019-02-18 [1] CRAN (R 3.5.2)              
+##  multcomp        1.4-8      2017-11-08 [1] CRAN (R 3.5.0)              
+##  munsell         0.5.0      2018-06-12 [1] CRAN (R 3.5.0)              
+##  mvtnorm         1.0-8      2018-05-31 [1] CRAN (R 3.5.0)              
+##  nlme            3.1-137    2018-04-07 [1] CRAN (R 3.5.2)              
+##  nloptr          1.2.1      2018-10-03 [1] CRAN (R 3.5.1)              
+##  numDeriv        2016.8-1   2016-08-27 [1] CRAN (R 3.5.0)              
+##  openxlsx        4.1.0      2018-05-26 [1] CRAN (R 3.5.0)              
+##  ordinal       * 2018.8-25  2018-08-25 [1] CRAN (R 3.5.0)              
+##  pacman        * 0.5.0      2018-10-22 [1] CRAN (R 3.5.1)              
+##  papaja        * 0.1.0.9842 2018-11-01 [1] Github (crsh/papaja@2e11aec)
+##  pillar          1.3.1      2018-12-15 [1] CRAN (R 3.5.1)              
+##  pkgbuild        1.0.2      2018-10-16 [1] CRAN (R 3.5.1)              
+##  pkgconfig       2.0.2      2018-08-16 [1] CRAN (R 3.5.0)              
+##  pkgload         1.0.2      2018-10-29 [1] CRAN (R 3.5.0)              
+##  plyr            1.8.4      2016-06-08 [1] CRAN (R 3.5.0)              
+##  prettyunits     1.0.2      2015-07-13 [1] CRAN (R 3.5.0)              
+##  processx        3.2.1      2018-12-05 [1] CRAN (R 3.5.1)              
+##  ps              1.3.0      2018-12-21 [1] CRAN (R 3.5.0)              
+##  purrr         * 0.3.0      2019-01-27 [1] CRAN (R 3.5.1)              
+##  R6              2.4.0      2019-02-14 [1] CRAN (R 3.5.2)              
+##  Rcpp            1.0.0      2018-11-07 [1] CRAN (R 3.5.0)              
+##  readr         * 1.3.1      2018-12-21 [1] CRAN (R 3.5.0)              
+##  readxl          1.3.0      2019-02-15 [1] CRAN (R 3.5.2)              
+##  remotes         2.0.2      2018-10-30 [1] CRAN (R 3.5.0)              
+##  reshape2        1.4.3      2017-12-11 [1] CRAN (R 3.5.0)              
+##  rio             0.5.16     2018-11-26 [1] CRAN (R 3.5.1)              
+##  rlang           0.3.1      2019-01-08 [1] CRAN (R 3.5.1)              
+##  rmarkdown       1.11       2018-12-08 [1] CRAN (R 3.5.1)              
+##  rprojroot       1.3-2      2018-01-03 [1] CRAN (R 3.5.0)              
+##  rstudioapi      0.9.0      2019-01-09 [1] CRAN (R 3.5.1)              
+##  RVAideMemoire * 0.9-72     2019-02-11 [1] CRAN (R 3.5.2)              
+##  rvest           0.3.2      2016-06-17 [1] CRAN (R 3.5.0)              
+##  sandwich        2.5-0      2018-08-17 [1] CRAN (R 3.5.0)              
+##  scales          1.0.0      2018-08-09 [1] CRAN (R 3.5.0)              
+##  sessioninfo     1.1.1      2018-11-05 [1] CRAN (R 3.5.0)              
+##  stringi         1.3.1      2019-02-13 [1] CRAN (R 3.5.2)              
+##  stringr       * 1.4.0      2019-02-10 [1] CRAN (R 3.5.2)              
+##  survival        2.43-3     2018-11-26 [1] CRAN (R 3.5.2)              
+##  testthat        2.0.1      2018-10-13 [1] CRAN (R 3.5.1)              
+##  TH.data         1.0-10     2019-01-21 [1] CRAN (R 3.5.2)              
+##  tibble        * 2.0.1      2019-01-12 [1] CRAN (R 3.5.2)              
+##  tidyr         * 0.8.2      2018-10-28 [1] CRAN (R 3.5.0)              
+##  tidyselect      0.2.5      2018-10-11 [1] CRAN (R 3.5.0)              
+##  tidyverse     * 1.2.1      2017-11-14 [1] CRAN (R 3.5.0)              
+##  ucminf          1.1-4      2016-08-18 [1] CRAN (R 3.5.0)              
+##  usethis         1.4.0      2018-08-14 [1] CRAN (R 3.5.0)              
+##  utf8            1.1.4      2018-05-24 [1] CRAN (R 3.5.0)              
+##  withr           2.1.2      2018-03-15 [1] CRAN (R 3.5.0)              
+##  xfun            0.5        2019-02-20 [1] CRAN (R 3.5.2)              
+##  xml2            1.2.0      2018-01-24 [1] CRAN (R 3.5.0)              
+##  xtable          1.8-3      2018-08-29 [1] CRAN (R 3.5.0)              
+##  yaml            2.2.0      2018-07-25 [1] CRAN (R 3.5.0)              
+##  zip             1.0.0      2017-04-25 [1] CRAN (R 3.5.0)              
+##  zoo             1.8-4      2018-09-19 [1] CRAN (R 3.5.1)              
+## 
+## [1] /Library/Frameworks/R.framework/Versions/3.5/Resources/library</code></pre>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
