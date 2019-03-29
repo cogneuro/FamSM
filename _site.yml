@@ -6,6 +6,12 @@ navbar:
     - text: "Exp 1"
       href: FamSM_Exp1_Face.html
     - text: "Exp 2"
-      href: exp2.html
+      href: FamSM_Exp2_Word.html
+    - text: "Exp 3A"
+      href: FamSM_Exp3A_Face.html
+    - text: "Exp 3B"
+      href: FamSM_Exp3B_Word.html
+    - text: "Exp 4A"
+      href: FamSM_Exp4A_Face.html
     - text: "Exp 4B"
-      href: FamSM_Exp3Word.html
+      href: FamSM_Exp4B_Face.html

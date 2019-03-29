@@ -18,7 +18,7 @@ mainfont: Noto Sans CJK KR
 ---
 
 ```{r, echo=FALSE}
-setwd("~/Dropbox/2017Experiment/newOSF/")
+setwd("~/Dropbox/RProjects/FamSM/")
 ```
 
 ```{css, echo=FALSE}

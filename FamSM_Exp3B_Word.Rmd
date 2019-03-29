@@ -1,0 +1,640 @@
+---
+title: "Experiment 3B"
+author: "Hongmi Lee, Kyungmi Kim, Do-Joon Yi"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: 
+      collapse: false
+      smooth_scroll: false
+    number_sections: true
+    theme: cosmo 
+    highlight: tango
+    code_folding: hide
+subtitle: Two-day experiment, pseudowords only
+mainfont: Noto Sans CJK KR
+---
+
+```{r, echo=FALSE}
+setwd("~/Dropbox/RProjects/FamSM/")
+```
+
+```{css, echo=FALSE}
+pre code, pre, code {
+  white-space: pre !important;
+  overflow-x: scroll !important;
+  word-break: keep-all !important;
+  word-wrap: initial !important;
+}
+```
+
+```{r setup, message=FALSE}
+set.seed(12345) # for reproducibility
+options(knitr.kable.NA = '')
+
+# Some packages need to be loaded. We use `pacman` as a package manager, which takes care of the other packages. 
+if (!require("pacman", quietly = TRUE)) install.packages("pacman")
+if (!require("Rmisc", quietly = TRUE)) install.packages("Rmisc") # Never load it directly.
+pacman::p_load(tidyverse, knitr, car, afex, emmeans, parallel, ordinal,
+               ggbeeswarm, RVAideMemoire)
+pacman::p_load_gh("thomasp85/patchwork")  
+```
+
+
+# Day 1 Familiarization
+
+Forty eight `pseudowords` were repeated 30 times on Day 1. Only `pseudowords` were used in the current experiment. Each of 13 participants completed a total of 1,440 trials, divided into 10 blocks of 144 trials each. Each item was repeated three times within a block. In each trial, participants indicated whether it was the first, second, or third time the given item was presented within the block. Two participants (5th & 6th) did not complete the session due to a technical issue. These two participants were exposed to each item 24 to 27 times.
+
+```{r, collapse=TRUE}
+D1 <- read.csv("data/data_FamSM_Exp3B_Word_PRE.csv", header = T)
+D1$SID <- factor(D1$SID)
+glimpse(D1, width=70)
+# 1. SID: participant ID
+# 2. Block: 1~10
+# 3. Trial: 1~144
+# 4. RepTime: 3 repetitions per image per block. 1~3
+# 5. Resp: repetition counting, 1~3, 0 = no response
+# 6. Corr: Correctness, 1 = correct, 0 = incorrect or no response
+# 7. RT: reaction times in ms.
+# 8. ImgName: name of stimuli
+
+table(D1$SID)
+```
+
+
+## Accuracy & RT
+
+```{r, warning=FALSE, message=FALSE, fig.height=4}
+# all blocks
+cD1s <- D1 %>% group_by(SID) %>% summarise(M = mean(Corr)*100) %>% ungroup()
+
+cD1slong <- D1 %>% group_by(SID, Block) %>% 
+  summarise(Accuracy = mean(Corr)*100) %>% 
+  ungroup()
+
+cD1g <- Rmisc::summarySEwithin(data=cD1slong, measurevar = "Accuracy", 
+                               idvar = "SID", withinvars = "Block")
+
+h1 <- ggplot(cD1g, mapping=aes(x=Block, y=Accuracy, group=1)) + 
+  geom_ribbon(aes(ymin=Accuracy-ci, ymax=Accuracy+ci), fill="darkred", alpha=0.3) +
+  geom_line(colour="darkred", size = 1) +
+  geom_line(cD1slong, alpha = 0.3, show.legend = FALSE,
+            mapping=aes(x=Block, y=Accuracy, group=SID, color=SID)) +
+  coord_cartesian(ylim = c(0, 100), clip = "on") +
+  labs(x = "Block", 
+       y = "Accuracy (%)") +
+  scale_x_discrete(breaks=seq(1,10,1)) +
+  theme_bw(base_size = 18) +
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        legend.position = "none") 
+
+
+rD1slong <- D1 %>% filter(Corr==1) %>% 
+  group_by(SID, Block) %>% 
+  summarise(RT = mean(RT)) %>% 
+  ungroup()
+
+rD1g <- Rmisc::summarySEwithin(data=rD1slong, measurevar = "RT", 
+                               idvar = "SID", withinvars = "Block")
+
+h2 <- ggplot(rD1g, mapping=aes(x=Block, y=RT, group=1)) + 
+  geom_ribbon(aes(ymin=RT-ci, ymax=RT+ci), fill="darkred", alpha=0.3) +
+  geom_line(colour="darkred", size = 1) +
+  geom_line(rD1slong, alpha = 0.3, show.legend = FALSE,
+            mapping=aes(x=Block, y=RT, group=SID, color=SID)) +
+  coord_cartesian(ylim = c(0, 800), clip = "on") +
+  labs(x = "Block", 
+       y = "Correct RT (ms)") +
+  scale_x_discrete(breaks=seq(1,10,1)) +
+  theme_bw(base_size = 18) +
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        legend.position = "none") 
+
+h1 + h2
+```
+
+Two participants (6th & 7th) did not make responses in all or most of trials in Block 1. In subsequent blocks, participants made faster correct responses while maintaining a similar level of accuracy. Overall accuracy was `r round(mean(cD1s$M), digits=2)`% (SD = `r round(sd(cD1s$M), digits=2)`). 
+
+
+<br><br>
+
+****
+
+<br><br>
+
+
+# Item Repetition Phase
+
+The three-phase procedure as in Experiments 1 and 2 was conducted on Day 2. In the item repetition phase, half of the pseudowords learned on Day 1 were repeated eight time, producing 192 trials. In each trial, participants made a preference judgment for an item.
+
+```{r, collapse=TRUE}
+P1 <- read.csv("data/data_FamSM_Exp3B_Word_REP.csv", header = T)
+P1$Pref <- ifelse(P1$Resp==1,1,0)
+glimpse(P1, width=70)
+# 1. SID: participant ID
+# 2. RepTime: number of repetition, 1~8
+# 3. Trial: 1~24
+# 4. Resp: preference judgment, 1 = like, 2 = dislike, 3 = no response
+# 5. Corr: correctness, 1 = response, 0 = no response
+# 6. RT: reaction times in ms.
+# 7. ImgName: name of stimuli
+# 8. Pref: preference, 0 = dislike (treating no response as 'dislike'), 1 = like
+
+table(P1$SID)
+```
+
+Participants did not make responses in `r round(100 - mean(P1$Corr)*100, digits=2)`% of trials.
+
+
+## Preference
+
+```{r, echo=FALSE}
+P1slong <- P1 %>% group_by(SID) %>% 
+  summarise(Preference = mean(Pref)) %>% 
+  ungroup
+```
+
+The mean of individuals' preference scores was `r round(mean(P1slong$Preference)*100, digits=2)`%. In the following plot, red point and error bar represent the means and 95% bootstrapped CIs.
+
+```{r, fig.height=3}
+P1slong <- P1 %>% group_by(SID) %>% 
+  summarise(Preference = mean(Pref)) %>% 
+  ungroup()
+
+ggplot(data=P1slong, aes(x=1, y=Preference)) +
+  geom_violin(width = 1, trim = TRUE) +
+  ggbeeswarm::geom_quasirandom(dodge.width = 0.7, color = "blue", size = 3, alpha = 0.2,
+                               show.legend = FALSE) +
+  stat_summary(fun.data = "mean_cl_boot", color = "darkred", size = 1) +
+  coord_flip(ylim = c(0, 1), clip = "on") +
+  labs(y = "Preference Judgment (0 = dislike, 1 = like)") +
+  theme_bw(base_size = 18) +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.title.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.text.y = element_blank(),
+        aspect.ratio = .3)
+```
+
+
+<br><br>
+
+****
+
+<br><br>
+
+# Item-Source Association Phase
+
+Participants learned 48 pairs of a pseudoword and a quadrant on the screen. They were instructed to pay attention to the location of each face while making a preference judgment. All pseudowords shown on Day 1 were presented once in one of four quadrants. The within-participant **item repetition** was the single factor. Twenty four pseudowords had been repeated in the first phase (`repeated`) while the other 24 faces had not (`unrepeated`).
+
+```{r, collapse=TRUE}
+P2 <- read.csv("data/data_FamSM_Exp3B_Word_SRC.csv", header = T)
+P2$Repetition = factor(P2$Repetition, levels=c(1,2), labels=c("Repetition","No Repetition"))
+P2$Pref <- ifelse(P2$Resp==1,1,0)
+
+glimpse(P2, width=70)
+# 1. SID: participant ID
+# 2. Trial: 1~48
+# 3. Repetition: 1 = repetition, 2 = no repetition
+# 4. Loc: location (source) of memory item; quadrants, 1~4
+# 5. Resp: preference judgment, 1 = like, 2 = dislike, 3 = no response
+# 6. Corr: correctness, 1=response, 0 = no response
+# 7. RT: reaction times in ms.
+# 8. ImgName: name of stimuli
+# 9. Pref: preference, 0 = dislike (treating no response as 'dislike'), 1 = like
+
+table(P2$Repetition, P2$SID)
+```
+
+Participants did not make responses in `r round(100 - mean(P2$Corr)*100, digits=2)`% of trials.
+
+
+## Preference
+
+We calculated the mean and *s.d.* of individual participants' accuracy rates for each condition. As in Experiment 2, preference for `pseudowords` increased after `repetition`. In the following plot, red points and error bars represent the means and 95% CIs.
+
+```{r, fig.height=4, fig.width=4}
+# phase 1, subject-level, long-format
+P2slong <- P2 %>% group_by(SID, Repetition) %>% 
+  summarise(Preference = mean(Pref)) %>% 
+  ungroup()
+
+# summary table
+P2g <- P2slong %>% group_by(Repetition) %>%
+  summarise(M = mean(Preference), SD = sd(Preference)) %>% 
+  ungroup() 
+P2g %>% kable()
+
+
+# group level, needed for printing & geom_pointrange
+# Rmisc must be called indirectly due to incompatibility between plyr and dplyr.
+P2g$ci <- Rmisc::summarySEwithin(data = P2slong, measurevar = "Preference", idvar = "SID", withinvars = "Repetition")$ci
+P2g$Preference <- P2g$M
+
+ggplot(P2slong, aes(x=Repetition, y=Preference, fill=Repetition)) +
+  geom_violin(width = 0.5, trim=TRUE) + 
+  ggbeeswarm::geom_quasirandom(color = "blue", size = 3, alpha = 0.2, width = 0.2, show.legend = FALSE) +
+  geom_pointrange(P2g, inherit.aes=FALSE,
+                  mapping=aes(x = Repetition, y=Preference, 
+                              ymin = Preference - ci, ymax = Preference + ci), 
+                  colour="darkred", size = 1) +
+  coord_cartesian(ylim = c(0, 1), clip = "on") +
+  labs(x = "Item Repetition", 
+       y = "Preference Judgment \n (0 = dislike, 1 = like)") +
+  scale_fill_manual(values=c("#E69F00", "#56B4E9"),
+                    labels=c("Repeated", "Unrepeated")) +
+  theme_bw(base_size = 18) +
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        legend.position = "none") 
+```
+
+
+### ANOVA
+
+Mean preference scores were submitted to a one-way repeated measures ANOVA. Participants preferred the pseudowords of the `repetition` condition significantly to those of the `no repetition` condition (*familiarity benefit*). 
+
+```{r, warning=FALSE, message=FALSE}
+p2.aov <- aov_ez(id = "SID", dv = "Preference", data = P2slong, within = "Repetition")
+anova(p2.aov, es = "pes") %>% kable(digits = 4)
+```
+
+
+<br><br>
+
+****
+
+<br><br>
+
+
+# Source Memory Test Phase
+
+In each trial, participants first indicated in which quadrant a given pseudoword appeared during the item-source association phase. Participants then rated how confident they were about their memory judgment. The design was the same as that in the second phase. A single factor was the within-participant **item repetition** (`repeated` vs. `unrepeated`).
+
+```{r, collapse=TRUE}
+P3 <- read.csv("data/data_FamSM_Exp3B_Word_TST.csv", header = T)
+P3$Repetition = factor(P3$Repetition, levels=c(1,2), labels=c("Repeated","Unrepeated"))
+
+glimpse(P3, width=70)
+# 1. SID: participant ID
+# 2. Trial: 1~48
+# 3. Repetition: 1 = repetition, 2 = no repetition
+# 4. AscLoc: location (source) in which the item was presented in Phase 2; quadrants, 1~4
+# 5. SrcResp: source response; quadrants, 1~4
+# 6. Corr: correctness, 1=correct ,2=incorrect & no response
+# 7. RT: reaction times in ms.
+# 8. Confident: confidence rating, 1~4
+# 9. ImgName: name of stimuli
+
+table(P3$Repetition, P3$SID)
+```
+
+
+## Accuracy
+
+We calculated the mean and *s.d.* of individual participants' mean percentage accuracy. Source memory accuracy was greater in the `unrepeated` condition than the `repeated` condition (*novelty benefit*). In the following plot, red points and error bars represent the means and 95% within-participants CIs. 
+
+```{r, fig.height=4, fig.width=4}
+# phase 3, subject-level, long-format
+P3ACCslong <- P3 %>% group_by(SID, Repetition) %>% 
+  summarise(Accuracy = mean(Corr)*100) %>% 
+  ungroup()
+
+# summary table
+P3ACCg <- P3ACCslong %>% group_by(Repetition) %>%
+  summarise(M = mean(Accuracy), SD = sd(Accuracy)) %>% 
+  ungroup() 
+P3ACCg %>% kable()
+
+# wide format, needed for geom_segments.
+P3ACCswide <- P3ACCslong %>% spread(key = Repetition, value = Accuracy)
+
+# group level, needed for printing & geom_pointrange
+# Rmisc must be called indirectly due to incompatibility between plyr and dplyr.
+P3ACCg$ci <- Rmisc::summarySEwithin(data = P3ACCslong, measurevar = "Accuracy", idvar = "SID", withinvars = "Repetition")$ci
+P3ACCg$Accuracy <- P3ACCg$M
+
+ggplot(data=P3ACCslong, aes(x=Repetition, y=Accuracy, fill=Repetition)) +
+  geom_violin(width = 0.5, trim=TRUE) +
+  geom_point(position=position_dodge(0.5), color="gray80", size=1.8, show.legend = FALSE) +
+  geom_segment(data=P3ACCswide, inherit.aes = FALSE,
+               aes(x=1, y=P3ACCswide$Repeated, xend=2, yend=P3ACCswide$Unrepeated), color="gray80") +
+  geom_pointrange(data=P3ACCg,
+                  aes(x = Repetition, ymin = Accuracy-ci, ymax = Accuracy+ci, group = Repetition),
+                  position = position_dodge(0.5), color = "darkred", size = 1, show.legend = FALSE) +
+  scale_fill_manual(values=c("#E69F00", "#56B4E9"),
+                    labels=c("Repeated", "Unrepeated")) +
+  labs(x = "Item Repetition", 
+       y = "Source Memory Accuracy (%)") +
+  coord_cartesian(ylim = c(0, 100), clip = "on") +
+  theme_bw(base_size = 18) +
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        legend.position = "none")
+
+```
+
+
+
+### ANOVA
+
+Mean percentage accuracy was submitted to a one-way repeated measures ANOVA. 
+
+```{r, warning=FALSE, message=FALSE}
+ci95 <- P3ACCswide %>% 
+  mutate(Diff = Unrepeated - Repeated) %>% 
+  summarise(lower = mean(Diff) - qt(0.975,df=n()-1)*sd(Diff)/sqrt(n()),
+            upper = mean(Diff) + qt(0.975,df=n()-1)*sd(Diff)/sqrt(n()))
+
+p3.corr.aov <- aov_ez(id = "SID", dv = "Accuracy", data = P3ACCslong, within = "Repetition")
+anova(p3.corr.aov, es = "pes") %>% kable(digits = 4)
+```
+
+Source memory accuracy was higher for **unrepeated** than **repeated** pseudowords. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
+
+
+
+### GLMM
+
+To supplement conventional ANOVAs, we tested **generalized linear mixed models (GLMM)** on source memory accuracy. This mixed modeling approach with a binomial link function is expected to properly handle binary data such as source memory responses (i.e., correct or not; [Jaeger, 2008](https://www.sciencedirect.com/science/article/pii/S0749596X07001337)). 
+
+The full model (`full1`) was built with a fixed effect (**item repetition**). The model was maximal in that it included both by-participant and by-item random intercepts, and by-participant random slopes for **item repetition** ([Barr, Levy, Scheepers, & Tily, 2013](https://www.sciencedirect.com/science/article/pii/S0749596X12001180)). In case the maximal model does not converge successfully, we built another model (`full2`) with the maximal random structure but with the correlations among the random terms removed ([Singmann, 2018](https://cran.r-project.org/web/packages/afex/vignettes/afex_mixed_example.html#lrt-results)). 
+
+To fit the models, we used the `mixed()` of the `afex` package ([Singmann, Bolker, & Westfall, 2017](https://afex.singmann.science/forums/topic/citing-afex)) which was built on the `lmer()` of the `lme4` package ([Bates, Maechler, Bolker, & Walker, 2015](https://www.jstatsoft.org/article/view/v067i01/0)). The `mixed()` assessed the statistical significance of fixed effects by comparing a model with the effect in question against its nested model which lacked the effect in question. *P*-values of the effects were obtained by likelihood ratio tests (LRT).
+
+```{r, eval=FALSE}
+(nc <- detectCores())
+cl <- makeCluster(rep("localhost", nc))
+
+full1 <- mixed(Corr ~ Repetition + (Repetition|SID) + (1|ImgName), 
+               P3, method = "LRT", cl = cl, 
+               family=binomial(link="logit"),
+               control = glmerControl(optCtrl = list(maxfun = 1e6)))
+full2 <- mixed(Corr ~ Repetition + (Repetition||SID) + (1|ImgName),
+               P3, method = "LRT", cl = cl, 
+               family=binomial(link="logit"),
+               control = glmerControl(optCtrl = list(maxfun = 1e6)), expand_re = TRUE)
+
+stopCluster(cl)
+```
+
+```{r, echo=FALSE}
+load("RData/afex_FamSM_Exp3B_Word_Acc.RData")
+```
+
+The next table shows the LRT results of the models `full1` and `full2` side by side.
+
+```{r}
+full.compare <- cbind(afex::nice(full1), afex::nice(full2)[,-c(1,2)])
+colnames(full.compare)[c(3,4,5,6)] <- c("full1 Chisq", "p","full2 Chisq", "p")
+full.compare %>% kable()
+```
+
+The *p*-values from all models agreed strongly providing a high degree of confidence in the results. Item repetition impaired source memory of `pseudowords` that were familiarized on the previous day. 
+
+
+<br><br>
+
+
+## Confidence
+
+The following table presents the mean and *s.d.* of individual participants' confidence ratings in each condition. The difference between conditions appears negligible. 
+
+```{r, fig.height=4, fig.width=4}
+P3CFslong <- P3 %>% group_by(SID, Repetition) %>% 
+  summarise(Confidence = mean(Confident)) %>% 
+  ungroup()
+
+P3CFg <- P3CFslong %>% group_by(Repetition) %>%
+  summarise(M = mean(Confidence), SD = sd(Confidence)) %>% 
+  ungroup() 
+P3CFg %>% kable()
+
+# wide format, needed for geom_segments.
+P3CFswide <- P3CFslong %>% spread(key = Repetition, value = Confidence)
+
+# group level, needed for printing & geom_pointrange
+# Rmisc must be called indirectly due to incompatibility between plyr and dplyr.
+P3CFg$ci <- Rmisc::summarySEwithin(data = P3CFslong, measurevar = "Confidence", idvar = "SID", withinvars = "Repetition")$ci
+P3CFg$Confidence <- P3CFg$M
+
+ggplot(data=P3CFslong, aes(x=Repetition, y=Confidence, fill=Repetition)) +
+  geom_violin(width = 0.5, trim=TRUE) +
+  geom_point(position=position_dodge(0.5), color="gray80", size=1.8, show.legend = FALSE) +
+  geom_segment(data=P3CFswide, inherit.aes = FALSE,
+               aes(x=1, y=P3CFswide$Repeated, xend=2, yend=P3CFswide$Unrepeated), color="gray80") +
+  geom_pointrange(data=P3CFg,
+                  aes(x = Repetition, ymin = Confidence-ci, ymax = Confidence+ci, group = Repetition),
+                  position = position_dodge(0.5), color = "darkred", size = 1, show.legend = FALSE) +
+  scale_fill_manual(values=c("#E69F00", "#56B4E9"),
+                    labels=c("Repeated", "Unrepeated")) +
+  labs(x = "Item Repetition", 
+       y = "Source Memory Confidence") +
+  coord_cartesian(ylim = c(1, 4), clip = "on") +
+  theme_bw(base_size = 18) +
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        legend.position = "none")
+```
+
+
+### ANOVA
+
+Mean confidence ratings were submitted to a one-way repeated measures ANOVA. 
+
+```{r, warning=FALSE, message=FALSE}
+ci95 <- P3CFswide %>% 
+  mutate(Diff = Unrepeated - Repeated) %>%
+  summarise(lower = mean(Diff) - qt(0.975,df=n()-1)*sd(Diff)/sqrt(n()),
+            upper = mean(Diff) + qt(0.975,df=n()-1)*sd(Diff)/sqrt(n()))
+
+p3.conf.aov <- aov_ez(id = "SID", dv = "Confidence", data = P3CFslong, within = "Repetition")
+anova(p3.conf.aov, es = "pes") %>% kable(digits = 4)
+```
+
+The difference between conditions was not significant. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
+
+
+### CLMM
+
+The responses from a Likert-type scale are ordinal. Especially for the rating items with numerical response formats containing four or fewer categories, it is recommended to use categorical data analysis approaches, rather than treating the responses as continuous data ([Harpe, 2015](https://ac.els-cdn.com/S1877129715200196/1-s2.0-S1877129715200196-main.pdf?_tid=589e7c17-4d55-49e6-a80f-5aef938a1f44&acdnat=1549722329_bb934739b91ee6554cafadb39565dc25)).
+
+Here we employed the cumulative link mixed modeling using the `clmm()` of the package `ordinal` ([Christensen, submitted](https://cran.r-project.org/web/packages/ordinal/vignettes/clm_article.pdf)). The model specification of fixed and random effects was the same as the `mixed()` above.
+```{r, eval=FALSE}
+P3R <- P3
+P3R$Confident = factor(P3R$Confident, ordered = TRUE)
+P3R$SID = factor(P3R$SID)
+
+cm.full <- clmm(Confident ~ Repetition + (Repetition|SID) + (1|ImgName), data=P3R)
+cm.red1 <- clmm(Confident ~ 1 + (Repetition|SID) + (1|ImgName), data=P3R) 
+```
+
+```{r, echo=FALSE}
+P3R <- P3
+P3R$Confident = factor(P3R$Confident, ordered = TRUE)
+P3R$SID = factor(P3R$SID)
+
+load("RData/clmm_FamSM_Exp3B_Word_Conf.RData")
+```
+
+To determine the significance of the fixed effect, the LRT compared the full model (`cm.full`) with its nested model (`cm.red1`) without the effect of interest. The next table showed that The effect of **item repetition** was not significant.
+
+```{r}
+cm.comp <- anova(cm.full, cm.red1)
+data.frame(Effect = "Repetition", df = 1, Chisq = cm.comp$LR.stat[2], p = cm.comp$`Pr(>Chisq)`[2]) %>% kable()
+```
+
+Below is the plot of estimated marginal means, which were extracted from the fitted CLMM. There was little difference between conditions in the distribution of ratings.
+
+```{r, fig.height=4}
+pacman::p_load(RVAideMemoire)
+temp <- emmeans(cm.full,~Repetition|cut,mode="linear.predictor")
+temp <- rating.emmeans(temp)
+
+colnames(temp)[1] <- "Condition"
+
+ggplot(data = temp, aes(x = Rating, y = Prob, group = Condition)) +
+  geom_line(aes(color = Condition), size = 1.2) +
+  geom_point(aes(shape = Condition, color = Condition), 
+             size = 4, fill = "white", stroke = 1.2) +
+  scale_color_manual(values=c("#E69F00", "#E69F00")) +
+  scale_shape_manual(name="Condition", values=c(21,24)) +
+  labs(y = "Response Probability", x = "Rating") +
+  expand_limits(y=0) +
+  scale_y_continuous(limits = c(0, 0.5)) +
+  scale_x_discrete(labels = c("1" = "1(Guessed)","4"="4(Sure)")) +
+  theme_minimal() +
+  theme(text = element_text(size=18))
+```
+
+
+<br><br>
+
+
+## RT
+
+Only RTs in correct trials were analyzed. Before analysis, we first removed RTs either shorter than 200ms or longer than 10s. Then, from the RT distribution of each condition, RTs beyond 3 *s.d.* from the mean were removed. 
+
+```{r, collapse=TRUE}
+cP3 <- P3 %>% filter(Corr==1)
+
+sP3 <- cP3 %>% filter(RT > 200 & RT < 10000) %>%
+  group_by(SID) %>% 
+  nest() %>% 
+  mutate(lbound = map(data, ~mean(.$RT)-3*sd(.$RT)),
+         ubound = map(data, ~mean(.$RT)+3*sd(.$RT))) %>% 
+  unnest(lbound, ubound) %>% 
+  unnest(data) %>% 
+  ungroup() %>% 
+  mutate(Outlier = (RT < lbound)|(RT > ubound)) %>% 
+  filter(Outlier == FALSE) %>%
+  select(SID, Repetition, RT, ImgName)
+
+100 - 100*nrow(sP3)/nrow(cP3)
+```
+
+This trimming procedure removed `r round(100 - 100*nrow(sP3)/nrow(cP3), digits = 2)`% of correct RTs.
+  
+Since the overall accuracy of source memory was not high, only small numbers of correct trials were available after trimming. The following table summarizes the numbers of RTs submitted to subsequent analyses. None of participants had more than 20 trials per condition. 
+
+```{r}
+sP3 %>% group_by(SID, Repetition) %>% 
+  summarise(NumTrial = length(RT)) %>%
+  ungroup %>% 
+  group_by(Repetition) %>%
+  summarise(Avg = mean(NumTrial), 
+            Med = median(NumTrial), 
+            Min = min(NumTrial), 
+            Max = max(NumTrial)) %>% 
+  ungroup %>% 
+  kable()
+```
+
+```{r, fig.height=3}
+den1 <- ggplot(cP3, aes(x=RT)) + 
+  geom_density() + 
+  theme_bw(base_size = 18) +
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank()) 
+den2 <- ggplot(sP3, aes(x=RT)) + 
+  geom_density() + 
+  theme_bw(base_size = 18) + 
+  labs(x = "Trimmed RT") + 
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank()) 
+den1 + den2
+```
+
+The overall RT distribution was highly skewed even after trimming. Given limited numbers of RTs and its skewed distribution, any results from the current RT analyses should be interpreted with caution and preferably corroborated with other measures.
+
+We calculated the mean and s.d. of individual participants’ mean RTs. The numerical pattern of RTs was consistent with the accuracy and confidence data. Participants made slightly faster responses in the `repeated` condition than `unrepeated` condition.
+
+```{r, fig.height=4, fig.width=4}
+P3RTslong <- sP3 %>% group_by(SID, Repetition) %>% 
+  summarise(RT = mean(RT)) %>% 
+  ungroup()
+
+P3RTg <- P3RTslong %>% group_by(Repetition) %>%
+  summarise(M = mean(RT), SD = sd(RT)) %>% 
+  ungroup()
+P3RTg %>% kable()
+
+# wide format, needed for geom_segments.
+P3RTswide <- P3RTslong %>% spread(key = Repetition, value = RT)
+
+# group level, needed for printing & geom_pointrange
+# Rmisc must be called indirectly due to incompatibility between plyr and dplyr.
+P3RTg$ci <- Rmisc::summarySEwithin(data = P3RTslong, measurevar = "RT", idvar = "SID", withinvars = "Repetition")$ci
+P3RTg$RT <- P3RTg$M
+
+ggplot(data=P3RTslong, aes(x=Repetition, y=RT, fill=Repetition)) +
+  geom_violin(width = 0.5, trim=TRUE) +
+  geom_point(position=position_dodge(0.5), color="gray80", size=1.8, show.legend = FALSE) +
+  geom_segment(data=P3RTswide, inherit.aes = FALSE,
+               aes(x=1, y=P3RTswide$Repeated, xend=2, yend=P3RTswide$Unrepeated), color="gray80") +
+  geom_pointrange(data=P3RTg,
+                  aes(x = Repetition, ymin = RT-ci, ymax = RT+ci, group = Repetition),
+                  position = position_dodge(0.5), color = "darkred", size = 1, show.legend = FALSE) +
+  scale_fill_manual(values=c("#E69F00", "#56B4E9"),
+                    labels=c("Repeated", "Unrepeated")) +
+  labs(x = "Item Repetition", 
+       y = "Response Times (ms)") +
+  coord_cartesian(ylim = c(0, 6000), clip = "on") +
+  theme_bw(base_size = 18) +
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        legend.position = "none")
+```
+
+### ANOVA
+
+Individuals’ mean RTs were submitted to a one-way repeated measures ANOVA with **item repetition** as a within-participant factor. The RT difference between conditions was not significant.
+
+```{r, warning=FALSE, message=FALSE}
+p3.rt.aov <- aov_ez(id = "SID", dv = "RT", data = sP3, within = "Repetition")
+anova(p3.rt.aov, es = "pes") %>% kable(digits = 4)
+```
+
+
+<br><br>
+
+****
+
+<br><br>
+
+
+# Session Info
+```{r, collapse=TRUE}
+sessionInfo()
+```
+
+
