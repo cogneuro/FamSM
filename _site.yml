@@ -4,7 +4,7 @@ navbar:
   title: "My Website"
   left:
     - text: "Exp 1"
-      href: exp1.html
+      href: FamSM_Exp1_Face.html
     - text: "Exp 2"
       href: exp2.html
     - text: "Exp 4B"
