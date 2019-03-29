@@ -1,0 +1,687 @@
+---
+title: "Experiment 1"
+author: "Hongmi Lee, Kyungmi Kim, Do-Joon Yi"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: 
+      collapse: false
+      smooth_scroll: false
+    number_sections: true
+    theme: cosmo 
+    highlight: tango
+    code_folding: hide
+subtitle: Famous vs. non-famous faces (between-participants design)
+mainfont: Noto Sans CJK KR
+---
+
+```{r, echo=FALSE}
+setwd("~/Dropbox/2017Experiment/newOSF/")
+```
+
+```{css, echo=FALSE}
+pre code, pre, code {
+  white-space: pre !important;
+  overflow-x: scroll !important;
+  word-break: keep-all !important;
+  word-wrap: initial !important;
+}
+```
+
+```{r setup, message=FALSE}
+set.seed(12345) # for reproducibility
+options(knitr.kable.NA = '')
+
+# Some packages need to be loaded. We use `pacman` as a package manager, which takes care of the other packages. 
+if (!require("pacman", quietly = TRUE)) install.packages("pacman")
+if (!require("Rmisc", quietly = TRUE)) install.packages("Rmisc") # Never load it directly.
+pacman::p_load(tidyverse, knitr, car, afex, emmeans, parallel, ordinal,
+               ggbeeswarm, cowplot, RVAideMemoire)
+```
+
+
+# Item Repetition Phase
+
+Twenty four participants were recruited. Half of participants watched 24 `famous` faces while the other half watched 24 `non-famous` faces (between-participants factor, **pre-experimental item familiarity**). The faces were repeated eight times, producing 192 trials. In each trial, participants made a male/female judgment for a face. 
+
+
+```{r, collapse=TRUE}
+P1 <- read.csv("data/data_FamSM_Exp1_Face_REP.csv", header = T)
+P1$Familiarity = factor(P1$Familiarity, levels=c(1,2), labels=c("Famous","Non-famous"))
+
+glimpse(P1, width=70)
+# 1. SID: participant ID
+# 2. Familiarity: pre-experimental familiarity. 1 = famous, 2 = non-famous
+# 3. RepTime: number of repetitions, 1~8
+# 4. Trial: 1~24
+# 5. ImgCat: stimulus category. male vs. female
+# 6. Resp: male/female judgment, 1 = male, 2 = female, 0 = no response
+# 7. Corr: correctness, 1=correct, 0 = incorrect or no response
+# 8. RT: reaction times in ms.
+# 9. ImgName: name of stimuli
+
+table(P1$Familiarity, P1$SID)
+```
+
+
+## Accuracy
+
+We calculated the mean and *s.d.* of individual participants' mean percentage accuracy. Overall accuracy of the male/female judgment was high. The `famous` condition showed lower mean accuracy and more variance than the `non-famous` condition. In the following plot, red points and error bars represent the means and 95% CIs.
+
+```{r, fig.height=4}
+# phase 1, subject-level, long-format
+P1slong <- P1 %>% group_by(SID, Familiarity) %>% 
+  summarise(Accuracy = mean(Corr)*100) %>% 
+  ungroup()
+
+# summary table
+P1slong %>% group_by(Familiarity) %>%
+  summarise(M = mean(Accuracy), SD = sd(Accuracy)) %>% 
+  ungroup() %>% 
+  kable()
+
+
+# group level, needed for printing & geom_pointrange
+# Rmisc must be called indirectly due to incompatibility between plyr and dplyr.
+P1g <- Rmisc::summarySE(data = P1slong, measurevar = "Accuracy", groupvars = "Familiarity")
+
+ggplot(P1slong, aes(x=Familiarity, y=Accuracy)) +
+  geom_violin(width = 0.5, trim=TRUE) + 
+  ggbeeswarm::geom_quasirandom(color = "blue", size = 3, alpha = 0.2, width = 0.2) +
+  geom_pointrange(P1g, inherit.aes=FALSE,
+                  mapping=aes(x = Familiarity, y=Accuracy, 
+                              ymin = Accuracy - ci, ymax = Accuracy + ci), 
+                  colour="darkred", size = 1)+
+  coord_cartesian(ylim = c(50, 100), clip = "on") +
+  labs(x = "Pre-experimental Stimulus Familiarity", 
+       y = "Male/Female Judgment \n Accuracy (%)") +
+  theme_bw(base_size = 18)
+```
+
+
+### ANOVA
+
+Levene's test indicated that the assumption of homogeneity of variance was not violated. Then, a one-way ANOVA showed that the difference in accuracy was not significant between `famous` vs. `non-famous` conditions.
+
+```{r, warning=FALSE, message=FALSE}
+car::leveneTest(Accuracy ~ Familiarity, P1slong)
+
+p1.aov <- aov_ez(id = "SID", dv = "Accuracy", data = P1slong, between = "Familiarity")
+anova(p1.aov, es = "pes") %>% kable(digits = 4)
+```
+
+<br><br>
+
+****
+
+<br><br>
+
+
+# Item-Source Association Phase
+
+Participants learned 48 pairs of a face and a quadrant on the screen. They were instructed to pay attention to the location of each face while making a male/female judgment. A between-participants **pre-experimental item familiarity** factor determined whether a participant watched `famous` or `non-famous` faces. A within-participant **item repetition** factor determined whether a trial presented a `repeated` item, which had appeared in the first phase or an `unrepeated` item, which appeared for the first time in the experiment.
+
+```{r, collapse=TRUE}
+P2 <- read.csv("data/data_FamSM_Exp1_Face_SRC.csv", header = T)
+P2$Familiarity = factor(P2$Familiarity, levels=c(1,2), labels=c("Famous","Non-famous"))
+P2$Repetition = factor(P2$Repetition, levels=c(1,2), labels=c("Repeated","Unrepeated"))
+
+glimpse(P2, width=70)
+# 1. SID: participant ID
+# 2. Familiarity: pre-experimental familiarity. 1 = famous, 2 = non-famous
+# 3. Trial: 1~48
+# 4. Repetition: 1 = repeated, 2 = unrepeated
+# 5. ImgCat: stimulus category. male vs. female
+# 6. Loc: location (source) of memory item; quadrants, 1~4
+# 7. Resp: male/female judgment, 1 = male, 2 = female, 0 = no response
+# 8. Corr: correctness, 1 = correct, 0 = incorrect or no response
+# 9. RT: reaction times in ms.
+# 10. ImgName: name of stimuli
+
+table(P2$Familiarity, P2$SID)
+table(P2$Repetition, P2$SID)
+```
+
+
+
+## Accuracy
+
+We calculated the mean and *s.d.* of individual participants' mean percentage accuracy. The accuracy was generally high. The `non-famous, unrepeated` condition showed slightly lower mean accuracy than the other conditions.
+
+```{r, fig.height=4}
+# phase 2, subject-level, long-format
+P2slong <- P2 %>% group_by(SID, Familiarity, Repetition) %>% 
+  summarise(Accuracy = mean(Corr)*100) %>% 
+  ungroup()
+
+# summary table
+P2g <- P2slong %>% group_by(Familiarity, Repetition) %>%
+  summarise(M = mean(Accuracy), SD = sd(Accuracy)) %>% 
+  ungroup()
+P2g %>% kable()
+
+# group level, needed for printing & geom_pointrange
+# Rmisc must be called indirectly due to incompatibility between plyr and dplyr.
+P2g$ci <- Rmisc::summarySEwithin(data = P2slong, measurevar = "Accuracy", idvar = "SID",
+                               withinvars = "Repetition", betweenvars = "Familiarity")$ci
+P2g$Accuracy <- P2g$M
+
+ggplot(data=P2slong, aes(x=Familiarity, y=Accuracy, fill=Repetition)) +
+  geom_violin(width = 0.7, trim=TRUE) +
+  ggbeeswarm::geom_quasirandom(dodge.width = 0.7, color = "blue", size = 3, alpha = 0.2, 
+                               show.legend = FALSE) +
+  # geom_pointrange(data=P2g,
+  #                 aes(x = Familiarity, ymin = Accuracy-ci, ymax = Accuracy+ci, color = Repetition),
+  #                 position = position_dodge(0.7), color = "darkred", size = 1, show.legend = FALSE) +
+  coord_cartesian(ylim = c(50, 100), clip = "on") +
+  labs(x = "Pre-experimental Stimulus Familiarity", 
+       y = "Male/Female Judgment \n Accuracy (%)", 
+       fill="Item Repetition") +
+  scale_fill_manual(values=c("#E69F00", "#56B4E9"),
+                    labels=c("Repeated", "Unrepeated")) +
+  theme_bw(base_size = 18) +
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank()) 
+```
+
+
+### ANOVA
+
+Mean percentage accuracy was submitted to a 2x2 mixed design ANOVA with **pre-experimental item familiarity** as a between-participants factor and **item repetition** as a within-participant factor. Neither main effects failed to reach significance. The two-way interaction was marginally significant. 
+
+```{r, warning=FALSE, message=FALSE}
+p2.aov <- aov_ez(id = "SID", dv = "Accuracy", data = P2slong, 
+                 between = "Familiarity", within = "Repetition")
+anova(p2.aov, es = "pes") %>% kable(digits = 4)
+```
+
+
+<br><br>
+
+****
+
+<br><br>
+
+
+# Source Memory Test Phase
+
+In each trial, participants first indicated in which quadrant a given face appeared during the item-source association phase. Participants then rated how confident they were about their memory judgment. The design was the same as that in the second phase. There were 48 trials. **Pre-experimental item familiarity** was a between-participants factor. **Item repetition** was a within-participant factor.
+
+```{r, collapse=TRUE}
+P3 <- read.csv("data/data_FamSM_Exp1_Face_TST.csv", header = T)
+P3$Familiarity = factor(P3$Familiarity, levels=c(1,2), labels=c("Famous","Non-famous"))
+P3$Repetition = factor(P3$Repetition, levels=c(1,2), labels=c("Repeated","Unrepeated"))
+
+glimpse(P3, width=70)
+# 1. SID: participant ID
+# 2. Familiarity: pre-experimental familiarity. 1 = famous, 2 = non-famous
+# 3. Trial: 1~48
+# 4. Repetition: 1 = repeated, 2 = unrepeated
+# 5. AscLoc: location (source) in which the item was presented in Phase 2; quadrants, 1~4
+# 6. SrcResp: source response; quadrants, 1~4
+# 7. Corr: correctness, 1=correct, 0=incorrect
+# 8. RT: reaction times in ms.
+# 9. Confident: confidence rating, 1~4
+# 10. ImgName: name of stimuli
+
+table(P3$Familiarity, P3$SID)
+table(P3$Repetition, P3$SID)
+```
+
+
+## Accuracy
+
+We calculated the mean and *s.d.* of individual participants' mean percentage accuracy. In the following plot, red points and error bars represent the means and 95% within-participants CIs.
+
+```{r, fig.height=4}
+# phase 3, subject-level, long-format
+P3ACCslong <- P3 %>% group_by(SID, Familiarity, Repetition) %>% 
+  summarise(Accuracy = mean(Corr)*100) %>% 
+  ungroup()
+
+# summary table
+P3ACCg <- P3ACCslong %>% group_by(Familiarity, Repetition) %>%
+  summarise(M = mean(Accuracy), SD = sd(Accuracy)) %>% 
+  ungroup() 
+P3ACCg %>% kable()
+
+# marginal means of famous vs. non-famous conditions.
+P3ACCslong %>% group_by(Familiarity) %>% 
+  summarise(M = mean(Accuracy), SD = sd(Accuracy)) %>% 
+  ungroup() %>% kable()
+
+# marginal means of repeated vs. unrepeated conditions.
+P3ACCslong %>% group_by(Repetition) %>% 
+  summarise(M = mean(Accuracy), SD = sd(Accuracy)) %>% 
+  ungroup() %>% kable()
+
+# wide format, needed for geom_segments.
+P3ACCswide <- P3ACCslong %>% spread(key = Repetition, value = Accuracy)
+
+# group level, needed for printing & geom_pointrange
+# Rmisc must be called indirectly due to incompatibility between plyr and dplyr.
+P3ACCg$ci <- Rmisc::summarySEwithin(data = P3ACCslong, measurevar = "Accuracy", idvar = "SID",
+                              withinvars = "Repetition", betweenvars = "Familiarity")$ci
+P3ACCg$Accuracy <- P3ACCg$M
+
+ggplot(data=P3ACCslong, aes(x=Familiarity, y=Accuracy, fill=Repetition)) +
+  geom_violin(width = 0.5, trim=TRUE) +
+  geom_point(position=position_dodge(0.5), color="gray80", size=1.8, show.legend = FALSE) +
+  geom_segment(data=filter(P3ACCswide, Familiarity=="Famous"), inherit.aes = FALSE,
+               aes(x=1-.12, y=filter(P3ACCswide, Familiarity=="Famous")$Repeated,
+                   xend=1+.12, yend=filter(P3ACCswide, Familiarity=="Famous")$Unrepeated),
+               color="gray80") +
+  geom_segment(data=filter(P3ACCswide, Familiarity=="Non-famous"), inherit.aes = FALSE,
+               aes(x=2-.12, y=filter(P3ACCswide, Familiarity=="Non-famous")$Repeated,
+                   xend=2+.12, yend=filter(P3ACCswide, Familiarity=="Non-famous")$Unrepeated),
+               color="gray80") +
+  geom_pointrange(data=P3ACCg,
+                  aes(x = Familiarity, ymin = Accuracy-ci, ymax = Accuracy+ci, group = Repetition),
+                  position = position_dodge(0.5), color = "darkred", size = 1, show.legend = FALSE) +
+  scale_fill_manual(values=c("#E69F00", "#56B4E9"),
+                    labels=c("Repeated", "Unrepeated")) +
+  labs(x = "Pre-experimental Stimulus Familiarity", 
+       y = "Source Memory Accuracy (%)", 
+       fill='Item Repetition') +
+  coord_cartesian(ylim = c(0, 100), clip = "on") +
+  theme_bw(base_size = 18) +
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank()) 
+```
+
+The effect of **item repetition** depended on the **pre-experimental familiarity** of the items. For `famous` faces, the source of `unrepeated` items was better remembered (*novelty benefit*). For `non-famous` faces, the source of `repeated` items was better remembered (*familiarity benefit*). These crossed effects were on top of the general familiarity benefit, in which source memory was more accurate for `famous` faces than for `non-famous` faces. 
+
+### ANOVA
+
+Mean percentage accuracy was submitted to a 2x2 mixed design ANOVA with **pre-experimental item familiarity** as a between-participants factor (`famous` vs. `non-famous`) and **item repetition** as a within-participant factor (`repeated` vs. `unrepeated`).
+
+```{r, warning=FALSE, message=FALSE}
+p3.corr.aov <- aov_ez(id = "SID", dv = "Accuracy", data = P3ACCslong, 
+                      between = "Familiarity", within = "Repetition")
+anova(p3.corr.aov, es = "pes") %>% kable(digits = 4)
+```
+
+The main effect of **pre-experimental item familiarity** and the two-way interaction were significant. Additionally, we performed two separate one-way repeated-measures ANOVAs as post-hoc analyses. In the following two tables, the first presents the effect of item repetition for `famous` faces, and the second presents the same effect for `non-famous` faces.
+
+```{r, warning=FALSE, message=FALSE}
+ci95 <- P3ACCswide %>% filter(Familiarity=="Famous") %>% 
+  mutate(Diff = Unrepeated - Repeated) %>% 
+  summarise(lower = mean(Diff) - qt(0.975,df=n()-1)*sd(Diff)/sqrt(n()),
+            upper = mean(Diff) + qt(0.975,df=n()-1)*sd(Diff)/sqrt(n()))
+
+p3.corr.aov.r1 <- aov_ez(id = "SID", dv = "Accuracy", within = "Repetition",
+                        data = filter(P3ACCslong, Familiarity == "Famous"))
+anova(p3.corr.aov.r1, es = "pes") %>% kable(digits = 4)
+```
+
+In the **famous** face group, source memory was more accurate for **unrepeated** than **repeated** faces. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
+
+```{r, warning=FALSE, message=FALSE}
+ci95 <- P3ACCswide %>% filter(Familiarity=="Non-famous") %>% 
+  mutate(Diff = Repeated - Unrepeated) %>% 
+  summarise(lower = mean(Diff) - qt(0.975,df=n()-1)*sd(Diff)/sqrt(n()),
+            upper = mean(Diff) + qt(0.975,df=n()-1)*sd(Diff)/sqrt(n()))
+
+p3.corr.aov.r2 <- aov_ez(id = "SID", dv = "Accuracy", within = "Repetition",
+                        data = filter(P3ACCslong, Familiarity == "Non-famous"))
+anova(p3.corr.aov.r2, es = "pes") %>% kable(digits = 4)
+```
+
+In the **non-famous** face group, source memory was more accurate for **repeated** than **unrepeated** faces. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
+
+
+
+### GLMM
+
+To supplement conventional ANOVAs, we tested **generalized linear mixed models (GLMM)** on source memory accuracy. This mixed modeling approach with a binomial link function is expected to properly handle binary data such as source memory responses (i.e., correct or not; [Jaeger, 2008](https://www.sciencedirect.com/science/article/pii/S0749596X07001337)). 
+
+We built the full model (`full1`) with two fixed effects (**pre-experimental item familiarity** and **item repetition**) and their interaction. The model also included maximal random effects structure ([Barr, Levy, Scheepers, & Tily, 2013](https://www.sciencedirect.com/science/article/pii/S0749596X12001180)): both by-participant and by-item random intercepts, and by-participant random slopes for **item repetition**. In case the maximal model does not converge successfully, we built another model (`full2`) with the maximal random structure but with the correlations among the random terms removed ([Singmann, 2018](https://cran.r-project.org/web/packages/afex/vignettes/afex_mixed_example.html#lrt-results)). 
+
+To fit the models, we used the `mixed()` of the `afex` package ([Singmann, Bolker, & Westfall, 2017](https://afex.singmann.science/forums/topic/citing-afex)) which was built on the `lmer()` of the `lme4` package ([Bates, Maechler, Bolker, & Walker, 2015](https://www.jstatsoft.org/article/view/v067i01/0)). The `mixed()` assessed the statistical significance of fixed effects by comparing a model with the effect in question against its nested model which lacked the effect in question. *P*-values of the effects were obtained by likelihood ratio tests (LRT).
+
+```{r, eval=FALSE}
+(nc <- detectCores())
+cl <- makeCluster(rep("localhost", nc))
+
+full1 <- afex::mixed(Corr ~ Familiarity*Repetition + (Repetition|SID) + (1|ImgName), 
+               P3, method = "LRT", cl = cl, 
+               family=binomial(link="logit"),
+               control = glmerControl(optCtrl = list(maxfun = 1e6)))
+full2 <- afex::mixed(Corr ~ Familiarity*Repetition + (Repetition||SID) + (1|ImgName),
+               P3, method = "LRT", cl = cl, 
+               family=binomial(link="logit"),
+               control = glmerControl(optCtrl = list(maxfun = 1e6)), expand_re = TRUE)
+stopCluster(cl)
+```
+
+```{r, echo=FALSE}
+load("RData/afex_FamSM_Exp1_Face_Acc.RData")
+```
+
+The table below presents the LRT results of the models `full1` and `full2`.
+
+```{r}
+full.compare <- cbind(afex::nice(full1), afex::nice(full2)[,-c(1,2)])
+colnames(full.compare)[c(3,4,5,6)] <- c("full1 Chisq", "p","full2 Chisq", "p")
+full.compare %>% kable()
+```
+
+The *p*-values from both models agreed strongly providing a high degree of confidence in the results. Now we proceeded to the post-hoc analyses. As in the following table, the results from the pairwise comparisons were consistent with those based on the ANOVA. Item repetition impaired source memory of `famous` faces whereas it improved source memory of `non-famous` faces. 
+
+```{r}
+emmeans(full1, pairwise ~ Repetition | Familiarity, type = "response")$contrasts %>% kable()
+```
+
+
+<br><br>
+
+
+## Confidence
+
+The following table presents the mean and *s.d.* of individual participants' confidence ratings in each condition. The pattern of confidence ratings was qualitatively identical to those from accuracy analysis; we observed the *novelty benefit* with `famous` faces and the *familiarity benefit* with `non-famous` faces. In the following plot, red points and error bars represent the means and 95% within-participants CIs.
+
+```{r, fig.height=4}
+P3CFslong <- P3 %>% group_by(SID, Familiarity, Repetition) %>% 
+  summarise(Confidence = mean(Confident)) %>% 
+  ungroup()
+
+P3CFg <- P3CFslong %>% 
+  group_by(Familiarity, Repetition) %>%
+  summarise(M = mean(Confidence), SD = sd(Confidence)) %>% 
+  ungroup() 
+P3CFg %>% kable()
+
+# marginal means of famous vs. non-famous conditions.
+P3CFslong %>% group_by(Familiarity) %>% 
+  summarise(M = mean(Confidence), SD = sd(Confidence)) %>% 
+  ungroup() %>% kable()
+
+# marginal means of repeated vs. unrepeated conditions.
+P3CFslong %>% group_by(Repetition) %>% 
+  summarise(M = mean(Confidence), SD = sd(Confidence)) %>% 
+  ungroup() %>% kable()
+
+# wide format, needed for geom_segments.
+P3CFswide <- P3CFslong %>% spread(key = Repetition, value = Confidence)
+
+# group level, needed for printing & geom_pointrange
+# Rmisc must be called indirectly due to incompatibility between plyr and dplyr.
+P3CFg$ci <- Rmisc::summarySEwithin(data = P3CFslong, measurevar = "Confidence", idvar = "SID",
+                                    withinvars = "Repetition", betweenvars = "Familiarity")$ci
+P3CFg$Confidence <- P3CFg$M
+
+ggplot(data=P3CFslong, aes(x=Familiarity, y=Confidence, fill=Repetition)) +
+  geom_violin(width = 0.5, trim=TRUE) +
+  geom_point(position=position_dodge(0.5), color="gray80", size=1.8, show.legend = FALSE) +
+  geom_segment(data=filter(P3CFswide, Familiarity=="Famous"), inherit.aes = FALSE,
+               aes(x=1-.12, y=filter(P3CFswide, Familiarity=="Famous")$Repeated,
+                   xend=1+.12, yend=filter(P3CFswide, Familiarity=="Famous")$Unrepeated),
+               color="gray80") +
+  geom_segment(data=filter(P3CFswide, Familiarity=="Non-famous"), inherit.aes = FALSE,
+               aes(x=2-.12, y=filter(P3CFswide, Familiarity=="Non-famous")$Repeated,
+                   xend=2+.12, yend=filter(P3CFswide, Familiarity=="Non-famous")$Unrepeated),
+               color="gray80") +
+  geom_pointrange(data=P3CFg,
+                  aes(x = Familiarity, ymin = Confidence-ci, ymax = Confidence+ci, group = Repetition),
+                  position = position_dodge(0.5), color = "darkred", size = 1, show.legend = FALSE) +
+  scale_fill_manual(values=c("#E69F00", "#56B4E9"),
+                    labels=c("Repeated", "Unrepeated")) +
+  labs(x = "Pre-experimental Stimulus Familiarity", 
+       y = "Source Memory Confidence", 
+       fill='Item Repetition') +
+  coord_cartesian(ylim = c(1, 4), clip = "on") +
+  theme_bw(base_size = 18) +
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank())
+```
+
+### ANOVA
+
+Individuals’ mean confidence ratings were submitted to a 2x2 mixed design ANOVA with **pre-experimental item familiarity** as a between-participants factor and **item repetition** as a within-participant factor.
+
+```{r, warning=FALSE, message=FALSE}
+p3.conf.aov <- aov_ez(id = "SID", dv = "Confidence", data = P3CFslong, 
+                      between = "Familiarity", within = "Repetition")
+anova(p3.conf.aov, es = "pes") %>% kable(digits = 4)
+```
+
+The two-way interaction was significant while neither main effects reached significance. Next we performed two additional one-way repeated-measures ANOVAs as post-hoc analyses. The first table below presents the effect of item repetition for `famous` faces, and the second presents the same effect for `non-famous` faces.
+
+```{r, warning=FALSE, message=FALSE}
+ci95 <- P3CFswide %>% filter(Familiarity=="Famous") %>%
+  mutate(Diff = Unrepeated - Repeated) %>%
+  summarise(lower = mean(Diff) - qt(0.975,df=n()-1)*sd(Diff)/sqrt(n()),
+            upper = mean(Diff) + qt(0.975,df=n()-1)*sd(Diff)/sqrt(n()))
+
+p3.conf.aov.r1 <- aov_ez(id = "SID", dv = "Confidence", within = "Repetition",
+                         data = filter(P3CFslong, Familiarity == "Famous"))
+anova(p3.conf.aov.r1, es = "pes") %>% kable(digits = 4)
+```
+
+In the `famous` face group, confidence ratings were higher for **unrepeated** than **repeated** faces. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
+
+
+```{r, warning=FALSE, message=FALSE}
+ci95 <- P3CFswide %>% filter(Familiarity=="Non-famous") %>%
+  mutate(Diff = Repeated - Unrepeated) %>%
+  summarise(lower = mean(Diff) - qt(0.975,df=n()-1)*sd(Diff)/sqrt(n()),
+            upper = mean(Diff) + qt(0.975,df=n()-1)*sd(Diff)/sqrt(n()))
+
+p3.conf.aov.r2 <- aov_ez(id = "SID", dv = "Confidence", within = "Repetition",
+                         data = filter(P3CFslong, Familiarity == "Non-famous"))
+anova(p3.conf.aov.r2, es = "pes") %>% kable(digits = 4)
+```
+
+In the `non-famous` face group, confidence ratings were higher for **repeated** than **unrepeated** faces. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
+
+
+### CLMM
+
+The responses from a Likert-type scale are ordinal. Especially for the rating items with numerical response formats containing four or fewer categories, it is recommended to use categorical data analysis approaches, rather than treating the responses as continuous data ([Harpe, 2015](https://ac.els-cdn.com/S1877129715200196/1-s2.0-S1877129715200196-main.pdf?_tid=589e7c17-4d55-49e6-a80f-5aef938a1f44&acdnat=1549722329_bb934739b91ee6554cafadb39565dc25)).
+
+Here we employed the **cumulative link mixed modeling (CLMM)** using the `clmm()` of the package `ordinal` ([Christensen, submitted](https://cran.r-project.org/web/packages/ordinal/vignettes/clm_article.pdf)). The specification of the full model was the same as the `mixed()` above. To determine the statistical significance, the LRT compared models with or without the fixed effect of interest.
+
+```{r, eval=FALSE}
+P3R <- P3
+P3R$Confident = factor(P3R$Confident, ordered = TRUE)
+P3R$SID = factor(P3R$SID)
+
+cm.full <- clmm(Confident ~ Familiarity * Repetition + (Repetition|SID) + (1|ImgName), data=P3R)
+cm.red1 <- clmm(Confident ~ Familiarity + Repetition + (Repetition|SID) + (1|ImgName), data=P3R)
+cm.red2 <- clmm(Confident ~ Repetition + (Repetition|SID) + (1|ImgName), data=P3R)
+cm.red3 <- clmm(Confident ~ 1 + (Repetition|SID) + (1|ImgName), data=P3R) 
+```
+
+```{r, echo=FALSE}
+P3R <- P3
+P3R$Confident = factor(P3R$Confident, ordered = TRUE)
+P3R$SID = factor(P3R$SID)
+
+load("RData/clmm_FamSM_Exp1_Face_Conf.RData")
+```
+
+```{r}
+cm.comp <- anova(cm.full, cm.red1, cm.red2, cm.red3)
+
+data.frame(Effect = c("Familiarity", "Repetition", "Familiarity:Repetition"),
+           df = 1, Chisq = cm.comp$LR.stat[2:4], p = cm.comp$`Pr(>Chisq)`[2:4]) %>% kable()
+```
+
+The LRT revealed a significant two-way interaction. Neither main effects were significant. Next we performed pairwise comparisons as post-hoc analyses. As shown in the following table, the results of the pairwise comparisons were consistent with those from the ANOVA approach. 
+
+```{r}
+emmeans(cm.full, pairwise ~ Repetition | Familiarity)$contrasts %>% kable()
+```
+
+Below is the plot of estimated marginal means, which were extracted from the fitted CLMM. The estimated distribution of confidence ratings evidently represents the interaction between **item repetition** and **pre-experimental item repetition**.
+
+```{r, fig.height=4}
+temp <- emmeans(cm.full,~Familiarity:Repetition|cut, mode="linear.predictor")
+temp <- rating.emmeans(temp)
+temp <- temp %>% unite(Condition, c("Familiarity", "Repetition"))
+
+ggplot(data = temp, aes(x = Rating, y = Prob, group = Condition)) +
+  geom_line(aes(color = Condition), size = 1.2) +
+  geom_point(aes(shape = Condition, color = Condition), size = 4, fill = "white", stroke = 1.2) +
+  scale_color_manual(values=c("#E69F00", "#E69F00", "#56B4E9", "#56B4E9")) +
+  scale_shape_manual(name="Condition", values=c(21,24,21,24)) +
+  labs(y = "Response Probability", x = "Rating") +
+  expand_limits(y=0) +
+  scale_y_continuous(limits = c(0, 0.4)) +
+  scale_x_discrete(labels = c("1" = "1(Guessed)","4"="4(Sure)")) +
+  theme_minimal() +
+  theme(text = element_text(size=18))
+```
+
+```{r, collapse=TRUE}
+ww.conf.t.r1 <- t.test(Confidence ~ Repetition, filter(P3CFslong, Familiarity == "Famous"), paired = TRUE)
+sort(abs(ww.conf.t.r1$conf.int))[1:2] # 95% CI of difference between means
+
+ww.conf.t.r2 <- t.test(Confidence ~ Repetition, filter(P3CFslong, Familiarity == "Non-famous"), paired = TRUE)
+sort(abs(ww.conf.t.r2$conf.int))[1:2] # 95% CI of difference between means
+```
+
+
+<br><br>
+
+
+## RT
+
+Only RTs in correct trials were analyzed. Before analysis, we first removed RTs either shorter than 200ms or longer than 10s. Then, from the RT distribution of each condition, RTs beyond 3 *s.d.* from the mean were removed. 
+
+```{r, collapse=TRUE}
+cP3 <- P3 %>% filter(Corr==1)
+
+sP3 <- cP3 %>% filter(RT > 200 & RT < 10000) %>% 
+  group_by(SID) %>% 
+  nest() %>% 
+  mutate(lbound = map(data, ~mean(.$RT)-3*sd(.$RT)),
+         ubound = map(data, ~mean(.$RT)+3*sd(.$RT))) %>% 
+  unnest(lbound, ubound) %>% 
+  unnest(data) %>% 
+  ungroup() %>% 
+  mutate(Outlier = (RT < lbound)|(RT > ubound)) %>% 
+  filter(Outlier == FALSE) %>% 
+  select(SID, Familiarity, Repetition, RT, ImgName)
+
+100 - 100*nrow(sP3)/nrow(cP3)
+```
+
+This trimming procedure removed `r round(100 - 100*nrow(sP3)/nrow(cP3), digits = 2)`% of correct RTs.
+  
+Since the overall accuracy of source memory was not high, only small numbers of correct trials were available after trimming. The following table summarizes the numbers of RTs submitted to subsequent analyses. None of participants had more than 25 trials per condition. In the `non-famous` conditions, half participants had less than 10 valid trials.
+
+```{r}
+sP3 %>% group_by(SID, Familiarity, Repetition) %>% 
+  summarise(NumTrial = length(RT)) %>% 
+  ungroup %>% 
+  group_by(Familiarity, Repetition) %>%
+  summarise(Avg = mean(NumTrial), 
+            Med = median(NumTrial), 
+            Min = min(NumTrial), 
+            Max = max(NumTrial)) %>% 
+  ungroup %>% 
+  kable()
+```
+
+```{r, fig.height=3}
+h1 <- ggplot(cP3, aes(x=RT)) + geom_density()
+h2 <- ggplot(sP3, aes(x=RT)) + geom_density() + labs(x = "Trimmed RT")
+plot_grid(h1, h2)
+```
+
+The overall RT distribution was highly skewed even after trimming. Given limited numbers of RTs and its skewed distribution, any results from the current RT analyses should be interpreted with caution and preferably corroborated with other measures.
+
+We calculated the mean and *s.d.* of individual participants’ mean RTs. The numerical pattern of RTs across the conditions was consistent with the accuracy and confidence data. In the following plot, red points and error bars represent the means and 95% within-participants CIs.
+
+```{r, fig.height=4}
+P3RTslong <- sP3 %>% group_by(SID, Familiarity, Repetition) %>% 
+  summarise(RT = mean(RT)) %>% 
+  ungroup()
+
+P3RTg <- P3RTslong %>% group_by(Familiarity, Repetition) %>%
+  summarise(M = mean(RT), SD = sd(RT)) %>% 
+  ungroup()
+P3RTg %>% kable()
+
+# wide format, needed for geom_segments.
+P3RTswide <- P3RTslong %>% spread(key = Repetition, value = RT)
+
+# group level, needed for printing & geom_pointrange
+# Rmisc must be called indirectly due to incompatibility between plyr and dplyr.
+P3RTg$ci <- Rmisc::summarySEwithin(data = P3RTslong, measurevar = "RT", idvar = "SID",
+                                   withinvars = "Repetition", betweenvars = "Familiarity")$ci
+P3RTg$RT <- P3RTg$M
+
+ggplot(data=P3RTslong, aes(x=Familiarity, y=RT, fill=Repetition)) +
+  geom_violin(width = 0.5, trim=TRUE) +
+  geom_point(position=position_dodge(0.5), color="gray80", size=1.8, show.legend = FALSE) +
+  geom_segment(data=filter(P3RTswide, Familiarity=="Famous"), inherit.aes = FALSE,
+               aes(x=1-.12, y=filter(P3RTswide, Familiarity=="Famous")$Repeated,
+                   xend=1+.12, yend=filter(P3RTswide, Familiarity=="Famous")$Unrepeated),
+               color="gray80") +
+  geom_segment(data=filter(P3RTswide, Familiarity=="Non-famous"), inherit.aes = FALSE,
+               aes(x=2-.12, y=filter(P3RTswide, Familiarity=="Non-famous")$Repeated,
+                   xend=2+.12, yend=filter(P3RTswide, Familiarity=="Non-famous")$Unrepeated),
+               color="gray80") +
+  geom_pointrange(data=P3RTg,
+                  aes(x = Familiarity, ymin = RT-ci, ymax = RT+ci, group = Repetition),
+                  position = position_dodge(0.5), color = "darkred", size = 1, show.legend = FALSE) +
+  scale_fill_manual(values=c("#E69F00", "#56B4E9"),
+                    labels=c("Repeated", "Unrepeated")) +
+  labs(x = "Pre-experimental Stimulus Familiarity", 
+       y = "Response Times (ms)", 
+       fill='Item Repetition') +
+  theme_bw(base_size = 18) +
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank())
+```
+
+
+### ANOVA
+
+Individuals’ mean RTs were submitted to a 2x2 mixed design ANOVA with **pre-experimental item familiarity** as a between-participants factor and **item repetition** as a within-participant factor.[^1]
+
+```{r, warning=FALSE, message=FALSE}
+p3.rt.aov <- aov_ez(id = "SID", dv = "RT", data = sP3, 
+                      between = "Familiarity", within = "Repetition")
+anova(p3.rt.aov, es = "pes") %>% kable(digits = 4)
+```
+
+The two-way interaction was significant. We then proceeded to post-hoc analyses with two one-way repeated-measures ANOVAs. The first table below presents the effect of item repetition for `famous` faces, and the second table presents the same effect for `non-famous` faces.
+
+```{r, warning=FALSE, message=FALSE}
+p3.rt.aov.r1 <- aov_ez(id = "SID", dv = "RT", within = "Repetition",
+                         data = filter(sP3, Familiarity == "Famous"))
+anova(p3.rt.aov.r1, es = "pes") %>% kable(digits = 4)
+```
+
+The difference was not significant in the `famous` condition.
+
+
+```{r, warning=FALSE, message=FALSE}
+p3.rt.aov.r2 <- aov_ez(id = "SID", dv = "RT", within = "Repetition",
+                         data = filter(sP3, Familiarity == "Non-famous"))
+anova(p3.rt.aov.r2, es = "pes") %>% kable(digits = 4)
+```
+
+The difference was not significant in the `non-famous` condition, either.
+
+
+
+<br><br>
+
+****
+
+<br><br>
+
+
+# Session Info
+```{r, collapse=TRUE}
+sessionInfo()
+```
+
+[^1]: 
+We additionally tested several GLMMs on source memory RTs since GLMMs with relevant link functions were supposed to be better than the conventional ANOVA in dealing with such limited, unbalanced and skewed data as the current RTs ([Lo & Andrews, 2015](https://p3w.frontiersin.org/articles/10.3389/fpsyg.2015.01171/full)). Some models adopted non-linear transformations of RTs (such as -1000/RT or log(RT)) and  others assumed an inverse Gaussian or Gamma distribution and a linear relationship (identity link function) between the predictors and RTs. None of the models, however, converged onto a stable solution. 
