@@ -1,7 +1,7 @@
-name: "My Website"
+name: "FamSM"
 output_dir: "."
 navbar:
-  title: "My Website"
+  title: "Lee, Kim, Yi (under revision)"
   left:
     - text: "Exp 1"
       href: FamSM_Exp1_Face.html
