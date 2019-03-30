@@ -9,6 +9,11 @@ subtitle: Data & R scripts for analyses
 mainfont: Noto Sans CJK KR
 ---
 
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+# install.packages("devtools")
+devtools::install_github("ropenscilabs/icon")
+```
+
 <br><br>
 
 ## Authors
@@ -28,3 +33,6 @@ Previous studies have reported contradictory findings regarding the effects of i
 ## Acknowledgement
 
 This research was supported by the National Research Foundation of Korea under Grant NRF-2017R1D1A1B03028539.
+
+***
+[[View on Github `r icon::fa("github", size = 3)`](https://github.com/cogneuro/FamSM)]{style="float:right"}
