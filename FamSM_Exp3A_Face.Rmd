@@ -39,7 +39,9 @@ if (!require("pacman", quietly = TRUE)) install.packages("pacman")
 if (!require("Rmisc", quietly = TRUE)) install.packages("Rmisc") # Never load it directly.
 pacman::p_load(tidyverse, knitr, car, afex, emmeans, parallel, ordinal,
                ggbeeswarm, RVAideMemoire)
-pacman::p_load_gh("thomasp85/patchwork")               
+pacman::p_load_gh("thomasp85/patchwork", "RLesur/klippy")
+
+klippy::klippy()               
 ```
 
 

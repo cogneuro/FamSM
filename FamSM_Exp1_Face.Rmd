@@ -38,9 +38,11 @@ options(knitr.kable.NA = '')
 if (!require("pacman", quietly = TRUE)) install.packages("pacman")
 if (!require("Rmisc", quietly = TRUE)) install.packages("Rmisc") # Never load it directly.
 pacman::p_load(tidyverse, knitr, car, afex, emmeans, parallel, ordinal,
-               ggbeeswarm, cowplot, RVAideMemoire)
-```
+               ggbeeswarm, RVAideMemoire)
+pacman::p_load_gh("thomasp85/patchwork", "RLesur/klippy")
 
+klippy::klippy()
+```
 
 # Item Repetition Phase
 
@@ -587,9 +589,22 @@ sP3 %>% group_by(SID, Familiarity, Repetition) %>%
 ```
 
 ```{r, fig.height=3}
-h1 <- ggplot(cP3, aes(x=RT)) + geom_density()
-h2 <- ggplot(sP3, aes(x=RT)) + geom_density() + labs(x = "Trimmed RT")
-plot_grid(h1, h2)
+den1 <- ggplot(cP3, aes(x=RT)) + 
+  geom_density() + 
+  theme_bw(base_size = 18) +
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank()) 
+den2 <- ggplot(sP3, aes(x=RT)) + 
+  geom_density() + 
+  theme_bw(base_size = 18) + 
+  labs(x = "Trimmed RT") + 
+  theme(panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank()) 
+den1 + den2
 ```
 
 The overall RT distribution was highly skewed even after trimming. Given limited numbers of RTs and its skewed distribution, any results from the current RT analyses should be interpreted with caution and preferably corroborated with other measures.
