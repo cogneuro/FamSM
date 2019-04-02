@@ -47,7 +47,7 @@ klippy::klippy()
 
 # Item Repetition Phase
 
-Thirty participants were recruited. Half of the participants were exposed to 24 `words` while the other half were exposed to 24 `pseudowords` (**pre-experimental stimulus familiarity** as a between-participants factor). Each item was repeated eight times, resulting in 192 trials. Participants made a Like/Dislike judgment for each item. 
+Thirty participants were recruited. Half of the participants were exposed to 24 `words` while the other half were exposed to 24 `pseudowords` (**pre-experimental stimulus familiarity** as a between-participants factor). Each item was repeated eight times, resulting in 192 trials. Participants made a preference judgment (like/dislike) for each item. 
 
 ```{r, collapse=TRUE}
 P1 <- read.csv("data/data_FamSM_Exp2_Word_REP.csv", header = T)
@@ -216,7 +216,7 @@ p2.pref.aov.r1 <- aov_ez(id = "SID", dv = "Preference", within = "Repetition",
 anova(p2.pref.aov.r1, es = "pes") %>% kable(digits = 4)
 ```
 
-Item repetition tended to reduce preference for `words`.
+**Item repetition** tended to reduce preference for `words`.
 
 ```{r, warning=FALSE, message=FALSE}
 p2.pref.aov.r2 <- aov_ez(id = "SID", dv = "Preference", within = "Repetition",
@@ -224,7 +224,7 @@ p2.pref.aov.r2 <- aov_ez(id = "SID", dv = "Preference", within = "Repetition",
 anova(p2.pref.aov.r2, es = "pes") %>% kable(digits = 4)
 ```
 
-Item repetition did not significantly affect preference for `pseudowords`.
+**Item repetition** did not significantly affect preference for `pseudowords`.
 
 
 
@@ -237,7 +237,7 @@ Item repetition did not significantly affect preference for `pseudowords`.
 
 # Source Memory Test Phase
 
-In each trial, participants first indicated in which quadrant a given face appeared during the item-source association phase. Participants then rated how confident they were about their memory judgment. There were 48 trials in total. 
+In each trial, participants first indicated in which quadrant a given item appeared during the item-source association phase. Participants then rated how confident they were about their memory judgment. There were 48 trials in total. 
 
 ```{r, collapse=TRUE}
 P3 <- read.csv("data/data_FamSM_Exp2_Word_TST.csv", header = T)
@@ -346,7 +346,7 @@ p3.corr.aov.r1 <- aov_ez(id = "SID", dv = "Accuracy", within = "Repetition",
 anova(p3.corr.aov.r1, es = "pes") %>% kable(digits = 4)
 ```
 
-In the **word** group, source memory accuracy was higher for **unrepeated** than **repeated** items. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
+In the `words` group, source memory accuracy was higher for `unrepeated` than `repeated` items. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
 
 ```{r, warning=FALSE, message=FALSE}
 ci95 <- P3ACCswide %>% filter(Familiarity=="Pseudowords") %>% 
@@ -359,7 +359,7 @@ p3.corr.aov.r2 <- aov_ez(id = "SID", dv = "Accuracy", within = "Repetition",
 anova(p3.corr.aov.r2, es = "pes") %>% kable(digits = 4)
 ```
 
-In the **pseudoword** group, source memory tended to be more accurate for **repeated** than **unrepeated** items. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
+In the `pseudowords` group, source memory tended to be more accurate for `repeated` than `unrepeated` items. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
 
 
 ### GLMM
@@ -411,7 +411,7 @@ emmeans(full1, pairwise ~ Repetition | Familiarity, type = "response")$contrasts
 
 ## Confidence
 
-The table below shows the mean and *s.d.* of individual participants' confidence ratings for each condition. The pattern of confidence ratings was qualitatively identical to that of source memory accuracy; we observed the **novelty benefit** for `words` and the **familiarity benefit** for `pseudowords`.
+The table below shows the mean and *s.d.* of individual participants' confidence ratings for each condition. The pattern of confidence ratings was qualitatively identical to that of source memory accuracy; we observed the *novelty benefit* for `words` and the *familiarity benefit* for `pseudowords`.
 
 ```{r, fig.height=4}
 P3CFslong <- P3 %>% group_by(SID, Familiarity, Repetition) %>% 
@@ -491,7 +491,7 @@ p3.conf.aov.r1 <- aov_ez(id = "SID", dv = "Confidence", within = "Repetition",
 anova(p3.conf.aov.r1, es = "pes") %>% kable(digits = 4)
 ```
 
-In the **word** group, participants were more confident on their source memory for **unrepeated** than **repeated** items. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
+In the `word` group, participants were more confident on their source memory for `unrepeated` than `repeated` items. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
 
 ```{r, warning=FALSE, message=FALSE}
 ci95 <- P3CFswide %>% filter(Familiarity=="Pseudowords") %>%
@@ -504,7 +504,7 @@ p3.conf.aov.r2 <- aov_ez(id = "SID", dv = "Confidence", within = "Repetition",
 anova(p3.conf.aov.r2, es = "pes") %>% kable(digits = 4)
 ```
 
-In the **pseudoword** group, participants' confidence ratings were higher for **repeated** than **unrepeated** items. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
+In the `pseudoword` group, participants' confidence ratings were higher for `repeated` than `unrepeated` items. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
 
 
 ### CLMM
@@ -761,7 +761,7 @@ apa_beeplot(data = P3,
             las=1)
 ```
 
-For both accuracy and confidence of source memory, no interaction with **preference** reached statistical significance. In contrast, the interaction between **pre-experimental stimulus familiarity** and **item repetition** remained significant. These results strongly suggest that preference alone cannot account for the interaction between pre-experimental stimulus familiarity and item repetition on source memory performance.
+For both accuracy and confidence of source memory, no interaction with **preference** reached statistical significance. In contrast, the interaction between **pre-experimental stimulus familiarity** and **item repetition** remained significant. These results strongly suggest that preference alone cannot account for the interaction between **pre-experimental stimulus familiarity** and **item repetition** on source memory performance.
 
 <br><br>
 

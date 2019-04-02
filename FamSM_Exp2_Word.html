@@ -525,7 +525,7 @@ klippy<span class="op">::</span><span class="kw">klippy</span>()</code></pre></d
 </script>
 <div id="item-repetition-phase" class="section level1">
 <h1><span class="header-section-number">1</span> Item Repetition Phase</h1>
-<p>Thirty participants were recruited. Half of the participants were exposed to 24 <code>words</code> while the other half were exposed to 24 <code>pseudowords</code> (<strong>pre-experimental stimulus familiarity</strong> as a between-participants factor). Each item was repeated eight times, resulting in 192 trials. Participants made a Like/Dislike judgment for each item.</p>
+<p>Thirty participants were recruited. Half of the participants were exposed to 24 <code>words</code> while the other half were exposed to 24 <code>pseudowords</code> (<strong>pre-experimental stimulus familiarity</strong> as a between-participants factor). Each item was repeated eight times, resulting in 192 trials. Participants made a preference judgment (like/dislike) for each item.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">P1 &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/data_FamSM_Exp2_Word_REP.csv&quot;</span>, <span class="dt">header =</span> T)
 P1<span class="op">$</span>Familiarity =<span class="st"> </span><span class="kw">factor</span>(P1<span class="op">$</span>Familiarity, <span class="dt">levels=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>), <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Words&quot;</span>,<span class="st">&quot;Pseudowords&quot;</span>))
 P1<span class="op">$</span>Pref &lt;-<span class="st"> </span><span class="kw">ifelse</span>(P1<span class="op">$</span>Resp<span class="op">==</span><span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">0</span>)
@@ -851,7 +851,7 @@ P2g<span class="op">$</span>Preference &lt;-<span class="st"> </span>P2g<span cl
 </tr>
 </tbody>
 </table>
-<p>Item repetition tended to reduce preference for <code>words</code>.</p>
+<p><strong>Item repetition</strong> tended to reduce preference for <code>words</code>.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p2.pref.aov.r2 &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;Preference&quot;</span>, <span class="dt">within =</span> <span class="st">&quot;Repetition&quot;</span>,
                         <span class="dt">data =</span> <span class="kw">filter</span>(P2slong, Familiarity <span class="op">==</span><span class="st"> &quot;Pseudowords&quot;</span>))
 <span class="kw">anova</span>(p2.pref.aov.r2, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
@@ -879,7 +879,7 @@ P2g<span class="op">$</span>Preference &lt;-<span class="st"> </span>P2g<span cl
 </tr>
 </tbody>
 </table>
-<p>Item repetition did not significantly affect preference for <code>pseudowords</code>.</p>
+<p><strong>Item repetition</strong> did not significantly affect preference for <code>pseudowords</code>.</p>
 <p><br><br></p>
 <hr />
 <p><br><br></p>
@@ -888,7 +888,7 @@ P2g<span class="op">$</span>Preference &lt;-<span class="st"> </span>P2g<span cl
 </div>
 <div id="source-memory-test-phase" class="section level1">
 <h1><span class="header-section-number">3</span> Source Memory Test Phase</h1>
-<p>In each trial, participants first indicated in which quadrant a given face appeared during the item-source association phase. Participants then rated how confident they were about their memory judgment. There were 48 trials in total.</p>
+<p>In each trial, participants first indicated in which quadrant a given item appeared during the item-source association phase. Participants then rated how confident they were about their memory judgment. There were 48 trials in total.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">P3 &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/data_FamSM_Exp2_Word_TST.csv&quot;</span>, <span class="dt">header =</span> T)
 P3<span class="op">$</span>Familiarity =<span class="st"> </span><span class="kw">factor</span>(P3<span class="op">$</span>Familiarity, <span class="dt">levels=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>), <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Words&quot;</span>,<span class="st">&quot;Pseudowords&quot;</span>))
 P3<span class="op">$</span>Repetition =<span class="st"> </span><span class="kw">factor</span>(P3<span class="op">$</span>Repetition, <span class="dt">levels=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>), <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Repeated&quot;</span>,<span class="st">&quot;Unrepeated&quot;</span>))
@@ -1149,7 +1149,7 @@ p3.corr.aov.r1 &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<spa
 </tr>
 </tbody>
 </table>
-<p>In the <strong>word</strong> group, source memory accuracy was higher for <strong>unrepeated</strong> than <strong>repeated</strong> items. The 95% CI of difference between the means was [11.66, 27.23].</p>
+<p>In the <code>words</code> group, source memory accuracy was higher for <code>unrepeated</code> than <code>repeated</code> items. The 95% CI of difference between the means was [11.66, 27.23].</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ci95 &lt;-<span class="st"> </span>P3ACCswide <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(Familiarity<span class="op">==</span><span class="st">&quot;Pseudowords&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">mutate</span>(<span class="dt">Diff =</span> Repeated <span class="op">-</span><span class="st"> </span>Unrepeated) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">summarise</span>(<span class="dt">lower =</span> <span class="kw">mean</span>(Diff) <span class="op">-</span><span class="st"> </span><span class="kw">qt</span>(<span class="fl">0.975</span>,<span class="dt">df=</span><span class="kw">n</span>()<span class="op">-</span><span class="dv">1</span>)<span class="op">*</span><span class="kw">sd</span>(Diff)<span class="op">/</span><span class="kw">sqrt</span>(<span class="kw">n</span>()),
@@ -1182,7 +1182,7 @@ p3.corr.aov.r2 &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<spa
 </tr>
 </tbody>
 </table>
-<p>In the <strong>pseudoword</strong> group, source memory tended to be more accurate for <strong>repeated</strong> than <strong>unrepeated</strong> items. The 95% CI of difference between the means was [-0.01, 13.9].</p>
+<p>In the <code>pseudowords</code> group, source memory tended to be more accurate for <code>repeated</code> than <code>unrepeated</code> items. The 95% CI of difference between the means was [-0.01, 13.9].</p>
 </div>
 <div id="glmm" class="section level3">
 <h3><span class="header-section-number">3.1.2</span> GLMM</h3>
@@ -1284,7 +1284,7 @@ full.compare <span class="op">%&gt;%</span><span class="st"> </span><span class=
 </div>
 <div id="confidence" class="section level2">
 <h2><span class="header-section-number">3.2</span> Confidence</h2>
-<p>The table below shows the mean and <em>s.d.</em> of individual participants’ confidence ratings for each condition. The pattern of confidence ratings was qualitatively identical to that of source memory accuracy; we observed the <strong>novelty benefit</strong> for <code>words</code> and the <strong>familiarity benefit</strong> for <code>pseudowords</code>.</p>
+<p>The table below shows the mean and <em>s.d.</em> of individual participants’ confidence ratings for each condition. The pattern of confidence ratings was qualitatively identical to that of source memory accuracy; we observed the <em>novelty benefit</em> for <code>words</code> and the <em>familiarity benefit</em> for <code>pseudowords</code>.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">P3CFslong &lt;-<span class="st"> </span>P3 <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(SID, Familiarity, Repetition) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Confidence =</span> <span class="kw">mean</span>(Confident)) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">ungroup</span>()
@@ -1494,7 +1494,7 @@ p3.conf.aov.r1 &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<spa
 </tr>
 </tbody>
 </table>
-<p>In the <strong>word</strong> group, participants were more confident on their source memory for <strong>unrepeated</strong> than <strong>repeated</strong> items. The 95% CI of difference between the means was [0.41, 1.01].</p>
+<p>In the <code>word</code> group, participants were more confident on their source memory for <code>unrepeated</code> than <code>repeated</code> items. The 95% CI of difference between the means was [0.41, 1.01].</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ci95 &lt;-<span class="st"> </span>P3CFswide <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(Familiarity<span class="op">==</span><span class="st">&quot;Pseudowords&quot;</span>) <span class="op">%&gt;%</span>
 <span class="st">  </span><span class="kw">mutate</span>(<span class="dt">Diff =</span> Repeated <span class="op">-</span><span class="st"> </span>Unrepeated) <span class="op">%&gt;%</span>
 <span class="st">  </span><span class="kw">summarise</span>(<span class="dt">lower =</span> <span class="kw">mean</span>(Diff) <span class="op">-</span><span class="st"> </span><span class="kw">qt</span>(<span class="fl">0.975</span>,<span class="dt">df=</span><span class="kw">n</span>()<span class="op">-</span><span class="dv">1</span>)<span class="op">*</span><span class="kw">sd</span>(Diff)<span class="op">/</span><span class="kw">sqrt</span>(<span class="kw">n</span>()),
@@ -1527,7 +1527,7 @@ p3.conf.aov.r2 &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<spa
 </tr>
 </tbody>
 </table>
-<p>In the <strong>pseudoword</strong> group, participants’ confidence ratings were higher for <strong>repeated</strong> than <strong>unrepeated</strong> items. The 95% CI of difference between the means was [0.07, 0.62].</p>
+<p>In the <code>pseudoword</code> group, participants’ confidence ratings were higher for <code>repeated</code> than <code>unrepeated</code> items. The 95% CI of difference between the means was [0.07, 0.62].</p>
 </div>
 <div id="clmm" class="section level3">
 <h3><span class="header-section-number">3.2.2</span> CLMM</h3>
@@ -2106,7 +2106,7 @@ P3<span class="op">$</span>Preference =<span class="st"> </span><span class="kw"
                                <span class="dt">x =</span> <span class="st">&quot;bottom&quot;</span>, <span class="dt">inset =</span> <span class="fl">0.05</span>),
             <span class="dt">las=</span><span class="dv">1</span>)</code></pre></div>
 <p><img src="FamSM_Exp2_Word_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>
-<p>For both accuracy and confidence of source memory, no interaction with <strong>preference</strong> reached statistical significance. In contrast, the interaction between <strong>pre-experimental stimulus familiarity</strong> and <strong>item repetition</strong> remained significant. These results strongly suggest that preference alone cannot account for the interaction between pre-experimental stimulus familiarity and item repetition on source memory performance.</p>
+<p>For both accuracy and confidence of source memory, no interaction with <strong>preference</strong> reached statistical significance. In contrast, the interaction between <strong>pre-experimental stimulus familiarity</strong> and <strong>item repetition</strong> remained significant. These results strongly suggest that preference alone cannot account for the interaction between <strong>pre-experimental stimulus familiarity</strong> and <strong>item repetition</strong> on source memory performance.</p>
 <p><br><br></p>
 <hr />
 <p><br><br></p>
