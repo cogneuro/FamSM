@@ -259,7 +259,7 @@ ggplot(P2slong, aes(x=Repetition, y=Preference, fill=Repetition)) +
 
 ### ANOVA
 
-Mean preference scores were submitted to a one-way repeated measures ANOVA. Participants made significantly more 'Like' responses to repeated than unrepeated pseudowords (*familiarity benefit*). 
+Mean preference scores were submitted to a one-way repeated measures ANOVA. Participants made significantly more 'Like' responses to `repeated` than `unrepeated` pseudowords (*familiarity benefit*). 
 
 ```{r, warning=FALSE, message=FALSE}
 p2.aov <- aov_ez(id = "SID", dv = "Preference", data = P2slong, within = "Repetition")

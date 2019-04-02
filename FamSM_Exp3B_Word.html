@@ -759,7 +759,7 @@ P2g<span class="op">$</span>Preference &lt;-<span class="st"> </span>P2g<span cl
 <p><img src="FamSM_Exp3B_Word_files/figure-html/unnamed-chunk-9-1.png" width="384" /></p>
 <div id="anova" class="section level3">
 <h3><span class="header-section-number">3.1.1</span> ANOVA</h3>
-<p>Mean preference scores were submitted to a one-way repeated measures ANOVA. Participants made significantly more ‘Like’ responses to repeated than unrepeated pseudowords (<em>familiarity benefit</em>).</p>
+<p>Mean preference scores were submitted to a one-way repeated measures ANOVA. Participants made significantly more ‘Like’ responses to <code>repeated</code> than <code>unrepeated</code> pseudowords (<em>familiarity benefit</em>).</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p2.aov &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;Preference&quot;</span>, <span class="dt">data =</span> P2slong, <span class="dt">within =</span> <span class="st">&quot;Repetition&quot;</span>)
 <span class="kw">anova</span>(p2.aov, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
 <table>
