@@ -1,0 +1,1955 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Hongmi Lee, Kyungmi Kim, Do-Joon Yi" />
+
+<meta name="date" content="2019-04-02" />
+
+<title>Experiment 1</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<script src="site_libs/clipboard-1.7.1/clipboard.min.js"></script>
+<link href="site_libs/primer-tooltips-1.4.0/build.css" rel="stylesheet" />
+<link href="site_libs/klippy-0.0.0.9500/css/klippy.min.css" rel="stylesheet" />
+<script src="site_libs/klippy-0.0.0.9500/js/klippy.min.js"></script>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code > span.dt { color: #204a87; } /* DataType */
+code > span.dv { color: #0000cf; } /* DecVal */
+code > span.bn { color: #0000cf; } /* BaseN */
+code > span.fl { color: #0000cf; } /* Float */
+code > span.ch { color: #4e9a06; } /* Char */
+code > span.st { color: #4e9a06; } /* String */
+code > span.co { color: #8f5902; font-style: italic; } /* Comment */
+code > span.ot { color: #8f5902; } /* Other */
+code > span.al { color: #ef2929; } /* Alert */
+code > span.fu { color: #000000; } /* Function */
+code > span.er { color: #a40000; font-weight: bold; } /* Error */
+code > span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #000000; } /* Constant */
+code > span.sc { color: #000000; } /* SpecialChar */
+code > span.vs { color: #4e9a06; } /* VerbatimString */
+code > span.ss { color: #4e9a06; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #000000; } /* Variable */
+code > span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code > span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code > span.ex { } /* Extension */
+code > span.at { color: #c4a000; } /* Attribute */
+code > span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code > span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+
+.sourceCode .row {
+  width: 100%;
+}
+.sourceCode {
+  overflow-x: auto;
+}
+.code-folding-btn {
+  margin-right: -30px;
+}
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' || rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("hide" === "show");
+});
+</script>
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = false;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Lee, Kim, Yi (under revision)</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="FamSM_Exp1_Face.html">Exp 1</a>
+</li>
+<li>
+  <a href="FamSM_Exp2_Word.html">Exp 2</a>
+</li>
+<li>
+  <a href="FamSM_Exp3A_Face.html">Exp 3A</a>
+</li>
+<li>
+  <a href="FamSM_Exp3B_Word.html">Exp 3B</a>
+</li>
+<li>
+  <a href="FamSM_Exp4A_Face.html">Exp 4A</a>
+</li>
+<li>
+  <a href="FamSM_Exp4B_Face.html">Exp 4B</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">Experiment 1</h1>
+<h3 class="subtitle">Famous vs. non-famous faces (between-participants design)</h3>
+<h4 class="author">Hongmi Lee, Kyungmi Kim, Do-Joon Yi</h4>
+<h4 class="date">2019-04-02</h4>
+
+</div>
+
+
+<style type="text/css">
+pre code, pre, code {
+  white-space: pre !important;
+  overflow-x: scroll !important;
+  word-break: keep-all !important;
+  word-wrap: initial !important;
+}
+</style>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">set.seed</span>(<span class="dv">12345</span>) <span class="co"># for reproducibility</span>
+<span class="kw">options</span>(<span class="dt">knitr.kable.NA =</span> <span class="st">&#39;&#39;</span>)
+
+<span class="co"># Some packages need to be loaded. We use `pacman` as a package manager, which takes care of the other packages. </span>
+<span class="cf">if</span> (<span class="op">!</span><span class="kw">require</span>(<span class="st">&quot;pacman&quot;</span>, <span class="dt">quietly =</span> <span class="ot">TRUE</span>)) <span class="kw">install.packages</span>(<span class="st">&quot;pacman&quot;</span>)
+<span class="cf">if</span> (<span class="op">!</span><span class="kw">require</span>(<span class="st">&quot;Rmisc&quot;</span>, <span class="dt">quietly =</span> <span class="ot">TRUE</span>)) <span class="kw">install.packages</span>(<span class="st">&quot;Rmisc&quot;</span>) <span class="co"># Never load it directly.</span>
+pacman<span class="op">::</span><span class="kw">p_load</span>(tidyverse, knitr, car, afex, emmeans, parallel, ordinal,
+               ggbeeswarm, RVAideMemoire)
+pacman<span class="op">::</span><span class="kw">p_load_gh</span>(<span class="st">&quot;thomasp85/patchwork&quot;</span>, <span class="st">&quot;RLesur/klippy&quot;</span>)
+
+klippy<span class="op">::</span><span class="kw">klippy</span>()</code></pre></div>
+<script>
+  addClassKlippyTo("pre.r, pre.markdown");
+  addKlippy('left', 'top', 'auto', '1', 'Copy code', 'Copied!');
+</script>
+<div id="item-repetition-phase" class="section level1">
+<h1><span class="header-section-number">1</span> Item Repetition Phase</h1>
+<p>Twenty four participants were recruited. Half of the participants were exposed to 24 <code>famous</code> faces while the other half were exposed to 24 <code>non-famous</code> faces (<strong>pre-experimental stimulus familiarity</strong> as a between-participants factor). Each face was repeated eight times, resulting in 192 trials in total. For each face, participants made a male/female judgment.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">P1 &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/data_FamSM_Exp1_Face_REP.csv&quot;</span>, <span class="dt">header =</span> T)
+P1<span class="op">$</span>Familiarity =<span class="st"> </span><span class="kw">factor</span>(P1<span class="op">$</span>Familiarity, <span class="dt">levels=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>), <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Famous&quot;</span>,<span class="st">&quot;Non-famous&quot;</span>))
+
+<span class="kw">glimpse</span>(P1, <span class="dt">width=</span><span class="dv">70</span>)
+## Observations: 4,608
+## Variables: 9
+## $ SID         &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+## $ Familiarity &lt;fct&gt; Famous, Famous, Famous, Famous, Famous, Famous,…
+## $ RepTime     &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+## $ Trial       &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, …
+## $ ImgCat      &lt;int&gt; 1, 2, 1, 2, 1, 1, 1, 2, 2, 2, 1, 2, 1, 2, 2, 1,…
+## $ Resp        &lt;int&gt; 1, 2, 1, 1, 1, 1, 1, 2, 2, 2, 1, 2, 1, 2, 2, 1,…
+## $ Corr        &lt;int&gt; 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+## $ RT          &lt;dbl&gt; 477.59, 385.10, 337.84, 354.65, 395.43, 436.21,…
+## $ ImgName     &lt;fct&gt; actor17.jpg, famfemale30.jpg, actor51.jpg, famf…
+<span class="co"># 1. SID: participant ID</span>
+<span class="co"># 2. Familiarity: pre-experimental familiarity. 1 = famous, 2 = non-famous</span>
+<span class="co"># 3. RepTime: number of repetitions, 1~8</span>
+<span class="co"># 4. Trial: 1~24</span>
+<span class="co"># 5. ImgCat: stimulus category. male vs. female</span>
+<span class="co"># 6. Resp: male/female judgment, 1 = male, 2 = female, 0 = no response</span>
+<span class="co"># 7. Corr: correctness, 1=correct, 0 = incorrect or no response</span>
+<span class="co"># 8. RT: reaction times in ms.</span>
+<span class="co"># 9. ImgName: name of stimuli</span>
+
+<span class="kw">table</span>(P1<span class="op">$</span>Familiarity, P1<span class="op">$</span>SID)
+##             
+##                1   2   3   4   5   6   7   8   9  10  11  12  13  14  15
+##   Famous     192 192 192 192 192 192 192 192 192 192 192 192   0   0   0
+##   Non-famous   0   0   0   0   0   0   0   0   0   0   0   0 192 192 192
+##             
+##               16  17  18  19  20  21  22  23  24
+##   Famous       0   0   0   0   0   0   0   0   0
+##   Non-famous 192 192 192 192 192 192 192 192 192</code></pre></div>
+<div id="accuracy" class="section level2">
+<h2><span class="header-section-number">1.1</span> Accuracy</h2>
+<p>We calculated the mean and <em>s.d.</em> of individual participants’ mean percentage accuracy. Overall accuracy of the male/female judgment was high. The <code>famous</code> condition showed lower mean accuracy and larger variance than the <code>non-famous</code> condition. In the following plot, red points and error bars represent the means and 95% CIs.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># phase 1, subject-level, long-format</span>
+P1slong &lt;-<span class="st"> </span>P1 <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(SID, Familiarity) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Accuracy =</span> <span class="kw">mean</span>(Corr)<span class="op">*</span><span class="dv">100</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ungroup</span>()
+
+<span class="co"># summary table</span>
+P1slong <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(Familiarity) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">M =</span> <span class="kw">mean</span>(Accuracy), <span class="dt">SD =</span> <span class="kw">sd</span>(Accuracy)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Familiarity</th>
+<th align="right">M</th>
+<th align="right">SD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Famous</td>
+<td align="right">98.26389</td>
+<td align="right">1.301294</td>
+</tr>
+<tr class="even">
+<td align="left">Non-famous</td>
+<td align="right">95.31250</td>
+<td align="right">6.269698</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># group level, needed for printing &amp; geom_pointrange</span>
+<span class="co"># Rmisc must be called indirectly due to incompatibility between plyr and dplyr.</span>
+P1g &lt;-<span class="st"> </span>Rmisc<span class="op">::</span><span class="kw">summarySE</span>(<span class="dt">data =</span> P1slong, <span class="dt">measurevar =</span> <span class="st">&quot;Accuracy&quot;</span>, <span class="dt">groupvars =</span> <span class="st">&quot;Familiarity&quot;</span>)
+
+<span class="kw">ggplot</span>(P1slong, <span class="kw">aes</span>(<span class="dt">x=</span>Familiarity, <span class="dt">y=</span>Accuracy)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_violin</span>(<span class="dt">width =</span> <span class="fl">0.5</span>, <span class="dt">trim=</span><span class="ot">TRUE</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span>ggbeeswarm<span class="op">::</span><span class="kw">geom_quasirandom</span>(<span class="dt">color =</span> <span class="st">&quot;blue&quot;</span>, <span class="dt">size =</span> <span class="dv">3</span>, <span class="dt">alpha =</span> <span class="fl">0.2</span>, <span class="dt">width =</span> <span class="fl">0.2</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_pointrange</span>(P1g, <span class="dt">inherit.aes=</span><span class="ot">FALSE</span>,
+                  <span class="dt">mapping=</span><span class="kw">aes</span>(<span class="dt">x =</span> Familiarity, <span class="dt">y=</span>Accuracy, 
+                              <span class="dt">ymin =</span> Accuracy <span class="op">-</span><span class="st"> </span>ci, <span class="dt">ymax =</span> Accuracy <span class="op">+</span><span class="st"> </span>ci), 
+                  <span class="dt">colour=</span><span class="st">&quot;darkred&quot;</span>, <span class="dt">size =</span> <span class="dv">1</span>)<span class="op">+</span>
+<span class="st">  </span><span class="kw">coord_cartesian</span>(<span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">50</span>, <span class="dv">100</span>), <span class="dt">clip =</span> <span class="st">&quot;on&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Pre-experimental Stimulus Familiarity&quot;</span>, 
+       <span class="dt">y =</span> <span class="st">&quot;Male/Female Judgment </span><span class="ch">\n</span><span class="st"> Accuracy (%)&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">theme_bw</span>(<span class="dt">base_size =</span> <span class="dv">18</span>)</code></pre></div>
+<p><img src="FamSM_Exp1_Face_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<div id="anova" class="section level3">
+<h3><span class="header-section-number">1.1.1</span> ANOVA</h3>
+<p>Levene’s test indicated that the assumption of homogeneity of variance was not violated. Then, a one-way ANOVA showed that the difference in accuracy was not significant between <code>famous</code> vs. <code>non-famous</code> conditions.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">car<span class="op">::</span><span class="kw">leveneTest</span>(Accuracy <span class="op">~</span><span class="st"> </span>Familiarity, P1slong)</code></pre></div>
+<pre><code>## Levene&#39;s Test for Homogeneity of Variance (center = median)
+##       Df F value Pr(&gt;F)
+## group  1  2.5262 0.1262
+##       22</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p1.aov &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;Accuracy&quot;</span>, <span class="dt">data =</span> P1slong, <span class="dt">between =</span> <span class="st">&quot;Familiarity&quot;</span>)
+<span class="kw">anova</span>(p1.aov, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">num Df</th>
+<th align="right">den Df</th>
+<th align="right">MSE</th>
+<th align="right">F</th>
+<th align="right">pes</th>
+<th align="right">Pr(&gt;F)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Familiarity</td>
+<td align="right">1</td>
+<td align="right">22</td>
+<td align="right">20.5012</td>
+<td align="right">2.5493</td>
+<td align="right">0.1038</td>
+<td align="right">0.1246</td>
+</tr>
+</tbody>
+</table>
+<p><br><br></p>
+<hr />
+<p><br><br></p>
+</div>
+</div>
+</div>
+<div id="item-source-association-phase" class="section level1">
+<h1><span class="header-section-number">2</span> Item-Source Association Phase</h1>
+<p>Participants learned 48 face-location (a quadrant on the screen) associations. They were instructed to pay attention to the location of each face while making a male/female judgment. A between-participants <strong>pre-experimental stimulus familiarity</strong> factor determined whether a participant viewed <code>famous</code> or <code>non-famous</code> faces. A within-participant <strong>item repetition</strong> factor determined whether a <code>repeated</code> item (which had been presented in the first phase) or an <code>unrepeated</code> item (which appeared for the first time in the item-source association phase) was presened in each trial.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">P2 &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/data_FamSM_Exp1_Face_SRC.csv&quot;</span>, <span class="dt">header =</span> T)
+P2<span class="op">$</span>Familiarity =<span class="st"> </span><span class="kw">factor</span>(P2<span class="op">$</span>Familiarity, <span class="dt">levels=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>), <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Famous&quot;</span>,<span class="st">&quot;Non-famous&quot;</span>))
+P2<span class="op">$</span>Repetition =<span class="st"> </span><span class="kw">factor</span>(P2<span class="op">$</span>Repetition, <span class="dt">levels=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>), <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Repeated&quot;</span>,<span class="st">&quot;Unrepeated&quot;</span>))
+
+<span class="kw">glimpse</span>(P2, <span class="dt">width=</span><span class="dv">70</span>)
+## Observations: 1,152
+## Variables: 10
+## $ SID         &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+## $ Familiarity &lt;fct&gt; Famous, Famous, Famous, Famous, Famous, Famous,…
+## $ Trial       &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, …
+## $ Repetition  &lt;fct&gt; Unrepeated, Unrepeated, Repeated, Repeated, Unr…
+## $ ImgCat      &lt;int&gt; 1, 1, 2, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 1, 1, 2,…
+## $ Loc         &lt;int&gt; 3, 4, 3, 2, 3, 1, 2, 1, 4, 2, 3, 1, 3, 1, 1, 3,…
+## $ Resp        &lt;int&gt; 1, 1, 2, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 1, 1, 2,…
+## $ Corr        &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+## $ RT          &lt;dbl&gt; 1135.99, 692.29, 536.67, 789.05, 1257.40, 789.7…
+## $ ImgName     &lt;fct&gt; actor9.jpg, athlete13.jpg, famfemale01.jpg, act…
+<span class="co"># 1. SID: participant ID</span>
+<span class="co"># 2. Familiarity: pre-experimental familiarity. 1 = famous, 2 = non-famous</span>
+<span class="co"># 3. Trial: 1~48</span>
+<span class="co"># 4. Repetition: 1 = repeated, 2 = unrepeated</span>
+<span class="co"># 5. ImgCat: stimulus category. male vs. female</span>
+<span class="co"># 6. Loc: location (source) of memory item; quadrants, 1~4</span>
+<span class="co"># 7. Resp: male/female judgment, 1 = male, 2 = female, 0 = no response</span>
+<span class="co"># 8. Corr: correctness, 1 = correct, 0 = incorrect or no response</span>
+<span class="co"># 9. RT: reaction times in ms.</span>
+<span class="co"># 10. ImgName: name of stimuli</span>
+
+<span class="kw">table</span>(P2<span class="op">$</span>Familiarity, P2<span class="op">$</span>SID)
+##             
+##               1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
+##   Famous     48 48 48 48 48 48 48 48 48 48 48 48  0  0  0  0  0  0  0  0
+##   Non-famous  0  0  0  0  0  0  0  0  0  0  0  0 48 48 48 48 48 48 48 48
+##             
+##              21 22 23 24
+##   Famous      0  0  0  0
+##   Non-famous 48 48 48 48
+<span class="kw">table</span>(P2<span class="op">$</span>Repetition, P2<span class="op">$</span>SID)
+##             
+##               1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
+##   Repeated   24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24
+##   Unrepeated 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24
+##             
+##              21 22 23 24
+##   Repeated   24 24 24 24
+##   Unrepeated 24 24 24 24</code></pre></div>
+<div id="accuracy-1" class="section level2">
+<h2><span class="header-section-number">2.1</span> Accuracy</h2>
+<p>We calculated the mean and <em>s.d.</em> of individual participants’ mean percentage accuracy. Overall accuracy was high. The <code>non-famous, unrepeated</code> condition showed slightly lower mean accuracy than the other conditions.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># phase 2, subject-level, long-format</span>
+P2slong &lt;-<span class="st"> </span>P2 <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(SID, Familiarity, Repetition) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Accuracy =</span> <span class="kw">mean</span>(Corr)<span class="op">*</span><span class="dv">100</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ungroup</span>()
+
+<span class="co"># summary table</span>
+P2g &lt;-<span class="st"> </span>P2slong <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(Familiarity, Repetition) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">M =</span> <span class="kw">mean</span>(Accuracy), <span class="dt">SD =</span> <span class="kw">sd</span>(Accuracy)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ungroup</span>()
+P2g <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Familiarity</th>
+<th align="left">Repetition</th>
+<th align="right">M</th>
+<th align="right">SD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Famous</td>
+<td align="left">Repeated</td>
+<td align="right">97.22222</td>
+<td align="right">3.698439</td>
+</tr>
+<tr class="even">
+<td align="left">Famous</td>
+<td align="left">Unrepeated</td>
+<td align="right">98.61111</td>
+<td align="right">3.243746</td>
+</tr>
+<tr class="odd">
+<td align="left">Non-famous</td>
+<td align="left">Repeated</td>
+<td align="right">98.26389</td>
+<td align="right">3.751403</td>
+</tr>
+<tr class="even">
+<td align="left">Non-famous</td>
+<td align="left">Unrepeated</td>
+<td align="right">94.44444</td>
+<td align="right">10.102588</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># group level, needed for printing &amp; geom_pointrange</span>
+<span class="co"># Rmisc must be called indirectly due to incompatibility between plyr and dplyr.</span>
+P2g<span class="op">$</span>ci &lt;-<span class="st"> </span>Rmisc<span class="op">::</span><span class="kw">summarySEwithin</span>(<span class="dt">data =</span> P2slong, <span class="dt">measurevar =</span> <span class="st">&quot;Accuracy&quot;</span>, <span class="dt">idvar =</span> <span class="st">&quot;SID&quot;</span>,
+                               <span class="dt">withinvars =</span> <span class="st">&quot;Repetition&quot;</span>, <span class="dt">betweenvars =</span> <span class="st">&quot;Familiarity&quot;</span>)<span class="op">$</span>ci
+P2g<span class="op">$</span>Accuracy &lt;-<span class="st"> </span>P2g<span class="op">$</span>M
+
+<span class="kw">ggplot</span>(<span class="dt">data=</span>P2slong, <span class="kw">aes</span>(<span class="dt">x=</span>Familiarity, <span class="dt">y=</span>Accuracy, <span class="dt">fill=</span>Repetition)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_violin</span>(<span class="dt">width =</span> <span class="fl">0.7</span>, <span class="dt">trim=</span><span class="ot">TRUE</span>) <span class="op">+</span>
+<span class="st">  </span>ggbeeswarm<span class="op">::</span><span class="kw">geom_quasirandom</span>(<span class="dt">dodge.width =</span> <span class="fl">0.7</span>, <span class="dt">color =</span> <span class="st">&quot;blue&quot;</span>, <span class="dt">size =</span> <span class="dv">3</span>, <span class="dt">alpha =</span> <span class="fl">0.2</span>, 
+                               <span class="dt">show.legend =</span> <span class="ot">FALSE</span>) <span class="op">+</span>
+<span class="st">  </span><span class="co"># geom_pointrange(data=P2g,</span>
+<span class="st">  </span><span class="co">#                 aes(x = Familiarity, ymin = Accuracy-ci, ymax = Accuracy+ci, color = Repetition),</span>
+<span class="st">  </span><span class="co">#                 position = position_dodge(0.7), color = &quot;darkred&quot;, size = 1, show.legend = FALSE) +</span>
+<span class="st">  </span><span class="kw">coord_cartesian</span>(<span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">50</span>, <span class="dv">100</span>), <span class="dt">clip =</span> <span class="st">&quot;on&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Pre-experimental Stimulus Familiarity&quot;</span>, 
+       <span class="dt">y =</span> <span class="st">&quot;Male/Female Judgment </span><span class="ch">\n</span><span class="st"> Accuracy (%)&quot;</span>, 
+       <span class="dt">fill=</span><span class="st">&quot;Item Repetition&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values=</span><span class="kw">c</span>(<span class="st">&quot;#E69F00&quot;</span>, <span class="st">&quot;#56B4E9&quot;</span>),
+                    <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Repeated&quot;</span>, <span class="st">&quot;Unrepeated&quot;</span>)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">theme_bw</span>(<span class="dt">base_size =</span> <span class="dv">18</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">panel.grid.major =</span> <span class="kw">element_blank</span>(), 
+        <span class="dt">panel.grid.minor =</span> <span class="kw">element_blank</span>()) </code></pre></div>
+<p><img src="FamSM_Exp1_Face_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<div id="anova-1" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> ANOVA</h3>
+<p>Mean percentage accuracy was submitted to a 2x2 mixed design ANOVA with <strong>pre-experimental stimulus familiarity</strong> as a between-participants factor and <strong>item repetition</strong> as a within-participant factor. Both main effects failed to reach significance. The two-way interaction was marginally significant.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p2.aov &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;Accuracy&quot;</span>, <span class="dt">data =</span> P2slong, 
+                 <span class="dt">between =</span> <span class="st">&quot;Familiarity&quot;</span>, <span class="dt">within =</span> <span class="st">&quot;Repetition&quot;</span>)
+<span class="kw">anova</span>(p2.aov, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">num Df</th>
+<th align="right">den Df</th>
+<th align="right">MSE</th>
+<th align="right">F</th>
+<th align="right">pes</th>
+<th align="right">Pr(&gt;F)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Familiarity</td>
+<td align="right">1</td>
+<td align="right">22</td>
+<td align="right">49.8146</td>
+<td align="right">0.5881</td>
+<td align="right">0.0260</td>
+<td align="right">0.4513</td>
+</tr>
+<tr class="even">
+<td>Repetition</td>
+<td align="right">1</td>
+<td align="right">22</td>
+<td align="right">20.3533</td>
+<td align="right">0.8708</td>
+<td align="right">0.0381</td>
+<td align="right">0.3609</td>
+</tr>
+<tr class="odd">
+<td>Familiarity:Repetition</td>
+<td align="right">1</td>
+<td align="right">22</td>
+<td align="right">20.3533</td>
+<td align="right">3.9984</td>
+<td align="right">0.1538</td>
+<td align="right">0.0580</td>
+</tr>
+</tbody>
+</table>
+<p><br><br></p>
+<hr />
+<p><br><br></p>
+</div>
+</div>
+</div>
+<div id="source-memory-test-phase" class="section level1">
+<h1><span class="header-section-number">3</span> Source Memory Test Phase</h1>
+<p>In each trial, participants first indicated in which quadrant a given face appeared during the item-source association phase. Participants then rated how confident they were about their memory judgment. There were 48 trials in total.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">P3 &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/data_FamSM_Exp1_Face_TST.csv&quot;</span>, <span class="dt">header =</span> T)
+P3<span class="op">$</span>Familiarity =<span class="st"> </span><span class="kw">factor</span>(P3<span class="op">$</span>Familiarity, <span class="dt">levels=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>), <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Famous&quot;</span>,<span class="st">&quot;Non-famous&quot;</span>))
+P3<span class="op">$</span>Repetition =<span class="st"> </span><span class="kw">factor</span>(P3<span class="op">$</span>Repetition, <span class="dt">levels=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>), <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Repeated&quot;</span>,<span class="st">&quot;Unrepeated&quot;</span>))
+
+<span class="kw">glimpse</span>(P3, <span class="dt">width=</span><span class="dv">70</span>)
+## Observations: 1,152
+## Variables: 10
+## $ SID         &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+## $ Familiarity &lt;fct&gt; Famous, Famous, Famous, Famous, Famous, Famous,…
+## $ Trial       &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, …
+## $ Repetition  &lt;fct&gt; Repeated, Repeated, Unrepeated, Repeated, Unrep…
+## $ AscLoc      &lt;int&gt; 1, 2, 3, 3, 2, 2, 3, 4, 1, 4, 2, 4, 2, 2, 3, 4,…
+## $ ScrResp     &lt;int&gt; 1, 3, 1, 2, 3, 2, 1, 4, 1, 4, 3, 2, 2, 2, 3, 4,…
+## $ Corr        &lt;int&gt; 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1,…
+## $ RT          &lt;dbl&gt; 3065.59, 2146.18, 2411.76, 1512.09, 2817.44, 14…
+## $ Confident   &lt;int&gt; 2, 2, 3, 3, 1, 4, 4, 4, 3, 4, 1, 3, 4, 1, 4, 2,…
+## $ ImgName     &lt;fct&gt; famfemale21.jpg, athlete28.jpg, famfemale37.jpg…
+<span class="co"># 1. SID: participant ID</span>
+<span class="co"># 2. Familiarity: pre-experimental familiarity. 1 = famous, 2 = non-famous</span>
+<span class="co"># 3. Trial: 1~48</span>
+<span class="co"># 4. Repetition: 1 = repeated, 2 = unrepeated</span>
+<span class="co"># 5. AscLoc: location (source) in which the item was presented in Phase 2; quadrants, 1~4</span>
+<span class="co"># 6. SrcResp: source response; quadrants, 1~4</span>
+<span class="co"># 7. Corr: correctness, 1=correct, 0=incorrect</span>
+<span class="co"># 8. RT: reaction times in ms.</span>
+<span class="co"># 9. Confident: confidence rating, 1~4</span>
+<span class="co"># 10. ImgName: name of stimuli</span>
+
+<span class="kw">table</span>(P3<span class="op">$</span>Familiarity, P3<span class="op">$</span>SID)
+##             
+##               1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
+##   Famous     48 48 48 48 48 48 48 48 48 48 48 48  0  0  0  0  0  0  0  0
+##   Non-famous  0  0  0  0  0  0  0  0  0  0  0  0 48 48 48 48 48 48 48 48
+##             
+##              21 22 23 24
+##   Famous      0  0  0  0
+##   Non-famous 48 48 48 48
+<span class="kw">table</span>(P3<span class="op">$</span>Repetition, P3<span class="op">$</span>SID)
+##             
+##               1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
+##   Repeated   24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24
+##   Unrepeated 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24
+##             
+##              21 22 23 24
+##   Repeated   24 24 24 24
+##   Unrepeated 24 24 24 24</code></pre></div>
+<div id="accuracy-2" class="section level2">
+<h2><span class="header-section-number">3.1</span> Accuracy</h2>
+<p>We calculated the mean and <em>s.d.</em> of individual participants’ mean percentage accuracy. In the following plot, red points and error bars represent the means and 95% within-participants CIs.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># phase 3, subject-level, long-format</span>
+P3ACCslong &lt;-<span class="st"> </span>P3 <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(SID, Familiarity, Repetition) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Accuracy =</span> <span class="kw">mean</span>(Corr)<span class="op">*</span><span class="dv">100</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ungroup</span>()
+
+<span class="co"># summary table</span>
+P3ACCg &lt;-<span class="st"> </span>P3ACCslong <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(Familiarity, Repetition) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">M =</span> <span class="kw">mean</span>(Accuracy), <span class="dt">SD =</span> <span class="kw">sd</span>(Accuracy)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ungroup</span>() 
+P3ACCg <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Familiarity</th>
+<th align="left">Repetition</th>
+<th align="right">M</th>
+<th align="right">SD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Famous</td>
+<td align="left">Repeated</td>
+<td align="right">48.95833</td>
+<td align="right">17.86638</td>
+</tr>
+<tr class="even">
+<td align="left">Famous</td>
+<td align="left">Unrepeated</td>
+<td align="right">65.27778</td>
+<td align="right">12.97498</td>
+</tr>
+<tr class="odd">
+<td align="left">Non-famous</td>
+<td align="left">Repeated</td>
+<td align="right">43.75000</td>
+<td align="right">14.70458</td>
+</tr>
+<tr class="even">
+<td align="left">Non-famous</td>
+<td align="left">Unrepeated</td>
+<td align="right">34.72222</td>
+<td align="right">13.45275</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># marginal means of famous vs. non-famous conditions.</span>
+P3ACCslong <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(Familiarity) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">M =</span> <span class="kw">mean</span>(Accuracy), <span class="dt">SD =</span> <span class="kw">sd</span>(Accuracy)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Familiarity</th>
+<th align="right">M</th>
+<th align="right">SD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Famous</td>
+<td align="right">57.11806</td>
+<td align="right">17.39700</td>
+</tr>
+<tr class="even">
+<td align="left">Non-famous</td>
+<td align="right">39.23611</td>
+<td align="right">14.53365</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># marginal means of repeated vs. unrepeated conditions.</span>
+P3ACCslong <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(Repetition) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">M =</span> <span class="kw">mean</span>(Accuracy), <span class="dt">SD =</span> <span class="kw">sd</span>(Accuracy)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Repetition</th>
+<th align="right">M</th>
+<th align="right">SD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Repeated</td>
+<td align="right">46.35417</td>
+<td align="right">16.22199</td>
+</tr>
+<tr class="even">
+<td align="left">Unrepeated</td>
+<td align="right">50.00000</td>
+<td align="right">20.26396</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># wide format, needed for geom_segments.</span>
+P3ACCswide &lt;-<span class="st"> </span>P3ACCslong <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">spread</span>(<span class="dt">key =</span> Repetition, <span class="dt">value =</span> Accuracy)
+
+<span class="co"># group level, needed for printing &amp; geom_pointrange</span>
+<span class="co"># Rmisc must be called indirectly due to incompatibility between plyr and dplyr.</span>
+P3ACCg<span class="op">$</span>ci &lt;-<span class="st"> </span>Rmisc<span class="op">::</span><span class="kw">summarySEwithin</span>(<span class="dt">data =</span> P3ACCslong, <span class="dt">measurevar =</span> <span class="st">&quot;Accuracy&quot;</span>, <span class="dt">idvar =</span> <span class="st">&quot;SID&quot;</span>,
+                              <span class="dt">withinvars =</span> <span class="st">&quot;Repetition&quot;</span>, <span class="dt">betweenvars =</span> <span class="st">&quot;Familiarity&quot;</span>)<span class="op">$</span>ci
+P3ACCg<span class="op">$</span>Accuracy &lt;-<span class="st"> </span>P3ACCg<span class="op">$</span>M
+
+<span class="kw">ggplot</span>(<span class="dt">data=</span>P3ACCslong, <span class="kw">aes</span>(<span class="dt">x=</span>Familiarity, <span class="dt">y=</span>Accuracy, <span class="dt">fill=</span>Repetition)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_violin</span>(<span class="dt">width =</span> <span class="fl">0.5</span>, <span class="dt">trim=</span><span class="ot">TRUE</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">position=</span><span class="kw">position_dodge</span>(<span class="fl">0.5</span>), <span class="dt">color=</span><span class="st">&quot;gray80&quot;</span>, <span class="dt">size=</span><span class="fl">1.8</span>, <span class="dt">show.legend =</span> <span class="ot">FALSE</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_segment</span>(<span class="dt">data=</span><span class="kw">filter</span>(P3ACCswide, Familiarity<span class="op">==</span><span class="st">&quot;Famous&quot;</span>), <span class="dt">inherit.aes =</span> <span class="ot">FALSE</span>,
+               <span class="kw">aes</span>(<span class="dt">x=</span><span class="dv">1</span><span class="op">-</span>.<span class="dv">12</span>, <span class="dt">y=</span><span class="kw">filter</span>(P3ACCswide, Familiarity<span class="op">==</span><span class="st">&quot;Famous&quot;</span>)<span class="op">$</span>Repeated,
+                   <span class="dt">xend=</span><span class="dv">1</span><span class="op">+</span>.<span class="dv">12</span>, <span class="dt">yend=</span><span class="kw">filter</span>(P3ACCswide, Familiarity<span class="op">==</span><span class="st">&quot;Famous&quot;</span>)<span class="op">$</span>Unrepeated),
+               <span class="dt">color=</span><span class="st">&quot;gray80&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_segment</span>(<span class="dt">data=</span><span class="kw">filter</span>(P3ACCswide, Familiarity<span class="op">==</span><span class="st">&quot;Non-famous&quot;</span>), <span class="dt">inherit.aes =</span> <span class="ot">FALSE</span>,
+               <span class="kw">aes</span>(<span class="dt">x=</span><span class="dv">2</span><span class="op">-</span>.<span class="dv">12</span>, <span class="dt">y=</span><span class="kw">filter</span>(P3ACCswide, Familiarity<span class="op">==</span><span class="st">&quot;Non-famous&quot;</span>)<span class="op">$</span>Repeated,
+                   <span class="dt">xend=</span><span class="dv">2</span><span class="op">+</span>.<span class="dv">12</span>, <span class="dt">yend=</span><span class="kw">filter</span>(P3ACCswide, Familiarity<span class="op">==</span><span class="st">&quot;Non-famous&quot;</span>)<span class="op">$</span>Unrepeated),
+               <span class="dt">color=</span><span class="st">&quot;gray80&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_pointrange</span>(<span class="dt">data=</span>P3ACCg,
+                  <span class="kw">aes</span>(<span class="dt">x =</span> Familiarity, <span class="dt">ymin =</span> Accuracy<span class="op">-</span>ci, <span class="dt">ymax =</span> Accuracy<span class="op">+</span>ci, <span class="dt">group =</span> Repetition),
+                  <span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="fl">0.5</span>), <span class="dt">color =</span> <span class="st">&quot;darkred&quot;</span>, <span class="dt">size =</span> <span class="dv">1</span>, <span class="dt">show.legend =</span> <span class="ot">FALSE</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values=</span><span class="kw">c</span>(<span class="st">&quot;#E69F00&quot;</span>, <span class="st">&quot;#56B4E9&quot;</span>),
+                    <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Repeated&quot;</span>, <span class="st">&quot;Unrepeated&quot;</span>)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Pre-experimental Stimulus Familiarity&quot;</span>, 
+       <span class="dt">y =</span> <span class="st">&quot;Source Memory Accuracy (%)&quot;</span>, 
+       <span class="dt">fill=</span><span class="st">&#39;Item Repetition&#39;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">coord_cartesian</span>(<span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">100</span>), <span class="dt">clip =</span> <span class="st">&quot;on&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">theme_bw</span>(<span class="dt">base_size =</span> <span class="dv">18</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">panel.grid.major =</span> <span class="kw">element_blank</span>(), 
+        <span class="dt">panel.grid.minor =</span> <span class="kw">element_blank</span>()) </code></pre></div>
+<p><img src="FamSM_Exp1_Face_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>The effect of <strong>item repetition</strong> was modulated by the <strong>pre-experimental stimulus familiarity</strong> of the items. For <code>famous</code> faces, the locations of <code>unrepeated</code> items were better remembered (<em>novelty benefit</em>). For <code>non-famous</code> faces, the locations of <code>repeated</code> items were better remembered (<em>familiarity benefit</em>). These crossed effects were on top of the general familiarity benefit, in which source memory was more accurate for <code>famous</code> faces than for <code>non-famous</code> faces.</p>
+<div id="anova-2" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> ANOVA</h3>
+<p>Mean percentage accuracy was submitted to a 2x2 mixed design ANOVA with <strong>pre-experimental stimulus familiarity</strong> as a between-participants factor (<code>famous</code> vs. <code>non-famous</code>) and <strong>item repetition</strong> as a within-participant factor (<code>repeated</code> vs. <code>unrepeated</code>).</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p3.corr.aov &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;Accuracy&quot;</span>, <span class="dt">data =</span> P3ACCslong, 
+                      <span class="dt">between =</span> <span class="st">&quot;Familiarity&quot;</span>, <span class="dt">within =</span> <span class="st">&quot;Repetition&quot;</span>)
+<span class="kw">anova</span>(p3.corr.aov, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">num Df</th>
+<th align="right">den Df</th>
+<th align="right">MSE</th>
+<th align="right">F</th>
+<th align="right">pes</th>
+<th align="right">Pr(&gt;F)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Familiarity</td>
+<td align="right">1</td>
+<td align="right">22</td>
+<td align="right">358.5004</td>
+<td align="right">10.7034</td>
+<td align="right">0.3273</td>
+<td align="right">0.0035</td>
+</tr>
+<tr class="even">
+<td>Repetition</td>
+<td align="right">1</td>
+<td align="right">22</td>
+<td align="right">83.8792</td>
+<td align="right">1.9016</td>
+<td align="right">0.0796</td>
+<td align="right">0.1818</td>
+</tr>
+<tr class="odd">
+<td>Familiarity:Repetition</td>
+<td align="right">1</td>
+<td align="right">22</td>
+<td align="right">83.8792</td>
+<td align="right">22.9788</td>
+<td align="right">0.5109</td>
+<td align="right">0.0001</td>
+</tr>
+</tbody>
+</table>
+<p>The main effect of <strong>pre-experimental stimulus familiarity</strong> and the two-way interaction were both significant. Additionally, we performed two separate one-way repeated-measures ANOVAs as post-hoc analyses. The table below shows the effect of item repetition for <code>famous</code> faces.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ci95 &lt;-<span class="st"> </span>P3ACCswide <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(Familiarity<span class="op">==</span><span class="st">&quot;Famous&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">Diff =</span> Unrepeated <span class="op">-</span><span class="st"> </span>Repeated) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">lower =</span> <span class="kw">mean</span>(Diff) <span class="op">-</span><span class="st"> </span><span class="kw">qt</span>(<span class="fl">0.975</span>,<span class="dt">df=</span><span class="kw">n</span>()<span class="op">-</span><span class="dv">1</span>)<span class="op">*</span><span class="kw">sd</span>(Diff)<span class="op">/</span><span class="kw">sqrt</span>(<span class="kw">n</span>()),
+            <span class="dt">upper =</span> <span class="kw">mean</span>(Diff) <span class="op">+</span><span class="st"> </span><span class="kw">qt</span>(<span class="fl">0.975</span>,<span class="dt">df=</span><span class="kw">n</span>()<span class="op">-</span><span class="dv">1</span>)<span class="op">*</span><span class="kw">sd</span>(Diff)<span class="op">/</span><span class="kw">sqrt</span>(<span class="kw">n</span>()))
+
+p3.corr.aov.r1 &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;Accuracy&quot;</span>, <span class="dt">within =</span> <span class="st">&quot;Repetition&quot;</span>,
+                        <span class="dt">data =</span> <span class="kw">filter</span>(P3ACCslong, Familiarity <span class="op">==</span><span class="st"> &quot;Famous&quot;</span>))
+<span class="kw">anova</span>(p3.corr.aov.r1, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">num Df</th>
+<th align="right">den Df</th>
+<th align="right">MSE</th>
+<th align="right">F</th>
+<th align="right">pes</th>
+<th align="right">Pr(&gt;F)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Repetition</td>
+<td align="right">1</td>
+<td align="right">11</td>
+<td align="right">78.0592</td>
+<td align="right">20.4709</td>
+<td align="right">0.6505</td>
+<td align="right">9e-04</td>
+</tr>
+</tbody>
+</table>
+<p>In the <strong>famous</strong> face group, source memory was more accurate for <strong>unrepeated</strong> than <strong>repeated</strong> faces. The 95% CI of difference between the means was [8.38, 24.26]. The table below shows the effect of item repetition for <code>non-famous</code> faces.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ci95 &lt;-<span class="st"> </span>P3ACCswide <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(Familiarity<span class="op">==</span><span class="st">&quot;Non-famous&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">Diff =</span> Repeated <span class="op">-</span><span class="st"> </span>Unrepeated) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">lower =</span> <span class="kw">mean</span>(Diff) <span class="op">-</span><span class="st"> </span><span class="kw">qt</span>(<span class="fl">0.975</span>,<span class="dt">df=</span><span class="kw">n</span>()<span class="op">-</span><span class="dv">1</span>)<span class="op">*</span><span class="kw">sd</span>(Diff)<span class="op">/</span><span class="kw">sqrt</span>(<span class="kw">n</span>()),
+            <span class="dt">upper =</span> <span class="kw">mean</span>(Diff) <span class="op">+</span><span class="st"> </span><span class="kw">qt</span>(<span class="fl">0.975</span>,<span class="dt">df=</span><span class="kw">n</span>()<span class="op">-</span><span class="dv">1</span>)<span class="op">*</span><span class="kw">sd</span>(Diff)<span class="op">/</span><span class="kw">sqrt</span>(<span class="kw">n</span>()))
+
+p3.corr.aov.r2 &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;Accuracy&quot;</span>, <span class="dt">within =</span> <span class="st">&quot;Repetition&quot;</span>,
+                        <span class="dt">data =</span> <span class="kw">filter</span>(P3ACCslong, Familiarity <span class="op">==</span><span class="st"> &quot;Non-famous&quot;</span>))
+<span class="kw">anova</span>(p3.corr.aov.r2, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">num Df</th>
+<th align="right">den Df</th>
+<th align="right">MSE</th>
+<th align="right">F</th>
+<th align="right">pes</th>
+<th align="right">Pr(&gt;F)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Repetition</td>
+<td align="right">1</td>
+<td align="right">11</td>
+<td align="right">89.6991</td>
+<td align="right">5.4516</td>
+<td align="right">0.3314</td>
+<td align="right">0.0395</td>
+</tr>
+</tbody>
+</table>
+<p>In the <strong>non-famous</strong> face group, source memory was more accurate for <strong>repeated</strong> than <strong>unrepeated</strong> faces. The 95% CI of difference between the means was [0.52, 17.54].</p>
+</div>
+<div id="glmm" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> GLMM</h3>
+<p>To supplement conventional ANOVAs, we tested <strong>generalized linear mixed models (GLMM)</strong> on source memory accuracy. This mixed modeling approach with a binomial link function is expected to properly handle binary data such as source memory responses (i.e., correct or not; <a href="https://www.sciencedirect.com/science/article/pii/S0749596X07001337">Jaeger, 2008</a>).</p>
+<p>We built the full model (<code>full1</code>) with two fixed effects (<strong>pre-experimental stimulus familiarity</strong> and <strong>item repetition</strong>) and their interaction. The model also included maximal random effects structure (<a href="https://www.sciencedirect.com/science/article/pii/S0749596X12001180">Barr, Levy, Scheepers, &amp; Tily, 2013</a>): both by-participant and by-item random intercepts, and by-participant random slopes for <strong>item repetition</strong>. In case the maximal model does not converge successfully, we built another model (<code>full2</code>) with the maximal random structure but with the correlations among the random terms removed (<a href="https://cran.r-project.org/web/packages/afex/vignettes/afex_mixed_example.html#lrt-results">Singmann, 2018</a>).</p>
+<p>To fit the models, we used the <code>mixed()</code> of the <code>afex</code> package (<a href="https://afex.singmann.science/forums/topic/citing-afex">Singmann, Bolker, &amp; Westfall, 2017</a>) which was built on the <code>lmer()</code> of the <code>lme4</code> package (<a href="https://www.jstatsoft.org/article/view/v067i01/0">Bates, Maechler, Bolker, &amp; Walker, 2015</a>). The <code>mixed()</code> assessed the statistical significance of fixed effects by comparing a model with the effect in question against its nested model which lacked the effect in question. <em>P</em>-values of the effects were obtained by likelihood ratio tests (LRT).</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">(nc &lt;-<span class="st"> </span><span class="kw">detectCores</span>())
+cl &lt;-<span class="st"> </span><span class="kw">makeCluster</span>(<span class="kw">rep</span>(<span class="st">&quot;localhost&quot;</span>, nc))
+
+full1 &lt;-<span class="st"> </span>afex<span class="op">::</span><span class="kw">mixed</span>(Corr <span class="op">~</span><span class="st"> </span>Familiarity<span class="op">*</span>Repetition <span class="op">+</span><span class="st"> </span>(Repetition<span class="op">|</span>SID) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>ImgName), 
+               P3, <span class="dt">method =</span> <span class="st">&quot;LRT&quot;</span>, <span class="dt">cl =</span> cl, 
+               <span class="dt">family=</span><span class="kw">binomial</span>(<span class="dt">link=</span><span class="st">&quot;logit&quot;</span>),
+               <span class="dt">control =</span> <span class="kw">glmerControl</span>(<span class="dt">optCtrl =</span> <span class="kw">list</span>(<span class="dt">maxfun =</span> <span class="fl">1e6</span>)))
+full2 &lt;-<span class="st"> </span>afex<span class="op">::</span><span class="kw">mixed</span>(Corr <span class="op">~</span><span class="st"> </span>Familiarity<span class="op">*</span>Repetition <span class="op">+</span><span class="st"> </span>(Repetition<span class="op">||</span>SID) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>ImgName),
+               P3, <span class="dt">method =</span> <span class="st">&quot;LRT&quot;</span>, <span class="dt">cl =</span> cl, 
+               <span class="dt">family=</span><span class="kw">binomial</span>(<span class="dt">link=</span><span class="st">&quot;logit&quot;</span>),
+               <span class="dt">control =</span> <span class="kw">glmerControl</span>(<span class="dt">optCtrl =</span> <span class="kw">list</span>(<span class="dt">maxfun =</span> <span class="fl">1e6</span>)), <span class="dt">expand_re =</span> <span class="ot">TRUE</span>)
+<span class="kw">stopCluster</span>(cl)</code></pre></div>
+<p>The table below presents the LRT results of the models <code>full1</code> and <code>full2</code>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">full.compare &lt;-<span class="st"> </span><span class="kw">cbind</span>(afex<span class="op">::</span><span class="kw">nice</span>(full1), afex<span class="op">::</span><span class="kw">nice</span>(full2)[,<span class="op">-</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>)])
+<span class="kw">colnames</span>(full.compare)[<span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>)] &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;full1 Chisq&quot;</span>, <span class="st">&quot;p&quot;</span>,<span class="st">&quot;full2 Chisq&quot;</span>, <span class="st">&quot;p&quot;</span>)
+full.compare <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Effect</th>
+<th align="right">df</th>
+<th align="left">full1 Chisq</th>
+<th align="left">p</th>
+<th align="left">full2 Chisq</th>
+<th align="left">p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Familiarity</td>
+<td align="right">1</td>
+<td align="left">8.74 **</td>
+<td align="left">.003</td>
+<td align="left">8.81 **</td>
+<td align="left">.003</td>
+</tr>
+<tr class="even">
+<td align="left">Repetition</td>
+<td align="right">1</td>
+<td align="left">1.49</td>
+<td align="left">.22</td>
+<td align="left">1.56</td>
+<td align="left">.21</td>
+</tr>
+<tr class="odd">
+<td align="left">Familiarity:Repetition</td>
+<td align="right">1</td>
+<td align="left">16.22 ***</td>
+<td align="left">&lt;.0001</td>
+<td align="left">17.48 ***</td>
+<td align="left">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+<p>The <em>p</em>-values from the two models were highly similar to each other. Post-hoc analysis results are summarized in the table below. The results from the pairwise comparisons were consistent with those from the ANOVA. Item repetition impaired source memory for <code>famous</code> faces whereas it improved source memory for <code>non-famous</code> faces.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">emmeans</span>(full1, pairwise <span class="op">~</span><span class="st"> </span>Repetition <span class="op">|</span><span class="st"> </span>Familiarity, <span class="dt">type =</span> <span class="st">&quot;response&quot;</span>)<span class="op">$</span>contrasts <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">contrast</th>
+<th align="left">Familiarity</th>
+<th align="right">odds.ratio</th>
+<th align="right">SE</th>
+<th align="right">df</th>
+<th align="right">z.ratio</th>
+<th align="right">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Repeated / Unrepeated</td>
+<td align="left">Famous</td>
+<td align="right">0.4826584</td>
+<td align="right">0.0884641</td>
+<td align="right">Inf</td>
+<td align="right">-3.974386</td>
+<td align="right">0.0000706</td>
+</tr>
+<tr class="even">
+<td align="left">Repeated / Unrepeated</td>
+<td align="left">Non-famous</td>
+<td align="right">1.5113764</td>
+<td align="right">0.2759630</td>
+<td align="right">Inf</td>
+<td align="right">2.262005</td>
+<td align="right">0.0236971</td>
+</tr>
+</tbody>
+</table>
+<p><br><br></p>
+</div>
+</div>
+<div id="confidence" class="section level2">
+<h2><span class="header-section-number">3.2</span> Confidence</h2>
+<p>The following table presents the mean and <em>s.d.</em> of individual participants’ confidence ratings in each condition. The pattern of confidence ratings was qualitatively identical to that of source memory accuracy: we observed the <em>novelty benefit</em> for <code>famous</code> faces and the <em>familiarity benefit</em> for <code>non-famous</code> faces. In the following plot, red points and error bars represent the means and 95% within-participants CIs.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">P3CFslong &lt;-<span class="st"> </span>P3 <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(SID, Familiarity, Repetition) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Confidence =</span> <span class="kw">mean</span>(Confident)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ungroup</span>()
+
+P3CFg &lt;-<span class="st"> </span>P3CFslong <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">group_by</span>(Familiarity, Repetition) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">M =</span> <span class="kw">mean</span>(Confidence), <span class="dt">SD =</span> <span class="kw">sd</span>(Confidence)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ungroup</span>() 
+P3CFg <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Familiarity</th>
+<th align="left">Repetition</th>
+<th align="right">M</th>
+<th align="right">SD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Famous</td>
+<td align="left">Repeated</td>
+<td align="right">2.437500</td>
+<td align="right">0.4555702</td>
+</tr>
+<tr class="even">
+<td align="left">Famous</td>
+<td align="left">Unrepeated</td>
+<td align="right">2.826389</td>
+<td align="right">0.4085703</td>
+</tr>
+<tr class="odd">
+<td align="left">Non-famous</td>
+<td align="left">Repeated</td>
+<td align="right">2.625000</td>
+<td align="right">0.5047126</td>
+</tr>
+<tr class="even">
+<td align="left">Non-famous</td>
+<td align="left">Unrepeated</td>
+<td align="right">2.083333</td>
+<td align="right">0.4660169</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># marginal means of famous vs. non-famous conditions.</span>
+P3CFslong <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(Familiarity) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">M =</span> <span class="kw">mean</span>(Confidence), <span class="dt">SD =</span> <span class="kw">sd</span>(Confidence)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Familiarity</th>
+<th align="right">M</th>
+<th align="right">SD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Famous</td>
+<td align="right">2.631944</td>
+<td align="right">0.4674919</td>
+</tr>
+<tr class="even">
+<td align="left">Non-famous</td>
+<td align="right">2.354167</td>
+<td align="right">0.5497584</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># marginal means of repeated vs. unrepeated conditions.</span>
+P3CFslong <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(Repetition) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">M =</span> <span class="kw">mean</span>(Confidence), <span class="dt">SD =</span> <span class="kw">sd</span>(Confidence)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Repetition</th>
+<th align="right">M</th>
+<th align="right">SD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Repeated</td>
+<td align="right">2.531250</td>
+<td align="right">0.4798554</td>
+</tr>
+<tr class="even">
+<td align="left">Unrepeated</td>
+<td align="right">2.454861</td>
+<td align="right">0.5724814</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># wide format, needed for geom_segments.</span>
+P3CFswide &lt;-<span class="st"> </span>P3CFslong <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">spread</span>(<span class="dt">key =</span> Repetition, <span class="dt">value =</span> Confidence)
+
+<span class="co"># group level, needed for printing &amp; geom_pointrange</span>
+<span class="co"># Rmisc must be called indirectly due to incompatibility between plyr and dplyr.</span>
+P3CFg<span class="op">$</span>ci &lt;-<span class="st"> </span>Rmisc<span class="op">::</span><span class="kw">summarySEwithin</span>(<span class="dt">data =</span> P3CFslong, <span class="dt">measurevar =</span> <span class="st">&quot;Confidence&quot;</span>, <span class="dt">idvar =</span> <span class="st">&quot;SID&quot;</span>,
+                                    <span class="dt">withinvars =</span> <span class="st">&quot;Repetition&quot;</span>, <span class="dt">betweenvars =</span> <span class="st">&quot;Familiarity&quot;</span>)<span class="op">$</span>ci
+P3CFg<span class="op">$</span>Confidence &lt;-<span class="st"> </span>P3CFg<span class="op">$</span>M
+
+<span class="kw">ggplot</span>(<span class="dt">data=</span>P3CFslong, <span class="kw">aes</span>(<span class="dt">x=</span>Familiarity, <span class="dt">y=</span>Confidence, <span class="dt">fill=</span>Repetition)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_violin</span>(<span class="dt">width =</span> <span class="fl">0.5</span>, <span class="dt">trim=</span><span class="ot">TRUE</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">position=</span><span class="kw">position_dodge</span>(<span class="fl">0.5</span>), <span class="dt">color=</span><span class="st">&quot;gray80&quot;</span>, <span class="dt">size=</span><span class="fl">1.8</span>, <span class="dt">show.legend =</span> <span class="ot">FALSE</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_segment</span>(<span class="dt">data=</span><span class="kw">filter</span>(P3CFswide, Familiarity<span class="op">==</span><span class="st">&quot;Famous&quot;</span>), <span class="dt">inherit.aes =</span> <span class="ot">FALSE</span>,
+               <span class="kw">aes</span>(<span class="dt">x=</span><span class="dv">1</span><span class="op">-</span>.<span class="dv">12</span>, <span class="dt">y=</span><span class="kw">filter</span>(P3CFswide, Familiarity<span class="op">==</span><span class="st">&quot;Famous&quot;</span>)<span class="op">$</span>Repeated,
+                   <span class="dt">xend=</span><span class="dv">1</span><span class="op">+</span>.<span class="dv">12</span>, <span class="dt">yend=</span><span class="kw">filter</span>(P3CFswide, Familiarity<span class="op">==</span><span class="st">&quot;Famous&quot;</span>)<span class="op">$</span>Unrepeated),
+               <span class="dt">color=</span><span class="st">&quot;gray80&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_segment</span>(<span class="dt">data=</span><span class="kw">filter</span>(P3CFswide, Familiarity<span class="op">==</span><span class="st">&quot;Non-famous&quot;</span>), <span class="dt">inherit.aes =</span> <span class="ot">FALSE</span>,
+               <span class="kw">aes</span>(<span class="dt">x=</span><span class="dv">2</span><span class="op">-</span>.<span class="dv">12</span>, <span class="dt">y=</span><span class="kw">filter</span>(P3CFswide, Familiarity<span class="op">==</span><span class="st">&quot;Non-famous&quot;</span>)<span class="op">$</span>Repeated,
+                   <span class="dt">xend=</span><span class="dv">2</span><span class="op">+</span>.<span class="dv">12</span>, <span class="dt">yend=</span><span class="kw">filter</span>(P3CFswide, Familiarity<span class="op">==</span><span class="st">&quot;Non-famous&quot;</span>)<span class="op">$</span>Unrepeated),
+               <span class="dt">color=</span><span class="st">&quot;gray80&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_pointrange</span>(<span class="dt">data=</span>P3CFg,
+                  <span class="kw">aes</span>(<span class="dt">x =</span> Familiarity, <span class="dt">ymin =</span> Confidence<span class="op">-</span>ci, <span class="dt">ymax =</span> Confidence<span class="op">+</span>ci, <span class="dt">group =</span> Repetition),
+                  <span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="fl">0.5</span>), <span class="dt">color =</span> <span class="st">&quot;darkred&quot;</span>, <span class="dt">size =</span> <span class="dv">1</span>, <span class="dt">show.legend =</span> <span class="ot">FALSE</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values=</span><span class="kw">c</span>(<span class="st">&quot;#E69F00&quot;</span>, <span class="st">&quot;#56B4E9&quot;</span>),
+                    <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Repeated&quot;</span>, <span class="st">&quot;Unrepeated&quot;</span>)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Pre-experimental Stimulus Familiarity&quot;</span>, 
+       <span class="dt">y =</span> <span class="st">&quot;Source Memory Confidence&quot;</span>, 
+       <span class="dt">fill=</span><span class="st">&#39;Item Repetition&#39;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">coord_cartesian</span>(<span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">4</span>), <span class="dt">clip =</span> <span class="st">&quot;on&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">theme_bw</span>(<span class="dt">base_size =</span> <span class="dv">18</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">panel.grid.major =</span> <span class="kw">element_blank</span>(), 
+        <span class="dt">panel.grid.minor =</span> <span class="kw">element_blank</span>())</code></pre></div>
+<p><img src="FamSM_Exp1_Face_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<div id="anova-3" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> ANOVA</h3>
+<p>Individuals’ mean confidence ratings were submitted to a 2x2 mixed design ANOVA with <strong>pre-experimental stimulus familiarity</strong> as a between-participants factor and <strong>item repetition</strong> as a within-participants factor.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p3.conf.aov &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;Confidence&quot;</span>, <span class="dt">data =</span> P3CFslong, 
+                      <span class="dt">between =</span> <span class="st">&quot;Familiarity&quot;</span>, <span class="dt">within =</span> <span class="st">&quot;Repetition&quot;</span>)
+<span class="kw">anova</span>(p3.conf.aov, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">num Df</th>
+<th align="right">den Df</th>
+<th align="right">MSE</th>
+<th align="right">F</th>
+<th align="right">pes</th>
+<th align="right">Pr(&gt;F)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Familiarity</td>
+<td align="right">1</td>
+<td align="right">22</td>
+<td align="right">0.3322</td>
+<td align="right">2.7875</td>
+<td align="right">0.1125</td>
+<td align="right">0.1092</td>
+</tr>
+<tr class="even">
+<td>Repetition</td>
+<td align="right">1</td>
+<td align="right">22</td>
+<td align="right">0.0910</td>
+<td align="right">0.7694</td>
+<td align="right">0.0338</td>
+<td align="right">0.3899</td>
+</tr>
+<tr class="odd">
+<td>Familiarity:Repetition</td>
+<td align="right">1</td>
+<td align="right">22</td>
+<td align="right">0.0910</td>
+<td align="right">28.5428</td>
+<td align="right">0.5647</td>
+<td align="right">0.0000</td>
+</tr>
+</tbody>
+</table>
+<p>The two-way interaction was significant while neither main effects reached significance. Next we performed two additional one-way repeated-measures ANOVAs as post-hoc analyses. The first table below presents the effect of item repetition for <code>famous</code> faces, and the second presents the same effect for <code>non-famous</code> faces.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ci95 &lt;-<span class="st"> </span>P3CFswide <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(Familiarity<span class="op">==</span><span class="st">&quot;Famous&quot;</span>) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">Diff =</span> Unrepeated <span class="op">-</span><span class="st"> </span>Repeated) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">lower =</span> <span class="kw">mean</span>(Diff) <span class="op">-</span><span class="st"> </span><span class="kw">qt</span>(<span class="fl">0.975</span>,<span class="dt">df=</span><span class="kw">n</span>()<span class="op">-</span><span class="dv">1</span>)<span class="op">*</span><span class="kw">sd</span>(Diff)<span class="op">/</span><span class="kw">sqrt</span>(<span class="kw">n</span>()),
+            <span class="dt">upper =</span> <span class="kw">mean</span>(Diff) <span class="op">+</span><span class="st"> </span><span class="kw">qt</span>(<span class="fl">0.975</span>,<span class="dt">df=</span><span class="kw">n</span>()<span class="op">-</span><span class="dv">1</span>)<span class="op">*</span><span class="kw">sd</span>(Diff)<span class="op">/</span><span class="kw">sqrt</span>(<span class="kw">n</span>()))
+
+p3.conf.aov.r1 &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;Confidence&quot;</span>, <span class="dt">within =</span> <span class="st">&quot;Repetition&quot;</span>,
+                         <span class="dt">data =</span> <span class="kw">filter</span>(P3CFslong, Familiarity <span class="op">==</span><span class="st"> &quot;Famous&quot;</span>))
+<span class="kw">anova</span>(p3.conf.aov.r1, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">num Df</th>
+<th align="right">den Df</th>
+<th align="right">MSE</th>
+<th align="right">F</th>
+<th align="right">pes</th>
+<th align="right">Pr(&gt;F)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Repetition</td>
+<td align="right">1</td>
+<td align="right">11</td>
+<td align="right">0.0555</td>
+<td align="right">16.3643</td>
+<td align="right">0.598</td>
+<td align="right">0.0019</td>
+</tr>
+</tbody>
+</table>
+<p>In the <code>famous</code> face group, confidence ratings were higher for <strong>unrepeated</strong> than <strong>repeated</strong> faces. The 95% CI of difference between the means was [0.18, 0.6].</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ci95 &lt;-<span class="st"> </span>P3CFswide <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(Familiarity<span class="op">==</span><span class="st">&quot;Non-famous&quot;</span>) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">Diff =</span> Repeated <span class="op">-</span><span class="st"> </span>Unrepeated) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">lower =</span> <span class="kw">mean</span>(Diff) <span class="op">-</span><span class="st"> </span><span class="kw">qt</span>(<span class="fl">0.975</span>,<span class="dt">df=</span><span class="kw">n</span>()<span class="op">-</span><span class="dv">1</span>)<span class="op">*</span><span class="kw">sd</span>(Diff)<span class="op">/</span><span class="kw">sqrt</span>(<span class="kw">n</span>()),
+            <span class="dt">upper =</span> <span class="kw">mean</span>(Diff) <span class="op">+</span><span class="st"> </span><span class="kw">qt</span>(<span class="fl">0.975</span>,<span class="dt">df=</span><span class="kw">n</span>()<span class="op">-</span><span class="dv">1</span>)<span class="op">*</span><span class="kw">sd</span>(Diff)<span class="op">/</span><span class="kw">sqrt</span>(<span class="kw">n</span>()))
+
+p3.conf.aov.r2 &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;Confidence&quot;</span>, <span class="dt">within =</span> <span class="st">&quot;Repetition&quot;</span>,
+                         <span class="dt">data =</span> <span class="kw">filter</span>(P3CFslong, Familiarity <span class="op">==</span><span class="st"> &quot;Non-famous&quot;</span>))
+<span class="kw">anova</span>(p3.conf.aov.r2, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">num Df</th>
+<th align="right">den Df</th>
+<th align="right">MSE</th>
+<th align="right">F</th>
+<th align="right">pes</th>
+<th align="right">Pr(&gt;F)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Repetition</td>
+<td align="right">1</td>
+<td align="right">11</td>
+<td align="right">0.1266</td>
+<td align="right">13.9077</td>
+<td align="right">0.5584</td>
+<td align="right">0.0033</td>
+</tr>
+</tbody>
+</table>
+<p>In the <code>non-famous</code> face group, confidence ratings were higher for <strong>repeated</strong> than <strong>unrepeated</strong> faces. The 95% CI of difference between the means was [0.22, 0.86].</p>
+</div>
+<div id="clmm" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> CLMM</h3>
+<p>The responses from a Likert-type scale are ordinal. Especially for the rating items with numerical response formats containing four or fewer categories, it is recommended to use categorical data analysis approaches, rather than treating the responses as continuous data (<a href="https://ac.els-cdn.com/S1877129715200196/1-s2.0-S1877129715200196-main.pdf?_tid=589e7c17-4d55-49e6-a80f-5aef938a1f44&amp;acdnat=1549722329_bb934739b91ee6554cafadb39565dc25">Harpe, 2015</a>).</p>
+<p>Here we employed the <strong>cumulative link mixed modeling (CLMM)</strong> using the <code>clmm()</code> of the package <code>ordinal</code> (<a href="https://cran.r-project.org/web/packages/ordinal/vignettes/clm_article.pdf">Christensen, submitted</a>). The specification of the full model was the same as the <code>mixed()</code> above. To determine the statistical significance, the LRT compared models with or without the fixed effect of interest.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">P3R &lt;-<span class="st"> </span>P3
+P3R<span class="op">$</span>Confident =<span class="st"> </span><span class="kw">factor</span>(P3R<span class="op">$</span>Confident, <span class="dt">ordered =</span> <span class="ot">TRUE</span>)
+P3R<span class="op">$</span>SID =<span class="st"> </span><span class="kw">factor</span>(P3R<span class="op">$</span>SID)
+
+cm.full &lt;-<span class="st"> </span><span class="kw">clmm</span>(Confident <span class="op">~</span><span class="st"> </span>Familiarity <span class="op">*</span><span class="st"> </span>Repetition <span class="op">+</span><span class="st"> </span>(Repetition<span class="op">|</span>SID) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>ImgName), <span class="dt">data=</span>P3R)
+cm.red1 &lt;-<span class="st"> </span><span class="kw">clmm</span>(Confident <span class="op">~</span><span class="st"> </span>Familiarity <span class="op">+</span><span class="st"> </span>Repetition <span class="op">+</span><span class="st"> </span>(Repetition<span class="op">|</span>SID) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>ImgName), <span class="dt">data=</span>P3R)
+cm.red2 &lt;-<span class="st"> </span><span class="kw">clmm</span>(Confident <span class="op">~</span><span class="st"> </span>Repetition <span class="op">+</span><span class="st"> </span>(Repetition<span class="op">|</span>SID) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>ImgName), <span class="dt">data=</span>P3R)
+cm.red3 &lt;-<span class="st"> </span><span class="kw">clmm</span>(Confident <span class="op">~</span><span class="st"> </span><span class="dv">1</span> <span class="op">+</span><span class="st"> </span>(Repetition<span class="op">|</span>SID) <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>ImgName), <span class="dt">data=</span>P3R) </code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">cm.comp &lt;-<span class="st"> </span><span class="kw">anova</span>(cm.full, cm.red1, cm.red2, cm.red3)
+
+<span class="kw">data.frame</span>(<span class="dt">Effect =</span> <span class="kw">c</span>(<span class="st">&quot;Familiarity&quot;</span>, <span class="st">&quot;Repetition&quot;</span>, <span class="st">&quot;Familiarity:Repetition&quot;</span>),
+           <span class="dt">df =</span> <span class="dv">1</span>, <span class="dt">Chisq =</span> cm.comp<span class="op">$</span>LR.stat[<span class="dv">2</span><span class="op">:</span><span class="dv">4</span>], <span class="dt">p =</span> cm.comp<span class="op">$</span><span class="st">`</span><span class="dt">Pr(&gt;Chisq)</span><span class="st">`</span>[<span class="dv">2</span><span class="op">:</span><span class="dv">4</span>]) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Effect</th>
+<th align="right">df</th>
+<th align="right">Chisq</th>
+<th align="right">p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Familiarity</td>
+<td align="right">1</td>
+<td align="right">0.4489511</td>
+<td align="right">0.5028335</td>
+</tr>
+<tr class="even">
+<td align="left">Repetition</td>
+<td align="right">1</td>
+<td align="right">0.8270370</td>
+<td align="right">0.3631307</td>
+</tr>
+<tr class="odd">
+<td align="left">Familiarity:Repetition</td>
+<td align="right">1</td>
+<td align="right">19.3723293</td>
+<td align="right">0.0000108</td>
+</tr>
+</tbody>
+</table>
+<p>The LRT revealed a significant two-way interaction. Neither main effects were significant. Next we performed pairwise comparisons as post-hoc analyses. As shown in the following table, the results of the pairwise comparisons were consistent with those from the ANOVA approach.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">emmeans</span>(cm.full, pairwise <span class="op">~</span><span class="st"> </span>Repetition <span class="op">|</span><span class="st"> </span>Familiarity)<span class="op">$</span>contrasts <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">contrast</th>
+<th align="left">Familiarity</th>
+<th align="right">estimate</th>
+<th align="right">SE</th>
+<th align="right">df</th>
+<th align="right">z.ratio</th>
+<th align="right">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Repeated - Unrepeated</td>
+<td align="left">Famous</td>
+<td align="right">-0.7610445</td>
+<td align="right">0.2402659</td>
+<td align="right">Inf</td>
+<td align="right">-3.16751</td>
+<td align="right">0.0015375</td>
+</tr>
+<tr class="even">
+<td align="left">Repeated - Unrepeated</td>
+<td align="left">Non-famous</td>
+<td align="right">1.0914876</td>
+<td align="right">0.2384801</td>
+<td align="right">Inf</td>
+<td align="right">4.57685</td>
+<td align="right">0.0000047</td>
+</tr>
+</tbody>
+</table>
+<p>Below is the plot of estimated marginal means, which were extracted from the fitted CLMM. The estimated distribution of confidence ratings shows the interaction between <strong>item repetition</strong> and <strong>pre-experimental stimulus familiarity</strong>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">temp &lt;-<span class="st"> </span><span class="kw">emmeans</span>(cm.full,<span class="op">~</span>Familiarity<span class="op">:</span>Repetition<span class="op">|</span>cut, <span class="dt">mode=</span><span class="st">&quot;linear.predictor&quot;</span>)
+temp &lt;-<span class="st"> </span><span class="kw">rating.emmeans</span>(temp)
+temp &lt;-<span class="st"> </span>temp <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">unite</span>(Condition, <span class="kw">c</span>(<span class="st">&quot;Familiarity&quot;</span>, <span class="st">&quot;Repetition&quot;</span>))
+
+<span class="kw">ggplot</span>(<span class="dt">data =</span> temp, <span class="kw">aes</span>(<span class="dt">x =</span> Rating, <span class="dt">y =</span> Prob, <span class="dt">group =</span> Condition)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">color =</span> Condition), <span class="dt">size =</span> <span class="fl">1.2</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">shape =</span> Condition, <span class="dt">color =</span> Condition), <span class="dt">size =</span> <span class="dv">4</span>, <span class="dt">fill =</span> <span class="st">&quot;white&quot;</span>, <span class="dt">stroke =</span> <span class="fl">1.2</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">scale_color_manual</span>(<span class="dt">values=</span><span class="kw">c</span>(<span class="st">&quot;#E69F00&quot;</span>, <span class="st">&quot;#E69F00&quot;</span>, <span class="st">&quot;#56B4E9&quot;</span>, <span class="st">&quot;#56B4E9&quot;</span>)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">scale_shape_manual</span>(<span class="dt">name=</span><span class="st">&quot;Condition&quot;</span>, <span class="dt">values=</span><span class="kw">c</span>(<span class="dv">21</span>,<span class="dv">24</span>,<span class="dv">21</span>,<span class="dv">24</span>)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">y =</span> <span class="st">&quot;Response Probability&quot;</span>, <span class="dt">x =</span> <span class="st">&quot;Rating&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">expand_limits</span>(<span class="dt">y=</span><span class="dv">0</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">scale_y_continuous</span>(<span class="dt">limits =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="fl">0.4</span>)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">scale_x_discrete</span>(<span class="dt">labels =</span> <span class="kw">c</span>(<span class="st">&quot;1&quot;</span> =<span class="st"> &quot;1(Guessed)&quot;</span>,<span class="st">&quot;4&quot;</span>=<span class="st">&quot;4(Sure)&quot;</span>)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">theme_minimal</span>() <span class="op">+</span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">text =</span> <span class="kw">element_text</span>(<span class="dt">size=</span><span class="dv">18</span>))</code></pre></div>
+<p><img src="FamSM_Exp1_Face_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ww.conf.t.r1 &lt;-<span class="st"> </span><span class="kw">t.test</span>(Confidence <span class="op">~</span><span class="st"> </span>Repetition, <span class="kw">filter</span>(P3CFslong, Familiarity <span class="op">==</span><span class="st"> &quot;Famous&quot;</span>), <span class="dt">paired =</span> <span class="ot">TRUE</span>)
+<span class="kw">sort</span>(<span class="kw">abs</span>(ww.conf.t.r1<span class="op">$</span>conf.int))[<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>] <span class="co"># 95% CI of difference between means</span>
+## [1] 0.1772996 0.6004781
+
+ww.conf.t.r2 &lt;-<span class="st"> </span><span class="kw">t.test</span>(Confidence <span class="op">~</span><span class="st"> </span>Repetition, <span class="kw">filter</span>(P3CFslong, Familiarity <span class="op">==</span><span class="st"> &quot;Non-famous&quot;</span>), <span class="dt">paired =</span> <span class="ot">TRUE</span>)
+<span class="kw">sort</span>(<span class="kw">abs</span>(ww.conf.t.r2<span class="op">$</span>conf.int))[<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>] <span class="co"># 95% CI of difference between means</span>
+## [1] 0.2219825 0.8613508</code></pre></div>
+<p><br><br></p>
+</div>
+</div>
+<div id="rt" class="section level2">
+<h2><span class="header-section-number">3.3</span> RT</h2>
+<p>Only RTs in correct trials were analyzed. Before analysis, we first removed RTs either shorter than 200ms or longer than 10s. Then, from the RT distribution of each condition, RTs beyond 3 <em>s.d.</em> from the mean were additionally removed.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">cP3 &lt;-<span class="st"> </span>P3 <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(Corr<span class="op">==</span><span class="dv">1</span>)
+
+sP3 &lt;-<span class="st"> </span>cP3 <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(RT <span class="op">&gt;</span><span class="st"> </span><span class="dv">200</span> <span class="op">&amp;</span><span class="st"> </span>RT <span class="op">&lt;</span><span class="st"> </span><span class="dv">10000</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">group_by</span>(SID) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">nest</span>() <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">lbound =</span> <span class="kw">map</span>(data, <span class="op">~</span><span class="kw">mean</span>(.<span class="op">$</span>RT)<span class="op">-</span><span class="dv">3</span><span class="op">*</span><span class="kw">sd</span>(.<span class="op">$</span>RT)),
+         <span class="dt">ubound =</span> <span class="kw">map</span>(data, <span class="op">~</span><span class="kw">mean</span>(.<span class="op">$</span>RT)<span class="op">+</span><span class="dv">3</span><span class="op">*</span><span class="kw">sd</span>(.<span class="op">$</span>RT))) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">unnest</span>(lbound, ubound) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">unnest</span>(data) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ungroup</span>() <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">mutate</span>(<span class="dt">Outlier =</span> (RT <span class="op">&lt;</span><span class="st"> </span>lbound)<span class="op">|</span>(RT <span class="op">&gt;</span><span class="st"> </span>ubound)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">filter</span>(Outlier <span class="op">==</span><span class="st"> </span><span class="ot">FALSE</span>) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">select</span>(SID, Familiarity, Repetition, RT, ImgName)
+
+<span class="dv">100</span> <span class="op">-</span><span class="st"> </span><span class="dv">100</span><span class="op">*</span><span class="kw">nrow</span>(sP3)<span class="op">/</span><span class="kw">nrow</span>(cP3)
+## [1] 2.882883</code></pre></div>
+<p>This trimming procedure removed 2.88% of correct RTs.</p>
+<p>Since the overall source memory accuracy was not high, only small numbers of correct trials were available after trimming. The following table summarizes the numbers of trials submitted to subsequent analyses. No participant had more than 25 trials per condition. In the <code>non-famous</code> group, half of the participants had less than 10 valid trials per condition.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">sP3 <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(SID, Familiarity, Repetition) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">NumTrial =</span> <span class="kw">length</span>(RT)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span>ungroup <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">group_by</span>(Familiarity, Repetition) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Avg =</span> <span class="kw">mean</span>(NumTrial), 
+            <span class="dt">Med =</span> <span class="kw">median</span>(NumTrial), 
+            <span class="dt">Min =</span> <span class="kw">min</span>(NumTrial), 
+            <span class="dt">Max =</span> <span class="kw">max</span>(NumTrial)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span>ungroup <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Familiarity</th>
+<th align="left">Repetition</th>
+<th align="right">Avg</th>
+<th align="right">Med</th>
+<th align="right">Min</th>
+<th align="right">Max</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Famous</td>
+<td align="left">Repeated</td>
+<td align="right">11.583333</td>
+<td align="right">12.0</td>
+<td align="right">4</td>
+<td align="right">19</td>
+</tr>
+<tr class="even">
+<td align="left">Famous</td>
+<td align="left">Unrepeated</td>
+<td align="right">15.083333</td>
+<td align="right">14.5</td>
+<td align="right">11</td>
+<td align="right">21</td>
+</tr>
+<tr class="odd">
+<td align="left">Non-famous</td>
+<td align="left">Repeated</td>
+<td align="right">10.333333</td>
+<td align="right">9.5</td>
+<td align="right">6</td>
+<td align="right">15</td>
+</tr>
+<tr class="even">
+<td align="left">Non-famous</td>
+<td align="left">Unrepeated</td>
+<td align="right">7.916667</td>
+<td align="right">7.5</td>
+<td align="right">3</td>
+<td align="right">15</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">den1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(cP3, <span class="kw">aes</span>(<span class="dt">x=</span>RT)) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">geom_density</span>() <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">theme_bw</span>(<span class="dt">base_size =</span> <span class="dv">18</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">panel.grid.major =</span> <span class="kw">element_blank</span>(), 
+        <span class="dt">panel.grid.minor =</span> <span class="kw">element_blank</span>(),
+        <span class="dt">axis.text.y =</span> <span class="kw">element_blank</span>(),
+        <span class="dt">axis.ticks.y =</span> <span class="kw">element_blank</span>()) 
+den2 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(sP3, <span class="kw">aes</span>(<span class="dt">x=</span>RT)) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">geom_density</span>() <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">theme_bw</span>(<span class="dt">base_size =</span> <span class="dv">18</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Trimmed RT&quot;</span>) <span class="op">+</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">panel.grid.major =</span> <span class="kw">element_blank</span>(), 
+        <span class="dt">panel.grid.minor =</span> <span class="kw">element_blank</span>(),
+        <span class="dt">axis.text.y =</span> <span class="kw">element_blank</span>(),
+        <span class="dt">axis.ticks.y =</span> <span class="kw">element_blank</span>()) 
+den1 <span class="op">+</span><span class="st"> </span>den2</code></pre></div>
+<p><img src="FamSM_Exp1_Face_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+<p>The overall RT distribution was highly skewed even after trimming. Given limited numbers of RTs and its skewed distribution, any results from the current RT analyses should be interpreted with caution and preferably corroborated with other measures.</p>
+<p>We calculated the mean and <em>s.d.</em> of individual participants’ mean RTs. The overall pattern of RTs across the conditions was consistent with that of source memory accuracy and confidence ratings. In the following plot, red points and error bars represent the means and 95% within-participants CIs.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">P3RTslong &lt;-<span class="st"> </span>sP3 <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(SID, Familiarity, Repetition) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">RT =</span> <span class="kw">mean</span>(RT)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ungroup</span>()
+
+P3RTg &lt;-<span class="st"> </span>P3RTslong <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(Familiarity, Repetition) <span class="op">%&gt;%</span>
+<span class="st">  </span><span class="kw">summarise</span>(<span class="dt">M =</span> <span class="kw">mean</span>(RT), <span class="dt">SD =</span> <span class="kw">sd</span>(RT)) <span class="op">%&gt;%</span><span class="st"> </span>
+<span class="st">  </span><span class="kw">ungroup</span>()
+P3RTg <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>()</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Familiarity</th>
+<th align="left">Repetition</th>
+<th align="right">M</th>
+<th align="right">SD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Famous</td>
+<td align="left">Repeated</td>
+<td align="right">2355.159</td>
+<td align="right">1102.2211</td>
+</tr>
+<tr class="even">
+<td align="left">Famous</td>
+<td align="left">Unrepeated</td>
+<td align="right">2051.237</td>
+<td align="right">710.7829</td>
+</tr>
+<tr class="odd">
+<td align="left">Non-famous</td>
+<td align="left">Repeated</td>
+<td align="right">2434.308</td>
+<td align="right">996.1972</td>
+</tr>
+<tr class="even">
+<td align="left">Non-famous</td>
+<td align="left">Unrepeated</td>
+<td align="right">2580.130</td>
+<td align="right">1117.5506</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># wide format, needed for geom_segments.</span>
+P3RTswide &lt;-<span class="st"> </span>P3RTslong <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">spread</span>(<span class="dt">key =</span> Repetition, <span class="dt">value =</span> RT)
+
+<span class="co"># group level, needed for printing &amp; geom_pointrange</span>
+<span class="co"># Rmisc must be called indirectly due to incompatibility between plyr and dplyr.</span>
+P3RTg<span class="op">$</span>ci &lt;-<span class="st"> </span>Rmisc<span class="op">::</span><span class="kw">summarySEwithin</span>(<span class="dt">data =</span> P3RTslong, <span class="dt">measurevar =</span> <span class="st">&quot;RT&quot;</span>, <span class="dt">idvar =</span> <span class="st">&quot;SID&quot;</span>,
+                                   <span class="dt">withinvars =</span> <span class="st">&quot;Repetition&quot;</span>, <span class="dt">betweenvars =</span> <span class="st">&quot;Familiarity&quot;</span>)<span class="op">$</span>ci
+P3RTg<span class="op">$</span>RT &lt;-<span class="st"> </span>P3RTg<span class="op">$</span>M
+
+<span class="kw">ggplot</span>(<span class="dt">data=</span>P3RTslong, <span class="kw">aes</span>(<span class="dt">x=</span>Familiarity, <span class="dt">y=</span>RT, <span class="dt">fill=</span>Repetition)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_violin</span>(<span class="dt">width =</span> <span class="fl">0.5</span>, <span class="dt">trim=</span><span class="ot">TRUE</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">position=</span><span class="kw">position_dodge</span>(<span class="fl">0.5</span>), <span class="dt">color=</span><span class="st">&quot;gray80&quot;</span>, <span class="dt">size=</span><span class="fl">1.8</span>, <span class="dt">show.legend =</span> <span class="ot">FALSE</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_segment</span>(<span class="dt">data=</span><span class="kw">filter</span>(P3RTswide, Familiarity<span class="op">==</span><span class="st">&quot;Famous&quot;</span>), <span class="dt">inherit.aes =</span> <span class="ot">FALSE</span>,
+               <span class="kw">aes</span>(<span class="dt">x=</span><span class="dv">1</span><span class="op">-</span>.<span class="dv">12</span>, <span class="dt">y=</span><span class="kw">filter</span>(P3RTswide, Familiarity<span class="op">==</span><span class="st">&quot;Famous&quot;</span>)<span class="op">$</span>Repeated,
+                   <span class="dt">xend=</span><span class="dv">1</span><span class="op">+</span>.<span class="dv">12</span>, <span class="dt">yend=</span><span class="kw">filter</span>(P3RTswide, Familiarity<span class="op">==</span><span class="st">&quot;Famous&quot;</span>)<span class="op">$</span>Unrepeated),
+               <span class="dt">color=</span><span class="st">&quot;gray80&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_segment</span>(<span class="dt">data=</span><span class="kw">filter</span>(P3RTswide, Familiarity<span class="op">==</span><span class="st">&quot;Non-famous&quot;</span>), <span class="dt">inherit.aes =</span> <span class="ot">FALSE</span>,
+               <span class="kw">aes</span>(<span class="dt">x=</span><span class="dv">2</span><span class="op">-</span>.<span class="dv">12</span>, <span class="dt">y=</span><span class="kw">filter</span>(P3RTswide, Familiarity<span class="op">==</span><span class="st">&quot;Non-famous&quot;</span>)<span class="op">$</span>Repeated,
+                   <span class="dt">xend=</span><span class="dv">2</span><span class="op">+</span>.<span class="dv">12</span>, <span class="dt">yend=</span><span class="kw">filter</span>(P3RTswide, Familiarity<span class="op">==</span><span class="st">&quot;Non-famous&quot;</span>)<span class="op">$</span>Unrepeated),
+               <span class="dt">color=</span><span class="st">&quot;gray80&quot;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_pointrange</span>(<span class="dt">data=</span>P3RTg,
+                  <span class="kw">aes</span>(<span class="dt">x =</span> Familiarity, <span class="dt">ymin =</span> RT<span class="op">-</span>ci, <span class="dt">ymax =</span> RT<span class="op">+</span>ci, <span class="dt">group =</span> Repetition),
+                  <span class="dt">position =</span> <span class="kw">position_dodge</span>(<span class="fl">0.5</span>), <span class="dt">color =</span> <span class="st">&quot;darkred&quot;</span>, <span class="dt">size =</span> <span class="dv">1</span>, <span class="dt">show.legend =</span> <span class="ot">FALSE</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">scale_fill_manual</span>(<span class="dt">values=</span><span class="kw">c</span>(<span class="st">&quot;#E69F00&quot;</span>, <span class="st">&quot;#56B4E9&quot;</span>),
+                    <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Repeated&quot;</span>, <span class="st">&quot;Unrepeated&quot;</span>)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Pre-experimental Stimulus Familiarity&quot;</span>, 
+       <span class="dt">y =</span> <span class="st">&quot;Response Times (ms)&quot;</span>, 
+       <span class="dt">fill=</span><span class="st">&#39;Item Repetition&#39;</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">theme_bw</span>(<span class="dt">base_size =</span> <span class="dv">18</span>) <span class="op">+</span>
+<span class="st">  </span><span class="kw">theme</span>(<span class="dt">panel.grid.major =</span> <span class="kw">element_blank</span>(), 
+        <span class="dt">panel.grid.minor =</span> <span class="kw">element_blank</span>())</code></pre></div>
+<p><img src="FamSM_Exp1_Face_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
+<div id="anova-4" class="section level3">
+<h3><span class="header-section-number">3.3.1</span> ANOVA</h3>
+<p>Individuals’ mean RTs were submitted to a 2x2 mixed design ANOVA with <strong>pre-experimental stimulus familiarity</strong> as a between-participants factor and <strong>item repetition</strong> as a within-participant factor.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p3.rt.aov &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;RT&quot;</span>, <span class="dt">data =</span> sP3, 
+                      <span class="dt">between =</span> <span class="st">&quot;Familiarity&quot;</span>, <span class="dt">within =</span> <span class="st">&quot;Repetition&quot;</span>)
+<span class="kw">anova</span>(p3.rt.aov, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">num Df</th>
+<th align="right">den Df</th>
+<th align="right">MSE</th>
+<th align="right">F</th>
+<th align="right">pes</th>
+<th align="right">Pr(&gt;F)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Familiarity</td>
+<td align="right">1</td>
+<td align="right">22</td>
+<td align="right">1866257.4</td>
+<td align="right">0.5943</td>
+<td align="right">0.0263</td>
+<td align="right">0.4490</td>
+</tr>
+<tr class="even">
+<td>Repetition</td>
+<td align="right">1</td>
+<td align="right">22</td>
+<td align="right">114458.6</td>
+<td align="right">0.6551</td>
+<td align="right">0.0289</td>
+<td align="right">0.4269</td>
+</tr>
+<tr class="odd">
+<td>Familiarity:Repetition</td>
+<td align="right">1</td>
+<td align="right">22</td>
+<td align="right">114458.6</td>
+<td align="right">5.3016</td>
+<td align="right">0.1942</td>
+<td align="right">0.0311</td>
+</tr>
+</tbody>
+</table>
+<p>The two-way interaction was significant. We then performed two one-way repeated-measures ANOVAs as post-hoc analyses. The first table below presents the effect of item repetition for <code>famous</code> faces, and the second table presents the same effect for <code>non-famous</code> faces.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p3.rt.aov.r1 &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;RT&quot;</span>, <span class="dt">within =</span> <span class="st">&quot;Repetition&quot;</span>,
+                         <span class="dt">data =</span> <span class="kw">filter</span>(sP3, Familiarity <span class="op">==</span><span class="st"> &quot;Famous&quot;</span>))
+<span class="kw">anova</span>(p3.rt.aov.r1, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">num Df</th>
+<th align="right">den Df</th>
+<th align="right">MSE</th>
+<th align="right">F</th>
+<th align="right">pes</th>
+<th align="right">Pr(&gt;F)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Repetition</td>
+<td align="right">1</td>
+<td align="right">11</td>
+<td align="right">165604.1</td>
+<td align="right">3.3466</td>
+<td align="right">0.2333</td>
+<td align="right">0.0946</td>
+</tr>
+</tbody>
+</table>
+<p>The effect of item repetition was not significant in the <code>famous</code> condition.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p3.rt.aov.r2 &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;RT&quot;</span>, <span class="dt">within =</span> <span class="st">&quot;Repetition&quot;</span>,
+                         <span class="dt">data =</span> <span class="kw">filter</span>(sP3, Familiarity <span class="op">==</span><span class="st"> &quot;Non-famous&quot;</span>))
+<span class="kw">anova</span>(p3.rt.aov.r2, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th align="right">num Df</th>
+<th align="right">den Df</th>
+<th align="right">MSE</th>
+<th align="right">F</th>
+<th align="right">pes</th>
+<th align="right">Pr(&gt;F)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Repetition</td>
+<td align="right">1</td>
+<td align="right">11</td>
+<td align="right">63313.16</td>
+<td align="right">2.0151</td>
+<td align="right">0.1548</td>
+<td align="right">0.1835</td>
+</tr>
+</tbody>
+</table>
+<p>The effect of item repetition was not significant in the <code>non-famous</code> condition, either.</p>
+<p><br><br></p>
+<hr />
+<p><br><br></p>
+</div>
+</div>
+</div>
+<div id="session-info" class="section level1">
+<h1><span class="header-section-number">4</span> Session Info</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sessionInfo</span>()
+## R version 3.5.3 (2019-03-11)
+## Platform: x86_64-apple-darwin15.6.0 (64-bit)
+## Running under: macOS Mojave 10.14.4
+## 
+## Matrix products: default
+## BLAS: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRlapack.dylib
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] parallel  stats     graphics  grDevices utils     datasets  methods  
+## [8] base     
+## 
+## other attached packages:
+##  [1] klippy_0.0.0.9500    patchwork_0.0.1      RVAideMemoire_0.9-73
+##  [4] ggbeeswarm_0.6.0     ordinal_2019.3-9     emmeans_1.3.3       
+##  [7] afex_0.23-0          lme4_1.1-21          Matrix_1.2-17       
+## [10] car_3.0-2            carData_3.0-2        knitr_1.22          
+## [13] forcats_0.4.0        stringr_1.4.0        dplyr_0.8.0.1       
+## [16] purrr_0.3.2          readr_1.3.1          tidyr_0.8.3         
+## [19] tibble_2.1.1         ggplot2_3.1.0        tidyverse_1.2.1     
+## [22] Rmisc_1.5            plyr_1.8.4           lattice_0.20-38     
+## [25] pacman_0.5.1        
+## 
+## loaded via a namespace (and not attached):
+##  [1] nlme_3.1-137      lubridate_1.7.4   httr_1.4.0       
+##  [4] numDeriv_2016.8-1 tools_3.5.3       backports_1.1.3  
+##  [7] utf8_1.1.4        R6_2.4.0          vipor_0.4.5      
+## [10] lazyeval_0.2.2    colorspace_1.4-1  withr_2.1.2      
+## [13] tidyselect_0.2.5  curl_3.3          compiler_3.5.3   
+## [16] cli_1.1.0         rvest_0.3.2       xml2_1.2.0       
+## [19] sandwich_2.5-0    labeling_0.3      scales_1.0.0     
+## [22] mvtnorm_1.0-10    digest_0.6.18     foreign_0.8-71   
+## [25] minqa_1.2.4       rmarkdown_1.12    rio_0.5.16       
+## [28] pkgconfig_2.0.2   htmltools_0.3.6   highr_0.8        
+## [31] rlang_0.3.3       readxl_1.3.1      rstudioapi_0.10  
+## [34] generics_0.0.2    zoo_1.8-5         jsonlite_1.6     
+## [37] zip_2.0.1         magrittr_1.5      fansi_0.4.0      
+## [40] Rcpp_1.0.1        munsell_0.5.0     abind_1.4-5      
+## [43] ucminf_1.1-4      stringi_1.4.3     multcomp_1.4-10  
+## [46] yaml_2.2.0        MASS_7.3-51.3     grid_3.5.3       
+## [49] crayon_1.3.4      haven_2.1.0       splines_3.5.3    
+## [52] hms_0.4.2         pillar_1.3.1      boot_1.3-20      
+## [55] estimability_1.3  reshape2_1.4.3    codetools_0.2-16 
+## [58] glue_1.3.1        evaluate_0.13     data.table_1.12.0
+## [61] modelr_0.1.4      nloptr_1.2.1      cellranger_1.1.0 
+## [64] gtable_0.3.0      assertthat_0.2.1  xfun_0.5         
+## [67] openxlsx_4.1.0    xtable_1.8-3      broom_0.5.1      
+## [70] coda_0.19-2       survival_2.44-1   lmerTest_3.1-0   
+## [73] beeswarm_0.2.3    TH.data_1.0-10</code></pre></div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>We additionally tested several GLMMs on source memory RTs since GLMMs with relevant link functions were supposed to be better than the conventional ANOVA in dealing with such limited, unbalanced and skewed data as the current RTs (<a href="https://p3w.frontiersin.org/articles/10.3389/fpsyg.2015.01171/full">Lo &amp; Andrews, 2015</a>). Some models adopted non-linear transformations of RTs (such as -1000/RT or log(RT)) and others assumed an inverse Gaussian or Gamma distribution and a linear relationship (identity link function) between the predictors and RTs. None of the models, however, converged onto a stable solution.<a href="#fnref1">↩</a></p></li>
+</ol>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
