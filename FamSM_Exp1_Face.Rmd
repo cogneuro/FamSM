@@ -44,6 +44,7 @@ pacman::p_load_gh("thomasp85/patchwork", "RLesur/klippy")
 klippy::klippy()
 ```
 
+
 # Item Repetition Phase
 
 Twenty four participants were recruited. Half of participants watched 24 `famous` faces while the other half watched 24 `non-famous` faces (between-participants factor, **pre-experimental item familiarity**). The faces were repeated eight times, producing 192 trials. In each trial, participants made a male/female judgment for a face. 
