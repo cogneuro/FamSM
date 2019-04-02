@@ -604,7 +604,7 @@ h2 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(rD1g, <span clas
 
 h1 <span class="op">+</span><span class="st"> </span>h2</code></pre></div>
 <p><img src="FamSM_Exp3A_Face_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
-<p>Three participants (1st, 7th, &amp; 9th) did not make responses in all or most of trials in Block 1. The performance improved over time; accuracy increased and RT decreased in subsequent blocks. Overall accuracy was 61.07% (SD = 6.18).</p>
+<p>Three participants (1st, 7th, &amp; 9th) did not make responses in all or most of trials in Block 1. The performance improved over time; accuracy increased and RT decreased in subsequent blocks. Overall accuracy was 61.07% (<em>s.d.</em> = 6.18).</p>
 <p><br><br></p>
 <hr />
 <p><br><br></p>
@@ -612,7 +612,7 @@ h1 <span class="op">+</span><span class="st"> </span>h2</code></pre></div>
 </div>
 <div id="item-repetition-phase" class="section level1">
 <h1><span class="header-section-number">2</span> Item Repetition Phase</h1>
-<p>The same three-phase procedure as in Experiments 1 and 2 was conducted on Day 2. In the first phase, 24 out of the 48 non-famous faces learned on Day 1 were repeated eight times, resulting in 192 trials in total. In each trial, participants made a male/female judgment.</p>
+<p>The same three-phase procedure as in Experiments 1 and 2 was conducted on Day 2. In the first phase, 24 out of the 48 <code>non-famous</code> faces learned on Day 1 were repeated eight times, resulting in 192 trials in total. In each trial, participants made a male/female judgment.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">P1 &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/data_FamSM_Exp3A_Face_REP.csv&quot;</span>, <span class="dt">header =</span> T)
 <span class="kw">glimpse</span>(P1, <span class="dt">width=</span><span class="dv">70</span>)
 ## Observations: 2,496
@@ -756,7 +756,7 @@ P2g<span class="op">$</span>Accuracy &lt;-<span class="st"> </span>P2g<span clas
 <p><img src="FamSM_Exp3A_Face_files/figure-html/unnamed-chunk-9-1.png" width="384" /></p>
 <div id="anova" class="section level3">
 <h3><span class="header-section-number">3.1.1</span> ANOVA</h3>
-<p>Mean percentage accuracy was submitted to a one-way repeated measures ANOVA. The effect of item repetition was not statistically significant.</p>
+<p>Mean percentage accuracy was submitted to a one-way repeated measures ANOVA. The effect of <strong>item repetition</strong> was not statistically significant.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p2.aov &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;Accuracy&quot;</span>, <span class="dt">data =</span> P2slong, <span class="dt">within =</span> <span class="st">&quot;Repetition&quot;</span>)
 <span class="kw">anova</span>(p2.aov, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
 <table>
@@ -1059,7 +1059,7 @@ p3.conf.aov &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span c
 </tr>
 </tbody>
 </table>
-<p>Confidence ratings were higher for unrepeated than repeated faces. The 95% CI of difference between the means was [0.02, 0.5].</p>
+<p>Confidence ratings were higher for <code>unrepeated</code> than <code>repeated</code> faces. The 95% CI of difference between the means was [0.02, 0.5].</p>
 </div>
 <div id="clmm" class="section level3">
 <h3><span class="header-section-number">4.2.2</span> CLMM</h3>

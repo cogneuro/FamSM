@@ -121,7 +121,7 @@ h2 <- ggplot(rD1g, mapping=aes(x=Block, y=RT, group=1)) +
 h1 + h2
 ```
 
-Three participants (1st, 7th, & 9th) did not make responses in all or most of trials in Block 1. The performance improved over time; accuracy increased and RT decreased in subsequent blocks. Overall accuracy was `r round(mean(cD1s$M), digits=2)`% (SD = `r round(sd(cD1s$M), digits=2)`).
+Three participants (1st, 7th, & 9th) did not make responses in all or most of trials in Block 1. The performance improved over time; accuracy increased and RT decreased in subsequent blocks. Overall accuracy was `r round(mean(cD1s$M), digits=2)`% (*s.d.* = `r round(sd(cD1s$M), digits=2)`).
 
 
 <br><br>
@@ -133,7 +133,7 @@ Three participants (1st, 7th, & 9th) did not make responses in all or most of tr
 
 # Item Repetition Phase
 
-The same three-phase procedure as in Experiments 1 and 2 was conducted on Day 2. In the first phase, 24 out of the 48 non-famous faces learned on Day 1 were repeated eight times, resulting in 192 trials in total. In each trial, participants made a male/female judgment. 
+The same three-phase procedure as in Experiments 1 and 2 was conducted on Day 2. In the first phase, 24 out of the 48 `non-famous` faces learned on Day 1 were repeated eight times, resulting in 192 trials in total. In each trial, participants made a male/female judgment. 
 
 ```{r, collapse=TRUE}
 P1 <- read.csv("data/data_FamSM_Exp3A_Face_REP.csv", header = T)
@@ -257,7 +257,7 @@ ggplot(P2slong, aes(x=Repetition, y=Accuracy, fill=Repetition)) +
 
 ### ANOVA
 
-Mean percentage accuracy was submitted to a one-way repeated measures ANOVA. The effect of item repetition was not statistically significant.
+Mean percentage accuracy was submitted to a one-way repeated measures ANOVA. The effect of **item repetition** was not statistically significant.
 
 ```{r, warning=FALSE, message=FALSE}
 p2.aov <- aov_ez(id = "SID", dv = "Accuracy", data = P2slong, within = "Repetition")
@@ -457,7 +457,7 @@ p3.conf.aov <- aov_ez(id = "SID", dv = "Confidence", data = P3CFslong, within = 
 anova(p3.conf.aov, es = "pes") %>% kable(digits = 4)
 ```
 
-Confidence ratings were higher for unrepeated than repeated faces. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
+Confidence ratings were higher for `unrepeated` than `repeated` faces. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
 
 
 ### CLMM
