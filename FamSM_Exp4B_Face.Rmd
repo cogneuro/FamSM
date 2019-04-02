@@ -47,7 +47,7 @@ klippy::klippy()
 
 # Item Repetition Phase
 
-Twenty eight participants watched 20 `famous` faces and 20 `non-famous` faces (within-participant factor, **pre-experimental item familiarity**). The faces were repeated eight times, producing 320 trials. In each trial, participants made a male/female judgment for a face. 
+Twenty eight participants were exposed to 20 `famous` faces and 20 `non-famous` faces (**pre-experimental stimulus familiarity** as a within-participant factor). Each face was repeated eight times, resulting in 320 trials. For each face, participants made a male/female judgment. 
 
 ```{r, collapse=TRUE}
 P1 <- read.csv("data/data_FamSM_Exp4B_Face_REP.csv", header = T)
@@ -123,7 +123,7 @@ anova(p1.aov, es = "pes") %>% kable(digits = 4)
 
 # Item-Source Association Phase
 
-Participants learned 80 pairs of a face and a quadrant on the screen. They were instructed to pay attention to the location of each face while reporting in which quadrant a face appeared. The design consisted of two within-participant factors. First, **pre-experimental item familiarity** determined if a trial presented a `famous` or `non-famous` face. Second, **item repetition** determined if a trial presented a `repeated` item, which had appeared in the first phase or a `unrepeated` item, which appeared for the first time in the experiment. 
+Participants learned 80 face-location (a quadrant on the screen) associations. They were instructed to pay attention to the location of each face while reporting in which quadrant a face appeared. The design consisted of two within-participant factors: **pre-experimental stimulus familiarity** (`famous` or `non-famous` face) and **item repetition** (`repeated` or `unrepeated` in the first phase). 
 
 ```{r, collapse=TRUE}
 P2 <- read.csv("data/data_FamSM_Exp4B_Face_SRC.csv", header = T)
@@ -149,7 +149,7 @@ table(P2$Repetition, P2$SID)
 
 ## Accuracy
 
-We calculated the mean and *s.d.* of individual participants' mean percentage accuracy. It turned out that one of participants (26th) pressed wrong buttons during the first half of trials. Otherwise, the accuracy of the localization task was near ceiling.
+We calculated the mean and *s.d.* of individual participants' mean percentage accuracy. The accuracy of the localization task was near ceiling, except for one participant (26th) who pressed wrong buttons during the first half of trials.
 
 ```{r, fig.height=4}
 # phase 2, subject-level, long-format
@@ -190,7 +190,7 @@ ggplot(data=P2slong, aes(x=Familiarity, y=Accuracy, fill=Repetition)) +
 
 ### ANOVA
 
-Mean percentage accuracy was submitted to a 2x2 repeated measures ANOVA with **pre-experimental item familiarity** and **item repetition** as two within-participant factors. No effects were significant. 
+Mean percentage accuracy was submitted to a 2x2 repeated measures ANOVA with **pre-experimental stimulus familiarity** and **item repetition** as two within-participant factors. No effects were significant. 
 
 ```{r, warning=FALSE, message=FALSE}
 p2.aov <- aov_ez(id = "SID", dv = "Accuracy", data = P2slong, within = c("Familiarity", "Repetition"))
@@ -207,7 +207,7 @@ anova(p2.aov, es = "pes") %>% kable(digits = 4)
 
 # Source Memory Test Phase
 
-In each trial, participants first indicated in which quadrant a given face appeared during the item-source association phase. Participants then rated how confident they were about their memory judgment. The design was the same as that in the second phase. There were 48 trials. Both **pre-experimental item familiarity** and **item repetition** were within-participant factors.
+In each trial, participants first indicated in which quadrant a given face appeared during the item-source association phase. Participants then rated how confident they were about their memory judgment. There were 48 trials in total. Both **pre-experimental stimulus familiarity** and **item repetition** were manipulated within participants.
 
 
 ```{r, collapse=TRUE}
@@ -292,18 +292,19 @@ ggplot(data=P3ACCslong, aes(x=Familiarity, y=Accuracy, fill=Repetition)) +
         panel.grid.minor = element_blank()) 
 ```
 
-The effect of **item repetition** depended on the **pre-experimental familiarity** of the items. For `famous` faces, the source of unrepeated items was better remembered (*novelty benefit*). For `non-famous` faces, the source of repeated items was better remembered (*familiarity benefit*). These crossed effects were on top of the general familiarity benefit, in which source memory was more accurate for `famous` faces than for `non-famous` faces. 
+The effect of **item repetition** was modulated by the **pre-experimental familiarity** of the items. For `famous` faces, the locations of unrepeated items were better remembered (*novelty benefit*). For `non-famous` faces, the locations of repeated items were better remembered (*familiarity benefit*). These crossed effects were on top of the general familiarity benefit, in which source memory was more accurate for `famous` faces than for `non-famous` faces. 
 
 ### ANOVA
 
-Mean percentage accuracy was submitted to a 2x2 repeated measures ANOVA with **pre-experimental item familiarity** (`famous` vs. `non-famous`) and **item repetition** (`repetition` vs. `no repetition`) as two within-participant factors.
+Mean percentage accuracy was submitted to a 2x2 repeated measures ANOVA with **pre-experimental stimulus familiarity** (`famous` vs. `non-famous`) and **item repetition** (`repetition` vs. `no repetition`) as two within-participant factors.
 
 ```{r, warning=FALSE, message=FALSE}
 p3.corr.aov <- aov_ez(id = "SID", dv = "Accuracy", data = P3ACCslong, within = c("Familiarity", "Repetition"))
 anova(p3.corr.aov, es = "pes") %>% kable(digits = 4)
 ```
 
-The main effect of **pre-experimental item familiarity** and the two-way interaction were significant. Additionally, we performed two separate one-way repeated-measures ANOVAs as post-hoc analyses. In the following two tables, the first presents the effect of item repetition for `famous` faces, and the second presents the same effect for `non-famous` faces.
+The main effect of **pre-experimental stimulus familiarity** and the two-way interaction were both significant. Additionally, we performed two separate one-way repeated-measures ANOVAs as post-hoc analyses. The table below shows the effect of item repetition for `famous` faces.
+
 
 ```{r, warning=FALSE, message=FALSE}
 ci95 <- P3ACCswide %>% filter(Familiarity=="Famous") %>% 
@@ -316,7 +317,7 @@ p3.corr.aov.r1 <- aov_ez(id = "SID", dv = "Accuracy", within = "Repetition",
 anova(p3.corr.aov.r1, es = "pes") %>% kable(digits = 4)
 ```
 
-In the **famous** face condition, source memory was more accurate for **unrepeated** than **repeated** faces. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
+In the **famous** face condition, source memory was more accurate for **unrepeated** than **repeated** faces. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`]. The table below shows the effect of item repetition for `non-famous` faces.
 
 ```{r, warning=FALSE, message=FALSE}
 ci95 <- P3ACCswide %>% filter(Familiarity=="Non-famous") %>% 
@@ -336,7 +337,7 @@ In the **non-famous** face condition, source memory was marginally more accurate
 
 To supplement conventional ANOVAs, we performed GLMMs on source memory accuracy. This mixed modeling approach with a binomial link function is expected to properly handle binary data such as source memory responses (i.e., correct or not; [Jaeger, 2008](https://www.sciencedirect.com/science/article/pii/S0749596X07001337)). 
 
-We built the full model (`full1`) with two fixed effects (**pre-experimental item familiarity** and **item repetition**) and their interaction. The model also included maximal random effects structure ([Barr, Levy, Scheepers, & Tily, 2013](https://www.sciencedirect.com/science/article/pii/S0749596X12001180)): both by-participant and by-item random intercepts, and by-participant random slopes for **pre-experimental item familiarity**, **item repetition** and their interaction. In case the maximal model does not converge successfully, we built another model (`full2`) with the maximal random structure but with the correlations among the random terms removed ([Singmann, 2018](https://cran.r-project.org/web/packages/afex/vignettes/afex_mixed_example.html#lrt-results)). 
+We built the full model (`full1`) with two fixed effects (**pre-experimental stimulus familiarity** and **item repetition**) and their interaction. The model also included maximal random effects structure ([Barr, Levy, Scheepers, & Tily, 2013](https://www.sciencedirect.com/science/article/pii/S0749596X12001180)): both by-participant and by-item random intercepts, and by-participant random slopes for **pre-experimental stimulus familiarity**, **item repetition** and their interaction. In case the maximal model does not converge successfully, we built another model (`full2`) with the maximal random structure but with the correlations among the random terms removed ([Singmann, 2018](https://cran.r-project.org/web/packages/afex/vignettes/afex_mixed_example.html#lrt-results)). 
 
 To fit the models, we used the `mixed()` of the `afex` package ([Singmann, Bolker, & Westfall, 2017](https://afex.singmann.science/forums/topic/citing-afex)) which was built on the `lmer()` of the `lme4` package ([Bates, Maechler, Bolker, & Walker, 2015](https://www.jstatsoft.org/article/view/v067i01/0)). The `mixed()` assessed the statistical significance of fixed effects by comparing a model with the effect in question against its nested model which lacked the effect in question. *P*-values of the effects were obtained by likelihood ratio tests (LRT).
 
@@ -367,7 +368,7 @@ colnames(full.compare)[c(3,4,5,6)] <- c("full1 Chisq", "p", "full2 Chisq", "p")
 full.compare %>% kable()
 ```
 
-The *p*-values from all models agreed strongly providing a high degree of confidence in the results. Now we proceeded to the post-hoc analyses. As in the following table, the difference between repeated vs. unrepeated faces was significant in the `famous` condition. However, the difference was not significant in the `non-famous` condition.
+The *p*-values from the two models were highly similar to each other. Post-hoc analysis results are summarized in the table below. The difference between repeated vs. unrepeated faces was significant in the `famous` condition. However, the difference was not significant in the `non-famous` condition.
 
 ```{r}
 emmeans(full1, pairwise ~ Repetition | Familiarity, type = "response")$contrasts %>% kable()
@@ -379,7 +380,7 @@ emmeans(full1, pairwise ~ Repetition | Familiarity, type = "response")$contrasts
 
 ## Confidence
 
-The following table presents the mean and *s.d.* of individual participants' confidence ratings in each condition. The pattern of confidence ratings was qualitatively identical to those from accuracy analysis; we observed the novelty benefit with `famous` faces and the familiarity benefit with `non-famous` faces. In the following plot, red points and error bars represent the means and 95% within-participants CIs.
+The following table presents the mean and *s.d.* of individual participants' confidence ratings in each condition. The pattern of confidence ratings was qualitatively identical to that of source memory accuracy; we observed the novelty benefit for `famous` faces and the familiarity benefit for `non-famous` faces. In the following plot, red points and error bars represent the means and 95% within-participants CIs.
 
 ```{r, fig.height=4}
 P3CFslong <- P3 %>% group_by(SID, Familiarity, Repetition) %>% 
@@ -439,14 +440,14 @@ ggplot(data=P3CFslong, aes(x=Familiarity, y=Confidence, fill=Repetition)) +
 
 ### ANOVA
 
-Individuals’ confidence ratings were submitted to a 2x2 repeated measures ANOVA with **pre-experimental item familiarity** and **item repetition** as two within-participant factors.
+Individuals’ confidence ratings were submitted to a 2x2 repeated measures ANOVA with **pre-experimental stimulus familiarity** and **item repetition** as two within-participant factors.
 
 ```{r, warning=FALSE, message=FALSE}
 p3.conf.aov <- aov_ez(id = "SID", dv = "Confidence", data = P3CFslong, within = c("Familiarity","Repetition"))
 anova(p3.conf.aov, es = "pes") %>% kable(digits = 4)
 ```
 
-Confidence ratings were higher in the `famous` condition than the `non-famous` condition (the main effect of **pre-experimental item familiarity**) and higher in the `repetition` condition than the `no repetition` condition (the main effect of **item repetition**). The effect of item repetition depended on the pre-experimental familiarity of the items. The two-way interaction was also significant. Next we performed two additional one-way repeated-measures ANOVAs as post-hoc analyses. The first table below presents the effect of item repetition for `famous` faces, and the second presents the same effect for `non-famous` faces.
+Confidence ratings were higher in the `famous` condition than the `non-famous` condition (the main effect of **pre-experimental stimulus familiarity**) and higher in the `repetition` condition than the `no repetition` condition (the main effect of **item repetition**). The effect of item repetition was also significantly modulated by the pre-experimental stimulus familiarity. Next we performed two additional one-way repeated-measures ANOVAs as post-hoc analyses. The table below shows the effect of item repetition for `famous` faces.
 
 ```{r, warning=FALSE, message=FALSE}
 ci95 <- P3CFswide %>% filter(Familiarity=="Famous") %>%
@@ -459,7 +460,7 @@ p3.conf.aov.r1 <- aov_ez(id = "SID", dv = "Confidence", within = "Repetition",
 anova(p3.conf.aov.r1, es = "pes") %>% kable(digits = 4)
 ```
 
-In the `famous` face condition, confidence ratings were higher for **unrepeated** than **repeated** faces. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
+In the `famous` face condition, confidence ratings were higher for **unrepeated** than **repeated** faces. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`]. The table below shows the effect of item repetition for `non-famous` faces.
 
 ```{r, warning=FALSE, message=FALSE}
 ci95 <- P3CFswide %>% filter(Familiarity=="Non-famous") %>%
@@ -507,13 +508,13 @@ data.frame(Effect = c("Familiarity", "Repetition", "Familiarity:Repetition"),
            df = 1, Chisq = cm.comp$LR.stat[2:4], p = cm.comp$`Pr(>Chisq)`[2:4]) %>% kable()
 ```
 
-The LRT revealed that the main effect of **item repetition** and the two-way interaction were significant. Next we performed pairwise comparisons as post-hoc analyses. As shown in the following table, the results of the pairwise comparisons were consistent with those from the ANOVA approach. 
+The LRT revealed that the main effect of **item repetition** and the two-way interaction were both significant. Next we performed pairwise comparisons as post-hoc analyses. As shown in the following table, the results of the pairwise comparisons were consistent with those from the ANOVA approach. 
 
 ```{r}
 emmeans(cm.full, pairwise ~ Repetition | Familiarity)$contrasts %>% kable()
 ```
 
-Below is the plot of estimated marginal means, which were extracted from the fitted CLMM. The estimated distribution of confidence ratings evidently represents the interaction between **item repetition** and **pre-experimental item repetition**.
+Below is the plot of estimated marginal means, which were extracted from the fitted CLMM. The estimated distribution of confidence ratings shows the interaction between **item repetition** and **pre-experimental stimulus familiarity**.
 
 ```{r, fig.height=4}
 temp <- emmeans(cm.full,~Familiarity:Repetition|cut, mode="linear.predictor")
@@ -539,7 +540,7 @@ ggplot(data = temp, aes(x = Rating, y = Prob, group = Condition)) +
 
 ## RT
 
-Only RTs in correct trials were analyzed. Before analysis, we first removed RTs either shorter than 200ms or longer than 10s. Then, from the RT distribution of each condition, RTs beyond 3 *s.d.* from the mean were removed. 
+Only RTs from correct trials were analyzed. Before analysis, we first removed RTs either shorter than 200ms or longer than 10s. Then, from the RT distribution of each condition, RTs beyond 3 *s.d.* from the mean were additionally removed. 
 
 ```{r, collapse=TRUE}
 cP3 <- P3 %>% filter(Corr==1)
@@ -561,7 +562,7 @@ sP3 <- cP3 %>% filter(RT > 200 & RT < 10000) %>%
 
 This trimming procedure removed `r round(100 - 100*nrow(sP3)/nrow(cP3), digits = 2)`% of correct RTs.
   
-Since the overall accuracy of source memory was not high, only small numbers of correct trials were available after trimming. The following table summarizes the numbers of RTs submitted to subsequent analyses. None of participants had more than 20 trials per condition. In the `non-famous` conditions, half participants had less than 10 valid trials.
+Since the overall source memory accuracy was not high, only small numbers of correct trials were available after trimming. The following table summarizes the numbers of RTs submitted to subsequent analyses. No participant had more than 20 trials per condition. For `non-famous` faces, half of the participants had less than 10 valid trials per condition.
 
 ```{r}
 sP3 %>% group_by(SID, Familiarity, Repetition) %>% 
@@ -597,7 +598,7 @@ den1 + den2
 
 The overall RT distribution was highly skewed even after trimming. Given limited numbers of RTs and its skewed distribution, any results from the current RT analyses should be interpreted with caution and preferably corroborated with other measures.
 
-We calculated the mean and *s.d.* of individual participants’ mean RTs. The numerical pattern of RTs across the conditions was consistent with the accuracy and confidence data. In the following plot, red points and error bars represent the means and 95% within-participants CIs.
+We calculated the mean and *s.d.* of individual participants’ mean RTs. The overall pattern of RTs across the conditions was consistent with that of source memory accuracy and confidence ratings. In the following plot, red points and error bars represent the means and 95% within-participants CIs.
 
 ```{r, fig.height=4}
 P3RTslong <- sP3 %>% group_by(SID, Familiarity, Repetition) %>% 
@@ -645,14 +646,14 @@ ggplot(data=P3RTslong, aes(x=Familiarity, y=RT, fill=Repetition)) +
 
 ### ANOVA
 
-Individuals’ mean RTs were submitted to a 2x2 repeated measures ANOVA with **pre-experimental item familiarity** and **item repetition** as two within-participant factors.[^1]
+Individuals’ mean RTs were submitted to a 2x2 repeated measures ANOVA with **pre-experimental stimulus familiarity** and **item repetition** as two within-participant factors.[^1]
 
 ```{r, warning=FALSE, message=FALSE}
 p3.rt.aov <- aov_ez(id = "SID", dv = "RT", data = sP3, within = c("Familiarity", "Repetition"))
 anova(p3.rt.aov, es = "pes") %>% kable(digits = 4)
 ```
 
-The main effect of **pre-experimental item familiarity** and the two-way interaction was significant. The main effect of **item repetition** was only marginally significant. We then proceeded to post-hoc analyses with two one-way repeated-measures ANOVAs. The first table below presents the effect of item repetition for `famous` faces, and the second table presents the same effect for `non-famous` faces.
+The main effect of **pre-experimental stimulus familiarity** and the two-way interaction were both significant. The main effect of **item repetition** was only marginally significant. We then performed two one-way repeated-measures ANOVAs as post-hoc analyses. The first table below presents the effect of item repetition for `famous` faces, and the second table presents the same effect for `non-famous` faces.
 
 ```{r, warning=FALSE, message=FALSE}
 p3.rt.aov.r1 <- aov_ez(id = "SID", dv = "RT", within = "Repetition",
@@ -660,7 +661,7 @@ p3.rt.aov.r1 <- aov_ez(id = "SID", dv = "RT", within = "Repetition",
 anova(p3.rt.aov.r1, es = "pes") %>% kable(digits = 4)
 ```
 
-The difference was significant in the `famous` condition.
+The effect of item repetition was significant in the `famous` condition.
 
 
 ```{r, warning=FALSE, message=FALSE}
@@ -669,7 +670,7 @@ p3.rt.aov.r2 <- aov_ez(id = "SID", dv = "RT", within = "Repetition",
 anova(p3.rt.aov.r2, es = "pes") %>% kable(digits = 4)
 ```
 
-The difference was not significant in the `non-famous` condition.
+The effect of item repetition was not significant in the `non-famous` condition.
 
 
 
@@ -686,4 +687,4 @@ sessionInfo()
 ```
 
 [^1]: 
-We additionally tested several GLMMs on source memory RTs since GLMMs with relevant link functions were supposed to be better than the conventional ANOVA in dealing with such limited, unbalanced and skewed data as the current RTs ([Lo & Andrews, 2015](https://p3w.frontiersin.org/articles/10.3389/fpsyg.2015.01171/full)). Some models adopted non-linear transformations of RTs (such as -1000/RT or log(RT)) and  others assumed an inverse Gaussian or Gamma distribution and a linear relationship (identity link function) between the predictors and RTs. None of the models, however, converged onto a stable solution. 
+We additionally tested several GLMMs on source memory RTs since GLMMs with relevant link functions are expected to properly handle unbalanced data with a small sample size and skewed distribution such as our RT data ([Lo & Andrews, 2015](https://p3w.frontiersin.org/articles/10.3389/fpsyg.2015.01171/full)). Some models adopted non-linear transformations of RTs (such as -1000/RT or log(RT)) and  others assumed an inverse Gaussian or Gamma distribution and a linear relationship (identity link function) between the predictors and RTs. None of the models, however, converged onto a stable solution. 

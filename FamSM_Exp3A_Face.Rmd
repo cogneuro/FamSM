@@ -47,7 +47,7 @@ klippy::klippy()
 
 # Day 1 Familiarization
 
-Forty eight faces were repeated 30 times on Day 1. Only `non-famous` faces were used in the current experiment. Each of 13 participants completed a total of 1,440 trials, divided into 10 blocks of 144 trials each. Each face was repeated three times within a block. In each trial, participants indicated whether it was the first, second, or third time the given face was presented within the block. 
+Forty eight `non-famous` faces were repeated 30 times on Day 1. Each participant (13 in total) completed 10 blocks of 144 trials each (1,440 trials in total). Each face was repeated three times within a block. In each trial, participants indicated whether it was the first, second, or third time the given face was presented within the block. 
 
 
 ```{r, collapse=TRUE}
@@ -133,7 +133,7 @@ Three participants (1st, 7th, & 9th) did not make responses in all or most of tr
 
 # Item Repetition Phase
 
-The three-phase procedure as in Experiments 1 and 2 was conducted on Day 2. In the first phase, 24 faces out of the 48 faces learned on Day 1 were repeated eight time, producing 192 trials. In each trial, participants made a male/female judgment for a face. 
+The same three-phase procedure as in Experiments 1 and 2 was conducted on Day 2. In the first phase, 24 out of the 48 non-famous faces learned on Day 1 were repeated eight times, resulting in 192 trials in total. In each trial, participants made a male/female judgment. 
 
 ```{r, collapse=TRUE}
 P1 <- read.csv("data/data_FamSM_Exp3A_Face_REP.csv", header = T)
@@ -159,7 +159,7 @@ P1slong <- P1 %>% group_by(SID) %>%
   ungroup()
 ```
 
-Participants performed the task very wel. The mean accuracy was `r round(mean(P1slong$Accuracy), digits=2)`%. In the following plot, red point and error bar represent the means and 95% bootstrapped CIs.
+The mean accuracy of the male/female judgment task was `r round(mean(P1slong$Accuracy), digits=2)`%. In the figure below, the red point and error bars represent the mean and 95% bootstrapped CIs.
 
 ```{r, fig.height=3}
 P1slong <- P1 %>% group_by(SID) %>% 
@@ -192,7 +192,7 @@ ggplot(data=P1slong, aes(x=1, y=Accuracy)) +
 
 # Item-Source Association Phase
 
-Participants learned 48 pairs of a face and a quadrant on the screen. They were instructed to pay attention to the location of each face while making a male/female judgment. All faces shown on Day 1 were presented once in one of four quadrants. The within-participant **item repetition** was the single factor. Twenty four faces had been repeated in the first phase (`repeated`) while the other 24 faces had not (`unrepeated`).
+Participants learned 48 face-location (a quadrant on the screen) associations. They were instructed to pay attention to the location of each face while making a male/female judgment. All faces shown on Day 1 were presented once in one of four quadrants. **Item repetition** was the single within-participant independent variable. Half of the faces had been repeated in the first phase (`repeated`) while the other half had not (`unrepeated`).
 
 ```{r, collapse=TRUE}
 P2 <- read.csv("data/data_FamSM_Exp3A_Face_SRC.csv", header = T)
@@ -216,7 +216,7 @@ table(P2$Repetition, P2$SID)
 
 ## Accuracy
 
-We calculated the mean and *s.d.* of individual participants' accuracy rates for each condition. There was only negligible difference between `repeated` vs. `unrepeated` conditions. In the following plot, red points and error bars represent the means and 95% CIs.
+We calculated the mean and *s.d.* of individual participants' accuracy for each condition. There was only negligible difference between the `repeated` vs. `unrepeated` conditions. In the following plot, red points and error bars represent the means and 95% CIs.
 
 ```{r, fig.height=4, fig.width=4}
 # phase 1, subject-level, long-format
@@ -257,7 +257,7 @@ ggplot(P2slong, aes(x=Repetition, y=Accuracy, fill=Repetition)) +
 
 ### ANOVA
 
-Mean percentage accuracy was submitted to a one-way repeated measures ANOVA. The difference between conditions was not statistically significant.
+Mean percentage accuracy was submitted to a one-way repeated measures ANOVA. The effect of item repetition was not statistically significant.
 
 ```{r, warning=FALSE, message=FALSE}
 p2.aov <- aov_ez(id = "SID", dv = "Accuracy", data = P2slong, within = "Repetition")
@@ -275,7 +275,7 @@ anova(p2.aov, es = "pes") %>% kable(digits = 4)
 
 # Source Memory Test Phase
 
-In each trial, participants first indicated in which quadrant a given face appeared during the item-source association phase. Participants then rated how confident they were about their memory judgment. The design was the same as that in the second phase. A single factor was the within-participant **item repetition** (`repeated` vs. `unrepeated`).
+In each trial, participants first indicated in which quadrant a given face appeared during the item-source association phase. Participants then rated how confident they were about their memory judgment. 
 
 ```{r, collapse=TRUE}
 P3 <- read.csv("data/data_FamSM_Exp3A_Face_TST.csv", header = T)
@@ -339,7 +339,7 @@ ggplot(data=P3ACCslong, aes(x=Repetition, y=Accuracy, fill=Repetition)) +
         legend.position = "none")
 ```
 
-Source memory accuracy was greater in the `unrepeated` condition than the `repeated` condition (*novelty benefit*). 
+Source memory accuracy was greater in the `unrepeated` than `repeated` condition (*novelty benefit*). 
 
 
 ### ANOVA
@@ -395,7 +395,7 @@ colnames(full.compare)[c(3,4,5,6)] <- c("full1 Chisq", "p","full2 Chisq", "p")
 full.compare %>% kable()
 ```
 
-The *p*-values from both models agreed strongly providing a high degree of confidence in the results. Item repetition impaired source memory of `non-famous` faces once they had become familiar on the previous day. 
+The *p*-values from the two models were highly similar to each other. Item repetition impaired source memory for `non-famous` faces when the faces had been pre-exposed on the previous day. 
 
 
 <br><br>
@@ -403,7 +403,7 @@ The *p*-values from both models agreed strongly providing a high degree of confi
 
 ## Confidence
 
-The following table presents the mean and *s.d.* of individual participants' confidence ratings in each condition. The pattern of confidence ratings was qualitatively identical to those from accuracy analysis; we observed the *novelty benefit* for `non-famous` faces. 
+The following table shows the mean and *s.d.* of individual participants' confidence ratings in each condition. The pattern of confidence ratings was qualitatively identical to that of source memory accuracy; we observed the *novelty benefit* for `non-famous` faces. 
 
 ```{r, fig.height=4, fig.width=4}
 P3CFslong <- P3 %>% group_by(SID, Repetition) %>% 
@@ -483,7 +483,7 @@ P3R$SID = factor(P3R$SID)
 load("RData/clmm_FamSM_Exp3A_Face_Conf.RData")
 ```
 
-To determine the significance of the fixed effect, the LRT compared the full model (`cm.full`) with its nested model (`cm.red1`) without the effect of interest. The next table showed that **item repetition** significantly reduced confidence on source memory. 
+To determine the significance of the fixed effect, the LRT compared the full model (`cm.full`) with its nested model (`cm.red1`) without the effect of interest. The table below shows that **item repetition** significantly decreased confidence ratings. 
 
 ```{r}
 cm.comp <- anova(cm.full, cm.red1)
@@ -519,7 +519,7 @@ ggplot(data = temp, aes(x = Rating, y = Prob, group = Condition)) +
 
 ## RT
 
-Only RTs in correct trials were analyzed. Before analysis, we first removed RTs either shorter than 200ms or longer than 10s. Then, from the RT distribution of each condition, RTs beyond 3 *s.d.* from the mean were removed. 
+Only RTs from correct trials were analyzed. Before analysis, we first removed RTs either shorter than 200ms or longer than 10s. Then, from the RT distribution of each condition, RTs beyond 3 *s.d.* from the mean were additionally removed. 
 
 ```{r, collapse=TRUE}
 cP3 <- P3 %>% filter(Corr==1)
@@ -539,9 +539,9 @@ sP3 <- cP3 %>% filter(RT > 200 & RT < 10000) %>%
 100 - 100*nrow(sP3)/nrow(cP3)
 ```
 
-This trimming procedure removed `r round(100 - 100*nrow(sP3)/nrow(cP3), digits = 2)`% of correct RTs.
+This trimming procedure removed `r round(100 - 100*nrow(sP3)/nrow(cP3), digits = 2)`% of correct trials.
   
-Since the overall accuracy of source memory was not high, only small numbers of correct trials were available after trimming. The following table summarizes the numbers of RTs submitted to subsequent analyses. None of participants had more than 25 trials per condition. 
+Since the overall source memory accuracy was not high, only small numbers of correct trials were available after trimming. The following table summarizes the numbers of RTs submitted to subsequent analyses. No participant had more than 25 trials per condition. 
 
 ```{r}
 sP3 %>% group_by(SID, Repetition) %>% 
@@ -577,7 +577,7 @@ den1 + den2
 
 The overall RT distribution was highly skewed even after trimming. Given limited numbers of RTs and its skewed distribution, any results from the current RT analyses should be interpreted with caution and preferably corroborated with other measures.
 
-We calculated the mean and *s.d.* of individual participants’ mean RTs. The numerical pattern of RTs was consistent with the accuracy and confidence data. Participants made slightly faster responses in the `unrepeated` condition than `repeated` condition.
+We calculated the mean and *s.d.* of individual participants’ mean RTs. The overall pattern of RTs was consistent with that of source memory accuracy and confidence ratings. Participants responded slightly faster in the `unrepeated` than `repeated` condition.
 
 ```{r, fig.height=4, fig.width=4}
 P3RTslong <- sP3 %>% group_by(SID, Repetition) %>% 

@@ -47,7 +47,7 @@ klippy::klippy()
 
 # Item Repetition Phase
 
-Thirty participants were recruited. Half of participants watched 24 `words` while the other half watched 24 `pseudowords` (between-participants factor, **pre-experimental item familiarity**). The faces were repeated eight times, producing 192 trials. In each trial, participants made a preference judgment for an item. 
+Thirty participants were recruited. Half of the participants were exposed to 24 `words` while the other half were exposed to 24 `pseudowords` (**pre-experimental stimulus familiarity** as a between-participants factor). Each item was repeated eight times, resulting in 192 trials. Participants made a Like/Dislike judgment for each item. 
 
 ```{r, collapse=TRUE}
 P1 <- read.csv("data/data_FamSM_Exp2_Word_REP.csv", header = T)
@@ -75,7 +75,7 @@ Participants did not make responses in `r round(100 - mean(P1$Corr)*100, digits=
 
 ## Preference
 
-We calculated the mean and *s.d.* of individual participants' preference scores in each condition. Participants showed greater preference for `words` than `pseudowords`. In the following plot, red points and error bars represent the means and 95% CIs.
+We calculated the mean and *s.d.* of individual participants' preference scores (probability of 'Like' responses) in each condition. Participants showed greater preference for `words` than for `pseudowords`. In the following plot, red points and error bars represent the means and 95% CIs.
 
 ```{r, fig.height=4}
 # phase 1, subject-level, long-format
@@ -110,7 +110,7 @@ ggplot(P1slong, aes(x=Familiarity, y=Preference)) +
 
 ### ANOVA
 
-Mean preference scores were submitted to a one-way ANOVA. The difference between conditions was statistically significant. The preference score was higher in the `words` than `pseudowords` conditions.
+Mean preference scores were submitted to a one-way ANOVA. The difference between conditions was statistically significant. The preference score was higher in the `words` than `pseudowords` condition.
 
 ```{r, warning=FALSE, message=FALSE}
 p1.aov <- aov_ez(id = "SID", dv = "Preference", data = P1slong, between = "Familiarity")
@@ -127,7 +127,7 @@ anova(p1.aov, es = "pes") %>% kable(digits = 4)
 
 # Item-Source Association Phase
 
-Participants learned 48 pairs of an item (word or pseudoword) and a quadrant on the screen. They were instructed to pay attention to the location of each item while making a preference judgment. A between-participants **pre-experimental item familiarity** factor determined whether a participant watched `words` or `pseudowords`. A within-participant **item repetition** factor determined whether a trial presented a `repeated` item, which had appeared in the first phase or an `unrepeated` item, which appeared for the first time in the experiment.
+Participants learned 48 item-location (a quadrant on the screen) associations. They were instructed to pay attention to the location of each item while making a preference judgment. A between-participants **pre-experimental stimulus familiarity** factor determined whether a participant was exposed to `words` or `pseudowords`. A within-participant **item repetition** factor determined whether a `repeated` item (which had been presented in the first phase) or an `unrepeated` item (which appeared for the first time in the item-source association phase) was presented in each trial.
 
 ```{r, collapse=TRUE}
 P2 <- read.csv("data/data_FamSM_Exp2_Word_SRC.csv", header = T)
@@ -159,7 +159,7 @@ Participants did not make responses in `r round(100 - mean(P2$Corr)*100, digits=
 
 ## Preference
 
-We calculated the mean and *s.d.* of individual participants' preference scores in each condition. After repetition, preference decreased for `words` but increased for `pseudowords`.
+We calculated the mean and *s.d.* of individual participants' preference scores for each condition. After repetition, preference decreased for `words` but increased for `pseudowords`.
 
 ```{r, fig.height=4}
 P2slong <- P2 %>% group_by(SID, Familiarity, Repetition) %>% 
@@ -200,7 +200,7 @@ ggplot(data=P2slong, aes(x=Familiarity, y=Preference, fill=Repetition)) +
 
 ### ANOVA
 
-We performed a 2x2 mixed design ANOVA with **pre-experimental item familiarity** as a between-participants factor and **item repetition** as a within-participant factor. The main effect of **pre-experimental item familiarity** and the two-way interaction were significant. 
+We performed a 2x2 mixed design ANOVA with **pre-experimental stimulus familiarity** as a between-participants factor and **item repetition** as a within-participant factor. The main effect of **pre-experimental stimulus familiarity** and the two-way interaction were both significant. 
 
 ```{r, warning=FALSE, message=FALSE}
 p2.aov <- aov_ez(id = "SID", dv = "Preference", data = P2slong, 
@@ -208,7 +208,7 @@ p2.aov <- aov_ez(id = "SID", dv = "Preference", data = P2slong,
 anova(p2.aov, es = "pes") %>% kable(digits = 4)
 ```
 
-As post-hoc analyses, we performed two one-way repeated measures ANOVAs to contrast `repeated` vs. `unrepeated` items within each **pre-experimental item familiarity** condition. The first table shows the results in the `words` condition and the second table in the `pseudowords` condition.
+As post-hoc analyses, we performed two one-way repeated measures ANOVAs to contrast `repeated` vs. `unrepeated` items within each **pre-experimental stimulus familiarity** condition. The first table shows the results from the `words` condition and the second table shows the results from the `pseudowords` condition.
 
 ```{r, warning=FALSE, message=FALSE}
 p2.pref.aov.r1 <- aov_ez(id = "SID", dv = "Preference", within = "Repetition",
@@ -224,7 +224,7 @@ p2.pref.aov.r2 <- aov_ez(id = "SID", dv = "Preference", within = "Repetition",
 anova(p2.pref.aov.r2, es = "pes") %>% kable(digits = 4)
 ```
 
-Item repetition did not affect preference significantly for `pseudowords`.
+Item repetition did not significantly affect preference for `pseudowords`.
 
 
 
@@ -237,7 +237,7 @@ Item repetition did not affect preference significantly for `pseudowords`.
 
 # Source Memory Test Phase
 
-In each trial, participants first indicated in which quadrant a given item appeared during the item-source association phase. Participants then rated how confident they were about their memory judgment. The design was the same as that in the second phase. There were 48 trials. **Pre-experimental item familiarity** was a between-participants factor. **Item repetition** was a within-participant factor.
+In each trial, participants first indicated in which quadrant a given face appeared during the item-source association phase. Participants then rated how confident they were about their memory judgment. There were 48 trials in total. 
 
 ```{r, collapse=TRUE}
 P3 <- read.csv("data/data_FamSM_Exp2_Word_TST.csv", header = T)
@@ -321,11 +321,11 @@ ggplot(data=P3ACCslong, aes(x=Familiarity, y=Accuracy, fill=Repetition)) +
         panel.grid.minor = element_blank()) 
 ```
 
-The effect of **item repetition** depended on the **pre-experimental familiarity** of the items. For `words`, the source of unrepeated items was better remembered (*novelty effect*). For `pseudowords`, the source of repeated items was better remembered (*familiarity effect*). These crossed effects were on top of the general familiarity effect, in which source memory was more accurate for `words` than for `pseudowords`. 
+The effect of **item repetition** was modulated by the **pre-experimental stimulus familiarity** of the items. For `words`, the locations of unrepeated items were better remembered (*novelty effect*). For `pseudowords`, the locations of repeated items were better remembered (*familiarity effect*). These crossed effects were on top of the general familiarity effect, in which source memory was more accurate for `words` than for `pseudowords`. 
 
 ### ANOVA
 
-Individuals' mean percentage accuracy was submitted to a 2x2 mixed design ANOVA with **pre-experimental item familiarity** as a between-participants factor (`words` vs. `pseudowords`) and **item repetition** as a within-participant factor (`repeated` vs. `unrepeated`).
+Individuals' mean percentage accuracy was submitted to a 2x2 mixed design ANOVA with **pre-experimental stimulus familiarity** as a between-participants factor (`words` vs. `pseudowords`) and **item repetition** as a within-participant factor (`repeated` vs. `unrepeated`).
 
 ```{r, warning=FALSE, message=FALSE}
 p3.corr.aov <- aov_ez(id = "SID", dv = "Accuracy", data = P3ACCslong, 
@@ -359,14 +359,14 @@ p3.corr.aov.r2 <- aov_ez(id = "SID", dv = "Accuracy", within = "Repetition",
 anova(p3.corr.aov.r2, es = "pes") %>% kable(digits = 4)
 ```
 
-In the **pseudoword** group, source memory was marginally more accurate for **repeated** than **unrepeated** items. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
+In the **pseudoword** group, source memory tended to be more accurate for **repeated** than **unrepeated** items. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
 
 
 ### GLMM
 
 To supplement conventional ANOVAs, we tested **generalized linear mixed models (GLMM)** on source memory accuracy. This mixed modeling approach with a binomial link function is expected to properly handle binary data such as source memory responses (i.e., correct or not; [Jaeger, 2008](https://www.sciencedirect.com/science/article/pii/S0749596X07001337)). 
 
-We built the full model (`full1`) with two fixed effects (**pre-experimental item familiarity** and **item repetition**) and their interaction. The model also included maximal random effects structure ([Barr, Levy, Scheepers, & Tily, 2013](https://www.sciencedirect.com/science/article/pii/S0749596X12001180)): both by-participant and by-item random intercepts, and by-participant random slopes for **item repetition**. In case the maximal model does not converge successfully, we built another model (`full2`) with the maximal random structure but with the correlations among the random terms removed ([Singmann, 2018](https://cran.r-project.org/web/packages/afex/vignettes/afex_mixed_example.html#lrt-results)). 
+We built the full model (`full1`) with two fixed effects (**pre-experimental stimulus familiarity** and **item repetition**) and their interaction. The model also included maximal random effects structure ([Barr, Levy, Scheepers, & Tily, 2013](https://www.sciencedirect.com/science/article/pii/S0749596X12001180)): both by-participant and by-item random intercepts, and by-participant random slopes for **item repetition**. In case the maximal model does not converge successfully, we built another model (`full2`) with the maximal random structure but with the correlations among the random terms removed ([Singmann, 2018](https://cran.r-project.org/web/packages/afex/vignettes/afex_mixed_example.html#lrt-results)). 
 
 To fit the models, we used the `mixed()` of the `afex` package ([Singmann, Bolker, & Westfall, 2017](https://afex.singmann.science/forums/topic/citing-afex)) which was built on the `lmer()` of the `lme4` package ([Bates, Maechler, Bolker, & Walker, 2015](https://www.jstatsoft.org/article/view/v067i01/0)). The `mixed()` assessed the statistical significance of fixed effects by comparing a model with the effect in question against its nested model which lacked the effect in question. *P*-values of the effects were obtained by likelihood ratio tests (LRT).
 
@@ -399,7 +399,7 @@ colnames(full.compare)[c(3,4,5,6)] <- c("full1 Chisq", "p","full2 Chisq", "p")
 full.compare %>% kable()
 ```
 
-The *p*-values from both models agreed strongly providing a high degree of confidence in the results. Now we proceeded to the post-hoc analyses. As in the following table, the results from the pairwise comparisons were consistent with those based on the ANOVA. Item repetition significantly impaired source memory of `words` whereas it slightly improved source memory of `pseudowords`. 
+The *p*-values from the two models were highly similar to each other. Post-hoc analysis results are summarized in the table below. The results from the pairwise comparisons were consistent with those from the ANOVA. Item repetition significantly impaired source memory for `words` whereas it slightly improved source memory for `pseudowords`. 
 
 ```{r}
 emmeans(full1, pairwise ~ Repetition | Familiarity, type = "response")$contrasts %>% kable()
@@ -411,7 +411,7 @@ emmeans(full1, pairwise ~ Repetition | Familiarity, type = "response")$contrasts
 
 ## Confidence
 
-The next table presents the mean and *s.d.* of individual participants' confidence ratings in each condition. The pattern of confidence ratings was qualitatively identical to those from accuracy analysis; we observed the **novelty benefit** with `words` and the **familiarity benefit** with `pseudowords`.
+The table below shows the mean and *s.d.* of individual participants' confidence ratings for each condition. The pattern of confidence ratings was qualitatively identical to that of source memory accuracy; we observed the **novelty benefit** for `words` and the **familiarity benefit** for `pseudowords`.
 
 ```{r, fig.height=4}
 P3CFslong <- P3 %>% group_by(SID, Familiarity, Repetition) %>% 
@@ -470,7 +470,7 @@ ggplot(data=P3CFslong, aes(x=Familiarity, y=Confidence, fill=Repetition)) +
 
 ### ANOVA
 
-Individuals’ confidence ratings were submitted to a 2x2 mixed design ANOVA with **pre-experimental item familiarity** as a between-participants factor and **item repetition** as a within-participant factor.
+Individuals’ confidence ratings were submitted to a 2x2 mixed design ANOVA with **pre-experimental stimulus familiarity** as a between-participants factor and **item repetition** as a within-participant factor.
 
 ```{r, warning=FALSE, message=FALSE}
 p3.conf.aov <- aov_ez(id = "SID", dv = "Confidence", data = P3CFslong, 
@@ -478,7 +478,7 @@ p3.conf.aov <- aov_ez(id = "SID", dv = "Confidence", data = P3CFslong,
 anova(p3.conf.aov, es = "pes") %>% kable(digits = 4)
 ```
 
-The main effect of **pre-experimental item familiarity** and the two-way interaction were significant. The main effect of **item repetition** were marginally significant. Next we performed two additional one-way repeated measures ANOVAs as post-hoc analyses. The first table below presents the effect of item repetition for `words`, and the second presents the same effect for `pseudowords`. The results evidenced that the repetition of items induced significant confidence changes in an opposite direction for `words` vs. `pseudowords` (see below).
+The main effect of **pre-experimental stimulus familiarity** and the two-way interaction were both significant. The main effect of **item repetition** was marginally significant. Next we performed two additional one-way repeated measures ANOVAs as post-hoc analyses. The first table below presents the effect of item repetition for `words`, and the second presents the same effect for `pseudowords`. The results showed that item repetition had significant effects on confidence ratings for `words` vs. `pseudowords` in opposite directions.
 
 ```{r, warning=FALSE, message=FALSE}
 ci95 <- P3CFswide %>% filter(Familiarity=="Words") %>%
@@ -491,7 +491,7 @@ p3.conf.aov.r1 <- aov_ez(id = "SID", dv = "Confidence", within = "Repetition",
 anova(p3.conf.aov.r1, es = "pes") %>% kable(digits = 4)
 ```
 
-In the **word** group, the participants were more confident on their source memory for **unrepeated** than **repeated** items. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
+In the **word** group, participants were more confident on their source memory for **unrepeated** than **repeated** items. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
 
 ```{r, warning=FALSE, message=FALSE}
 ci95 <- P3CFswide %>% filter(Familiarity=="Pseudowords") %>%
@@ -504,7 +504,7 @@ p3.conf.aov.r2 <- aov_ez(id = "SID", dv = "Confidence", within = "Repetition",
 anova(p3.conf.aov.r2, es = "pes") %>% kable(digits = 4)
 ```
 
-In the **pseudoword** group, the participants' confidence ratings were higher for **repeated** than **unrepeated** items. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
+In the **pseudoword** group, participants' confidence ratings were higher for **repeated** than **unrepeated** items. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
 
 
 ### CLMM
@@ -545,7 +545,7 @@ The LRT revealed a significant two-way interaction. Neither main effects were si
 emmeans(cm.full, pairwise ~ Repetition | Familiarity)$contrasts %>% kable()
 ```
 
-Below is the plot of estimated marginal means, which were extracted from the fitted CLMM. The estimated distribution of confidence ratings evidently represents the interaction between **item repetition** and **pre-experimental item repetition**.
+Below is the plot of estimated marginal means, which were extracted from the fitted CLMM. The estimated distribution of confidence ratings shows the interaction between **item repetition** and **pre-experimental stimulus familiarity**.
 
 ```{r, fig.height=4}
 temp <- emmeans(cm.full,~Familiarity:Repetition|cut, mode="linear.predictor")
@@ -571,7 +571,7 @@ ggplot(data = temp, aes(x = Rating, y = Prob, group = Condition)) +
 
 ## RT
 
-Only RTs in correct trials were analyzed. Before analysis, we first removed RTs either shorter than 200ms or longer than 10s. Then, from the RT distribution of each condition, RTs beyond 3 *s.d.* from the mean were removed. 
+Only RTs in correct trials were analyzed. Before analysis, we first removed RTs either shorter than 200ms or longer than 10s. Then, from the RT distribution of each condition, RTs beyond 3 *s.d.* from the mean were additionally removed. 
 
 ```{r, collapse=TRUE}
 cP3 <- P3 %>% filter(Corr==1)
@@ -593,7 +593,7 @@ sP3 <- cP3 %>% filter(RT > 200 & RT < 10000) %>%
 
 This trimming procedure removed `r round(100 - 100*nrow(sP3)/nrow(cP3), digits = 2)`% of correct RTs.
   
-Since the overall accuracy of source memory was not high, only small numbers of correct trials were available after trimming. The following table summarizes the numbers of RTs submitted to subsequent analyses. None of participants had more than 25 trials per condition. 
+Since the overall source memory accuracy was not high, only small numbers of correct trials were available after trimming. The following table summarizes the numbers of trials submitted to subsequent analyses. No participant had more than 25 trials per condition. 
 
 ```{r}
 sP3 %>% group_by(SID, Familiarity, Repetition) %>% 
@@ -629,7 +629,7 @@ den1 + den2
 
 The overall RT distribution was highly skewed even after trimming. Given limited numbers of RTs and its skewed distribution, any results from the current RT analyses should be interpreted with caution and preferably corroborated with other measures.
 
-We calculated the mean and *s.d.* of individual participants’ mean RTs. The numerical pattern of RTs across the conditions was consistent with the accuracy and confidence data. In the following plot, red points and error bars represent the means and 95% within-participants CIs.
+We calculated the mean and *s.d.* of individual participants’ mean RTs. The overall pattern of RTs across the conditions was consistent with that of source memory accuracy and confidence ratings. In the following plot, red points and error bars represent the means and 95% within-participants CIs.
 
 ```{r, fig.height=4}
 P3RTslong <- sP3 %>% group_by(SID, Familiarity, Repetition) %>% 
@@ -677,7 +677,7 @@ ggplot(data=P3RTslong, aes(x=Familiarity, y=RT, fill=Repetition)) +
 
 ### ANOVA
 
-Individuals’ mean RTs were submitted to a 2x2 mixed design ANOVA with **pre-experimental item familiarity** as a between-participants factor and **item repetition** as a within-participant factor.[^1]
+Individual participants’ mean RTs were submitted to a 2x2 mixed design ANOVA with **pre-experimental stimulus familiarity** as a between-participants factor and **item repetition** as a within-participant factor.[^1]
 
 ```{r, warning=FALSE, message=FALSE}
 p3.rt.aov <- aov_ez(id = "SID", dv = "RT", data = sP3, 
@@ -685,7 +685,7 @@ p3.rt.aov <- aov_ez(id = "SID", dv = "RT", data = sP3,
 anova(p3.rt.aov, es = "pes") %>% kable(digits = 4)
 ```
 
-The effect of **pre-experimental item familiarity** was significant. Participants made faster responses to `words` than `pseudowords`. The two-way interaction was also significant. Next, we proceeded to post-hoc analyses with two one-way repeated measures ANOVAs. The first table below presents the effect of item repetition for `words`, and the second table presents the same effect for `pseudowords`. 
+The effect of **pre-experimental stimulus familiarity** was significant. Participants made faster responses to `words` than `pseudowords`. The two-way interaction was also significant. We then performed two one-way repeated-measures ANOVAs as post-hoc analyses. The first table below presents the effect of item repetition for `words`, and the second table presents the same effect for `pseudowords`. 
 
 ```{r, warning=FALSE, message=FALSE}
 p3.rt.aov.r1 <- aov_ez(id = "SID", dv = "RT", within = "Repetition",
@@ -693,7 +693,7 @@ p3.rt.aov.r1 <- aov_ez(id = "SID", dv = "RT", within = "Repetition",
 anova(p3.rt.aov.r1, es = "pes") %>% kable(digits = 4)
 ```
 
-For `words`, the pattern of earlier responses for unrepeated words was significant.
+For `words`, RTs were significantly faster for unrepeated items.
 
 
 ```{r, warning=FALSE, message=FALSE}
@@ -702,7 +702,7 @@ p3.rt.aov.r2 <- aov_ez(id = "SID", dv = "RT", within = "Repetition",
 anova(p3.rt.aov.r2, es = "pes") %>% kable(digits = 4)
 ```
 
-For `pseudowords`, the pattern of earlier responses for repeated pseudowords was marginally significant. 
+For `pseudowords`, RTs were marginally faster for repeated items.
 
 
 <br><br>
@@ -710,7 +710,7 @@ For `pseudowords`, the pattern of earlier responses for repeated pseudowords was
 
 ## Preference matters?
 
-The preference scores in Phase 2 resembled the source memory accuracy and confidence ratings in Phase 3. Does preference determine source memory? Here, we reanalyzed the data from Phase 3 by considering participants' preference in Phase 2 as an additional factor. 
+The pattern of preference scores in Phase 2 resembled that of the source memory accuracy and confidence ratings in Phase 3. Does this indicate that source memory performance was affected by the preference judgment? Here, we reanalyzed the data from the source memory test phase using the preference response during the item-source association phase as an additional factor. 
 
 ```{r}
 P3$Preference <- NA
@@ -722,7 +722,7 @@ P3$Preference = factor(P3$Preference, levels=c(0,1), labels=c("Dislike","Like"))
 
 ### Source Memory Accuracy
 
-Individuals’ mean percentage accuracy was submitted to a 2x2x2 mixed design ANOVA with **pre-experimental item familiarity** (`words` vs. `pseudowords`) as a between-participants factor and **item repetition** (`repeated` vs. `unrepeated`) and **preference** (`like` vs. `dislike`)as two within-participant factors. The main effect of **preference** and its interactions with the other factors were not significant.
+Individuals’ mean percentage accuracy was submitted to a 2x2x2 mixed design ANOVA with **pre-experimental stimulus familiarity** (`words` vs. `pseudowords`) as a between-participants factor and **item repetition** (`repeated` vs. `unrepeated`) and **preference** (`like` vs. `dislike`) as two within-participant factors. The main effect of **preference** and its interactions with the other factors were not significant.
 
 ```{r, warning=FALSE, message=FALSE}
 acc.3way.aov <- aov_ez(id = "SID", dv = "Corr", data = P3, 
@@ -743,7 +743,7 @@ apa_beeplot(data = P3,
 
 ### Source Memory Confidence
 
-Individuals’ onfidence ratings were submitted to a 2x2x2 mixed design ANOVA with **pre-experimental item familiarity** (`words` vs. `pseudowords`) as a between-participants factor and **item repetition** (`repeated` vs. `unrepeated`) and `preference` (`like` vs. `dislike`)as two within-participant factors. The main effect of **preference** was significant. More importantly, however, **preference** did not significantly interact with the other factors. 
+Individuals’ confidence ratings were submitted to a 2x2x2 mixed design ANOVA with **pre-experimental stimulus familiarity** (`words` vs. `pseudowords`) as a between-participants factor and **item repetition** (`repeated` vs. `unrepeated`) and `preference` (`like` vs. `dislike`) as two within-participant factors. The main effect of **preference** was significant. More importantly, however, **preference** did not significantly interact with any of the other factors. 
 
 ```{r, warning=FALSE, message=FALSE}
 conf.3way.aov <- aov_ez(id = "SID", dv = "Confident", data = P3, 
@@ -761,7 +761,7 @@ apa_beeplot(data = P3,
             las=1)
 ```
 
-For both accuracy and confidence of source memory, no interactions with **preference** reached statistical significance. In contrast, the interaction between **pre-experimental item familiarity** and **item repetition** was always significant. These results evidenced that preference alone cannot account for the main findings on source memory.
+For both accuracy and confidence of source memory, no interaction with **preference** reached statistical significance. In contrast, the interaction between **pre-experimental stimulus familiarity** and **item repetition** remained significant. These results strongly suggest that preference alone cannot account for the interaction between pre-experimental stimulus familiarity and item repetition on source memory performance.
 
 <br><br>
 

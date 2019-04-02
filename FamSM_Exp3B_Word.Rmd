@@ -41,13 +41,13 @@ pacman::p_load(tidyverse, knitr, car, afex, emmeans, parallel, ordinal,
                ggbeeswarm, RVAideMemoire)
 pacman::p_load_gh("thomasp85/patchwork", "RLesur/klippy")
 
-klippy::klippy()  
+klippy::klippy() 
 ```
 
 
 # Day 1 Familiarization
 
-Forty eight `pseudowords` were repeated 30 times on Day 1. Only `pseudowords` were used in the current experiment. Each of 13 participants completed a total of 1,440 trials, divided into 10 blocks of 144 trials each. Each item was repeated three times within a block. In each trial, participants indicated whether it was the first, second, or third time the given item was presented within the block. Two participants (5th & 6th) did not complete the session due to a technical issue. These two participants were exposed to each item 24 to 27 times.
+Forty eight `pseudowords` were repeated 30 times on Day 1.Each participant (13 in total) completed 10 blocks of 144 trials each (1,440 trials in total). Each item was repeated three times within a block. In each trial, participants indicated whether it was the first, second, or third time the given item was presented within the block. Two participants (5th & 6th) did not complete the session due to a technical issue. These two participants were exposed to each item 24 to 27 times.
 
 ```{r, collapse=TRUE}
 D1 <- read.csv("data/data_FamSM_Exp3B_Word_PRE.csv", header = T)
@@ -119,7 +119,7 @@ h2 <- ggplot(rD1g, mapping=aes(x=Block, y=RT, group=1)) +
 h1 + h2
 ```
 
-Two participants (6th & 7th) did not make responses in all or most of trials in Block 1. In subsequent blocks, participants made faster correct responses while maintaining a similar level of accuracy. Overall accuracy was `r round(mean(cD1s$M), digits=2)`% (SD = `r round(sd(cD1s$M), digits=2)`). 
+Two participants (6th & 7th) did not make responses in all or most of trials in Block 1. Participants made faster correct responses while maintaining a similar level of accuracy over time. Overall accuracy was `r round(mean(cD1s$M), digits=2)`% (SD = `r round(sd(cD1s$M), digits=2)`). 
 
 
 <br><br>
@@ -131,7 +131,7 @@ Two participants (6th & 7th) did not make responses in all or most of trials in 
 
 # Item Repetition Phase
 
-The three-phase procedure as in Experiments 1 and 2 was conducted on Day 2. In the item repetition phase, half of the pseudowords learned on Day 1 were repeated eight time, producing 192 trials. In each trial, participants made a preference judgment for an item.
+The same three-phase procedure as in Experiments 1 and 2 was conducted on Day 2. In the item repetition phase, half of the pseudowords learned on Day 1 were repeated eight times, resulting in 192 trials. In each trial, participants made a preference judgment (like/dislike).
 
 ```{r, collapse=TRUE}
 P1 <- read.csv("data/data_FamSM_Exp3B_Word_REP.csv", header = T)
@@ -160,7 +160,7 @@ P1slong <- P1 %>% group_by(SID) %>%
   ungroup
 ```
 
-The mean of individuals' preference scores was `r round(mean(P1slong$Preference)*100, digits=2)`%. In the following plot, red point and error bar represent the means and 95% bootstrapped CIs.
+The preference score averaged across participants was `r round(mean(P1slong$Preference)*100, digits=2)`%. In the following plot, the red point and error bars represent the mean and 95% bootstrapped CIs.
 
 ```{r, fig.height=3}
 P1slong <- P1 %>% group_by(SID) %>% 
@@ -192,7 +192,7 @@ ggplot(data=P1slong, aes(x=1, y=Preference)) +
 
 # Item-Source Association Phase
 
-Participants learned 48 pairs of a pseudoword and a quadrant on the screen. They were instructed to pay attention to the location of each face while making a preference judgment. All pseudowords shown on Day 1 were presented once in one of four quadrants. The within-participant **item repetition** was the single factor. Twenty four pseudowords had been repeated in the first phase (`repeated`) while the other 24 faces had not (`unrepeated`).
+Participants learned 48 pseudoword-location (a quadrant on the screen) associations. They were instructed to pay attention to the location of each pseudoword while making a preference judgment. All pseudowords shown on Day 1 were presented once in one of four quadrants. **Item repetition** was the single within-participant independent variable. Half of the pseudowords had been repeated in the first phase (`repeated`) while the other half had not (`unrepeated`).
 
 ```{r, collapse=TRUE}
 P2 <- read.csv("data/data_FamSM_Exp3B_Word_SRC.csv", header = T)
@@ -218,7 +218,7 @@ Participants did not make responses in `r round(100 - mean(P2$Corr)*100, digits=
 
 ## Preference
 
-We calculated the mean and *s.d.* of individual participants' accuracy rates for each condition. As in Experiment 2, preference for `pseudowords` increased after `repetition`. In the following plot, red points and error bars represent the means and 95% CIs.
+We calculated the mean and *s.d.* of individual participants' preference score for each condition. As in Experiment 2, preference for `pseudowords` increased after `repetition`. In the following plot, red points and error bars represent the means and 95% CIs.
 
 ```{r, fig.height=4, fig.width=4}
 # phase 1, subject-level, long-format
@@ -259,7 +259,7 @@ ggplot(P2slong, aes(x=Repetition, y=Preference, fill=Repetition)) +
 
 ### ANOVA
 
-Mean preference scores were submitted to a one-way repeated measures ANOVA. Participants preferred the pseudowords of the `repetition` condition significantly to those of the `no repetition` condition (*familiarity benefit*). 
+Mean preference scores were submitted to a one-way repeated measures ANOVA. Participants made significantly more 'Like' responses to repeated than unrepeated pseudowords (*familiarity benefit*). 
 
 ```{r, warning=FALSE, message=FALSE}
 p2.aov <- aov_ez(id = "SID", dv = "Preference", data = P2slong, within = "Repetition")
@@ -276,7 +276,7 @@ anova(p2.aov, es = "pes") %>% kable(digits = 4)
 
 # Source Memory Test Phase
 
-In each trial, participants first indicated in which quadrant a given pseudoword appeared during the item-source association phase. Participants then rated how confident they were about their memory judgment. The design was the same as that in the second phase. A single factor was the within-participant **item repetition** (`repeated` vs. `unrepeated`).
+In each trial, participants first indicated in which quadrant a given pseudoword appeared during the item-source association phase. Participants then rated how confident they were about their memory judgment. 
 
 ```{r, collapse=TRUE}
 P3 <- read.csv("data/data_FamSM_Exp3B_Word_TST.csv", header = T)
@@ -299,7 +299,7 @@ table(P3$Repetition, P3$SID)
 
 ## Accuracy
 
-We calculated the mean and *s.d.* of individual participants' mean percentage accuracy. Source memory accuracy was greater in the `unrepeated` condition than the `repeated` condition (*novelty benefit*). In the following plot, red points and error bars represent the means and 95% within-participants CIs. 
+We calculated the mean and *s.d.* of individual participants' mean percentage accuracy. Source memory accuracy was greater in the `unrepeated` than `repeated` condition (*novelty benefit*). In the following plot, red points and error bars represent the means and 95% within-participants CIs. 
 
 ```{r, fig.height=4, fig.width=4}
 # phase 3, subject-level, long-format
@@ -389,7 +389,7 @@ stopCluster(cl)
 load("RData/afex_FamSM_Exp3B_Word_Acc.RData")
 ```
 
-The next table shows the LRT results of the models `full1` and `full2` side by side.
+The table below shows the LRT results of the models `full1` and `full2` side by side.
 
 ```{r}
 full.compare <- cbind(afex::nice(full1), afex::nice(full2)[,-c(1,2)])
@@ -397,7 +397,7 @@ colnames(full.compare)[c(3,4,5,6)] <- c("full1 Chisq", "p","full2 Chisq", "p")
 full.compare %>% kable()
 ```
 
-The *p*-values from all models agreed strongly providing a high degree of confidence in the results. Item repetition impaired source memory of `pseudowords` that were familiarized on the previous day. 
+The *p*-values from the two models were highly similar to each other. Item repetition impaired source memory for `pseudowords` that were familiarized on the previous day. 
 
 
 <br><br>
@@ -405,7 +405,7 @@ The *p*-values from all models agreed strongly providing a high degree of confid
 
 ## Confidence
 
-The following table presents the mean and *s.d.* of individual participants' confidence ratings in each condition. The difference between conditions appears negligible. 
+The following table presents the mean and *s.d.* of individual participants' confidence ratings in each condition. There was no difference between the repeated vs. unrepeated conditions. 
 
 ```{r, fig.height=4, fig.width=4}
 P3CFslong <- P3 %>% group_by(SID, Repetition) %>% 
@@ -484,7 +484,7 @@ P3R$SID = factor(P3R$SID)
 load("RData/clmm_FamSM_Exp3B_Word_Conf.RData")
 ```
 
-To determine the significance of the fixed effect, the LRT compared the full model (`cm.full`) with its nested model (`cm.red1`) without the effect of interest. The next table showed that The effect of **item repetition** was not significant.
+To determine the significance of the fixed effect, the LRT compared the full model (`cm.full`) with its nested model (`cm.red1`) without the effect of interest. The next table shows that the effect of **item repetition** was not significant.
 
 ```{r}
 cm.comp <- anova(cm.full, cm.red1)
@@ -520,7 +520,7 @@ ggplot(data = temp, aes(x = Rating, y = Prob, group = Condition)) +
 
 ## RT
 
-Only RTs in correct trials were analyzed. Before analysis, we first removed RTs either shorter than 200ms or longer than 10s. Then, from the RT distribution of each condition, RTs beyond 3 *s.d.* from the mean were removed. 
+Only RTs from correct trials were analyzed. Before analysis, we first removed RTs either shorter than 200ms or longer than 10s. Then, from the RT distribution of each condition, RTs beyond 3 *s.d.* from the mean were additionally removed. 
 
 ```{r, collapse=TRUE}
 cP3 <- P3 %>% filter(Corr==1)
@@ -540,9 +540,9 @@ sP3 <- cP3 %>% filter(RT > 200 & RT < 10000) %>%
 100 - 100*nrow(sP3)/nrow(cP3)
 ```
 
-This trimming procedure removed `r round(100 - 100*nrow(sP3)/nrow(cP3), digits = 2)`% of correct RTs.
+This trimming procedure removed `r round(100 - 100*nrow(sP3)/nrow(cP3), digits = 2)`% of correct trials.
   
-Since the overall accuracy of source memory was not high, only small numbers of correct trials were available after trimming. The following table summarizes the numbers of RTs submitted to subsequent analyses. None of participants had more than 20 trials per condition. 
+Since the overall source memory accuracy was not high, only small numbers of correct trials were available after trimming. The following table summarizes the numbers of RTs submitted to subsequent analyses. No participant had more than 20 trials per condition. 
 
 ```{r}
 sP3 %>% group_by(SID, Repetition) %>% 
@@ -578,7 +578,7 @@ den1 + den2
 
 The overall RT distribution was highly skewed even after trimming. Given limited numbers of RTs and its skewed distribution, any results from the current RT analyses should be interpreted with caution and preferably corroborated with other measures.
 
-We calculated the mean and s.d. of individual participants’ mean RTs. The numerical pattern of RTs was consistent with the accuracy and confidence data. Participants made slightly faster responses in the `repeated` condition than `unrepeated` condition.
+We calculated the mean and s.d. of individual participants’ mean RTs. The overall pattern of RTs was consistent with that of source memory accuracy and confidence ratings. Participants made slightly faster responses in the `repeated` than `unrepeated` condition.
 
 ```{r, fig.height=4, fig.width=4}
 P3RTslong <- sP3 %>% group_by(SID, Repetition) %>% 
