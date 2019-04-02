@@ -1080,7 +1080,7 @@ p3.corr.aov.r1 &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<spa
 </tr>
 </tbody>
 </table>
-<p>In the <strong>famous</strong> face condition, source memory was more accurate for <strong>unrepeated</strong> than <strong>repeated</strong> faces. The 95% CI of difference between the means was [1.17, 12.04]. The table below shows the effect of item repetition for <code>non-famous</code> faces.</p>
+<p>In the <code>famous</code> face condition, source memory was more accurate for <code>unrepeated</code> than <code>repeated</code> faces. The 95% CI of difference between the means was [1.17, 12.04]. The table below shows the effect of item repetition for <code>non-famous</code> faces.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ci95 &lt;-<span class="st"> </span>P3ACCswide <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(Familiarity<span class="op">==</span><span class="st">&quot;Non-famous&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">mutate</span>(<span class="dt">Diff =</span> Repeated <span class="op">-</span><span class="st"> </span>Unrepeated) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">summarise</span>(<span class="dt">lower =</span> <span class="kw">mean</span>(Diff) <span class="op">-</span><span class="st"> </span><span class="kw">qt</span>(<span class="fl">0.975</span>,<span class="dt">df=</span><span class="kw">n</span>()<span class="op">-</span><span class="dv">1</span>)<span class="op">*</span><span class="kw">sd</span>(Diff)<span class="op">/</span><span class="kw">sqrt</span>(<span class="kw">n</span>()),
@@ -1113,7 +1113,7 @@ p3.corr.aov.r2 &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<spa
 </tr>
 </tbody>
 </table>
-<p>In the <strong>non-famous</strong> face condition, source memory was marginally more accurate for <strong>repeated</strong> than <strong>unrepeated</strong> faces. The 95% CI of difference between the means was [-1.06, 12.13].</p>
+<p>In the <code>non-famous</code> face condition, source memory was marginally more accurate for <code>repeated</code> than <code>unrepeated</code> faces. The 95% CI of difference between the means was [-1.06, 12.13].</p>
 </div>
 <div id="glmm" class="section level3">
 <h3><span class="header-section-number">3.1.2</span> GLMM</h3>
@@ -1423,7 +1423,7 @@ p3.conf.aov.r1 &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<spa
 </tr>
 </tbody>
 </table>
-<p>In the <code>famous</code> face condition, confidence ratings were higher for <strong>unrepeated</strong> than <strong>repeated</strong> faces. The 95% CI of difference between the means was [0.03, 0.32]. The table below shows the effect of item repetition for <code>non-famous</code> faces.</p>
+<p>In the <code>famous</code> face condition, confidence ratings were higher for <code>unrepeated</code> than <code>repeated</code> faces. The 95% CI of difference between the means was [0.03, 0.32]. The table below shows the effect of item repetition for <code>non-famous</code> faces.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ci95 &lt;-<span class="st"> </span>P3CFswide <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(Familiarity<span class="op">==</span><span class="st">&quot;Non-famous&quot;</span>) <span class="op">%&gt;%</span>
 <span class="st">  </span><span class="kw">mutate</span>(<span class="dt">Diff =</span> Repeated <span class="op">-</span><span class="st"> </span>Unrepeated) <span class="op">%&gt;%</span>
 <span class="st">  </span><span class="kw">summarise</span>(<span class="dt">lower =</span> <span class="kw">mean</span>(Diff) <span class="op">-</span><span class="st"> </span><span class="kw">qt</span>(<span class="fl">0.975</span>,<span class="dt">df=</span><span class="kw">n</span>()<span class="op">-</span><span class="dv">1</span>)<span class="op">*</span><span class="kw">sd</span>(Diff)<span class="op">/</span><span class="kw">sqrt</span>(<span class="kw">n</span>()),
@@ -1456,12 +1456,12 @@ p3.conf.aov.r2 &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<spa
 </tr>
 </tbody>
 </table>
-<p>In the <code>non-famous</code> face condition, confidence ratings were higher for <strong>repeated</strong> than <strong>unrepeated</strong> faces. The 95% CI of difference between the means was [0.28, 0.58].</p>
+<p>In the <code>non-famous</code> face condition, confidence ratings were higher for <code>repeated</code> than <code>unrepeated</code> faces. The 95% CI of difference between the means was [0.28, 0.58].</p>
 </div>
 <div id="clmm" class="section level3">
 <h3><span class="header-section-number">3.2.2</span> CLMM</h3>
 <p>The responses from a Likert-type scale are ordinal. Especially for the rating items with numerical response formats containing four or fewer categories, it is recommended to use categorical data analysis approaches, rather than treating the responses as continuous data (<a href="https://ac.els-cdn.com/S1877129715200196/1-s2.0-S1877129715200196-main.pdf?_tid=589e7c17-4d55-49e6-a80f-5aef938a1f44&amp;acdnat=1549722329_bb934739b91ee6554cafadb39565dc25">Harpe, 2015</a>).</p>
-<p>Here we employed the cumulative link mixed modeling using the <code>clmm()</code> of the package <code>ordinal</code> (<a href="https://cran.r-project.org/web/packages/ordinal/vignettes/clm_article.pdf">Christensen, submitted</a>). The model specification of fixed and random effects was the same as the <code>mixed()</code> above. To determine the statistical significance, the LRT compared models with or without the fixed effect of interest.</p>
+<p>Here we employed the cumulative link mixed modeling using the <code>clmm()</code> of the package <code>ordinal</code> (<a href="https://cran.r-project.org/web/packages/ordinal/vignettes/clm_article.pdf">Christensen, submitted</a>). The model specification of fixed and random effects was the same as the <code>mixed()</code> above. To determine the statistical significance, the likelihood ratio tests (LRT) compared models with or without the fixed effect of interest.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">P3R &lt;-<span class="st"> </span>P3
 P3R<span class="op">$</span>Confident =<span class="st"> </span><span class="kw">factor</span>(P3R<span class="op">$</span>Confident, <span class="dt">ordered =</span> <span class="ot">TRUE</span>)
 P3R<span class="op">$</span>SID =<span class="st"> </span><span class="kw">factor</span>(P3R<span class="op">$</span>SID)
@@ -1806,7 +1806,7 @@ P3RTg<span class="op">$</span>RT &lt;-<span class="st"> </span>P3RTg<span class=
 </tr>
 </tbody>
 </table>
-<p>The effect of item repetition was significant in the <code>famous</code> condition.</p>
+<p>The effect of <strong>item repetition</strong> was significant in the <code>famous</code> condition.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p3.rt.aov.r2 &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;RT&quot;</span>, <span class="dt">within =</span> <span class="st">&quot;Repetition&quot;</span>,
                          <span class="dt">data =</span> <span class="kw">filter</span>(sP3, Familiarity <span class="op">==</span><span class="st"> &quot;Non-famous&quot;</span>))
 <span class="kw">anova</span>(p3.rt.aov.r2, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
@@ -1834,7 +1834,7 @@ P3RTg<span class="op">$</span>RT &lt;-<span class="st"> </span>P3RTg<span class=
 </tr>
 </tbody>
 </table>
-<p>The effect of item repetition was not significant in the <code>non-famous</code> condition.</p>
+<p>The effect of <strong>item repetition</strong> was not significant in the <code>non-famous</code> condition.</p>
 <p><br><br></p>
 <hr />
 <p><br><br></p>
