@@ -1088,7 +1088,7 @@ p3.corr.aov.r1 &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<spa
 </tr>
 </tbody>
 </table>
-<p>In the <strong>famous</strong> face group, source memory was more accurate for <code>unrepeated</code> than <code>repeated</code> faces. The 95% CI of difference between the means was [8.38, 24.26]. The table below shows the effect of item repetition for <code>non-famous</code> faces.</p>
+<p>In the <code>famous</code> face group, source memory was more accurate for <code>unrepeated</code> than <code>repeated</code> faces. The 95% CI of difference between the means was [8.38, 24.26]. The table below shows the effect of item repetition for <code>non-famous</code> faces.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ci95 &lt;-<span class="st"> </span>P3ACCswide <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(Familiarity<span class="op">==</span><span class="st">&quot;Non-famous&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">mutate</span>(<span class="dt">Diff =</span> Repeated <span class="op">-</span><span class="st"> </span>Unrepeated) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">summarise</span>(<span class="dt">lower =</span> <span class="kw">mean</span>(Diff) <span class="op">-</span><span class="st"> </span><span class="kw">qt</span>(<span class="fl">0.975</span>,<span class="dt">df=</span><span class="kw">n</span>()<span class="op">-</span><span class="dv">1</span>)<span class="op">*</span><span class="kw">sd</span>(Diff)<span class="op">/</span><span class="kw">sqrt</span>(<span class="kw">n</span>()),
@@ -1121,7 +1121,7 @@ p3.corr.aov.r2 &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<spa
 </tr>
 </tbody>
 </table>
-<p>In the <strong>non-famous</strong> face group, source memory was more accurate for <code>repeated</code> than <code>unrepeated</code> faces. The 95% CI of difference between the means was [0.52, 17.54].</p>
+<p>In the <code>non-famous</code> face group, source memory was more accurate for <code>repeated</code> than <code>unrepeated</code> faces. The 95% CI of difference between the means was [0.52, 17.54].</p>
 </div>
 <div id="glmm" class="section level3">
 <h3><span class="header-section-number">3.1.2</span> GLMM</h3>

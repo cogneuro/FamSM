@@ -319,7 +319,7 @@ p3.corr.aov.r1 <- aov_ez(id = "SID", dv = "Accuracy", within = "Repetition",
 anova(p3.corr.aov.r1, es = "pes") %>% kable(digits = 4)
 ```
 
-In the **famous** face group, source memory was more accurate for `unrepeated` than `repeated` faces. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
+In the `famous` face group, source memory was more accurate for `unrepeated` than `repeated` faces. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
 The table below shows the effect of item repetition for `non-famous` faces.
 
 ```{r, warning=FALSE, message=FALSE}
@@ -333,7 +333,7 @@ p3.corr.aov.r2 <- aov_ez(id = "SID", dv = "Accuracy", within = "Repetition",
 anova(p3.corr.aov.r2, es = "pes") %>% kable(digits = 4)
 ```
 
-In the **non-famous** face group, source memory was more accurate for `repeated` than `unrepeated` faces. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
+In the `non-famous` face group, source memory was more accurate for `repeated` than `unrepeated` faces. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
 
 
 
