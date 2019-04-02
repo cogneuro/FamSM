@@ -603,7 +603,7 @@ h2 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(rD1g, <span clas
 
 h1 <span class="op">+</span><span class="st"> </span>h2</code></pre></div>
 <p><img src="FamSM_Exp3B_Word_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
-<p>Two participants (6th &amp; 7th) did not make responses in all or most of trials in Block 1. Participants made faster correct responses while maintaining a similar level of accuracy over time. Overall accuracy was 58.64% (SD = 8.25).</p>
+<p>Two participants (6th &amp; 7th) did not make responses in all or most of trials in Block 1. Participants made faster correct responses while maintaining a similar level of accuracy over time. Overall accuracy was 58.64% (<em>s.d.</em> = 8.25).</p>
 <p><br><br></p>
 <hr />
 <p><br><br></p>
@@ -919,7 +919,7 @@ p3.corr.aov &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span c
 </tr>
 </tbody>
 </table>
-<p>Source memory accuracy was higher for <strong>unrepeated</strong> than <strong>repeated</strong> pseudowords. The 95% CI of difference between the means was [0.32, 17.63].</p>
+<p>Source memory accuracy was higher for <code>unrepeated</code> than <code>repeated</code> pseudowords. The 95% CI of difference between the means was [0.32, 17.63].</p>
 </div>
 <div id="glmm" class="section level3">
 <h3><span class="header-section-number">4.1.2</span> GLMM</h3>
@@ -971,7 +971,7 @@ full.compare <span class="op">%&gt;%</span><span class="st"> </span><span class=
 </div>
 <div id="confidence" class="section level2">
 <h2><span class="header-section-number">4.2</span> Confidence</h2>
-<p>The following table presents the mean and <em>s.d.</em> of individual participants’ confidence ratings in each condition. There was no difference between the repeated vs. unrepeated conditions.</p>
+<p>The following table presents the mean and <em>s.d.</em> of individual participants’ confidence ratings in each condition. There was no difference between the <code>repeated</code> vs. <code>unrepeated</code> conditions.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">P3CFslong &lt;-<span class="st"> </span>P3 <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">group_by</span>(SID, Repetition) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">summarise</span>(<span class="dt">Confidence =</span> <span class="kw">mean</span>(Confident)) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">ungroup</span>()

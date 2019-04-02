@@ -119,7 +119,7 @@ h2 <- ggplot(rD1g, mapping=aes(x=Block, y=RT, group=1)) +
 h1 + h2
 ```
 
-Two participants (6th & 7th) did not make responses in all or most of trials in Block 1. Participants made faster correct responses while maintaining a similar level of accuracy over time. Overall accuracy was `r round(mean(cD1s$M), digits=2)`% (SD = `r round(sd(cD1s$M), digits=2)`). 
+Two participants (6th & 7th) did not make responses in all or most of trials in Block 1. Participants made faster correct responses while maintaining a similar level of accuracy over time. Overall accuracy was `r round(mean(cD1s$M), digits=2)`% (*s.d.* = `r round(sd(cD1s$M), digits=2)`). 
 
 
 <br><br>
@@ -357,7 +357,7 @@ p3.corr.aov <- aov_ez(id = "SID", dv = "Accuracy", data = P3ACCslong, within = "
 anova(p3.corr.aov, es = "pes") %>% kable(digits = 4)
 ```
 
-Source memory accuracy was higher for **unrepeated** than **repeated** pseudowords. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
+Source memory accuracy was higher for `unrepeated` than `repeated` pseudowords. The 95% CI of difference between the means was [`r round(ci95[1], digits=2)`, `r round(ci95[2], digits=2)`].
 
 
 
@@ -405,7 +405,7 @@ The *p*-values from the two models were highly similar to each other. Item repet
 
 ## Confidence
 
-The following table presents the mean and *s.d.* of individual participants' confidence ratings in each condition. There was no difference between the repeated vs. unrepeated conditions. 
+The following table presents the mean and *s.d.* of individual participants' confidence ratings in each condition. There was no difference between the `repeated` vs. `unrepeated` conditions. 
 
 ```{r, fig.height=4, fig.width=4}
 P3CFslong <- P3 %>% group_by(SID, Repetition) %>% 
