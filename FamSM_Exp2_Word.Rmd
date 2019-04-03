@@ -47,7 +47,7 @@ klippy::klippy()
 
 # Item Repetition Phase
 
-Thirty participants were recruited. Half of the participants were exposed to 24 `words` while the other half were exposed to 24 `pseudowords` (**pre-experimental stimulus familiarity** as a between-participants factor). Each item was repeated eight times, resulting in 192 trials. Participants made a preference judgment (like/dislike) for each item. 
+Thirty participants were recruited. Half of the participants were exposed to 24 `words` while the other half were exposed to 24 `pseudowords` (**pre-experimental stimulus familiarity** as a between-participants factor).[^1] Each item was repeated eight times, resulting in 192 trials. Participants made a preference judgment (like/dislike) for each item. 
 
 ```{r, collapse=TRUE}
 P1 <- read.csv("data/data_FamSM_Exp2_Word_REP.csv", header = T)
@@ -677,7 +677,7 @@ ggplot(data=P3RTslong, aes(x=Familiarity, y=RT, fill=Repetition)) +
 
 ### ANOVA
 
-Individual participants’ mean RTs were submitted to a 2x2 mixed design ANOVA with **pre-experimental stimulus familiarity** as a between-participants factor and **item repetition** as a within-participant factor.[^1]
+Individual participants’ mean RTs were submitted to a 2x2 mixed design ANOVA with **pre-experimental stimulus familiarity** as a between-participants factor and **item repetition** as a within-participant factor.[^2]
 
 ```{r, warning=FALSE, message=FALSE}
 p3.rt.aov <- aov_ez(id = "SID", dv = "RT", data = sP3, 
@@ -776,4 +776,7 @@ sessionInfo()
 ```
 
 [^1]: 
+One additional participant in the `pseudoword` group was excluded from analysis for failing to follow instructions and not responding during the item repetition phase.
+
+[^2]: 
 We additionally tested several GLMMs on source memory RTs since GLMMs with relevant link functions were supposed to be better than the conventional ANOVA in dealing with such limited, unbalanced and skewed data as the current RTs ([Lo & Andrews, 2015](https://p3w.frontiersin.org/articles/10.3389/fpsyg.2015.01171/full)). Some models adopted non-linear transformations of RTs (such as -1000/RT or log(RT)) and  others assumed an inverse Gaussian or Gamma distribution and a linear relationship (identity link function) between the predictors and RTs. None of the models, however, converged onto a stable solution. 
