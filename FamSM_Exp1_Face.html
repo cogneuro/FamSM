@@ -11,7 +11,7 @@
 
 <meta name="author" content="Hongmi Lee, Kyungmi Kim, Do-Joon Yi" />
 
-<meta name="date" content="2019-04-02" />
+<meta name="date" content="2019-04-03" />
 
 <title>Experiment 1</title>
 
@@ -495,7 +495,7 @@ div.tocify {
 <h1 class="title toc-ignore">Experiment 1</h1>
 <h3 class="subtitle">Famous vs. non-famous faces (between-participants design)</h3>
 <h4 class="author">Hongmi Lee, Kyungmi Kim, Do-Joon Yi</h4>
-<h4 class="date">2019-04-02</h4>
+<h4 class="date">2019-04-03</h4>
 
 </div>
 
@@ -525,7 +525,7 @@ klippy<span class="op">::</span><span class="kw">klippy</span>()</code></pre></d
 </script>
 <div id="item-repetition-phase" class="section level1">
 <h1><span class="header-section-number">1</span> Item Repetition Phase</h1>
-<p>Twenty four participants were recruited. Half of the participants were exposed to 24 <code>famous</code> faces while the other half were exposed to 24 <code>non-famous</code> faces (<strong>pre-experimental stimulus familiarity</strong> as a between-participants factor). Each face was repeated eight times, resulting in 192 trials in total. For each face, participants made a male/female judgment.</p>
+<p>Twenty four participants were recruited. Half of the participants were exposed to 24 <code>famous</code> faces while the other half were exposed to 24 <code>non-famous</code> faces (<strong>pre-experimental stimulus familiarity</strong> as a between-participants factor).<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> Each face was repeated eight times, resulting in 192 trials in total. For each face, participants made a male/female judgment.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">P1 &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/data_FamSM_Exp1_Face_REP.csv&quot;</span>, <span class="dt">header =</span> T)
 P1<span class="op">$</span>Familiarity =<span class="st"> </span><span class="kw">factor</span>(P1<span class="op">$</span>Familiarity, <span class="dt">levels=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>), <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;Famous&quot;</span>,<span class="st">&quot;Non-famous&quot;</span>))
 
@@ -1749,7 +1749,7 @@ P3RTg<span class="op">$</span>RT &lt;-<span class="st"> </span>P3RTg<span class=
 <p><img src="FamSM_Exp1_Face_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
 <div id="anova-4" class="section level3">
 <h3><span class="header-section-number">3.3.1</span> ANOVA</h3>
-<p>Individuals’ mean RTs were submitted to a 2x2 mixed design ANOVA with <strong>pre-experimental stimulus familiarity</strong> as a between-participants factor and <strong>item repetition</strong> as a within-participant factor.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<p>Individuals’ mean RTs were submitted to a 2x2 mixed design ANOVA with <strong>pre-experimental stimulus familiarity</strong> as a between-participants factor and <strong>item repetition</strong> as a within-participant factor.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">p3.rt.aov &lt;-<span class="st"> </span><span class="kw">aov_ez</span>(<span class="dt">id =</span> <span class="st">&quot;SID&quot;</span>, <span class="dt">dv =</span> <span class="st">&quot;RT&quot;</span>, <span class="dt">data =</span> sP3, 
                       <span class="dt">between =</span> <span class="st">&quot;Familiarity&quot;</span>, <span class="dt">within =</span> <span class="st">&quot;Repetition&quot;</span>)
 <span class="kw">anova</span>(p3.rt.aov, <span class="dt">es =</span> <span class="st">&quot;pes&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">kable</span>(<span class="dt">digits =</span> <span class="dv">4</span>)</code></pre></div>
@@ -1861,9 +1861,9 @@ P3RTg<span class="op">$</span>RT &lt;-<span class="st"> </span>P3RTg<span class=
 <div id="session-info" class="section level1">
 <h1><span class="header-section-number">4</span> Session Info</h1>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sessionInfo</span>()
-## R version 3.5.3 (2019-03-11)
+## R version 3.5.2 (2018-12-20)
 ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-## Running under: macOS Mojave 10.14.4
+## Running under: macOS High Sierra 10.13.6
 ## 
 ## Matrix products: default
 ## BLAS: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRblas.0.dylib
@@ -1889,10 +1889,10 @@ P3RTg<span class="op">$</span>RT &lt;-<span class="st"> </span>P3RTg<span class=
 ## 
 ## loaded via a namespace (and not attached):
 ##  [1] nlme_3.1-137      lubridate_1.7.4   httr_1.4.0       
-##  [4] numDeriv_2016.8-1 tools_3.5.3       backports_1.1.3  
+##  [4] numDeriv_2016.8-1 tools_3.5.2       backports_1.1.3  
 ##  [7] utf8_1.1.4        R6_2.4.0          vipor_0.4.5      
 ## [10] lazyeval_0.2.2    colorspace_1.4-1  withr_2.1.2      
-## [13] tidyselect_0.2.5  curl_3.3          compiler_3.5.3   
+## [13] tidyselect_0.2.5  curl_3.3          compiler_3.5.2   
 ## [16] cli_1.1.0         rvest_0.3.2       xml2_1.2.0       
 ## [19] sandwich_2.5-0    labeling_0.3      scales_1.0.0     
 ## [22] mvtnorm_1.0-10    digest_0.6.18     foreign_0.8-71   
@@ -1903,21 +1903,22 @@ P3RTg<span class="op">$</span>RT &lt;-<span class="st"> </span>P3RTg<span class=
 ## [37] zip_2.0.1         magrittr_1.5      fansi_0.4.0      
 ## [40] Rcpp_1.0.1        munsell_0.5.0     abind_1.4-5      
 ## [43] ucminf_1.1-4      stringi_1.4.3     multcomp_1.4-10  
-## [46] yaml_2.2.0        MASS_7.3-51.3     grid_3.5.3       
-## [49] crayon_1.3.4      haven_2.1.0       splines_3.5.3    
+## [46] yaml_2.2.0        MASS_7.3-51.3     grid_3.5.2       
+## [49] crayon_1.3.4      haven_2.1.0       splines_3.5.2    
 ## [52] hms_0.4.2         pillar_1.3.1      boot_1.3-20      
 ## [55] estimability_1.3  reshape2_1.4.3    codetools_0.2-16 
 ## [58] glue_1.3.1        evaluate_0.13     data.table_1.12.0
 ## [61] modelr_0.1.4      nloptr_1.2.1      cellranger_1.1.0 
-## [64] gtable_0.3.0      assertthat_0.2.1  xfun_0.5         
+## [64] gtable_0.3.0      assertthat_0.2.1  xfun_0.6         
 ## [67] openxlsx_4.1.0    xtable_1.8-3      broom_0.5.1      
-## [70] coda_0.19-2       survival_2.44-1   lmerTest_3.1-0   
+## [70] coda_0.19-2       survival_2.44-1.1 lmerTest_3.1-0   
 ## [73] beeswarm_0.2.3    TH.data_1.0-10</code></pre></div>
 </div>
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>We additionally tested several GLMMs on source memory RTs since GLMMs with relevant link functions were supposed to be better than the conventional ANOVA in dealing with such limited, unbalanced and skewed data as the current RTs (<a href="https://p3w.frontiersin.org/articles/10.3389/fpsyg.2015.01171/full">Lo &amp; Andrews, 2015</a>). Some models adopted non-linear transformations of RTs (such as -1000/RT or log(RT)) and others assumed an inverse Gaussian or Gamma distribution and a linear relationship (identity link function) between the predictors and RTs. None of the models, however, converged onto a stable solution.<a href="#fnref1">↩</a></p></li>
+<li id="fn1"><p>One additional participant in the <code>famous</code> face group was removed from analysis for not responding in 87.5% of trials in the item-source association phase.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>We additionally tested several GLMMs on source memory RTs since GLMMs with relevant link functions were supposed to be better than the conventional ANOVA in dealing with such limited, unbalanced and skewed data as the current RTs (<a href="https://p3w.frontiersin.org/articles/10.3389/fpsyg.2015.01171/full">Lo &amp; Andrews, 2015</a>). Some models adopted non-linear transformations of RTs (such as -1000/RT or log(RT)) and others assumed an inverse Gaussian or Gamma distribution and a linear relationship (identity link function) between the predictors and RTs. None of the models, however, converged onto a stable solution.<a href="#fnref2">↩</a></p></li>
 </ol>
 </div>
 
