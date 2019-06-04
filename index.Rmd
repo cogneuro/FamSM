@@ -20,7 +20,7 @@ devtools::install_github("ropenscilabs/icon")
 
 * Hongmi Lee (Johns Hopkins University)
 * Kyungmi Kim (Wesleyan University)
-* Do-Joon Yi (Yonsei University)
+* Do-Joon Yi (Yonsei University) 
 
 <br><br>
 
