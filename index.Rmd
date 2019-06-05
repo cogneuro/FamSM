@@ -5,7 +5,7 @@ output:
   html_document:
     theme: cosmo 
     highlight: tango
-subtitle: Data & R scripts for analyses
+subtitle: Data & R scripts for analyses (in press, JEP:LMC)
 mainfont: Noto Sans CJK KR
 ---
 
