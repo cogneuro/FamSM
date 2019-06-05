@@ -1,7 +1,7 @@
 name: "FamSM"
 output_dir: "."
 navbar:
-  title: "Lee, Kim, Yi (accepted)"
+  title: "Lee, Kim, & Yi (accepted)"
   left:
     - text: "Exp 1"
       href: FamSM_Exp1_Face.html
